@@ -1,0 +1,13 @@
+<section class="s-processo-tiago-farma-05" data-secao="processo-tiago-farma-05">
+  <div class="processo-tiago-farma-05__container">
+    <div class="processo-tiago-farma-05__header" data-aos="fade-up">
+      <div class="processo-tiago-farma-05__eyebrow">{{eyebrow}}</div>
+      <h2 class="processo-tiago-farma-05__titulo">{{titulo}}</h2>
+    </div>
+    <div class="processo-tiago-farma-05__steps" data-aos="fade-up">
+      {{#itens}}
+      <div class="processo-tiago-farma-05__step"><div class="processo-tiago-farma-05__num">{{@num}}</div><h4 class="processo-tiago-farma-05__nome">{{nome}}</h4><p class="processo-tiago-farma-05__desc">{{descricao}}</p><div class="processo-tiago-farma-05__line"></div></div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

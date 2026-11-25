@@ -1,0 +1,23 @@
+<section class="s-sobre-vanessa-05" data-secao="sobre-vanessa-05">
+  <div class="sobre-vanessa-05__container sobre-vanessa-05__grid">
+    <div class="sobre-vanessa-05__photo">
+      <div class="sobre-vanessa-05__frame sobre-vanessa-05__tilt">
+        <img src="{{img:foto}}" alt="{{alt:foto}}" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div>
+      <span class="sobre-vanessa-05__eyebrow">{{rotulo}}</span>
+      <h2 class="sobre-vanessa-05__titulo">{{titulo}}</h2>
+      <p class="sobre-vanessa-05__texto">{{texto_1}}</p>
+      <p class="sobre-vanessa-05__texto">{{{texto_2}}}</p>
+      <div class="sobre-vanessa-05__credentials" data-stagger="">
+        {{#credenciais}}
+        <div class="sobre-vanessa-05__credential">
+          <div class="sobre-vanessa-05__badge">{{emblema}}</div>
+          <div><b>{{titulo}}</b><span>{{legenda}}</span></div>
+        </div>
+        {{/credenciais}}
+      </div>
+    </div>
+  </div>
+</section>

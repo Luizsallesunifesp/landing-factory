@@ -1,0 +1,34 @@
+{
+  "id": "cta-final-acalm-head-spa-10",
+  "tipo": "cta-final",
+  "origem": "acalm-head-spa",
+  "descricao": "Bloco centralizado de largura total com fundo em degradê escuro, eyebrow com filetes, título serifado grande com palavra em itálico (use <em> no título) e um único botão pílula para WhatsApp; sem imagens.",
+  "estilo": [
+    "editorial",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "qualquer landing page, como fechamento universal"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 32
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 80,
+      "descricao": "aceita <em> para a palavra em destaque"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 32
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

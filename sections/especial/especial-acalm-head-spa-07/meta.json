@@ -1,0 +1,102 @@
+{
+  "id": "especial-acalm-head-spa-07",
+  "tipo": "especial",
+  "origem": "acalm-head-spa",
+  "descricao": "Painel escuro com copy à esquerda e formulário de agendamento à direita (ritual, dia, nome, resumo dinâmico) que monta a mensagem e abre o WhatsApp. Lógica em section.js; não depende de libs globais. Se o link de WhatsApp já tiver ?text=, ele é substituído.",
+  "estilo": [
+    "escuro",
+    "acolhedor"
+  ],
+  "nicho": [
+    "clínicas",
+    "salões",
+    "consultórios",
+    "oficinas",
+    "estúdios"
+  ],
+  "libs": [],
+  "animacao": "reveal do painel ao rolar (IntersectionObserver, escala por --motion); resumo e link do WhatsApp atualizados ao digitar",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 160
+    },
+    "label_ritual": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "rituais": {
+      "tipo": "lista",
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 45
+        }
+      },
+      "min_itens": 1,
+      "max_itens": 6
+    },
+    "label_dia": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "dias": {
+      "tipo": "lista",
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 20
+        }
+      },
+      "min_itens": 1,
+      "max_itens": 7
+    },
+    "label_nome": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "placeholder_nome": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "resumo_vazio": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "resumo_com_nome": {
+      "tipo": "texto",
+      "max": 140,
+      "descricao": "usa {nome}, {ritual}, {dia}"
+    },
+    "resumo_sem_nome": {
+      "tipo": "texto",
+      "max": 140,
+      "descricao": "usa {ritual}, {dia}"
+    },
+    "msg_com_nome": {
+      "tipo": "texto",
+      "max": 120,
+      "descricao": "mensagem do WhatsApp; usa {nome}, {ritual}, {dia}, {negocio}"
+    },
+    "msg_sem_nome": {
+      "tipo": "texto",
+      "max": 120,
+      "descricao": "mensagem do WhatsApp; usa {ritual}, {dia}, {negocio}"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

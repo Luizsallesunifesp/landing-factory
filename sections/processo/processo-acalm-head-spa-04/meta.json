@@ -1,0 +1,55 @@
+{
+  "id": "processo-acalm-head-spa-04",
+  "tipo": "processo",
+  "origem": "acalm-head-spa",
+  "descricao": "Fundo escuro com cabeçalho e lista vertical de etapas numeradas em círculos, com linha de progresso que preenche ao rolar, título, texto e duração; sem imagens. JS próprio (scroll), sem dependência global.",
+  "estilo": [
+    "escuro",
+    "editorial"
+  ],
+  "nicho": [
+    "tratamentos",
+    "consultorias",
+    "onboarding de clientes",
+    "serviços explicados em etapas"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar e linha de progresso preenchida pelo scroll, ativando as etapas",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 210
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 7,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 215
+        },
+        "duracao": {
+          "tipo": "texto_curto",
+          "max": 16
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "servicos-luiz-ricardo-07",
+  "tipo": "servicos",
+  "origem": "luiz-ricardo",
+  "descricao": "Lista vertical de linhas empilhadas (ícone SVG de traço fino, título curto e frase de apoio com trecho em negrito), com reveal ao rolar e parallax sutil no fundo. Sem dependências globais; o JS próprio faz o reveal. Ícone é slot richtext com SVG inline (usa currentColor).",
+  "estilo": [
+    "minimalista",
+    "editorial"
+  ],
+  "nicho": [
+    "consultorias",
+    "agências",
+    "prestadores de serviço",
+    "SaaS"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar por linha (fade, blur, translate), parallax no fundo, linha ativa no centro em touch",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "Título em caixa alta mono, ex.: O que entrego"
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "icone": {
+          "tipo": "richtext",
+          "max": 700,
+          "descricao": "SVG inline 26x26, viewBox 24, stroke currentColor, aria-hidden"
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 45
+        },
+        "descricao": {
+          "tipo": "richtext",
+          "max": 130,
+          "descricao": "Frase com trecho em <b>negrito</b>"
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sobre-samanta-06",
+  "tipo": "sobre",
+  "origem": "samanta",
+  "descricao": "Duas colunas: à esquerda retrato vertical 4:5 com foto de atendimento 3:2 sobreposta; à direita rótulo, nome em título, registro em mono, citação em destaque, assinatura estilizada e lista de formação em pares rótulo/valor com traços finos. Requer gsap + ScrollTrigger (opcional, sem eles a seção aparece estática). Usa slots automáticos profissional, profissao e registro.",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "dentistas",
+    "médicos",
+    "fisioterapeutas",
+    "psicólogos",
+    "nutricionistas"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "reveal em cascata ao rolar, traços da lista de formação se desenham e assinatura aparece da esquerda para a direita",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "citacao": {
+      "tipo": "texto",
+      "max": 120
+    },
+    "formacao": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 45
+        },
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 45
+        }
+      }
+    },
+    "retrato": {
+      "tipo": "img",
+      "descricao": "retrato vertical 4:5"
+    },
+    "atendimento": {
+      "tipo": "img",
+      "descricao": "foto opcional de atendimento 3:2"
+    },
+    "assinatura": {
+      "tipo": "img",
+      "descricao": "assinatura estilizada em PNG, fundo branco, cerca de 600x200"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

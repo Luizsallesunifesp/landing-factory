@@ -1,0 +1,55 @@
+{
+  "id": "faixa-tiago-head-spa-05",
+  "tipo": "faixa",
+  "origem": "tiago-head-spa",
+  "descricao": "Faixa de largura total com foto de fundo em parallax e véu escuro, texto centralizado (eyebrow, título com palavra em destaque, lead curto) e botão de conversão para WhatsApp. Usa section.js próprio (reveal e parallax), sem dependência global.",
+  "estilo": [
+    "escuro",
+    "editorial"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultórios",
+    "estúdios",
+    "hotéis",
+    "serviços com chamada entre seções"
+  ],
+  "libs": [],
+  "animacao": "parallax no fundo (data-speed 0.3) e reveal escalonado ao rolar, ambos escalados por --motion",
+  "slots": {
+    "fundo": {
+      "tipo": "img",
+      "descricao": "foto de fundo da faixa"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo_inicio": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "texto antes da palavra destacada"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "palavra em destaque (itálico, cor de destaque)"
+    },
+    "titulo_fim": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "texto depois da palavra destacada"
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 270
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sobre-karol-03",
+  "tipo": "sobre",
+  "origem": "karol",
+  "descricao": "Duas colunas: foto 3:4 a esquerda, texto a direita com eyebrow, titulo em duas linhas (usa <br>), dois paragrafos e chips em caixa mono como tags de credencial. Fundo surface-2. Reveal via data-aos (requer AOS no shell).",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "profissionais de saude",
+    "consultores",
+    "advogados",
+    "coaches"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up nas duas colunas; zoom suave na foto no hover",
+  "slots": {
+    "foto": {
+      "tipo": "img"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 60,
+      "descricao": "aceita <br> para quebra de linha"
+    },
+    "paragrafo_1": {
+      "tipo": "texto",
+      "max": 380
+    },
+    "paragrafo_2": {
+      "tipo": "texto",
+      "max": 380
+    },
+    "chips": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 55
+        }
+      }
+    }
+  },
+  "mobile_ok": false,
+  "nota": 3,
+  "aprovada": false
+}

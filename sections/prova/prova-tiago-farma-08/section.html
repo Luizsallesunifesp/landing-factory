@@ -1,0 +1,25 @@
+<section class="s-prova-tiago-farma-08" data-secao="prova-tiago-farma-08">
+  <div class="prova-tiago-farma-08__container">
+    <div class="prova-tiago-farma-08__header prova-tiago-farma-08__reveal">
+      <div class="prova-tiago-farma-08__eyebrow">{{eyebrow}}</div>
+      <h2 class="prova-tiago-farma-08__titulo">{{titulo}}</h2>
+    </div>
+    <div class="prova-tiago-farma-08__grid prova-tiago-farma-08__reveal">
+      {{#depoimentos}}
+      <div class="prova-tiago-farma-08__card">
+        <div class="prova-tiago-farma-08__stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="prova-tiago-farma-08__txt">"{{texto}}"</p>
+        <div class="prova-tiago-farma-08__who">
+          <div class="prova-tiago-farma-08__avatar">{{inicial}}</div>
+          <div><strong>{{nome}}</strong><span>{{servico}}</span></div>
+        </div>
+      </div>
+      {{/depoimentos}}
+    </div>
+    <div class="prova-tiago-farma-08__bar prova-tiago-farma-08__reveal">
+      {{#indicadores}}
+      <div class="prova-tiago-farma-08__sp"><strong>{{valor}}</strong><span>{{rotulo}}</span></div>
+      {{/indicadores}}
+    </div>
+  </div>
+</section>

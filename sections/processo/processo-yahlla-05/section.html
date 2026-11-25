@@ -1,0 +1,18 @@
+<section class="s-processo-yahlla-05" data-secao="processo-yahlla-05">
+  <div class="processo-yahlla-05__wrap">
+    <div class="processo-yahlla-05__head">
+      <div class="processo-yahlla-05__eyebrow processo-yahlla-05__reveal">{{eyebrow}}</div>
+      <h2 class="processo-yahlla-05__titulo processo-yahlla-05__reveal">{{titulo}}</h2>
+    </div>
+    <div class="processo-yahlla-05__steps">
+      {{#itens}}
+      <div class="processo-yahlla-05__step processo-yahlla-05__reveal">
+        <span class="processo-yahlla-05__num">{{@num}}</span>
+        <div class="processo-yahlla-05__ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2c2 3-1 4-1 7a3 3 0 006 0c0-1-.5-2-1-3 2 1 4 4 4 7a8 8 0 11-16 0c0-4 3-6 4-9 .5 2 1.5 3 4 3-1-1-2-3 0-5z" fill="currentColor"></path></svg></div>
+        <h3 class="processo-yahlla-05__nome">{{nome}}</h3>
+        <p class="processo-yahlla-05__desc">{{descricao}}</p>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

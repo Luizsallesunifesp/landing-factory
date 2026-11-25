@@ -1,0 +1,47 @@
+{
+  "id": "servicos-karol-04",
+  "tipo": "servicos",
+  "origem": "karol",
+  "descricao": "Cabecalho com eyebrow e titulo, seguido de grade de tres cards sem imagem com indice numerado (01, 02, 03), titulo curto e descricao. Em mobile vira coluna unica. Sem dependencias globais.",
+  "estilo": [
+    "minimalista",
+    "editorial"
+  ],
+  "nicho": [
+    "clinicas",
+    "estudios",
+    "consultorias",
+    "escritorios",
+    "prestador com 2 a 4 servicos"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (fade + translateY) no cabecalho e na grade, via IntersectionObserver",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 45
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 180
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

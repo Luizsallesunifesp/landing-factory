@@ -1,0 +1,126 @@
+{
+  "id": "especial-tiago-head-spa-14",
+  "tipo": "especial",
+  "origem": "tiago-head-spa",
+  "descricao": "Cabeçalho centralizado e caixa de quiz escuro de três perguntas com tela de resultado: barra de progresso, opções empilhadas em botões, voltar, recomendação e CTA dourado para WhatsApp com as respostas, mais opção de refazer. Usa JS próprio (section.js) e, por isso, o quiz continua funcional com --motion 0 (só desliga animações e scroll suave). Depende de whatsapp_link para montar a mensagem.",
+  "estilo": [
+    "acolhedor",
+    "clean",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultórios",
+    "imobiliárias",
+    "cursos",
+    "funil de qualificação antes do contato"
+  ],
+  "libs": [],
+  "animacao": "troca de etapas com fade, barra de progresso animada, reveal via data-aos",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 46
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 26
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "trecho em itálico na cor de destaque"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 210
+    },
+    "pergunta_1": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "q1_opcoes": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 65
+        },
+        "recomendacao": {
+          "tipo": "texto",
+          "max": 350,
+          "descricao": "texto plano exibido no resultado quando esta opção é escolhida"
+        }
+      }
+    },
+    "pergunta_2": {
+      "tipo": "texto",
+      "max": 52
+    },
+    "q2_opcoes": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 35
+        }
+      }
+    },
+    "pergunta_3": {
+      "tipo": "texto",
+      "max": 46
+    },
+    "q3_opcoes": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 60
+        }
+      }
+    },
+    "voltar_texto": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "resultado_titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "resultado_texto": {
+      "tipo": "texto",
+      "max": 110
+    },
+    "aviso": {
+      "tipo": "texto",
+      "max": 110
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "refazer_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "msg_intro": {
+      "tipo": "texto",
+      "max": 65,
+      "descricao": "primeira linha da mensagem enviada ao WhatsApp"
+    },
+    "msg_fim": {
+      "tipo": "texto",
+      "max": 40,
+      "descricao": "última linha da mensagem enviada ao WhatsApp"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

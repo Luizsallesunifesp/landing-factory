@@ -1,0 +1,25 @@
+<header class="s-hero-acalm-head-spa-02" data-secao="hero-acalm-head-spa-02">
+  <div class="hero-acalm-head-spa-02__grain"></div>
+  <div class="lf-wrap hero-acalm-head-spa-02__inner">
+    <div class="hero-acalm-head-spa-02__text">
+      <div class="hero-acalm-head-spa-02__eyebrow">{{etiqueta}}</div>
+      <h1 class="hero-acalm-head-spa-02__titulo">{{titulo_antes}} <em>{{titulo_destaque}}</em>{{titulo_depois}}</h1>
+      <p class="hero-acalm-head-spa-02__lede">{{subtitulo}}</p>
+      <div class="hero-acalm-head-spa-02__ctas">
+        <a class="hero-acalm-head-spa-02__btn-primary" href="{{whatsapp_link}}" target="_blank" rel="noopener">
+          {{cta_texto}}
+        </a>
+        <a class="hero-acalm-head-spa-02__btn-ghost" href="{{cta2_link}}">{{cta2_texto}}</a>
+      </div>
+      <div class="hero-acalm-head-spa-02__stats">
+        {{#stats}}
+        <div class="hero-acalm-head-spa-02__stat"><b>{{valor}}</b><span>{{rotulo}}</span></div>
+        {{/stats}}
+      </div>
+    </div>
+    <div class="hero-acalm-head-spa-02__photo">
+      <img src="{{img:principal}}" alt="{{alt:principal}}" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+  <div class="hero-acalm-head-spa-02__scroll-cue"><span></span><div class="hero-acalm-head-spa-02__line"></div></div>
+</header>

@@ -1,0 +1,78 @@
+{
+  "id": "hero-karol-02",
+  "tipo": "hero",
+  "origem": "karol",
+  "descricao": "Hero em duas colunas: à esquerda etiqueta mono, título serifado grande com trecho em itálico (use <em>), parágrafo, dois CTAs (primário e fantasma) e grade de estatísticas com rótulo em caixa alta; à direita foto em moldura 4:5 com selo de nome e Instagram (foto vai acima no mobile). Sem dependências globais.",
+  "estilo": [
+    "editorial",
+    "esportivo",
+    "acolhedor"
+  ],
+  "nicho": [
+    "nutrição esportiva",
+    "fisioterapia",
+    "personal trainer",
+    "coaches",
+    "médicos",
+    "profissional de saúde com foto de autoridade"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade + subida) nos blocos de texto e foto via IntersectionObserver, respeita --motion",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 48,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 70,
+      "descricao": "promessa principal; use <em> no trecho de destaque e <br> opcional"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 260
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28,
+      "descricao": "CTA primário (WhatsApp)"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 28,
+      "descricao": "CTA secundário"
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "max": 120,
+      "descricao": "âncora ou URL do CTA secundário, ex.: #servicos"
+    },
+    "stats": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 28
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 42
+        }
+      }
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, formato 4:5"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": false,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sobre-luiz-ricardo-05",
+  "tipo": "sobre",
+  "origem": "luiz-ricardo",
+  "descricao": "Duas colunas em fundo escuro: retrato P&B em moldura a esquerda com legenda sobreposta; a direita, titulo com trecho em italico, lede, linha do tempo vertical de etapas (a ultima destacada como atual) e citacao. Camada de profundidade (parallax) no fundo. Usa --c-dark como fundo da propria secao.",
+  "estilo": [
+    "editorial",
+    "tech",
+    "escuro"
+  ],
+  "nicho": [
+    "Fundadores",
+    "consultores",
+    "profissionais autonomos",
+    "agencias que vendem pela autoridade da pessoa"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (IntersectionObserver) nos blocos e etapas; parallax na camada de fundo via data-depth. Ambos controlados por --motion.",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato vertical 851x1100"
+    },
+    "legenda_nome": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "legenda_cargo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 46
+    },
+    "titulo_destaque": {
+      "tipo": "texto",
+      "max": 47,
+      "descricao": "trecho em italico com cor de destaque"
+    },
+    "lede": {
+      "tipo": "texto",
+      "max": 195
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "descricao": "a ultima etapa recebe destaque (atual)",
+      "campos": {
+        "ano": {
+          "tipo": "texto_curto",
+          "max": 8
+        },
+        "titulo": {
+          "tipo": "texto_curto",
+          "max": 47
+        },
+        "texto": {
+          "tipo": "texto",
+          "max": 99
+        }
+      }
+    },
+    "citacao": {
+      "tipo": "texto",
+      "max": 91
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 2,
+  "nota": 4,
+  "aprovada": false
+}

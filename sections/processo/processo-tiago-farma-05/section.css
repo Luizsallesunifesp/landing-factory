@@ -1,0 +1,22 @@
+.s-processo-tiago-farma-05{background:var(--c-bg);padding:var(--section-y) 0;font-family:var(--f-body);color:var(--c-text);}
+.processo-tiago-farma-05__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space) * 1.4);}
+.processo-tiago-farma-05__header{max-width:640px;margin-bottom:calc(var(--space) * 2.4);}
+.processo-tiago-farma-05__eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:calc(var(--space) * .75);}
+.processo-tiago-farma-05__eyebrow::before{content:'';width:26px;height:1px;background:var(--c-accent);display:inline-block;}
+.processo-tiago-farma-05__titulo{font-family:var(--f-display);font-weight:500;color:var(--c-primary);letter-spacing:-.01em;}
+.processo-tiago-farma-05__steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space);}
+.processo-tiago-farma-05__step{background:var(--c-surface);border-radius:var(--radius);padding:calc(var(--space) * 1.25) var(--space);border:1px solid var(--c-line);position:relative;transition:transform .3s var(--ease), box-shadow .3s var(--ease);}
+.processo-tiago-farma-05__step:hover{transform:translateY(calc(-6px * var(--motion)));box-shadow:0 12px 30px color-mix(in srgb, var(--c-text) 12%, transparent);}
+.processo-tiago-farma-05__num{font-family:var(--f-display);font-size:15px;color:var(--c-accent);font-weight:600;margin-bottom:calc(var(--space) * .7);}
+.processo-tiago-farma-05__nome{font-family:var(--f-body);font-size:16px;font-weight:700;color:var(--c-primary);margin-bottom:10px;}
+.processo-tiago-farma-05__desc{font-size:14px;color:var(--c-muted);}
+.processo-tiago-farma-05__line{position:absolute;top:36px;left:100%;width:var(--space);height:1px;background:var(--c-line);}
+.processo-tiago-farma-05__step:last-child .processo-tiago-farma-05__line{display:none;}
+@media (max-width:900px){
+  .processo-tiago-farma-05__steps{grid-template-columns:1fr 1fr;}
+  .processo-tiago-farma-05__line{display:none;}
+}
+@media (max-width:600px){
+  .s-processo-tiago-farma-05{padding:calc(var(--section-y) * .7) 0;}
+  .processo-tiago-farma-05__container{padding:0 var(--space);}
+}

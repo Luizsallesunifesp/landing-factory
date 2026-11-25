@@ -1,0 +1,37 @@
+.s-faixa-mestre-hiroshi-08{
+  padding-block:var(--section-y);
+  border-top:1px solid var(--c-line);
+  background:var(--c-bg);
+  color:var(--c-text);
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__wrap{
+  max-width:var(--max-w);margin:0 auto;padding-inline:var(--space);
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__grade{
+  display:grid;gap:calc(var(--space) * 2);align-items:center;
+}
+@media(min-width:820px){
+  .s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__grade{
+    grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  }
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__selo{
+  margin:0;font-family:var(--f-display);font-weight:800;
+  font-size:clamp(2.1rem,5.2vw,3.3rem);line-height:1;
+  letter-spacing:-.05em;color:var(--c-text);
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__selo b{
+  color:var(--c-accent);font-variant-numeric:tabular-nums;
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__selo span{
+  display:block;margin-top:var(--space);
+  font-family:var(--f-body);font-size:.96rem;font-weight:400;
+  letter-spacing:0;color:var(--c-muted);
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__corpo{
+  margin:0;font-family:var(--f-body);
+  font-size:clamp(1rem,1.35vw,1.08rem);color:var(--c-muted);max-width:68ch;
+}
+.s-faixa-mestre-hiroshi-08 .faixa-mestre-hiroshi-08__corpo strong{
+  color:var(--c-text);font-weight:600;
+}

@@ -1,0 +1,39 @@
+<section class="s-hero-elaine-02" data-secao="hero-elaine-02">
+  <div class="lf-wrap">
+    <div class="hero-elaine-02__grid">
+      <div class="hero-elaine-02__texto" data-aos="fade-up">
+        <div class="hero-elaine-02__regua">
+          <span>{{cidade}}</span>
+          <span class="hero-elaine-02__linha"></span>
+          <span>{{etiqueta}}</span>
+        </div>
+        <h1 class="hero-elaine-02__titulo">{{titulo_inicio}} <em>{{titulo_destaque}}</em> {{titulo_fim}}</h1>
+        <p class="hero-elaine-02__lede">{{subtitulo}}</p>
+        <div class="hero-elaine-02__ctas">
+          <a class="hero-elaine-02__btn hero-elaine-02__btn--primario" href="{{whatsapp_link}}" target="_blank" rel="noopener">
+            {{cta_texto}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a class="hero-elaine-02__btn hero-elaine-02__btn--fantasma" href="{{cta2_link}}">{{cta2_texto}}</a>
+        </div>
+        <div class="hero-elaine-02__credenciais">
+          <span>{{registro}}</span>
+          {{#credencial_extra}}<span>{{credencial_extra}}</span>{{/credencial_extra}}
+          <span>{{instagram}}</span>
+        </div>
+      </div>
+      <div class="hero-elaine-02__arte" data-aos="fade-up" data-aos-delay="100">
+        <div class="hero-elaine-02__moldura">
+          <img src="{{img:principal}}" alt="{{alt:principal}}" loading="eager" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-elaine-02__faixa" aria-hidden="true">
+    <div class="hero-elaine-02__trilha">
+      {{#faixa}}<span>{{item}}</span>{{/faixa}}
+      {{#faixa}}<span>{{item}}</span>{{/faixa}}
+    </div>
+  </div>
+</section>

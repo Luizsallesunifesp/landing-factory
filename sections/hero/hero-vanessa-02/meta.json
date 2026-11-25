@@ -1,0 +1,103 @@
+{
+  "id": "hero-vanessa-02",
+  "tipo": "hero",
+  "origem": "vanessa",
+  "descricao": "Hero escuro em duas colunas: etiqueta mono, título serifado com trecho em itálico, subtítulo, botão de WhatsApp magnético e três selos (o primeiro com número animado); à direita foto inclinável em moldura com carimbo circular sobreposto; traço pontilhado com marcador animado ao fundo. Requer section.js (contador, tilt e magnético). Usa título e subtítulo como richtext (<br>, <em>, <b>).",
+  "estilo": [
+    "editorial",
+    "acolhedor",
+    "escuro"
+  ],
+  "nicho": [
+    "professores e tutores",
+    "coaches",
+    "consultores com certificação",
+    "educação",
+    "idiomas"
+  ],
+  "libs": [],
+  "animacao": "contador numérico, tilt 3D na foto, botão magnético, trajetória SVG decorativa (tudo escalado por --motion)",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "certificação + desde ano"
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 100,
+      "descricao": "usar <br> e <em> no trecho destacado"
+    },
+    "subtitulo": {
+      "tipo": "richtext",
+      "max": 330,
+      "descricao": "pode usar <b>"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "selo1_icone": {
+      "tipo": "texto_curto",
+      "max": 4,
+      "descricao": "emoji"
+    },
+    "selo1_numero": {
+      "tipo": "texto_curto",
+      "max": 4,
+      "descricao": "número que anima de 0"
+    },
+    "selo1_sufixo": {
+      "tipo": "texto_curto",
+      "max": 12,
+      "descricao": "ex.: + anos"
+    },
+    "selo1_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "selo2_icone": {
+      "tipo": "texto_curto",
+      "max": 4
+    },
+    "selo2_destaque": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "selo2_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "selo3_icone": {
+      "tipo": "texto_curto",
+      "max": 4
+    },
+    "selo3_destaque": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "selo3_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do profissional"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 160
+    },
+    "carimbo_destaque": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "carimbo_texto": {
+      "tipo": "texto_curto",
+      "max": 60
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

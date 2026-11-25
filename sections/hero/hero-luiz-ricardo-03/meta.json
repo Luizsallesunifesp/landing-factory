@@ -1,0 +1,118 @@
+{
+  "id": "hero-luiz-ricardo-03",
+  "tipo": "hero",
+  "origem": "luiz-ricardo",
+  "descricao": "Hero tipografico escuro em tela cheia com canvas de circuito no fundo e bloom com parallax; titulo em tres linhas alternando serifa italica e sans. Base com lede e meta a esquerda e cartao de embarque a direita (rota De/Para, terminal digitado, dois botoes, codigo de barras). Usa fundo --c-dark e --c-accent como cor de sinal; funciona melhor com tokens escuros. Depende de JS proprio (canvas, digitacao); sem --motion mostra o texto final estatico.",
+  "estilo": [
+    "tech",
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "agencias",
+    "SaaS",
+    "produtos digitais",
+    "consultorias de tecnologia"
+  ],
+  "libs": [
+    "canvas"
+  ],
+  "animacao": "canvas de nos conectados reativo ao ponteiro, digitacao no terminal, barras, reveal no cartao, parallax no bloom, aviao animado na rota",
+  "slots": {
+    "titulo_1": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "linha 1 do titulo (serifa italica)"
+    },
+    "titulo_2": {
+      "tipo": "texto",
+      "max": 34,
+      "descricao": "linha 2 do titulo (sans, mais leve)"
+    },
+    "titulo_3": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "linha 3 do titulo (serifa italica)"
+    },
+    "lede": {
+      "tipo": "texto",
+      "max": 140
+    },
+    "lede_destaque": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "trecho em destaque ao fim do lede"
+    },
+    "meta_esq": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "ex.: abrangencia de atendimento"
+    },
+    "meta_status": {
+      "tipo": "texto_curto",
+      "max": 32,
+      "descricao": "status com ponto pulsante"
+    },
+    "cartao_topo": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "rota_de_rotulo": {
+      "tipo": "texto_curto",
+      "max": 8
+    },
+    "rota_de": {
+      "tipo": "texto_curto",
+      "max": 18,
+      "descricao": "situacao atual"
+    },
+    "rota_para_rotulo": {
+      "tipo": "texto_curto",
+      "max": 8
+    },
+    "rota_para": {
+      "tipo": "texto_curto",
+      "max": 18,
+      "descricao": "situacao desejada"
+    },
+    "cartao_titulo": {
+      "tipo": "texto",
+      "max": 43
+    },
+    "cartao_sub": {
+      "tipo": "texto",
+      "max": 102
+    },
+    "terminal_comando": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "comando apos o nome do negocio, ex.: deploy --cliente=\"seu-negocio\""
+    },
+    "terminal_linhas": {
+      "tipo": "texto",
+      "max": 145,
+      "descricao": "linhas digitadas separadas por | ; a ultima fica em destaque"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 23,
+      "descricao": "botao WhatsApp"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "ex.: #portfolio"
+    },
+    "serial": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "texto vertical ao lado do codigo de barras"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 5,
+  "aprovada": false
+}

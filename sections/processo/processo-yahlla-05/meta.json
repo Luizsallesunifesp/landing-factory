@@ -1,0 +1,48 @@
+{
+  "id": "processo-yahlla-05",
+  "tipo": "processo",
+  "origem": "yahlla",
+  "descricao": "Cabeçalho com eyebrow e H2, seguido de passos numerados em grade de 3 colunas com divisores finos, ícone de chama, título e parágrafo; sem imagem. Reveal próprio via IntersectionObserver (section.js).",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "spas",
+    "estética",
+    "clínicas de bem-estar",
+    "psicologia",
+    "coaching",
+    "serviço com jornada em etapas"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar com atraso escalonado (CSS + IntersectionObserver)",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 3,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

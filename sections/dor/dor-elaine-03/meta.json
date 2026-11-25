@@ -1,0 +1,57 @@
+{
+  "id": "dor-elaine-03",
+  "tipo": "dor",
+  "origem": "elaine",
+  "descricao": "Cabeçalho em duas colunas (título grande à esquerda, parágrafo à direita); grade de cartões com rótulo pequeno numerado e frase de sintoma; nota final com trecho em negrito como chamada para avaliação. Reveal ao rolar via section.js (IntersectionObserver).",
+  "estilo": [
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "saúde integrativa",
+    "nutrição",
+    "estética",
+    "terapias de bem-estar",
+    "clínicas de sintomas crônicos"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade + translateY) no cabeçalho e na grade ao rolar",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 240
+    },
+    "sinais": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 12,
+          "descricao": "ex.: Sinal (o número é automático)"
+        },
+        "texto": {
+          "tipo": "texto",
+          "max": 65
+        }
+      }
+    },
+    "nota_final": {
+      "tipo": "richtext",
+      "max": 220,
+      "descricao": "aceita <strong> no trecho de destaque"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

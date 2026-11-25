@@ -1,0 +1,28 @@
+<section class="s-sobre-samanta-06" data-secao="sobre-samanta-06" aria-labelledby="sobre-samanta-06-titulo">
+  <div class="sobre-samanta-06__wrap sobre-samanta-06__grid">
+    <div class="sobre-samanta-06__fotos">
+      <div class="sobre-samanta-06__foto sobre-samanta-06__foto--retrato">
+        <img src="{{img:retrato}}" width="1280" height="1600" alt="{{alt:retrato}}" loading="lazy" decoding="async" onerror="this.remove()">
+      </div>
+      <div class="sobre-samanta-06__foto sobre-samanta-06__foto--atendimento">
+        <img src="{{img:atendimento}}" width="1600" height="1067" alt="{{alt:atendimento}}" loading="lazy" decoding="async" onerror="this.remove()">
+      </div>
+    </div>
+    <div class="sobre-samanta-06__texto">
+      <p class="sobre-samanta-06__rotulo">{{rotulo}}</p>
+      <h2 id="sobre-samanta-06-titulo" class="sobre-samanta-06__titulo">{{profissional}}</h2>
+      <p class="sobre-samanta-06__mono">{{profissao}} · {{registro}}</p>
+      <blockquote class="sobre-samanta-06__citacao">
+        <p>{{citacao}}</p>
+      </blockquote>
+      <div class="sobre-samanta-06__assinatura">
+        <img src="{{img:assinatura}}" width="600" height="200" alt="{{alt:assinatura}}" loading="lazy" decoding="async" onload="this.parentNode.classList.add('tem-imagem')" onerror="this.remove()">
+      </div>
+      <dl class="sobre-samanta-06__formacao">
+        {{#formacao}}
+        <div class="sobre-samanta-06__formacao-item"><dt>{{rotulo}}</dt><dd>{{valor}}</dd></div>
+        {{/formacao}}
+      </dl>
+    </div>
+  </div>
+</section>

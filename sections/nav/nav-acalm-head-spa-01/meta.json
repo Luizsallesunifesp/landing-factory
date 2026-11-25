@@ -1,0 +1,43 @@
+{
+  "id": "nav-acalm-head-spa-01",
+  "tipo": "nav",
+  "origem": "acalm-head-spa",
+  "descricao": "Barra fixa com logotipo em serif precedido de ícone ✦ à esquerda, links de âncora ao centro e botão de WhatsApp em destaque à direita; ganha fundo escuro desfocado ao rolar (section.js alterna .is-scrolled). Escondida links e CTA no mobile (sem menu hambúrguer). Texto é claro: precisa de hero escuro/imagem atrás.",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "clínicas",
+    "spas",
+    "salões",
+    "consultórios",
+    "negócios com agendamento"
+  ],
+  "libs": [],
+  "animacao": "fundo sólido com blur ao rolar (>40px) e sublinhado nos links no hover",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 12
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

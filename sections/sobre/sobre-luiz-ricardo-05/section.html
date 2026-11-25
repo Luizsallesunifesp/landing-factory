@@ -1,0 +1,34 @@
+<section class="s-sobre-luiz-ricardo-05" data-secao="sobre-luiz-ricardo-05">
+  <div class="sobre-luiz-ricardo-05__depth" data-depth="0.12" aria-hidden="true"></div>
+  <div class="sobre-luiz-ricardo-05__wrap">
+    <h2 class="sobre-luiz-ricardo-05__stamp">{{etiqueta}}</h2>
+    <div class="sobre-luiz-ricardo-05__about">
+      <div class="sobre-luiz-ricardo-05__portrait" data-reveal="">
+        <div class="sobre-luiz-ricardo-05__portrait-frame">
+          <img src="{{img:foto}}" alt="{{alt:foto}}" width="851" height="1100" loading="lazy" decoding="async">
+          <div class="sobre-luiz-ricardo-05__portrait-cap">
+            <b>{{legenda_nome}}</b>
+            <span>{{legenda_cargo}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="sobre-luiz-ricardo-05__titulo" data-reveal="">{{titulo}}<br><em>{{titulo_destaque}}</em></h2>
+        <p class="sobre-luiz-ricardo-05__lede" data-reveal="">{{lede}}</p>
+
+        <div class="sobre-luiz-ricardo-05__route">
+          {{#etapas}}
+          <div class="sobre-luiz-ricardo-05__route-stop" data-reveal="">
+            <div class="sobre-luiz-ricardo-05__yr">{{ano}}</div>
+            <h3>{{titulo}}</h3>
+            <p>{{texto}}</p>
+          </div>
+          {{/etapas}}
+        </div>
+
+        <blockquote class="sobre-luiz-ricardo-05__quote" data-reveal="">{{citacao}}</blockquote>
+      </div>
+    </div>
+  </div>
+</section>

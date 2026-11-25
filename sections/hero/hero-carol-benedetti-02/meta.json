@@ -1,0 +1,56 @@
+{
+  "id": "hero-carol-benedetti-02",
+  "tipo": "hero",
+  "origem": "carol-benedetti",
+  "descricao": "Hero de tela cheia com imagem de fundo (zoom lento e overlay escuro), eyebrow com linha, título serifado grande com trecho em itálico <em> (aceita <br>), subtítulo e dois CTAs (primário e ghost, o ghost aponta para #servicos). Animações só em CSS (fade-up em cascata), respeitam --motion. Sem dependência global.",
+  "estilo": [
+    "luxo",
+    "editorial"
+  ],
+  "nicho": [
+    "estética facial e corporal",
+    "spas",
+    "clínicas premium",
+    "consultórios de beleza"
+  ],
+  "libs": [],
+  "animacao": "fade-up em cascata (eyebrow, título, subtítulo, CTAs), zoom lento na imagem de fundo e pulso de brilho no trecho em itálico",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 62,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 50,
+      "descricao": "promessa principal; use <em> no trecho de destaque e <br> opcional"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 250
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24,
+      "descricao": "botão principal (WhatsApp)"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "botão ghost (leva a #servicos)"
+    },
+    "img:fundo": {
+      "tipo": "img",
+      "descricao": "imagem de fundo em tela cheia, ponto focal à direita (object-position 65%)"
+    },
+    "alt:fundo": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 3,
+  "aprovada": false
+}

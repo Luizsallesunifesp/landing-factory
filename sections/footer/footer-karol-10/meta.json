@@ -1,0 +1,42 @@
+{
+  "id": "footer-karol-10",
+  "tipo": "footer",
+  "origem": "karol",
+  "descricao": "Rodape escuro em tres colunas: marca com frase curta, contato (WhatsApp e Instagram) e endereco; linha inferior com copyright e registro profissional. Usa o slot automatico registro (o original tinha placeholder nao preenchido).",
+  "estilo": [
+    "clinico",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "profissional de saude",
+    "negocio local com contato, endereco e registro"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "frase": {
+      "tipo": "texto",
+      "max": 105
+    },
+    "titulo_contato": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "whatsapp_texto": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "titulo_endereco": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "direitos": {
+      "tipo": "texto_curto",
+      "max": 45
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

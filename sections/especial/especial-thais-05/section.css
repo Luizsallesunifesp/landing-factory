@@ -1,0 +1,38 @@
+.s-especial-thais-05{padding-block:var(--section-y);position:relative;background:var(--c-bg);color:var(--c-text);font-family:var(--f-body)}
+.especial-thais-05__doc{width:100%;max-width:var(--max-w);margin-inline:auto;padding-inline:clamp(20px,5vw,56px);position:relative;z-index:1}
+.especial-thais-05__topo{margin-bottom:clamp(26px,3.2vw,44px)}
+.especial-thais-05__regua{height:1px;background:color-mix(in srgb,var(--c-text) 22%,transparent);transform-origin:left}
+.especial-thais-05__titulo{font-family:var(--f-display);font-size:clamp(1.95rem,4.6vw,3.2rem);font-weight:600;letter-spacing:-0.03em;line-height:1.07}
+.especial-thais-05__lede{font-size:clamp(1.09rem,3.2vw,1.26rem);line-height:1.55;letter-spacing:-0.01em;color:var(--c-text);max-width:52ch;margin-top:calc(var(--space)*.9)}
+
+.especial-thais-05__fig{
+  margin-top:clamp(34px,4vw,54px);
+  border:1px solid color-mix(in srgb,var(--c-text) 22%,transparent);border-radius:var(--radius);background:var(--c-bg);
+  padding:clamp(22px,3vw,34px);overflow:hidden;
+}
+.especial-thais-05__fig svg{width:100%;height:auto;display:block}
+.especial-thais-05__curva{fill:none;stroke:var(--c-primary);stroke-width:2.5;stroke-linecap:round}
+.especial-thais-05__fantasma{fill:none;stroke:var(--c-muted);stroke-width:1.25;stroke-dasharray:5 5;opacity:.75}
+.especial-thais-05__eixo{stroke:color-mix(in srgb,var(--c-text) 22%,transparent);stroke-width:1}
+.especial-thais-05__grade{stroke:var(--c-line);stroke-width:1}
+.especial-thais-05__marca-txt{font-family:var(--f-body);font-variation-settings:'wdth' 84;font-size:15px;font-weight:600;fill:var(--c-muted);letter-spacing:.01em}
+.especial-thais-05__marca-txt.especial-thais-05__forte{fill:var(--c-text)}
+.especial-thais-05__ponto{fill:var(--c-bg);stroke:var(--c-primary);stroke-width:2.5}
+
+/* Duas versões do gráfico: a larga (viewBox 1000) fica ilegível abaixo de 1000px. */
+.especial-thais-05__fig .especial-thais-05__grafico-estreito{display:none}
+@media (max-width:999px){
+  .especial-thais-05__fig .especial-thais-05__grafico-largo{display:none}
+  .especial-thais-05__fig .especial-thais-05__grafico-estreito{display:block;max-width:470px;margin-inline:auto}
+  .especial-thais-05__grafico-estreito .especial-thais-05__marca-txt{font-size:15px}
+  .especial-thais-05__grafico-estreito .especial-thais-05__curva{stroke-width:3.2}
+  .especial-thais-05__grafico-estreito .especial-thais-05__fantasma{stroke-width:1.6;stroke-dasharray:6 6}
+  .especial-thais-05__grafico-estreito .especial-thais-05__ponto{stroke-width:3}
+}
+
+.especial-thais-05__lista{margin-top:clamp(32px,4vw,52px);border-top:1px solid color-mix(in srgb,var(--c-text) 22%,transparent);padding-top:10px}
+.especial-thais-05__etapa{display:grid;grid-template-columns:1fr;gap:6px 28px;padding:calc(var(--space)*1.1) 0;border-bottom:1px solid var(--c-line)}
+@media (min-width:760px){.especial-thais-05__etapa{grid-template-columns:132px 1fr;gap:0 32px;align-items:start}}
+.especial-thais-05__dia{font-family:var(--f-body);font-variation-settings:'wdth' 84;font-size:12px;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--c-primary);padding-top:.32em}
+.especial-thais-05__etapa-titulo{font-family:var(--f-display);font-size:clamp(1.28rem,3vw,1.55rem);font-weight:600;letter-spacing:-0.016em;line-height:1.26;margin:0 0 .34em}
+.especial-thais-05__etapa-texto{margin:0;color:var(--c-text);max-width:60ch}

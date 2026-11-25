@@ -1,0 +1,42 @@
+{
+  "id": "faq-vanessa-07",
+  "tipo": "faq",
+  "origem": "vanessa",
+  "descricao": "Cabeçalho centralizado com eyebrow e título, seguido de lista vertical de perguntas em acordeão nativo (details/summary), primeira já aberta, com sinal de + que gira ao abrir. Reveal em cascata ao rolar via section.js (sem dependência global).",
+  "estilo": [
+    "minimalista"
+  ],
+  "nicho": [
+    "qualquer landing page de serviço ou produto"
+  ],
+  "libs": [],
+  "animacao": "acordeão nativo; reveal ao rolar no cabeçalho e em cascata nos itens",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 30
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 70
+        },
+        "resposta": {
+          "tipo": "texto",
+          "max": 270
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

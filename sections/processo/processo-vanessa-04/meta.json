@@ -1,0 +1,75 @@
+{
+  "id": "processo-vanessa-04",
+  "tipo": "processo",
+  "origem": "vanessa",
+  "descricao": "Fundo escuro com cabeçalho (eyebrow, título, subtítulo) e tagline em itálico, quatro passos numerados em cards com conector pontilhado, e linha de pílulas com formatos de atendimento. Reveal em JS próprio (IntersectionObserver), sem dependência global.",
+  "estilo": [
+    "editorial",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "consultorias",
+    "mentorias",
+    "clínicas com protocolo",
+    "qualquer serviço com etapas claras"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar no cabeçalho e stagger nos passos",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 40
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 150
+    },
+    "tagline": {
+      "tipo": "texto",
+      "max": 70
+    },
+    "passos": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    },
+    "formatos": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "icone": {
+          "tipo": "texto_curto",
+          "max": 4
+        },
+        "destaque": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 45
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 3,
+  "aprovada": false
+}

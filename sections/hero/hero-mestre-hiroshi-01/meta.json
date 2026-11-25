@@ -1,0 +1,94 @@
+{
+  "id": "hero-mestre-hiroshi-01",
+  "tipo": "hero",
+  "origem": "mestre-hiroshi",
+  "descricao": "Hero escuro em duas colunas: marca em três linhas, título grande com trecho em cor de acento, subtítulo, botão principal com glow e varredura de brilho + botão vazado; à direita contador gigante contornado (ex.: 3) que regride ao rolar. Usa tag header. Sem imagens. Funciona melhor em páginas de fundo escuro (--c-bg escuro). Título e botões dependem de gsap/ScrollTrigger só para animação (opcional).",
+  "estilo": [
+    "bold",
+    "impactante",
+    "escuro"
+  ],
+  "nicho": [
+    "lançamento de infoproduto",
+    "curso",
+    "academia",
+    "esporte",
+    "defesa pessoal",
+    "saúde com oferta de vaga"
+  ],
+  "libs": [
+    "gsap",
+    "scrolltrigger"
+  ],
+  "animacao": "título palavra a palavra, reveal em cascata, contagem regressiva do contador ligada à rolagem, parallax de saída, glow rotativo e varredura de brilho no botão",
+  "slots": {
+    "marca_1": {
+      "tipo": "texto_curto",
+      "max": 10,
+      "descricao": "linha 1 da marca (pequena, espaçada)"
+    },
+    "marca_2": {
+      "tipo": "texto_curto",
+      "max": 10,
+      "descricao": "linha 2 da marca (grande); o ponto final colorido é fixo"
+    },
+    "marca_3": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "linha 3 da marca"
+    },
+    "titulo_antes": {
+      "tipo": "texto_curto",
+      "max": 10,
+      "descricao": "início do título, antes do destaque"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "trecho em cor de acento"
+    },
+    "titulo_depois": {
+      "tipo": "texto",
+      "max": 60,
+      "descricao": "final do título, depois do destaque"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 140
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "cta_link": {
+      "tipo": "url",
+      "descricao": "destino do botão principal, ex.: #preco"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "destino do botão secundário, ex.: #metodo"
+    },
+    "selo": {
+      "tipo": "texto",
+      "max": 95,
+      "descricao": "linha de reforço abaixo dos botões"
+    },
+    "contador_numero": {
+      "tipo": "texto_curto",
+      "max": 2,
+      "descricao": "número inteiro gigante; regride até 1 ao rolar"
+    },
+    "contador_legenda": {
+      "tipo": "texto_curto",
+      "max": 28
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 2,
+  "nota": 4,
+  "aprovada": false
+}

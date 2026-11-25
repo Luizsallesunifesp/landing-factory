@@ -1,0 +1,57 @@
+{
+  "id": "nav-tiago-farma-01",
+  "tipo": "nav",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho fixo em linha: logo textual com subtítulo à esquerda, links de âncora no centro, botão primário de WhatsApp à direita e hambúrguer no mobile com menu sobreposto. Fixo no topo (position:fixed), então a página precisa de padding-top; ganha fundo mais opaco ao rolar.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "profissional liberal",
+    "clínica",
+    "saúde"
+  ],
+  "libs": [],
+  "animacao": "estado 'scrolled' ao rolar e abertura do menu mobile via JS (sem libs)",
+  "slots": {
+    "logo_nome": {
+      "tipo": "texto_curto",
+      "max": 26,
+      "descricao": "nome do profissional/marca no logo"
+    },
+    "logo_sub": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "subtítulo do logo, em caixa alta"
+    },
+    "links": {
+      "tipo": "lista",
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      },
+      "min_itens": 3,
+      "max_itens": 6,
+      "descricao": "links de âncora para as seções da página"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 26
+    },
+    "cta_mobile_texto": {
+      "tipo": "texto_curto",
+      "max": 28,
+      "descricao": "link de WhatsApp no fim do menu mobile"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

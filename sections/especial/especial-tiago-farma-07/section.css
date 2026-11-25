@@ -1,0 +1,33 @@
+.s-especial-tiago-farma-07{padding:var(--section-y) 0;background:var(--c-surface-2);color:var(--c-text);font-family:var(--f-body)}
+.s-especial-tiago-farma-07 .especial-tiago-farma-07__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.4)}
+.especial-tiago-farma-07__header{max-width:640px;margin:0 auto calc(var(--space)*2.3);text-align:center}
+.especial-tiago-farma-07__eyebrow{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:var(--space);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--c-accent)}
+.especial-tiago-farma-07__eyebrow::before{content:'';width:26px;height:1px;background:var(--c-accent);display:inline-block}
+.especial-tiago-farma-07__titulo{font-family:var(--f-display);font-weight:500;font-size:clamp(1.75rem,3.6vw,2.6rem);line-height:1.15;letter-spacing:-.01em;color:var(--c-primary)}
+.especial-tiago-farma-07__subtitulo{margin-top:var(--space);font-size:1.05rem;color:var(--c-muted)}
+.especial-tiago-farma-07__card{max-width:760px;margin:0 auto;padding:calc(var(--space)*2);background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius-lg);box-shadow:0 20px 50px color-mix(in srgb,var(--c-primary) 12%,transparent)}
+.especial-tiago-farma-07__progress{display:flex;gap:8px;margin-bottom:calc(var(--space)*1.4)}
+.especial-tiago-farma-07__bar{flex:1;height:4px;border-radius:4px;overflow:hidden;background:var(--c-surface-2)}
+.especial-tiago-farma-07__bar i{display:block;height:100%;width:0;background:var(--c-primary);transition:width calc(.4s*var(--motion,1)) var(--ease)}
+.especial-tiago-farma-07__step{display:none}
+.especial-tiago-farma-07__step.is-active{display:block;animation:especial-tiago-farma-07-fade calc(.4s*var(--motion,1)) var(--ease)}
+@keyframes especial-tiago-farma-07-fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.especial-tiago-farma-07__pergunta{margin-bottom:calc(var(--space)*.9);font-family:var(--f-display);font-weight:500;font-size:1.4rem;line-height:1.3;color:var(--c-primary)}
+.especial-tiago-farma-07__options{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.especial-tiago-farma-07__opt{padding:18px 20px;border:1.5px solid var(--c-line);border-radius:var(--radius);background:transparent;font-family:var(--f-body);font-weight:700;font-size:.92rem;text-align:left;color:var(--c-text);cursor:pointer;transition:all .2s var(--ease)}
+.especial-tiago-farma-07__opt:hover{border-color:var(--c-primary);background:color-mix(in srgb,var(--c-primary) 8%,var(--c-surface))}
+.especial-tiago-farma-07__opt.is-selected{border-color:var(--c-primary);background:var(--c-primary);color:var(--c-on-primary)}
+.especial-tiago-farma-07__nav{display:flex;justify-content:space-between;align-items:center;margin-top:calc(var(--space)*1.4)}
+.especial-tiago-farma-07__back{font-size:.85rem;font-weight:700;color:var(--c-muted);cursor:pointer}
+.especial-tiago-farma-07__err{display:none;margin-top:12px;font-size:.82rem;font-weight:600;color:color-mix(in srgb,red 70%,var(--c-text))}
+.especial-tiago-farma-07__result{text-align:center}
+.especial-tiago-farma-07__icon{display:flex;align-items:center;justify-content:center;width:64px;height:64px;margin:0 auto var(--space);border-radius:50%;background:color-mix(in srgb,var(--c-primary) 12%,var(--c-surface));color:var(--c-primary);font-size:1.75rem;font-weight:700}
+.especial-tiago-farma-07__result .especial-tiago-farma-07__pergunta{margin-bottom:12px}
+.especial-tiago-farma-07__result p{max-width:460px;margin:0 auto calc(var(--space)*1.2);font-size:.95rem;color:var(--c-muted)}
+.especial-tiago-farma-07__cta{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;background:var(--c-accent);color:var(--c-dark);font-weight:700;font-size:.92rem;text-decoration:none;transition:transform .25s var(--ease)}
+.especial-tiago-farma-07__cta:hover{transform:translateY(calc(-2px*var(--motion,1)))}
+@media (max-width:760px){
+  .especial-tiago-farma-07__options{grid-template-columns:1fr}
+  .especial-tiago-farma-07__card{padding:30px 22px}
+  .s-especial-tiago-farma-07 .especial-tiago-farma-07__container{padding:0 20px}
+}

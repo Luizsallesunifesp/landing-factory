@@ -1,0 +1,46 @@
+.s-faq-mestre-hiroshi-10{
+  padding-block:var(--section-y);
+  border-top:1px solid var(--c-line);
+  background:var(--c-dark);
+  color:var(--c-on-dark);
+}
+.faq-mestre-hiroshi-10__wrap{max-width:var(--max-w);margin:0 auto;padding-inline:var(--space)}
+.faq-mestre-hiroshi-10__grade{display:grid;gap:calc(var(--space) * 2);align-items:start}
+@media(min-width:900px){.faq-mestre-hiroshi-10__grade{grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr)}}
+.faq-mestre-hiroshi-10__titulo{
+  font-family:var(--f-display);
+  font-size:clamp(1.5rem,5.6vw,2.9rem);
+  margin:0;
+}
+.faq-mestre-hiroshi-10__palavra{display:inline-block;will-change:transform,opacity,filter}
+.faq-mestre-hiroshi-10__item{border-top:1px solid var(--c-line)}
+.faq-mestre-hiroshi-10__item:last-of-type{border-bottom:1px solid var(--c-line)}
+.faq-mestre-hiroshi-10__pergunta{
+  list-style:none;cursor:pointer;display:flex;gap:var(--space);align-items:center;
+  padding:var(--space) 0;min-height:54px;font-family:var(--f-body);font-weight:600;font-size:1rem;
+  letter-spacing:-.018em;color:var(--c-on-dark);
+  transition:color .2s ease;
+}
+.faq-mestre-hiroshi-10__pergunta::-webkit-details-marker{display:none}
+.faq-mestre-hiroshi-10__pergunta:hover{color:var(--c-accent)}
+.faq-mestre-hiroshi-10__pergunta:hover .faq-mestre-hiroshi-10__ic{transform:scale(1.15)}
+.faq-mestre-hiroshi-10__item[open] .faq-mestre-hiroshi-10__pergunta:hover .faq-mestre-hiroshi-10__ic{transform:rotate(135deg) scale(1.15)}
+.faq-mestre-hiroshi-10__ic{
+  width:17px;height:17px;flex:0 0 auto;color:var(--c-primary);
+  fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  transition:transform .28s var(--ease);
+}
+.faq-mestre-hiroshi-10__item[open] .faq-mestre-hiroshi-10__ic{transform:rotate(135deg)}
+.faq-mestre-hiroshi-10__resp{
+  padding:0 0 calc(var(--space) * 1.25) clamp(26px,7vw,32px);
+  color:var(--c-muted);font-size:.97rem;max-width:62ch;
+}
+.faq-mestre-hiroshi-10__resp p{margin:0}
+.faq-mestre-hiroshi-10__item[open] .faq-mestre-hiroshi-10__resp{animation:faq-mestre-hiroshi-10-abre calc(.34s * var(--motion,1)) var(--ease)}
+@keyframes faq-mestre-hiroshi-10-abre{
+  from{opacity:0;transform:translateY(-8px)}
+  to{opacity:1;transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .faq-mestre-hiroshi-10__item[open] .faq-mestre-hiroshi-10__resp{animation:none}
+}

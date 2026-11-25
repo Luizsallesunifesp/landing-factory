@@ -1,0 +1,39 @@
+{
+  "id": "nav-vanessa-01",
+  "tipo": "nav",
+  "origem": "vanessa",
+  "descricao": "Lista horizontal simples de links de âncora, sem logo nem botão, com sublinhado animado no link ativo; pensada para ficar dentro de uma topbar escura (texto claro, escondida abaixo de 860px). Depende de uma barra/header escuro da página ao redor.",
+  "estilo": [
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "educação",
+    "consultoria",
+    "saúde",
+    "serviços profissionais"
+  ],
+  "libs": [],
+  "animacao": "sublinhado cresce no hover e no link da seção ativa (marcado por section.js via IntersectionObserver)",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "descricao": "links de âncora do menu",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "href": {
+          "tipo": "url",
+          "max": 30
+        },
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 16
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

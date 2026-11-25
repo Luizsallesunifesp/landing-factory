@@ -1,0 +1,42 @@
+{
+  "id": "faq-thais-09",
+  "tipo": "faq",
+  "origem": "thais",
+  "descricao": "Título com régua fina e lista de perguntas em acordeão (details/summary) com divisores finos e seta, respostas em texto recuado, sem mídia. Um item aberto por vez via section.js; sem JS funciona como details nativo.",
+  "estilo": [
+    "editorial",
+    "minimalista"
+  ],
+  "nicho": [
+    "procedimentos com objeções e riscos a explicar antes de agendar",
+    "saúde",
+    "estética"
+  ],
+  "libs": [],
+  "animacao": "acordeão com altura animada (grid-template-rows), respeita --motion; chama ScrollTrigger.refresh se existir",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 65
+        },
+        "resposta": {
+          "tipo": "richtext",
+          "max": 650,
+          "descricao": "um ou dois parágrafos em <p>"
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

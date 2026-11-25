@@ -1,0 +1,18 @@
+.s-local-renata-06{padding:var(--section-y) 0;background:var(--c-bg);color:var(--c-text);font-family:var(--f-body)}
+.s-local-renata-06 .local-renata-06__head{max-width:620px;margin-bottom:calc(var(--space)*2.2)}
+.s-local-renata-06 .local-renata-06__eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--c-primary);background:color-mix(in srgb,var(--c-primary) 14%,transparent);padding:7px 14px;border-radius:100px;margin-bottom:calc(var(--space)*.9)}
+.s-local-renata-06 .local-renata-06__eyebrow::before{content:"●";color:var(--c-accent);font-size:.6rem}
+.s-local-renata-06 .local-renata-06__titulo{font-family:var(--f-display);font-size:clamp(1.8rem,3vw,2.4rem);margin:0 0 14px}
+.s-local-renata-06 .local-renata-06__modes{display:grid;grid-template-columns:1fr 1fr;gap:var(--space)}
+.s-local-renata-06 .local-renata-06__card{background:var(--c-surface);border-radius:var(--radius-lg);padding:calc(var(--space)*1.5) calc(var(--space)*1.25);border:1px solid var(--c-line)}
+.s-local-renata-06 .local-renata-06__tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--c-accent);margin-bottom:14px}
+.s-local-renata-06 .local-renata-06__nome{font-family:var(--f-display);font-size:1.3rem;margin:0 0 10px}
+.s-local-renata-06 .local-renata-06__texto{color:var(--c-muted);font-size:.94rem;margin:0 0 18px}
+.s-local-renata-06 .local-renata-06__addr{font-size:.86rem;color:var(--c-muted);line-height:1.5}
+.s-local-renata-06 .local-renata-06__addr strong{color:var(--c-primary);display:block;margin-bottom:4px}
+.s-local-renata-06 .local-renata-06__map{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.86rem;font-weight:700;color:var(--c-accent);text-decoration:none;transition:gap .2s var(--ease)}
+.s-local-renata-06 .local-renata-06__map:hover{gap:10px}
+@media (max-width:780px){
+  .s-local-renata-06 .local-renata-06__modes{grid-template-columns:1fr}
+  .s-local-renata-06 .local-renata-06__card{padding:28px 22px}
+}

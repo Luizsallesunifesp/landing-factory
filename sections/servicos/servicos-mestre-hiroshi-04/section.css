@@ -1,0 +1,61 @@
+.s-servicos-mestre-hiroshi-04{padding-block:var(--section-y);background:var(--c-dark);color:var(--c-on-dark);border-top:1px solid var(--c-line)}
+.servicos-mestre-hiroshi-04__wrap{max-width:var(--max-w);margin:0 auto;padding-inline:var(--space)}
+.servicos-mestre-hiroshi-04__titulo{font-family:var(--f-display);font-size:clamp(1.5rem,5.6vw,2.9rem);max-width:20ch}
+.servicos-mestre-hiroshi-04__corpo{font-family:var(--f-body);font-size:clamp(1rem,1.35vw,1.08rem);color:var(--c-muted);max-width:68ch;margin-top:var(--space)}
+.servicos-mestre-hiroshi-04__palavra{display:inline-block;will-change:transform,opacity,filter}
+
+.servicos-mestre-hiroshi-04__indice{display:grid;gap:0;margin:calc(var(--space)*1.6) 0 0;padding:0;border-top:1px solid var(--c-line)}
+.servicos-mestre-hiroshi-04__item{list-style:none;display:flex;align-items:baseline;gap:var(--space);padding:var(--space) 0;border-bottom:1px solid var(--c-line);transition:border-color .3s var(--ease)}
+.servicos-mestre-hiroshi-04__item:hover{border-color:color-mix(in srgb,var(--c-accent) 60%,transparent)}
+.servicos-mestre-hiroshi-04__t{font-family:var(--f-display);font-weight:700;font-size:clamp(1.05rem,2.2vw,1.34rem);letter-spacing:-.032em;line-height:1.22;color:var(--c-on-dark);transition:transform .3s var(--ease)}
+.servicos-mestre-hiroshi-04__item:hover .servicos-mestre-hiroshi-04__t{transform:translateX(9px)}
+@media(min-width:820px){
+  .servicos-mestre-hiroshi-04__indice{grid-template-columns:1fr 1fr;column-gap:calc(var(--space)*2.5)}
+  .servicos-mestre-hiroshi-04__item:nth-child(2){border-top:1px solid var(--c-line)}
+}
+
+.servicos-mestre-hiroshi-04__cta-par{display:flex;flex-wrap:wrap;gap:var(--space);align-items:center;margin-top:calc(var(--space)*1.6)}
+@property --servicos-mestre-hiroshi-04-ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+.servicos-mestre-hiroshi-04__glow{position:relative;display:inline-flex;isolation:isolate}
+.servicos-mestre-hiroshi-04__glow::before{
+  content:"";position:absolute;inset:-4px;border-radius:var(--radius-lg);
+  background:conic-gradient(from var(--servicos-mestre-hiroshi-04-ang) at 50% 50%,
+    color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark)),var(--c-accent),color-mix(in srgb,var(--c-accent) 60%,var(--c-dark)),var(--c-accent),color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark)));
+  filter:blur(16px);opacity:.85;transform:scale(1);
+  animation:servicos-mestre-hiroshi-04-gira 6s linear infinite;
+  transition:transform .34s var(--ease),opacity .25s ease;
+  z-index:-1;pointer-events:none;
+}
+.servicos-mestre-hiroshi-04__glow:hover::before{transform:scale(1.08);opacity:1}
+@keyframes servicos-mestre-hiroshi-04-gira{to{--servicos-mestre-hiroshi-04-ang:360deg}}
+
+.servicos-mestre-hiroshi-04__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden;
+  background:var(--c-accent);color:var(--c-dark);
+  font-family:var(--f-body);font-weight:700;font-size:1.02rem;letter-spacing:-.012em;
+  padding:17px 30px;min-height:54px;border-radius:var(--radius-lg);text-decoration:none;white-space:nowrap;
+  box-shadow:0 10px 24px -12px color-mix(in srgb,var(--c-dark) 85%,transparent);
+  transition:background .2s ease,transform .16s var(--ease),box-shadow .2s ease;
+}
+.servicos-mestre-hiroshi-04__btn:hover{background:color-mix(in srgb,var(--c-accent) 85%,var(--c-on-dark));transform:translateY(-2px)}
+.servicos-mestre-hiroshi-04__btn:active{transform:translateY(1px) scale(.985)}
+.servicos-mestre-hiroshi-04__btn::after{
+  content:"";position:absolute;top:0;left:0;width:42%;height:100%;
+  background:linear-gradient(100deg,transparent,color-mix(in srgb,var(--c-on-dark) 32%,transparent),transparent);
+  transform:translateX(-260%) skewX(-18deg);
+  animation:servicos-mestre-hiroshi-04-varre 7s ease-in-out infinite;pointer-events:none;
+}
+@keyframes servicos-mestre-hiroshi-04-varre{
+  0%,68%{transform:translateX(-260%) skewX(-18deg)}
+  100%{transform:translateX(360%) skewX(-18deg)}
+}
+.servicos-mestre-hiroshi-04__ic{width:19px;height:19px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .24s var(--ease)}
+.servicos-mestre-hiroshi-04__btn:hover .servicos-mestre-hiroshi-04__ic{transform:translateX(4px)}
+@media(max-width:640px){
+  .servicos-mestre-hiroshi-04__glow{display:flex;width:100%}
+  .servicos-mestre-hiroshi-04__glow::before{animation-duration:9s;filter:blur(13px)}
+  .servicos-mestre-hiroshi-04__btn{width:100%;padding-inline:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  .servicos-mestre-hiroshi-04__btn::after,.servicos-mestre-hiroshi-04__glow::before{animation:none}
+}

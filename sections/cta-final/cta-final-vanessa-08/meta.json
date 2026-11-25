@@ -1,0 +1,43 @@
+{
+  "id": "cta-final-vanessa-08",
+  "tipo": "cta-final",
+  "origem": "vanessa",
+  "descricao": "Faixa escura centralizada sem imagem: tag de urgência no topo, título em uma frase, parágrafo curto, botão grande de WhatsApp (efeito magnético) e microtexto com garantias de atendimento. Reveal e magnetic são tratados no section.js próprio; sem dependências globais.",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "educação",
+    "saúde",
+    "consultoria",
+    "serviço com contato por WhatsApp"
+  ],
+  "libs": [],
+  "animacao": "Reveal ao entrar na viewport no bloco inteiro e botão magnético que acompanha o cursor (JS próprio, respeita --motion).",
+  "slots": {
+    "tag": {
+      "tipo": "texto_curto",
+      "max": 36
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 66
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 147
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 39
+    },
+    "nota": {
+      "tipo": "texto",
+      "max": 88
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

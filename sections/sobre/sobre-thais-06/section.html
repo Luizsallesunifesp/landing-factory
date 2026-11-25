@@ -1,0 +1,35 @@
+<section class="s-sobre-thais-06" data-secao="sobre-thais-06" aria-labelledby="sobre-thais-06-h">
+  <div class="sobre-thais-06__doc">
+    <div class="sobre-thais-06__topo">
+      <div class="sobre-thais-06__regua"></div>
+    </div>
+
+    <div class="sobre-thais-06__autoridade">
+      <div class="sobre-thais-06__etiqueta">
+        <figure class="sobre-thais-06__figura">
+          <img src="{{img:retrato}}" alt="{{alt:retrato}}" loading="lazy" decoding="async">
+        </figure>
+        <figcaption class="sobre-thais-06__legenda">
+          <span>{{profissional}}</span>
+          <span>{{registro}}</span>
+        </figcaption>
+      </div>
+
+      <div>
+        <h2 class="sobre-thais-06__titulo" id="sobre-thais-06-h">{{titulo}}</h2>
+        <div class="sobre-thais-06__prosa">
+          <p>{{paragrafo_1}}</p>
+          <p>{{paragrafo_2}}</p>
+        </div>
+
+        <div class="sobre-thais-06__formacao">
+          <ul>
+            {{#formacao}}
+            <li><span class="sobre-thais-06__k">{{rotulo}}</span><span class="sobre-thais-06__v">{{valor}}</span></li>
+            {{/formacao}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

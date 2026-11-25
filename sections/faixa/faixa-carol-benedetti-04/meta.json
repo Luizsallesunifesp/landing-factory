@@ -1,0 +1,30 @@
+{
+  "id": "faixa-carol-benedetti-04",
+  "tipo": "faixa",
+  "origem": "carol-benedetti",
+  "descricao": "Faixa curta centralizada com ícone de estrela, citação grande em serif itálico entre aspas e atribuição pequena em caixa alta; sem imagem nem botão. Reveal ao rolar via section.js (classe .in).",
+  "estilo": [
+    "minimalista",
+    "luxo"
+  ],
+  "nicho": [
+    "qualquer landing page como pausa visual entre seções, manifestos ou frases de marca"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (IntersectionObserver) e brilho pulsante suave no texto",
+  "slots": {
+    "citacao": {
+      "tipo": "texto",
+      "max": 50,
+      "descricao": "frase sem aspas (as aspas já estão no HTML)"
+    },
+    "atribuicao": {
+      "tipo": "texto",
+      "max": 80,
+      "descricao": "legenda sem o travessão inicial"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

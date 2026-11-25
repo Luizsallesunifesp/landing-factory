@@ -1,0 +1,20 @@
+.s-faq-tiago-head-spa-15{padding:var(--section-y) 0;position:relative;background:var(--c-dark);color:var(--c-on-dark)}
+.faq-tiago-head-spa-15__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.faq-tiago-head-spa-15__head{max-width:760px;margin:0 auto calc(var(--space)*2.3);text-align:center}
+.faq-tiago-head-spa-15__eyebrow{font-family:var(--f-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px}
+.faq-tiago-head-spa-15__eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--c-accent));flex:none}
+.faq-tiago-head-spa-15__eyebrow::after{content:"";width:34px;height:1px;background:linear-gradient(270deg,transparent,var(--c-accent));flex:none}
+.faq-tiago-head-spa-15__titulo{font-family:var(--f-display);color:var(--c-on-dark)}
+.faq-tiago-head-spa-15__destaque{font-style:italic;color:var(--c-accent)}
+.faq-tiago-head-spa-15__list{max-width:820px;margin:0 auto}
+.faq-tiago-head-spa-15__fq{border-bottom:1px solid var(--c-line)}
+.faq-tiago-head-spa-15__btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:calc(var(--space)*1.1) 0;background:none;border:0;cursor:pointer;text-align:left;font-family:var(--f-display);font-size:1.2rem;color:var(--c-on-dark);transition:.3s}
+.faq-tiago-head-spa-15__btn:hover{color:var(--c-accent)}
+.faq-tiago-head-spa-15__pm{width:28px;height:28px;flex:none;border-radius:50%;border:1px solid var(--c-line);display:flex;align-items:center;justify-content:center;color:var(--c-accent);transition:.35s;font-size:1rem}
+.faq-tiago-head-spa-15__fq.is-on .faq-tiago-head-spa-15__pm{transform:rotate(45deg);background:color-mix(in srgb,var(--c-accent) 12%,transparent)}
+.faq-tiago-head-spa-15__ans{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq-tiago-head-spa-15__ans p{padding:0 0 calc(var(--space)*1.1);color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);font-family:var(--f-body);font-size:.93rem;max-width:70ch}
+.faq-tiago-head-spa-15__js .faq-tiago-head-spa-15__rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.faq-tiago-head-spa-15__js .faq-tiago-head-spa-15__rv.is-in{opacity:1;transform:none}
+@media(max-width:768px){.s-faq-tiago-head-spa-15{padding:calc(var(--section-y)*.7) 0}.faq-tiago-head-spa-15__btn{font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){.faq-tiago-head-spa-15__js .faq-tiago-head-spa-15__rv{opacity:1;transform:none}}

@@ -1,0 +1,42 @@
+{
+  "id": "faixa-mestre-hiroshi-08",
+  "tipo": "faixa",
+  "origem": "mestre-hiroshi",
+  "descricao": "Bloco de garantia em duas colunas: à esquerda, número grande em destaque com 'dias para desistir'; à direita, parágrafo explicativo com frase final em negrito. Usa gsap/ScrollTrigger (opcional) para o reveal; sem eles o conteúdo fica visível.",
+  "estilo": [
+    "bold",
+    "direto"
+  ],
+  "nicho": [
+    "produto com garantia incondicional",
+    "infoprodutos",
+    "serviços de baixo risco"
+  ],
+  "libs": [],
+  "animacao": "reveal nos dois blocos ao rolar (gsap, opcional)",
+  "slots": {
+    "numero": {
+      "tipo": "texto_curto",
+      "max": 4
+    },
+    "unidade": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "legenda": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 120
+    },
+    "destaque": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

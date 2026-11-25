@@ -1,0 +1,34 @@
+.s-prova-thais-04{position:relative;width:100%;background:var(--c-surface-2);font-family:var(--f-body)}
+.prova-thais-04__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Fallback estático (grade) */
+.prova-thais-04__grade{list-style:none;margin:0 auto;padding:var(--section-y) var(--space);max-width:var(--max-w);display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space)}
+.prova-thais-04__placa{border:1px solid var(--c-line);border-radius:var(--radius);background:var(--c-surface);overflow:hidden}
+.prova-thais-04__foto{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.prova-thais-04__pe{padding:var(--space)}
+.prova-thais-04__t{margin:0;color:var(--c-text);font-size:1.05rem}
+.prova-thais-04__s{margin:.3rem 0 0;color:var(--c-muted);font-size:.85rem}
+
+/* Roda orbital (ativada por section.js) */
+.prova-thais-04__roda{position:relative;width:100%;background:var(--c-surface-2)}
+.prova-thais-04__viewport{position:sticky;top:0;height:100svh;width:100%;overflow:hidden}
+.prova-thais-04__viewport::before,
+.prova-thais-04__viewport::after{content:"";position:absolute;left:0;right:0;z-index:34;pointer-events:none}
+.prova-thais-04__viewport::before{top:0;height:clamp(96px,17vh,150px);background:linear-gradient(to bottom,var(--c-surface-2) 14%,color-mix(in srgb,var(--c-surface-2) 0%,transparent) 100%)}
+.prova-thais-04__viewport::after{bottom:0;height:clamp(150px,30vh,240px);background:linear-gradient(to top,var(--c-surface-2) 26%,color-mix(in srgb,var(--c-surface-2) 0%,transparent) 100%)}
+.prova-thais-04__corpo{position:absolute;left:50%;transform:translateX(-50%)}
+.prova-thais-04__palco{position:relative;height:100%;width:100%;perspective:1200px}
+.prova-thais-04__item{position:absolute;left:50%;top:50%;margin:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--c-line);background:var(--c-surface);will-change:transform,filter}
+.prova-thais-04__img{position:absolute;inset:0;background-size:cover;background-position:center}
+.prova-thais-04__legenda{position:absolute;left:0;right:0;z-index:40;display:flex;justify-content:center;pointer-events:none}
+.prova-thais-04__legenda-in{padding-inline:var(--space);text-align:center}
+.prova-thais-04__sub{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--c-muted);text-align:center;margin:0 0 12px;min-height:1.35em}
+.prova-thais-04__trilho-viewport{pointer-events:auto;margin-inline:auto;width:min(92vw,780px);overflow:hidden;padding-block:4px;-webkit-mask-image:linear-gradient(to right,transparent 0,black 13%,black 87%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,black 13%,black 87%,transparent 100%)}
+.prova-thais-04__trilho{display:flex;width:max-content;align-items:center}
+.prova-thais-04__btn{flex:none;margin-right:10px;cursor:pointer;white-space:nowrap;background:color-mix(in srgb,var(--c-surface) 55%,transparent);border:1px solid var(--c-line);border-radius:99px;padding:9px 22px;font-family:var(--f-body);font-size:clamp(.95rem,1.7vw,1.24rem);letter-spacing:-.02em;color:var(--c-text);transition:opacity .3s var(--ease),transform .3s var(--ease),border-color .3s var(--ease),background .3s var(--ease)}
+.prova-thais-04__btn[aria-current="true"]{border-color:var(--c-primary);background:var(--c-surface)}
+.prova-thais-04__aviso{position:absolute;bottom:0;left:0;right:0;z-index:40;margin:0;padding:0 var(--space) 16px;font-size:12px;letter-spacing:.02em;color:var(--c-muted);text-align:center;pointer-events:none}
+
+@media (max-width:760px){
+  .prova-thais-04__btn{padding:14px 20px}
+}

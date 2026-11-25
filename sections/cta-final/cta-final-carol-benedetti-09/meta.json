@@ -1,0 +1,39 @@
+{
+  "id": "cta-final-carol-benedetti-09",
+  "tipo": "cta-final",
+  "origem": "carol-benedetti",
+  "descricao": "Bloco centralizado com eyebrow, título grande, parágrafo curto e dois botões lado a lado: primário para WhatsApp e fantasma para Instagram. Sem imagem. Reveal escalonado ao rolar via section.js (IntersectionObserver, respeita --motion).",
+  "estilo": [
+    "luxo",
+    "acolhedor"
+  ],
+  "nicho": [
+    "estética",
+    "clínicas",
+    "consultórios",
+    "serviços que agendam por WhatsApp"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao entrar na viewport",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 110
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,55 @@
+{
+  "id": "sobre-tiago-farma-03",
+  "tipo": "sobre",
+  "origem": "tiago-farma",
+  "descricao": "Duas colunas: retrato vertical do profissional com badge de nome e especialidade sobreposto na base; à direita eyebrow, título serifado, parágrafo e lista de itens numerados com título e descrição. Usa slot automático {{profissional}} no badge. Sem dependências globais.",
+  "estilo": [
+    "acolhedor",
+    "clínico"
+  ],
+  "nicho": [
+    "consultórios e profissionais liberais que precisam apresentar credencial e método de trabalho"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade + subida) nas colunas ao rolar, via IntersectionObserver",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato vertical 4:5 do profissional"
+    },
+    "badge_cargo": {
+      "tipo": "texto_curto",
+      "max": 80
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 105
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 390
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "titulo": {
+          "tipo": "texto_curto",
+          "max": 65
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 100
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

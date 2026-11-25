@@ -1,0 +1,49 @@
+.s-especial-tiago-head-spa-07{background:var(--c-dark);color:var(--c-on-dark);padding:var(--section-y) 0;position:relative;font-family:var(--f-body)}
+.s-especial-tiago-head-spa-07 .lf-wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative}
+.especial-tiago-head-spa-07__in{display:grid;grid-template-columns:1.05fr .95fr;gap:calc(var(--space) * 2.7);align-items:center}
+.especial-tiago-head-spa-07__eyebrow{
+  font-family:var(--f-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;gap:12px;margin-bottom:20px;
+}
+.especial-tiago-head-spa-07__eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--c-accent));flex:none}
+.especial-tiago-head-spa-07__titulo{font-family:var(--f-display);font-size:clamp(1.95rem,4.4vw,3.25rem);line-height:1.1}
+.especial-tiago-head-spa-07__destaque{font-style:italic;color:var(--c-accent)}
+.especial-tiago-head-spa-07__lead{margin-top:16px;font-size:1.06rem;color:color-mix(in srgb,var(--c-on-dark) 72%,transparent);max-width:62ch}
+.especial-tiago-head-spa-07__ritual{list-style:none;margin-top:30px;counter-reset:r}
+.especial-tiago-head-spa-07__etapa{
+  counter-increment:r;position:relative;padding:15px 0 15px 52px;
+  border-bottom:1px solid color-mix(in srgb,var(--c-on-dark) 10%,transparent);
+  font-size:.93rem;color:color-mix(in srgb,var(--c-on-dark) 72%,transparent);
+}
+.especial-tiago-head-spa-07__etapa:last-child{border-bottom:0}
+.especial-tiago-head-spa-07__etapa strong{display:block;color:var(--c-on-dark);font-weight:600;font-size:.97rem;margin-bottom:3px}
+.especial-tiago-head-spa-07__etapa::before{
+  content:counter(r,decimal-leading-zero);position:absolute;left:0;top:16px;
+  font-family:var(--f-display);font-size:.95rem;color:var(--c-accent);
+  width:32px;height:32px;border:1px solid color-mix(in srgb,var(--c-on-dark) 14%,transparent);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+.especial-tiago-head-spa-07__btn{
+  display:inline-flex;align-items:center;justify-content:center;margin-top:32px;
+  padding:16px 30px;border-radius:100px;font-family:var(--f-body);
+  font-size:.86rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  background:var(--c-accent);color:var(--c-dark);text-decoration:none;
+  box-shadow:0 10px 34px -12px color-mix(in srgb,var(--c-accent) 75%,transparent);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.especial-tiago-head-spa-07__btn:hover{transform:translateY(-3px);box-shadow:0 18px 44px -12px color-mix(in srgb,var(--c-accent) 90%,transparent)}
+.especial-tiago-head-spa-07__img{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;border:1px solid color-mix(in srgb,var(--c-on-dark) 14%,transparent)}
+.especial-tiago-head-spa-07__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.especial-tiago-head-spa-07__img:hover img{transform:scale(1.06)}
+.especial-tiago-head-spa-07__img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,color-mix(in srgb,var(--c-dark) 75%,transparent));pointer-events:none}
+.especial-tiago-head-spa-07__badge{
+  position:absolute;left:22px;bottom:22px;z-index:2;padding:13px 20px;border-radius:var(--radius);
+  background:color-mix(in srgb,var(--c-dark) 72%,transparent);backdrop-filter:blur(12px);
+  border:1px solid color-mix(in srgb,var(--c-on-dark) 14%,transparent);
+}
+.especial-tiago-head-spa-07__badge b{display:block;font-family:var(--f-display);font-size:1.2rem;color:var(--c-accent)}
+.especial-tiago-head-spa-07__badge span{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 55%,transparent)}
+@media(max-width:900px){
+  .especial-tiago-head-spa-07__in{grid-template-columns:1fr;gap:calc(var(--space) * 1.7)}
+  .especial-tiago-head-spa-07__img{order:-1}
+}

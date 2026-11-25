@@ -1,0 +1,16 @@
+.s-servicos-carol-benedetti-06{padding:var(--section-y) 0;background:linear-gradient(180deg,var(--c-bg) 0%,var(--c-surface-2) 100%)}
+.servicos-carol-benedetti-06__reveal{opacity:0;transform:translateY(calc(34px*var(--motion,1)));transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.servicos-carol-benedetti-06__reveal.in{opacity:1;transform:translateY(0)}
+.servicos-carol-benedetti-06__grid>.servicos-carol-benedetti-06__reveal:nth-child(2){transition-delay:.12s}
+.servicos-carol-benedetti-06__grid>.servicos-carol-benedetti-06__reveal:nth-child(3){transition-delay:.24s}
+.servicos-carol-benedetti-06__grid>.servicos-carol-benedetti-06__reveal:nth-child(4){transition-delay:.36s}
+.servicos-carol-benedetti-06__head{text-align:center;max-width:640px;margin:0 auto calc(var(--space)*2.7)}
+.servicos-carol-benedetti-06__eyebrow{font-family:var(--f-body);text-transform:uppercase;letter-spacing:.32em;font-size:.7rem;font-weight:500;color:var(--c-accent)}
+.servicos-carol-benedetti-06__titulo{font-family:var(--f-display);font-size:clamp(2.1rem,4.4vw,3.2rem);margin:14px 0 18px}
+.servicos-carol-benedetti-06__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--space)*1.2)}
+.servicos-carol-benedetti-06__card{background:var(--c-surface);padding:44px 32px;position:relative;box-shadow:0 14px 40px color-mix(in srgb,var(--c-text) 7%,transparent);border-top:2px solid var(--c-accent);border-radius:var(--radius);transition:opacity 1s var(--ease),transform .5s var(--ease),box-shadow .5s var(--ease)}
+.servicos-carol-benedetti-06__card:hover{transform:translateY(-8px);box-shadow:0 24px 50px color-mix(in srgb,var(--c-text) 12%,transparent)}
+.servicos-carol-benedetti-06__icon{width:52px;height:52px;border-radius:50%;background:var(--c-bg);display:flex;align-items:center;justify-content:center;margin-bottom:24px;color:var(--c-accent)}
+.servicos-carol-benedetti-06__nome{font-family:var(--f-display);font-size:1.7rem;margin-bottom:14px}
+.servicos-carol-benedetti-06__desc{font-family:var(--f-body);font-size:.94rem;line-height:1.7;color:var(--c-muted);font-weight:300}
+@media(max-width:900px){.servicos-carol-benedetti-06__grid{grid-template-columns:1fr}}

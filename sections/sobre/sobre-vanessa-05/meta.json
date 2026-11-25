@@ -1,0 +1,60 @@
+{
+  "id": "sobre-vanessa-05",
+  "tipo": "sobre",
+  "origem": "vanessa",
+  "descricao": "Duas colunas: foto retangular em moldura com inclinação 3D ao passar o mouse à esquerda; à direita, rótulo, nome como título, dois parágrafos e uma linha de cartões de credencial com emblema (emoji) e legenda. Sem dependências globais.",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "profissionais autônomos com certificação ou formação acadêmica (saúde, educação, consultoria, estética)"
+  ],
+  "libs": [],
+  "animacao": "Tilt 3D na foto (hover) e reveal escalonado dos cartões de credencial (section.js, respeita --motion)",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "texto_1": {
+      "tipo": "texto",
+      "max": 250
+    },
+    "texto_2": {
+      "tipo": "richtext",
+      "max": 270,
+      "descricao": "aceita <b> para destaque"
+    },
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato vertical/retangular"
+    },
+    "credenciais": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "emblema": {
+          "tipo": "texto_curto",
+          "max": 4
+        },
+        "titulo": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "legenda": {
+          "tipo": "texto_curto",
+          "max": 45
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "dor-mestre-hiroshi-03",
+  "tipo": "dor",
+  "origem": "mestre-hiroshi",
+  "descricao": "Título em forma de pergunta grande e lista de três dores em itens com divisores finos, em duas colunas (título à esquerda, lista à direita) sobre fundo escuro. Usa gsap/ScrollTrigger se existirem; sem eles o conteúdo fica visível.",
+  "estilo": [
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "defesa pessoal",
+    "segurança",
+    "academias",
+    "cursos de saúde",
+    "produtos que resolvem medo ou insegurança"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "revelação palavra a palavra no título e escalonamento dos itens da lista",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 60
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

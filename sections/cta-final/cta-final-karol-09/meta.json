@@ -1,0 +1,36 @@
+{
+  "id": "cta-final-karol-09",
+  "tipo": "cta-final",
+  "origem": "karol",
+  "descricao": "Bloco centralizado de chamada para acao: titulo grande com trecho em italico de destaque e dois botoes lado a lado (WhatsApp primario e Instagram fantasma). Sem midia. Entrada por IntersectionObserver proprio (sem dependencias globais).",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "qualquer"
+  ],
+  "libs": [],
+  "animacao": "Reveal por IntersectionObserver (fade + translateY), respeita --motion",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 58
+    },
+    "titulo_destaque": {
+      "tipo": "texto",
+      "max": 48
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "cta_secundario_texto": {
+      "tipo": "texto_curto",
+      "max": 21
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

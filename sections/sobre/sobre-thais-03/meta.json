@@ -1,0 +1,41 @@
+{
+  "id": "sobre-thais-03",
+  "tipo": "sobre",
+  "origem": "thais",
+  "descricao": "Seção só de texto: régua fina no topo, manifesto em título grande (2 colunas no desktop) e três parágrafos com um trecho de destaque maior no meio. Sem imagem. Régua anima (scaleX) ao entrar na tela.",
+  "estilo": [
+    "editorial",
+    "minimalista"
+  ],
+  "nicho": [
+    "dermatologia",
+    "nutrição",
+    "laboratórios",
+    "advocacia",
+    "consultorias técnicas"
+  ],
+  "libs": [],
+  "animacao": "régua horizontal se desenha ao rolar (gsap ScrollTrigger opcional, fallback IntersectionObserver)",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "paragrafo_1": {
+      "tipo": "richtext",
+      "max": 190,
+      "descricao": "aceita <strong> em um trecho"
+    },
+    "destaque": {
+      "tipo": "texto",
+      "max": 95
+    },
+    "paragrafo_2": {
+      "tipo": "texto",
+      "max": 190
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

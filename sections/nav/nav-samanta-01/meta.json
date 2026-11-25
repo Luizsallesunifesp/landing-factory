@@ -1,0 +1,36 @@
+{
+  "id": "nav-samanta-01",
+  "tipo": "nav",
+  "origem": "samanta",
+  "descricao": "Cabeçalho mínimo (não fixo): nome da profissional em destaque com profissão e registro em mono caixa-alta abaixo, à direita botão fantasma pequeno de WhatsApp com seta; prefixo do botão some no mobile estreito. Usa f-display e f-mono (a seção espera --f-mono definido).",
+  "estilo": [
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "clínicas e consultórios de saúde",
+    "profissionais liberais com agendamento por WhatsApp"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "ancora": {
+      "tipo": "url",
+      "max": 40,
+      "descricao": "âncora do clique na marca, ex.: #conteudo"
+    },
+    "cta_prefixo": {
+      "tipo": "texto_curto",
+      "max": 16,
+      "descricao": "parte do texto do botão oculta no mobile estreito, ex.: 'Agendar pelo '"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "parte sempre visível do botão, ex.: 'WhatsApp'"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

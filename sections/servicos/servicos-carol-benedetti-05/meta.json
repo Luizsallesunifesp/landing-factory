@@ -1,0 +1,111 @@
+{
+  "id": "servicos-carol-benedetti-05",
+  "tipo": "servicos",
+  "origem": "carol-benedetti",
+  "descricao": "Cabeçalho centralizado com eyebrow, título e parágrafo; abaixo, 4 abas horizontais que alternam painéis em grade de protocolos numerados com título e texto curto. Sem imagens, tipografia é o destaque. JS próprio para abas e reveal; sem dependência global.",
+  "estilo": [
+    "editorial",
+    "minimalista"
+  ],
+  "nicho": [
+    "estética facial e corporal",
+    "clínicas de dermatologia",
+    "spas e centros de bem-estar",
+    "salões de beleza"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (IntersectionObserver, respeita --motion); troca de aba por JS",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 210
+    },
+    "aba1_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "aba2_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "aba3_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "aba4_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "aba1_itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    },
+    "aba2_itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 280
+        }
+      }
+    },
+    "aba3_itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    },
+    "aba4_itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

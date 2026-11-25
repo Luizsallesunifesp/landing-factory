@@ -1,0 +1,19 @@
+.s-faixa-tiago-head-spa-09{position:relative;overflow:hidden;isolation:isolate;padding:130px 0;text-align:center;background:var(--c-dark);color:var(--c-on-dark);font-family:var(--f-body)}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__px-bg{position:absolute;left:0;right:0;top:-18%;height:136%;background-size:cover;background-position:center;will-change:transform;z-index:0}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__px-veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--c-dark) 0%,color-mix(in srgb,var(--c-dark) 72%,transparent) 28%,color-mix(in srgb,var(--c-dark) 72%,transparent) 72%,var(--c-dark) 100%)}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__eyebrow{font-family:var(--f-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--c-accent));flex:none}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__eyebrow::after{content:"";width:34px;height:1px;background:linear-gradient(270deg,transparent,var(--c-accent));flex:none}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__titulo{font-family:var(--f-display);font-weight:500;line-height:1.12;letter-spacing:-.01em;font-size:clamp(1.95rem,4.4vw,3.25rem);max-width:19ch;margin:0 auto;text-shadow:0 4px 30px color-mix(in srgb,var(--c-dark) 70%,transparent)}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__g{font-style:italic;background:linear-gradient(135deg,var(--c-accent),color-mix(in srgb,var(--c-accent) 55%,var(--c-on-dark)),var(--c-accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__lead{font-size:1.06rem;max-width:62ch;margin:22px auto 0;color:color-mix(in srgb,var(--c-on-dark) 78%,transparent)}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__rv.in{opacity:1;transform:none}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__rv.faixa-tiago-head-spa-09__d1{transition-delay:.08s}
+.s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__rv.faixa-tiago-head-spa-09__d2{transition-delay:.16s}
+@media(max-width:768px){.s-faixa-tiago-head-spa-09{padding:88px 0}}
+@media(prefers-reduced-motion:reduce){
+  .s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__rv{opacity:1;transform:none;transition:none}
+  .s-faixa-tiago-head-spa-09 .faixa-tiago-head-spa-09__px-bg{transform:none!important}
+}

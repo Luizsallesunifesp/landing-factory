@@ -1,0 +1,20 @@
+<section class="s-sobre-tiago-farma-03" data-secao="sobre-tiago-farma-03">
+  <div class="sobre-tiago-farma-03__container sobre-tiago-farma-03__grid">
+    <div class="sobre-tiago-farma-03__reveal">
+      <div class="sobre-tiago-farma-03__portrait">
+        <img class="sobre-tiago-farma-03__img" src="{{img:foto}}" alt="{{alt:foto}}" loading="lazy" decoding="async">
+        <div class="sobre-tiago-farma-03__badge"><strong>{{profissional}}</strong><span>{{badge_cargo}}</span></div>
+      </div>
+    </div>
+    <div class="sobre-tiago-farma-03__reveal">
+      <div class="sobre-tiago-farma-03__eyebrow">{{eyebrow}}</div>
+      <h2 class="sobre-tiago-farma-03__titulo">{{titulo}}</h2>
+      <p class="sobre-tiago-farma-03__texto">{{texto}}</p>
+      <div class="sobre-tiago-farma-03__list">
+        {{#itens}}
+        <div class="sobre-tiago-farma-03__row"><div class="sobre-tiago-farma-03__ico">{{@num}}</div><div><h4 class="sobre-tiago-farma-03__item-titulo">{{titulo}}</h4><p class="sobre-tiago-farma-03__item-desc">{{descricao}}</p></div></div>
+        {{/itens}}
+      </div>
+    </div>
+  </div>
+</section>

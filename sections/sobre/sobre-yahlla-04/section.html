@@ -1,0 +1,23 @@
+<section class="s-sobre-yahlla-04" data-secao="sobre-yahlla-04">
+  <div class="sobre-yahlla-04__wrap sobre-yahlla-04__grid">
+    <div class="sobre-yahlla-04__portrait-wrap" data-aos="fade-up">
+      <div class="sobre-yahlla-04__frame"><img src="{{img:retrato}}" alt="{{alt:retrato}}" loading="lazy" decoding="async"></div>
+    </div>
+    <div>
+      <div class="sobre-yahlla-04__eyebrow" data-aos="fade-up">{{eyebrow}}</div>
+      <h2 class="sobre-yahlla-04__titulo" data-aos="fade-up" data-aos-delay="80">{{{titulo}}}</h2>
+      <p class="sobre-yahlla-04__lead" data-aos="fade-up" data-aos-delay="160">{{lead}}</p>
+      <p class="sobre-yahlla-04__body" data-aos="fade-up" data-aos-delay="160">{{texto}}</p>
+      <div class="sobre-yahlla-04__lang-row" data-aos="fade-up" data-aos-delay="240">
+        {{#idiomas}}
+        <span class="sobre-yahlla-04__lang-pill">{{nome}}</span>
+        {{/idiomas}}
+      </div>
+      <div class="sobre-yahlla-04__stat-row" data-aos="fade-up" data-aos-delay="320">
+        {{#stats}}
+        <div class="sobre-yahlla-04__stat"><b>{{valor}}</b><span>{{legenda}}</span></div>
+        {{/stats}}
+      </div>
+    </div>
+  </div>
+</section>

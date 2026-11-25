@@ -1,0 +1,88 @@
+{
+  "id": "hero-renata-02",
+  "tipo": "hero",
+  "origem": "renata",
+  "descricao": "Hero em duas colunas: à esquerda etiqueta em pílula, título serifado com trecho em itálico, texto de apoio, botão WhatsApp e botão fantasma, faixa de três métricas; à direita card de foto 4:5 com tag flutuante de identidade. Usa tokens de fonte (display + body). Sem dependência global.",
+  "estilo": [
+    "acolhedor",
+    "editorial"
+  ],
+  "nicho": [
+    "psicologia",
+    "terapia",
+    "mentoria",
+    "coaching",
+    "consultoria pessoal com foto do profissional"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 48,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo_antes": {
+      "tipo": "texto_curto",
+      "max": 24,
+      "descricao": "início do título, antes do trecho em itálico"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "trecho em itálico colorido"
+    },
+    "titulo_depois": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "final do título"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 290
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "âncora do botão secundário, ex.: #processo"
+    },
+    "metricas": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 3,
+      "campos": {
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 30
+        }
+      }
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, proporção 4:5"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    },
+    "tag_papel": {
+      "tipo": "texto_curto",
+      "max": 50,
+      "descricao": "papéis do profissional na tag da foto"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

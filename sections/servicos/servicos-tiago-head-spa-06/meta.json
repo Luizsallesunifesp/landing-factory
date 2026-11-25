@@ -1,0 +1,61 @@
+{
+  "id": "servicos-tiago-head-spa-06",
+  "tipo": "servicos",
+  "origem": "tiago-head-spa",
+  "descricao": "Seção escura com cabeçalho centralizado e grid de cards numerados (contorno dourado) com título, descrição e tag em pílula; sem imagens, leitura de catálogo. Reveal escalonado em JS próprio (IntersectionObserver).",
+  "estilo": [
+    "minimalista",
+    "clínico",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas",
+    "academias",
+    "consultorias",
+    "escolas de especialidades",
+    "catálogo de serviços com muitos itens"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (fade-up) com atraso por coluna",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 190
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 12,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 45
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 165
+        },
+        "tag": {
+          "tipo": "texto_curto",
+          "max": 25
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 4,
+  "nota": 4,
+  "aprovada": false
+}

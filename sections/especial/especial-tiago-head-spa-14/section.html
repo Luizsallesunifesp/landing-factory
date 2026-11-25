@@ -1,0 +1,46 @@
+<section class="s-especial-tiago-head-spa-14" data-secao="especial-tiago-head-spa-14">
+  <div class="especial-tiago-head-spa-14__wrap">
+    <div class="especial-tiago-head-spa-14__head" data-aos="fade-up">
+      <div class="especial-tiago-head-spa-14__eyebrow">{{eyebrow}}</div>
+      <h2 class="especial-tiago-head-spa-14__titulo">{{titulo}} <em class="especial-tiago-head-spa-14__destaque">{{titulo_destaque}}</em></h2>
+      <p class="especial-tiago-head-spa-14__lead">{{subtitulo}}</p>
+    </div>
+
+    <div class="especial-tiago-head-spa-14__box" data-aos="fade-up" data-aos-delay="80" data-msg-intro="{{msg_intro}}" data-msg-fim="{{msg_fim}}">
+      <div class="especial-tiago-head-spa-14__bar"><i class="especial-tiago-head-spa-14__fill"></i></div>
+
+      <div class="especial-tiago-head-spa-14__step is-on" data-q="1" data-pergunta="{{pergunta_1}}">
+        <h3 class="especial-tiago-head-spa-14__pergunta">{{pergunta_1}}</h3>
+        {{#q1_opcoes}}
+        <button type="button" class="especial-tiago-head-spa-14__opt" data-v="{{texto}}" data-rec="{{recomendacao}}">{{texto}}</button>
+        {{/q1_opcoes}}
+      </div>
+
+      <div class="especial-tiago-head-spa-14__step" data-q="2" data-pergunta="{{pergunta_2}}">
+        <h3 class="especial-tiago-head-spa-14__pergunta">{{pergunta_2}}</h3>
+        {{#q2_opcoes}}
+        <button type="button" class="especial-tiago-head-spa-14__opt" data-v="{{texto}}">{{texto}}</button>
+        {{/q2_opcoes}}
+        <button type="button" class="especial-tiago-head-spa-14__back">← {{voltar_texto}}</button>
+      </div>
+
+      <div class="especial-tiago-head-spa-14__step" data-q="3" data-pergunta="{{pergunta_3}}">
+        <h3 class="especial-tiago-head-spa-14__pergunta">{{pergunta_3}}</h3>
+        {{#q3_opcoes}}
+        <button type="button" class="especial-tiago-head-spa-14__opt" data-v="{{texto}}">{{texto}}</button>
+        {{/q3_opcoes}}
+        <button type="button" class="especial-tiago-head-spa-14__back">← {{voltar_texto}}</button>
+      </div>
+
+      <div class="especial-tiago-head-spa-14__step especial-tiago-head-spa-14__res" data-q="4">
+        <div class="especial-tiago-head-spa-14__tick">✓</div>
+        <h3 class="especial-tiago-head-spa-14__pergunta">{{resultado_titulo}}</h3>
+        <p class="especial-tiago-head-spa-14__res-txt">{{resultado_texto}}</p>
+        <div class="especial-tiago-head-spa-14__rec"></div>
+        <p class="especial-tiago-head-spa-14__aviso">{{aviso}}</p>
+        <a href="{{whatsapp_link}}" class="especial-tiago-head-spa-14__cta" target="_blank" rel="noopener">{{cta_texto}}</a>
+        <br><button type="button" class="especial-tiago-head-spa-14__back especial-tiago-head-spa-14__restart">↻ {{refazer_texto}}</button>
+      </div>
+    </div>
+  </div>
+</section>

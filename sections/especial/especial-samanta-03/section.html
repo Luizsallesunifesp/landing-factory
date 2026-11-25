@@ -1,0 +1,30 @@
+<section class="s-especial-samanta-03" data-secao="especial-samanta-03" aria-labelledby="especial-samanta-03-titulo" data-frames="{{frames_pasta}}" data-frames-leve="{{frames_pasta_leve}}">
+  <div class="especial-samanta-03__pin">
+    <div class="especial-samanta-03__wash" aria-hidden="true"></div>
+    <div class="especial-samanta-03__card">
+      <div class="especial-samanta-03__intro">
+        <p class="especial-samanta-03__rotulo">{{rotulo}}</p>
+        <h2 id="especial-samanta-03-titulo" class="especial-samanta-03__titulo">{{titulo}}</h2>
+        <p class="especial-samanta-03__texto">{{texto}}</p>
+      </div>
+      <div class="especial-samanta-03__palco">
+        <div class="especial-samanta-03__stage">
+          <div class="especial-samanta-03__quadro">
+            <img class="especial-samanta-03__img" src="{{img:dente}}" width="720" height="900" alt="{{alt:dente}}" loading="lazy" decoding="async">
+            <canvas class="especial-samanta-03__canvas" role="img" aria-label="{{alt:dente}}"></canvas>
+          </div>
+          <svg class="especial-samanta-03__linhas" aria-hidden="true" focusable="false"></svg>
+          <ol class="especial-samanta-03__notas" role="list">
+            {{#notas}}
+            <li class="especial-samanta-03__nota especial-samanta-03__nota--{{lado}}" data-ancora="{{ancora}}" style="--y:{{y}}"><span class="especial-samanta-03__node"><span class="especial-samanta-03__node-n">{{@num}}</span>{{nome}}</span><p>{{texto}}</p></li>
+            {{/notas}}
+          </ol>
+        </div>
+      </div>
+      <div class="especial-samanta-03__fim">
+        <p class="especial-samanta-03__nota-final">{{nota_final}}</p>
+        <a class="especial-samanta-03__btn" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}} <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>

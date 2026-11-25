@@ -1,0 +1,53 @@
+<section class="s-especial-mestre-hiroshi-07" data-secao="especial-mestre-hiroshi-07" id="preco">
+  <div class="especial-mestre-hiroshi-07__wrap">
+    <h2 class="especial-mestre-hiroshi-07__titulo" data-palavras="">{{titulo}}</h2>
+
+    <div class="especial-mestre-hiroshi-07__grade">
+      <div class="especial-mestre-hiroshi-07__recebe especial-mestre-hiroshi-07__brilho especial-mestre-hiroshi-07__rev">
+        <h3 class="especial-mestre-hiroshi-07__recebe-titulo">{{pacote_titulo}}</h3>
+        <p class="especial-mestre-hiroshi-07__sub">{{pacote_sub}}</p>
+
+        <ul class="especial-mestre-hiroshi-07__pack">
+          {{#bonus}}
+          <li>
+            <span class="especial-mestre-hiroshi-07__tt">{{nome}}</span>
+            <span class="especial-mestre-hiroshi-07__vv"><s>{{valor}}</s></span>
+            <p class="especial-mestre-hiroshi-07__dd">{{descricao}}</p>
+          </li>
+          {{/bonus}}
+        </ul>
+
+        <div class="especial-mestre-hiroshi-07__tot">
+          <span class="especial-mestre-hiroshi-07__tot-lab">{{total_label}}</span>
+          <span class="especial-mestre-hiroshi-07__tot-num"><s>{{total_valor}}</s></span>
+        </div>
+      </div>
+
+      <div class="especial-mestre-hiroshi-07__oferta especial-mestre-hiroshi-07__brilho especial-mestre-hiroshi-07__rev">
+        <p class="especial-mestre-hiroshi-07__de">{{oferta_intro}} <s>{{valor_de}}</s> {{oferta_conector}}</p>
+        <div class="especial-mestre-hiroshi-07__valor">
+          <span class="especial-mestre-hiroshi-07__pre">{{preco_prefixo}}</span><span class="especial-mestre-hiroshi-07__num">{{preco_inteiro}}</span><span class="especial-mestre-hiroshi-07__cent">{{preco_centavos}}</span>
+        </div>
+        <p class="especial-mestre-hiroshi-07__av">{{preco_avista}}</p>
+
+        <span class="especial-mestre-hiroshi-07__glow">
+          <a class="especial-mestre-hiroshi-07__btn" href="{{cta_url}}">
+            {{cta_texto}}
+            <svg class="especial-mestre-hiroshi-07__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </span>
+
+        <div class="especial-mestre-hiroshi-07__pg">
+          <span><svg class="especial-mestre-hiroshi-07__ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> {{pagamento_seguro}}</span>
+          <span>{{pagamento_formas}}</span>
+        </div>
+
+        <ul class="especial-mestre-hiroshi-07__itens">
+          {{#beneficios}}
+          <li><svg class="especial-mestre-hiroshi-07__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>{{texto}}</li>
+          {{/beneficios}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+.s-servicos-elaine-04{position:relative;background:var(--c-dark);color:var(--c-on-dark);padding:var(--section-y) 0}
+.servicos-elaine-04__wrap{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.2)}
+.servicos-elaine-04__eyebrow{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;gap:10px}
+.servicos-elaine-04__eyebrow::before{content:"";width:22px;height:1px;background:var(--c-accent);display:inline-block}
+.servicos-elaine-04__titulo{font-family:var(--f-display);font-weight:400;font-size:clamp(1.75rem,3vw,2.5rem);margin:14px 0 calc(var(--space)*2);max-width:640px}
+.servicos-elaine-04__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:color-mix(in srgb,var(--c-on-dark) 16%,transparent)}
+.servicos-elaine-04__card{background:var(--c-dark);padding:0;display:flex;flex-direction:column}
+.servicos-elaine-04__toggle{all:unset;box-sizing:border-box;width:100%;cursor:pointer;padding:calc(var(--space)*1.2) var(--space);min-height:168px;display:flex;flex-direction:column;justify-content:space-between}
+.servicos-elaine-04__toggle:focus-visible{outline:2px solid var(--c-accent);outline-offset:-4px}
+.servicos-elaine-04__num{font-family:var(--f-mono);font-size:.7rem;color:var(--c-accent);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.servicos-elaine-04__plus{width:20px;height:20px;border:1px solid color-mix(in srgb,var(--c-on-dark) 40%,transparent);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;transition:transform calc(.3s*var(--motion,1)) var(--ease),background .25s ease,border-color .25s ease}
+.servicos-elaine-04__plus::before,.servicos-elaine-04__plus::after{content:"";position:absolute;background:color-mix(in srgb,var(--c-on-dark) 90%,var(--c-dark))}
+.servicos-elaine-04__plus::before{width:8px;height:1px}
+.servicos-elaine-04__plus::after{width:1px;height:8px}
+.servicos-elaine-04__nome{font-family:var(--f-display);font-weight:400;font-size:1.125rem;margin:var(--space) 0 0;line-height:1.25;text-align:left}
+.servicos-elaine-04__desc{max-height:0;overflow:hidden;transition:max-height calc(.4s*var(--motion,1)) var(--ease),padding calc(.4s*var(--motion,1)) var(--ease)}
+.servicos-elaine-04__desc p{font-size:.875rem;line-height:1.55;color:var(--c-on-dark);opacity:.88;padding:0 var(--space) calc(var(--space)*1.2);white-space:pre-line}
+.servicos-elaine-04__card.is-open .servicos-elaine-04__desc{max-height:320px}
+.servicos-elaine-04__card.is-open .servicos-elaine-04__plus{transform:rotate(135deg);background:var(--c-accent);border-color:var(--c-accent)}
+.servicos-elaine-04__card.is-open .servicos-elaine-04__plus::before,.servicos-elaine-04__card.is-open .servicos-elaine-04__plus::after{background:var(--c-dark)}
+.servicos-elaine-04__reveal{opacity:0;transform:translateY(calc(18px*var(--motion,1)));transition:opacity calc(.7s*var(--motion,1)) var(--ease),transform calc(.7s*var(--motion,1)) var(--ease)}
+.servicos-elaine-04__reveal.in{opacity:1;transform:none}
+@media (max-width:900px){.servicos-elaine-04__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.servicos-elaine-04__grid{grid-template-columns:1fr}}

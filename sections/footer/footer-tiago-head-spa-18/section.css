@@ -1,0 +1,18 @@
+.s-footer-tiago-head-spa-18{background:var(--c-dark);color:var(--c-on-dark);border-top:1px solid var(--c-line);padding:56px 0 30px;scroll-margin-top:96px}
+.footer-tiago-head-spa-18__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.footer-tiago-head-spa-18__top{display:flex;justify-content:space-between;align-items:flex-start;gap:36px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid var(--c-line)}
+.footer-tiago-head-spa-18__logo{display:flex;align-items:center;gap:13px;margin-bottom:14px;text-decoration:none}
+.footer-tiago-head-spa-18__mark{width:46px;height:46px;flex:none}
+.footer-tiago-head-spa-18__emblem{width:100%;height:100%;display:block}
+.footer-tiago-head-spa-18__txt{line-height:1.1}
+.footer-tiago-head-spa-18__txt b{display:block;font-family:var(--f-display);font-size:1.18rem;font-weight:600;letter-spacing:.16em;color:var(--c-accent)}
+.footer-tiago-head-spa-18__txt span{display:block;font-size:.53rem;letter-spacing:.24em;text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 45%,transparent);margin-top:2px}
+.footer-tiago-head-spa-18__slogan{font-size:.85rem;color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);max-width:40ch}
+.footer-tiago-head-spa-18__nav{display:flex;flex-wrap:wrap;gap:12px 28px}
+.footer-tiago-head-spa-18__nav a{font-size:.82rem;color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);text-decoration:none;transition:.3s}
+.footer-tiago-head-spa-18__nav a:hover{color:var(--c-accent)}
+.footer-tiago-head-spa-18__socials{display:flex;gap:10px}
+.footer-tiago-head-spa-18__socials a{width:42px;height:42px;border-radius:12px;border:1px solid var(--c-line);display:flex;align-items:center;justify-content:center;color:var(--c-accent);background:color-mix(in srgb,var(--c-accent) 6%,transparent);transition:.35s}
+.footer-tiago-head-spa-18__socials a:hover{background:var(--c-accent);color:var(--c-dark);transform:translateY(-3px)}
+.footer-tiago-head-spa-18__bot{padding-top:26px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.76rem;color:color-mix(in srgb,var(--c-on-dark) 45%,transparent)}
+.footer-tiago-head-spa-18__disclaimer{margin-top:18px;font-size:.71rem;color:color-mix(in srgb,var(--c-on-dark) 30%,transparent);line-height:1.7;max-width:90ch}

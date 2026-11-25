@@ -1,0 +1,35 @@
+.s-prova-tiago-farma-06{background:var(--c-dark);color:var(--c-on-dark);position:relative;overflow:hidden;padding:var(--section-y) 0;font-family:var(--f-body);}
+.s-prova-tiago-farma-06::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c-on-dark) 5%,transparent),transparent 70%);pointer-events:none;}
+.prova-tiago-farma-06__container{position:relative;max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space) * 1.5);}
+.prova-tiago-farma-06__header{max-width:640px;margin-bottom:calc(var(--space) * 2.5);}
+.prova-tiago-farma-06__eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:var(--space);}
+.prova-tiago-farma-06__eyebrow::before{content:'';width:26px;height:1px;background:var(--c-accent);display:inline-block;}
+.prova-tiago-farma-06__titulo{font-family:var(--f-display);font-weight:500;color:var(--c-on-dark);letter-spacing:-.01em;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:0;}
+.prova-tiago-farma-06__sub{color:color-mix(in srgb,var(--c-on-dark) 65%,transparent);font-size:1.06rem;margin:var(--space) 0 0;}
+.prova-tiago-farma-06__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:calc(var(--space) * 1.2);margin-top:var(--space);}
+.prova-tiago-farma-06__card{background:color-mix(in srgb,var(--c-on-dark) 6%,transparent);border:1px solid color-mix(in srgb,var(--c-on-dark) 14%,transparent);border-radius:var(--radius-lg);overflow:hidden;transition:transform .3s var(--ease);}
+.prova-tiago-farma-06__card:hover{transform:translateY(-6px);}
+.prova-tiago-farma-06__imgwrap{position:relative;cursor:zoom-in;overflow:hidden;aspect-ratio:4/5;}
+.prova-tiago-farma-06__imgwrap img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s var(--ease);display:block;}
+.prova-tiago-farma-06__card:hover .prova-tiago-farma-06__imgwrap img{transform:scale(1.05);}
+.prova-tiago-farma-06__zoom{position:absolute;top:var(--space);right:var(--space);width:36px;height:36px;border-radius:50%;background:color-mix(in srgb,var(--c-dark) 60%,transparent);color:var(--c-on-dark);display:flex;align-items:center;justify-content:center;font-size:1rem;backdrop-filter:blur(4px);}
+.prova-tiago-farma-06__delta{position:absolute;bottom:var(--space);left:var(--space);background:var(--c-accent);color:var(--c-on-primary);font-family:var(--f-display);font-weight:600;font-size:1rem;padding:8px 16px;border-radius:100px;}
+.prova-tiago-farma-06__info{padding:var(--space) calc(var(--space) * 1.1);}
+.prova-tiago-farma-06__info span{display:block;font-size:.72rem;color:color-mix(in srgb,var(--c-on-dark) 50%,transparent);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;}
+.prova-tiago-farma-06__info strong{font-family:var(--f-body);font-size:.9rem;color:color-mix(in srgb,var(--c-on-dark) 85%,transparent);font-weight:600;}
+.prova-tiago-farma-06__footnote{margin:calc(var(--space) * 1.6) 0 0;font-size:.78rem;color:color-mix(in srgb,var(--c-on-dark) 55%,transparent);max-width:640px;}
+
+/* reveal (ativado pelo section.js) */
+.s-prova-tiago-farma-06.is-ready .prova-tiago-farma-06__reveal{opacity:0;transform:translateY(calc(28px * var(--motion,1)));transition:opacity calc(.8s * var(--motion,1)) var(--ease),transform calc(.8s * var(--motion,1)) var(--ease);}
+.s-prova-tiago-farma-06.is-ready .prova-tiago-farma-06__reveal.in{opacity:1;transform:none;}
+
+/* lightbox (criado pelo section.js) */
+.prova-tiago-farma-06__lightbox{position:fixed;inset:0;background:color-mix(in srgb,var(--c-dark) 92%,transparent);z-index:1200;display:none;align-items:center;justify-content:center;padding:40px;}
+.prova-tiago-farma-06__lightbox.open{display:flex;}
+.prova-tiago-farma-06__lightbox img{max-width:min(90vw,560px);max-height:85vh;border-radius:var(--radius);border:3px solid var(--c-accent);}
+.prova-tiago-farma-06__lightbox-close{position:absolute;top:28px;right:32px;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;background:color-mix(in srgb,var(--c-on-dark) 10%,transparent);color:var(--c-on-dark);font-size:1.4rem;display:flex;align-items:center;justify-content:center;}
+
+@media (max-width:768px){
+  .prova-tiago-farma-06__grid{grid-template-columns:1fr;}
+  .prova-tiago-farma-06__container{padding:0 var(--space);}
+}

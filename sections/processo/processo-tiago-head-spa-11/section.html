@@ -1,0 +1,17 @@
+<section class="s-processo-tiago-head-spa-11" data-secao="processo-tiago-head-spa-11">
+  <div class="processo-tiago-head-spa-11__wrap">
+    <div class="processo-tiago-head-spa-11__head processo-tiago-head-spa-11__rv">
+      <div class="processo-tiago-head-spa-11__eyebrow">{{eyebrow}}</div>
+      <h2 class="processo-tiago-head-spa-11__titulo">{{titulo}} <em class="processo-tiago-head-spa-11__destaque">{{titulo_destaque}}</em></h2>
+    </div>
+    <div class="processo-tiago-head-spa-11__steps">
+      {{#itens}}
+      <div class="processo-tiago-head-spa-11__step processo-tiago-head-spa-11__rv">
+        <div class="processo-tiago-head-spa-11__dot">{{@num}}</div>
+        <h4 class="processo-tiago-head-spa-11__nome">{{nome}}</h4>
+        <p class="processo-tiago-head-spa-11__desc">{{descricao}}</p>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

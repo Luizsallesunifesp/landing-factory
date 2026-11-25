@@ -1,0 +1,51 @@
+{
+  "id": "servicos-vanessa-06",
+  "tipo": "servicos",
+  "origem": "vanessa",
+  "descricao": "Cabeçalho centralizado com eyebrow e título, seguido de grade de cartões (3 colunas) com emoji, título curto de perfil de público e uma linha de descrição. Reveal escalonado ao rolar (JS próprio, sem dependências).",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "educação",
+    "saúde",
+    "consultoria",
+    "turismo",
+    "serviços profissionais"
+  ],
+  "libs": [],
+  "animacao": "reveal no cabeçalho e escalonado nos cartões ao rolar (IntersectionObserver)",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 35
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "icone": {
+          "tipo": "texto_curto",
+          "max": 4
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 140
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

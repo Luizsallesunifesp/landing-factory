@@ -1,0 +1,17 @@
+<section class="s-servicos-elaine-04" data-secao="servicos-elaine-04">
+  <div class="servicos-elaine-04__wrap">
+    <span class="servicos-elaine-04__eyebrow">{{eyebrow}}</span>
+    <h2 class="servicos-elaine-04__titulo servicos-elaine-04__reveal">{{titulo}}</h2>
+    <div class="servicos-elaine-04__grid servicos-elaine-04__reveal">
+      {{#itens}}
+      <div class="servicos-elaine-04__card">
+        <button class="servicos-elaine-04__toggle" aria-expanded="false">
+          <span class="servicos-elaine-04__num">{{@num}}<span class="servicos-elaine-04__plus"></span></span>
+          <h3 class="servicos-elaine-04__nome">{{nome}}</h3>
+        </button>
+        <div class="servicos-elaine-04__desc"><p>{{descricao}}</p></div>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,234 @@
+{
+  "id": "servicos-yahlla-06",
+  "tipo": "servicos",
+  "origem": "yahlla",
+  "descricao": "Cabeçalho com eyebrow e H2 em duas linhas, grade de seis cartas com foto de fundo na frente (categoria e nome) que giram em flip 3D ao toque revelando descrição, tags e CTA de WhatsApp; abaixo, banner de temporada com texto à esquerda e imagem à direita. Pensada para tema escuro. Sem dependência global; o flip usa section.js próprio. Os seis cartões são slots fixos (c1..c6).",
+  "estilo": [
+    "acolhedor",
+    "sensorial",
+    "editorial"
+  ],
+  "nicho": [
+    "catálogos de serviços",
+    "clínicas",
+    "estúdios",
+    "salões",
+    "cursos com módulos",
+    "ofertas com várias opções"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "flip 3D das cartas ao toque (data-card) com hint; fade-up escalonado por data-aos",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 60,
+      "descricao": "aceita <br> para quebra de linha"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "cta_card": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "link no verso das cartas"
+    },
+    "img:c1": {
+      "tipo": "img",
+      "descricao": "foto carta 1, 4:3 ou quadrada"
+    },
+    "c1_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c1_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c1_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c1_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c1_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c1_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "img:c2": {
+      "tipo": "img",
+      "descricao": "foto carta 2"
+    },
+    "c2_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c2_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c2_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c2_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c2_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c2_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "img:c3": {
+      "tipo": "img",
+      "descricao": "foto carta 3"
+    },
+    "c3_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c3_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c3_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c3_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c3_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c3_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "img:c4": {
+      "tipo": "img",
+      "descricao": "foto carta 4"
+    },
+    "c4_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c4_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c4_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c4_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c4_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c4_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "img:c5": {
+      "tipo": "img",
+      "descricao": "foto carta 5"
+    },
+    "c5_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c5_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c5_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c5_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c5_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c5_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "img:c6": {
+      "tipo": "img",
+      "descricao": "foto carta 6"
+    },
+    "c6_k": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "c6_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "c6_desc": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "c6_tag1": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c6_tag2": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "c6_tag3": {
+      "tipo": "texto_curto",
+      "max": 18
+    },
+    "banner_k": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "banner_titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "banner_texto": {
+      "tipo": "texto",
+      "max": 410
+    },
+    "banner_btn": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "img:banner": {
+      "tipo": "img",
+      "descricao": "foto do banner, paisagem"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

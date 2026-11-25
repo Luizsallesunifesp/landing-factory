@@ -1,0 +1,121 @@
+{
+  "id": "especial-mestre-hiroshi-07",
+  "tipo": "especial",
+  "origem": "mestre-hiroshi",
+  "descricao": "Duas colunas: à esquerda, lista de bônus com valor riscado, descrição curta e total riscado; à direita, card de oferta com brilho, preço grande parcelado, botão com glow, selos de pagamento e benefícios com ícone de check. Ícones em SVG inline (autônoma, sem sprite global). Para o título, usa o efeito global data-palavras (opcional).",
+  "estilo": [
+    "bold",
+    "escuro",
+    "conversão"
+  ],
+  "nicho": [
+    "infoprodutos",
+    "cursos",
+    "pacotes de serviços",
+    "oferta com bônus"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "reveal nos blocos, realce que segue o cursor no card, glow giratório e varredura de brilho no botão",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 47
+    },
+    "pacote_titulo": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "pacote_sub": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "bonus": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 10,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 50
+        },
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 80
+        }
+      }
+    },
+    "total_label": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "total_valor": {
+      "tipo": "texto_curto",
+      "max": 16
+    },
+    "oferta_intro": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "valor_de": {
+      "tipo": "texto_curto",
+      "max": 14
+    },
+    "oferta_conector": {
+      "tipo": "texto_curto",
+      "max": 6
+    },
+    "preco_prefixo": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "preco_inteiro": {
+      "tipo": "texto_curto",
+      "max": 5
+    },
+    "preco_centavos": {
+      "tipo": "texto_curto",
+      "max": 4
+    },
+    "preco_avista": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "cta_url": {
+      "tipo": "url",
+      "descricao": "link de checkout"
+    },
+    "pagamento_seguro": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "pagamento_formas": {
+      "tipo": "texto_curto",
+      "max": 50
+    },
+    "beneficios": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 65
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

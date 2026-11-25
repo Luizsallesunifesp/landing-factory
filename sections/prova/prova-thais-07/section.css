@@ -1,0 +1,13 @@
+.s-prova-thais-07{padding-block:var(--section-y);position:relative;background:var(--c-bg);color:var(--c-text)}
+.prova-thais-07__doc{width:100%;max-width:var(--max-w);margin-inline:auto;padding-inline:var(--space);position:relative;z-index:1}
+.prova-thais-07__topo{margin-bottom:clamp(26px,3.2vw,44px)}
+.prova-thais-07__regua{height:1px;background:var(--c-line);transform-origin:left}
+.prova-thais-07__titulo{font-family:var(--f-display);font-size:clamp(1.95rem,4.6vw,3.2rem);font-weight:600;letter-spacing:-0.03em;line-height:1.07;margin-bottom:clamp(30px,3.4vw,46px)}
+.prova-thais-07__grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:clamp(16px,2vw,26px)}
+.prova-thais-07__placa{margin:0;border:1px solid var(--c-line);border-radius:var(--radius);background:var(--c-surface);overflow:hidden}
+.prova-thais-07__placa img{width:100%;height:auto;display:block}
+.prova-thais-07__pe{padding:13px 15px 15px;border-top:1px solid var(--c-line)}
+.prova-thais-07__t{font-family:var(--f-body);font-size:15px;letter-spacing:-0.012em;margin-bottom:3px}
+.prova-thais-07__s{font-family:var(--f-body);font-size:12px;letter-spacing:.01em;color:var(--c-muted);line-height:1.45}
+.prova-thais-07__aviso{margin-top:calc(var(--space)*1.1);padding:18px 20px;border:1px solid var(--c-line);border-radius:var(--radius);background:color-mix(in srgb,var(--c-accent) 8%,var(--c-bg));font-size:13.5px;line-height:1.55;color:var(--c-muted);max-width:78ch}
+.prova-thais-07__aviso b{color:var(--c-accent)}

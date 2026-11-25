@@ -1,0 +1,19 @@
+.s-processo-karol-06{padding:var(--section-y) 0;background:var(--c-dark);color:var(--c-on-dark)}
+.processo-karol-06__eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;gap:.6em;margin-bottom:1.1rem}
+.processo-karol-06__eyebrow::before{content:"";width:22px;height:1px;background:var(--c-accent);display:inline-block}
+.processo-karol-06__titulo{color:var(--c-on-dark);font-size:clamp(1.9rem,3vw,2.5rem);max-width:620px}
+.processo-karol-06__trail{margin-top:calc(var(--space)*3);position:relative}
+.processo-karol-06__svg{width:100%;height:auto;display:block}
+.processo-karol-06__linha{stroke:var(--c-accent)}
+.processo-karol-06__ponto{fill:var(--c-accent)}
+.processo-karol-06__steps{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--space)*1.2);margin-top:calc(var(--space)*1.6)}
+.processo-karol-06__step{border-top:2px solid color-mix(in srgb,var(--c-on-dark) 25%,transparent);padding-top:18px}
+.processo-karol-06__n{font-family:var(--f-mono);font-size:.75rem;color:var(--c-accent);display:block;margin-bottom:10px}
+.processo-karol-06__nome{font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:8px;color:var(--c-on-dark)}
+.processo-karol-06__desc{font-size:.88rem;color:color-mix(in srgb,var(--c-on-dark) 72%,transparent);margin:0}
+@media (max-width:900px){
+  .processo-karol-06__steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .processo-karol-06__steps{grid-template-columns:1fr}
+}

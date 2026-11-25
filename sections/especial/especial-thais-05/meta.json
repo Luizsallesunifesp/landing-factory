@@ -1,0 +1,106 @@
+{
+  "id": "especial-thais-05",
+  "tipo": "especial",
+  "origem": "thais",
+  "descricao": "Título grande com lede e gráfico de curva em largura total (ação em 120 dias) com 5 marcos e linha tracejada de limite; em telas estreitas troca por versão vertical do gráfico. Abaixo, lista de etapas com o dia em destaque. Requer gsap + ScrollTrigger para a curva se desenhar no scroll (sem eles, gráfico estático completo). Os 5 marcos são fixos (posições no SVG).",
+  "estilo": [
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "estética",
+    "depilação a laser",
+    "tratamentos com cronograma e manutenção"
+  ],
+  "libs": [
+    "gsap",
+    "scrolltrigger"
+  ],
+  "animacao": "curva SVG desenhada por scroll (stroke-dashoffset scrub), marcadores aparecem por progresso (data-p), régua que desenha",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "lede": {
+      "tipo": "texto",
+      "max": 270
+    },
+    "aria_grafico": {
+      "tipo": "texto",
+      "max": 560,
+      "descricao": "Descrição acessível do gráfico"
+    },
+    "limite_rotulo": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "limite_rotulo_curto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "marco_1_dia": {
+      "tipo": "texto_curto",
+      "max": 6
+    },
+    "marco_1_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "marco_2_dia": {
+      "tipo": "texto_curto",
+      "max": 8
+    },
+    "marco_2_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "marco_3_dia": {
+      "tipo": "texto_curto",
+      "max": 6
+    },
+    "marco_3_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "marco_4_dia": {
+      "tipo": "texto_curto",
+      "max": 6
+    },
+    "marco_4_rotulo": {
+      "tipo": "texto_curto",
+      "max": 22
+    },
+    "marco_5_dia": {
+      "tipo": "texto_curto",
+      "max": 6
+    },
+    "marco_5_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "campos": {
+        "dia": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 60
+        },
+        "descricao": {
+          "tipo": "richtext",
+          "max": 260
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 7,
+  "nota": 5,
+  "aprovada": false
+}

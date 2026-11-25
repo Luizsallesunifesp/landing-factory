@@ -1,0 +1,24 @@
+<section class="s-dor-tiago-head-spa-04" data-secao="dor-tiago-head-spa-04">
+  <div class="dor-tiago-head-spa-04__wrap">
+    <div class="dor-tiago-head-spa-04__head dor-tiago-head-spa-04__rv">
+      <div class="dor-tiago-head-spa-04__eyebrow">{{eyebrow}}</div>
+      <h2 class="dor-tiago-head-spa-04__titulo">{{titulo}} <em class="dor-tiago-head-spa-04__g">{{titulo_destaque}}</em></h2>
+      <p class="dor-tiago-head-spa-04__lead">{{lead}}</p>
+    </div>
+
+    <div class="dor-tiago-head-spa-04__grid">
+      {{#itens}}
+      <div class="dor-tiago-head-spa-04__sig dor-tiago-head-spa-04__rv">
+        <svg class="dor-tiago-head-spa-04__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">{{{icone}}}</svg>
+        <h4 class="dor-tiago-head-spa-04__nome">{{nome}}</h4>
+        <p class="dor-tiago-head-spa-04__desc">{{descricao}}</p>
+      </div>
+      {{/itens}}
+    </div>
+
+    <div class="dor-tiago-head-spa-04__insight dor-tiago-head-spa-04__rv">
+      <span class="dor-tiago-head-spa-04__q">“</span>
+      <p>{{insight_inicio}} <b>{{insight_destaque}}</b> {{insight_fim}}</p>
+    </div>
+  </div>
+</section>

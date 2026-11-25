@@ -1,0 +1,28 @@
+{
+  "id": "footer-yahlla-10",
+  "tipo": "footer",
+  "origem": "yahlla",
+  "descricao": "Rodapé em uma linha com marca (ponto de destaque e nome) à esquerda e links à direita (Instagram, WhatsApp, voltar ao topo), com linha de copyright pequena abaixo. Link de topo aponta para #hero.",
+  "estilo": [
+    "minimalista",
+    "discreto"
+  ],
+  "nicho": [
+    "qualquer landing page de negócio local ou profissional liberal"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "topo_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "credito": {
+      "tipo": "texto",
+      "max": 50
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

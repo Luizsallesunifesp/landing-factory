@@ -1,0 +1,50 @@
+{
+  "id": "sobre-mestre-hiroshi-09",
+  "tipo": "sobre",
+  "origem": "mestre-hiroshi",
+  "descricao": "Duas colunas em fundo escuro: retrato 4:5 à esquerda; à direita nome em título grande, dois parágrafos de biografia e botão com glow giratório e brilho varrendo. Reveal com blur via GSAP (opcional, sem GSAP fica visível).",
+  "estilo": [
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "infoprodutos",
+    "consultorias",
+    "profissionais liberais",
+    "cursos com autor visível"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "reveal com fade, subida e blur nos blocos; botão com glow rotativo e varredura de brilho",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato do autor, proporção 4:5"
+    },
+    "nome": {
+      "tipo": "texto_curto",
+      "max": 32
+    },
+    "bio_1": {
+      "tipo": "texto",
+      "max": 220
+    },
+    "bio_2": {
+      "tipo": "texto",
+      "max": 85
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 22
+    },
+    "cta_link": {
+      "tipo": "url",
+      "descricao": "destino do botão (ex.: #preco)"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

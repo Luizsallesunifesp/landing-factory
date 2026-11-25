@@ -1,0 +1,58 @@
+{
+  "id": "prova-thais-04",
+  "tipo": "prova",
+  "origem": "thais",
+  "descricao": "Roda orbital de resultados antes e depois: cartões de foto em anel que gira com o scroll (seção sticky ~210vh), legenda em caixa alta e trilho de títulos clicáveis embaixo, com aviso pequeno. Depende de GSAP + ScrollTrigger (usa window.lenis se existir); sem GSAP ou com --motion 0 vira grade estática de cards.",
+  "estilo": [
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "estética",
+    "odontologia",
+    "dermatologia",
+    "fisioterapia",
+    "reabilitação"
+  ],
+  "libs": [
+    "gsap",
+    "scrolltrigger"
+  ],
+  "animacao": "roda orbital controlada por scroll (scrub) com foco, desfoque e escala; trilho de navegação clicável",
+  "slots": {
+    "titulo_sr": {
+      "tipo": "texto_curto",
+      "max": 50,
+      "descricao": "título oculto (só leitores de tela)"
+    },
+    "aviso": {
+      "tipo": "texto",
+      "max": 110,
+      "descricao": "aviso de que resultados variam"
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 10,
+      "campos": {
+        "foto": {
+          "tipo": "img",
+          "descricao": "foto do resultado, proporção ~1:1,3 (retrato)"
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 30,
+          "descricao": "título no trilho"
+        },
+        "sub": {
+          "tipo": "texto",
+          "max": 80,
+          "descricao": "legenda exibida acima do trilho"
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

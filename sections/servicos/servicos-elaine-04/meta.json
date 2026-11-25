@@ -1,0 +1,48 @@
+{
+  "id": "servicos-elaine-04",
+  "tipo": "servicos",
+  "origem": "elaine",
+  "descricao": "Fundo escuro com eyebrow e título de duas linhas; grade de cards numerados (4 colunas) em formato acordeão: número com sinal de mais e título, ao clicar expande a descrição. Sem imagens. Requer section.js (acordeão e reveal ao rolar).",
+  "estilo": [
+    "clínico",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "saúde integrativa",
+    "clínicas",
+    "estética",
+    "farmácia",
+    "serviços com lista extensa de procedimentos"
+  ],
+  "libs": [],
+  "animacao": "acordeão por clique (toggle JS) e reveal ao rolar via IntersectionObserver",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 110
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 8,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 55
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 350
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

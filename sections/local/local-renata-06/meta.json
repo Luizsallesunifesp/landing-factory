@@ -1,0 +1,74 @@
+{
+  "id": "local-renata-06",
+  "tipo": "local",
+  "origem": "renata",
+  "descricao": "Cabeçalho com eyebrow e título, seguido de dois cards lado a lado: presencial (endereço e link do Google Maps) e online (descrição do formato). Usa slots automáticos endereco e maps_url.",
+  "estilo": [
+    "clínico",
+    "acolhedor"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultórios",
+    "profissionais com atendimento presencial e online",
+    "academias",
+    "escritórios"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up (data-aos) no cabeçalho e nos cards",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "presencial_tag": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "presencial_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "presencial_texto": {
+      "tipo": "texto",
+      "max": 140
+    },
+    "presencial_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "maps_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "online_tag": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "online_titulo": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "online_texto": {
+      "tipo": "texto",
+      "max": 190
+    },
+    "online_rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "online_detalhe": {
+      "tipo": "texto",
+      "max": 110
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

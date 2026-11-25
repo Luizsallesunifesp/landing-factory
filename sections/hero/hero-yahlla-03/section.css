@@ -1,0 +1,17 @@
+.s-hero-yahlla-03{position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:0 0 90px;overflow:hidden;background:var(--c-dark);color:var(--c-on-dark)}
+.hero-yahlla-03__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scale(1.08);will-change:transform}
+.hero-yahlla-03__scrim{position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--c-dark) 55%,transparent) 0%,color-mix(in srgb,var(--c-dark) 35%,transparent) 35%,color-mix(in srgb,var(--c-dark) 85%,transparent) 82%,var(--c-dark) 100%)}
+.hero-yahlla-03__glow{position:absolute;width:640px;height:640px;max-width:100vw;left:50%;top:38%;transform:translate(-50%,-50%);background:radial-gradient(circle,color-mix(in srgb,var(--c-accent) 20%,transparent) 0%,transparent 68%);animation:hero-yahlla-03-breathe 7s ease-in-out infinite;pointer-events:none}
+@keyframes hero-yahlla-03-breathe{0%,100%{transform:translate(-50%,-50%) scale(.92);opacity:.75}50%{transform:translate(-50%,-50%) scale(1.12);opacity:1}}
+.hero-yahlla-03__content{position:relative;z-index:2;width:100%}
+.hero-yahlla-03__eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;font-family:var(--f-body);font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--c-accent);font-weight:700}
+.hero-yahlla-03__eyebrow::before{content:'';display:inline-block;width:22px;height:1px;background:var(--c-accent)}
+.hero-yahlla-03__titulo{font-family:var(--f-display);font-weight:500;letter-spacing:-.01em;font-size:var(--fs-hero);line-height:1.04;max-width:900px;color:var(--c-on-dark);margin:0}
+.hero-yahlla-03__titulo em{font-style:italic;color:var(--c-accent);font-weight:400}
+.hero-yahlla-03__sub{margin:calc(var(--space)*1.1) 0 0;max-width:520px;color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);font-size:17px}
+.hero-yahlla-03__cta-row{margin-top:calc(var(--space)*1.7);display:flex;gap:calc(var(--space)*.7);flex-wrap:wrap}
+.hero-yahlla-03__btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-family:var(--f-body);font-weight:700;font-size:14.5px;letter-spacing:.01em;text-decoration:none;background:var(--c-accent);color:var(--c-dark);border:1px solid transparent;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease)}
+.hero-yahlla-03__btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px color-mix(in srgb,var(--c-accent) 35%,transparent);background:color-mix(in srgb,var(--c-accent) 85%,var(--c-on-dark))}
+.hero-yahlla-03__btn--ghost{background:transparent;border-color:var(--c-line);color:var(--c-on-dark)}
+.hero-yahlla-03__btn--ghost:hover{border-color:var(--c-accent);box-shadow:none;background:color-mix(in srgb,var(--c-accent) 8%,transparent)}
+@media (prefers-reduced-motion:reduce){.hero-yahlla-03__glow{animation:none}}

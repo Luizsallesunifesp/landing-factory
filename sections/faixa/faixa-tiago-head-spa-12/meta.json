@@ -1,0 +1,47 @@
+{
+  "id": "faixa-tiago-head-spa-12",
+  "tipo": "faixa",
+  "origem": "tiago-head-spa",
+  "descricao": "Faixa de largura total com foto de fundo escurecida em parallax, texto centralizado (eyebrow, título com palavra em destaque itálico, lead) e sem botão. Autônoma: parallax e reveal no section.js (sem libs).",
+  "estilo": [
+    "escuro",
+    "editorial"
+  ],
+  "nicho": [
+    "pausa de posicionamento entre seções em qualquer segmento"
+  ],
+  "libs": [],
+  "animacao": "parallax no fundo (data-speed 0.26) e reveal escalonado ao rolar, ambos multiplicados por --motion",
+  "slots": {
+    "fundo": {
+      "tipo": "img",
+      "descricao": "foto de fundo, será escurecida"
+    },
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 38
+    },
+    "titulo_antes": {
+      "tipo": "texto_curto",
+      "max": 24,
+      "descricao": "trecho antes do destaque"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "palavra em itálico/accent"
+    },
+    "titulo_depois": {
+      "tipo": "texto_curto",
+      "max": 22,
+      "descricao": "trecho após o destaque, inclui pontuação inicial (ex.: ', não a milagre.')"
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 230
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

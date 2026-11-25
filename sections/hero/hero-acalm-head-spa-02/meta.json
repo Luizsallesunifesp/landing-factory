@@ -1,0 +1,85 @@
+{
+  "id": "hero-acalm-head-spa-02",
+  "tipo": "hero",
+  "origem": "acalm-head-spa",
+  "descricao": "Hero escuro em duas colunas: eyebrow com filete, título serifado grande com palavra em itálico destacada, lede, CTA primário e link ghost, stats; foto com canto superior direito arredondado; textura de grão e indicador de scroll na base. Ocupa 100svh. O link ghost aponta para uma âncora da página.",
+  "estilo": [
+    "acolhedor",
+    "editorial",
+    "escuro"
+  ],
+  "nicho": [
+    "spas",
+    "clínicas estéticas",
+    "consultórios que vendem experiência",
+    "negócios com fundador como rosto da marca"
+  ],
+  "libs": [],
+  "animacao": "Pulso CSS no indicador de scroll; sem JS.",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 48,
+      "descricao": "cidade · posicionamento"
+    },
+    "titulo_antes": {
+      "tipo": "texto_curto",
+      "max": 24,
+      "descricao": "início do título, antes da palavra em itálico"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 12,
+      "descricao": "palavra em itálico na cor de destaque"
+    },
+    "titulo_depois": {
+      "tipo": "texto_curto",
+      "max": 28,
+      "descricao": "final do título, incluindo pontuação (ex.: ', entre as serras.')"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 260
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "botão principal (WhatsApp)"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 24,
+      "descricao": "link secundário"
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "âncora ou URL do link secundário (ex.: #ritual)"
+    },
+    "stats": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 3,
+      "campos": {
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 28
+        }
+      }
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do fundador/profissional, proporção ~872x740"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

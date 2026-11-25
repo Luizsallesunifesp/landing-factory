@@ -1,0 +1,40 @@
+{
+  "id": "faixa-tiago-head-spa-09",
+  "tipo": "faixa",
+  "origem": "tiago-head-spa",
+  "descricao": "Faixa de largura total com foto de fundo escurecida (parallax), texto centralizado com eyebrow, título de duas partes (a segunda em dourado/destaque) e parágrafo curto; sem botão. Independente de libs globais; o section.js aplica a imagem de fundo (data-bg), o parallax e o reveal.",
+  "estilo": [
+    "escuro",
+    "editorial"
+  ],
+  "nicho": [
+    "pausa de posicionamento entre seções de serviços em qualquer segmento"
+  ],
+  "libs": [],
+  "animacao": "parallax no fundo (data-speed 0.28) e reveal escalonado ao rolar",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 50
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 250
+    },
+    "fundo": {
+      "tipo": "img",
+      "descricao": "foto de fundo da faixa, usada com parallax"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

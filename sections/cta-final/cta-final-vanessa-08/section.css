@@ -1,0 +1,77 @@
+.s-cta-final-vanessa-08{
+  background:var(--c-dark);
+  color:var(--c-on-dark);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  padding:var(--section-y) var(--space);
+  font-family:var(--f-body);
+}
+.s-cta-final-vanessa-08::before{
+  content:"";
+  position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--c-primary) 30%, transparent), transparent 55%);
+  pointer-events:none;
+}
+.cta-final-vanessa-08__inner{position:relative;max-width:640px;margin:0 auto;}
+.cta-final-vanessa-08__tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:color-mix(in srgb, var(--c-accent) 18%, transparent);
+  border:1px solid color-mix(in srgb, var(--c-accent) 45%, transparent);
+  color:var(--c-accent);
+  font-family:var(--f-mono, var(--f-body));
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:9px 18px;
+  border-radius:100px;
+  margin-bottom:var(--space);
+}
+.cta-final-vanessa-08__titulo{
+  font-family:var(--f-display);
+  font-size:clamp(28px,4vw,44px);
+  line-height:1.15;
+  margin:0 0 var(--space);
+  color:var(--c-on-dark);
+}
+.cta-final-vanessa-08__texto{
+  color:color-mix(in srgb, var(--c-on-dark) 72%, transparent);
+  font-size:17px;
+  line-height:1.6;
+  margin:0 0 calc(var(--space) * 1.5);
+}
+.cta-final-vanessa-08__btn{
+  background:var(--c-primary);
+  color:var(--c-on-primary);
+  font-weight:600;
+  font-size:17px;
+  padding:19px 36px;
+  border-radius:100px;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  text-decoration:none;
+  box-shadow:0 12px 28px color-mix(in srgb, var(--c-primary) 35%, transparent);
+  transition:transform .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease);
+}
+.cta-final-vanessa-08__btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 34px color-mix(in srgb, var(--c-primary) 45%, transparent);
+  background:color-mix(in srgb, var(--c-primary) 85%, var(--c-dark));
+}
+.cta-final-vanessa-08__btn:focus-visible{outline:2px solid var(--c-accent);outline-offset:3px;}
+.cta-final-vanessa-08__nota{
+  margin:var(--space) 0 0;
+  font-size:13px;
+  color:color-mix(in srgb, var(--c-on-dark) 45%, transparent);
+}
+
+/* reveal: só oculta se o JS da seção armou o efeito */
+.cta-final-vanessa-08__reveal.is-armed{
+  opacity:0;
+  transform:translateY(calc(26px * var(--motion, 1)));
+  transition:opacity .7s var(--ease), transform .7s var(--ease);
+}
+.cta-final-vanessa-08__reveal.is-armed.is-in{opacity:1;transform:translateY(0);}
+
+@media (max-width:640px){
+  .cta-final-vanessa-08__btn{width:100%;padding:17px 24px;}
+}

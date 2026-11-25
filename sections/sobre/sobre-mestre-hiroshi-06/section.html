@@ -1,0 +1,32 @@
+<section class="s-sobre-mestre-hiroshi-06" data-secao="sobre-mestre-hiroshi-06">
+  <div class="sobre-mestre-hiroshi-06__wrap">
+    <h2 class="sobre-mestre-hiroshi-06__titulo" data-palavras>{{titulo}} <span class="sobre-mestre-hiroshi-06__destaque">{{titulo_destaque}}</span>{{titulo_fim}}</h2>
+
+    <div class="sobre-mestre-hiroshi-06__duas">
+      <div class="sobre-mestre-hiroshi-06__texto sobre-mestre-hiroshi-06__rev">
+        <p>{{paragrafo_1}}</p>
+        <p>{{paragrafo_2}}</p>
+      </div>
+
+      <div class="sobre-mestre-hiroshi-06__quem">
+        <div>
+          <h3 class="sobre-mestre-hiroshi-06__sub sobre-mestre-hiroshi-06__rev"><svg class="sobre-mestre-hiroshi-06__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg> {{para_titulo}}</h3>
+          <ul class="sobre-mestre-hiroshi-06__itens sobre-mestre-hiroshi-06__itens--sim" data-escalona>
+            {{#para_itens}}
+            <li><svg class="sobre-mestre-hiroshi-06__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>{{texto}}</li>
+            {{/para_itens}}
+          </ul>
+        </div>
+
+        <div class="sobre-mestre-hiroshi-06__nao">
+          <h3 class="sobre-mestre-hiroshi-06__sub sobre-mestre-hiroshi-06__rev"><svg class="sobre-mestre-hiroshi-06__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg> {{nao_titulo}}</h3>
+          <ul class="sobre-mestre-hiroshi-06__itens sobre-mestre-hiroshi-06__itens--nao" data-escalona>
+            {{#nao_itens}}
+            <li><svg class="sobre-mestre-hiroshi-06__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>{{texto}}</li>
+            {{/nao_itens}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

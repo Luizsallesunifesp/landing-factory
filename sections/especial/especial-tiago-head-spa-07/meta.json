@@ -1,0 +1,75 @@
+{
+  "id": "especial-tiago-head-spa-07",
+  "tipo": "especial",
+  "origem": "tiago-head-spa",
+  "descricao": "Fundo escuro, duas colunas: à esquerda eyebrow, título com destaque em itálico, lead e lista numerada de cinco etapas (ritual) com botão WhatsApp; à direita foto em retrato com selo flutuante. Reveal via data-aos (AOS); sem dependências globais além disso.",
+  "estilo": [
+    "acolhedor",
+    "editorial",
+    "escuro"
+  ],
+  "nicho": [
+    "spas",
+    "barbearias premium",
+    "estúdios de bem-estar",
+    "massoterapia",
+    "clínicas de estética"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up com atraso na imagem; hover com zoom na foto",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "palavra em itálico; no original estava vazia (pode ficar em branco)"
+    },
+    "lead": {
+      "tipo": "texto",
+      "max": 410
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 50
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 150
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato 4:5"
+    },
+    "selo_titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "selo_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

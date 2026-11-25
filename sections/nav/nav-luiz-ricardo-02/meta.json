@@ -1,0 +1,46 @@
+{
+  "id": "nav-luiz-ricardo-02",
+  "tipo": "nav",
+  "origem": "luiz-ricardo",
+  "descricao": "Menu mobile em painel (sheet) escuro: rotulo em caixa alta, lista vertical de links com seta a direita e botao de WhatsApp em destaque ao final. Depende de painel pai (.sheet com classe .open) e de JS externo de abertura (burger com aria-controls) fornecidos pelo shell/pagina; a entrada escalonada dos links usa a classe .open de um ancestral.",
+  "estilo": [
+    "minimalista",
+    "tech",
+    "escuro"
+  ],
+  "nicho": [
+    "qualquer site com menu mobile em painel"
+  ],
+  "libs": [
+    "svg inline"
+  ],
+  "animacao": "entrada escalonada dos links via CSS quando o painel pai recebe .open; respeita --motion",
+  "slots": {
+    "label": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 25
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

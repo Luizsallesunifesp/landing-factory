@@ -1,0 +1,45 @@
+{
+  "id": "faq-acalm-head-spa-08",
+  "tipo": "faq",
+  "origem": "acalm-head-spa",
+  "descricao": "Cabeçalho com eyebrow e título à esquerda e lista de perguntas em acordeão com sinal de mais à direita (2 colunas, 1 no mobile), primeiro item aberto. Usa section.js próprio para o acordeão; sem dependência global.",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "qualquer negócio de serviço que precisa responder dúvidas antes do agendamento"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up (data-aos) no cabeçalho e na lista; acordeão com expansão por max-height",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 40
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 50
+        },
+        "resposta": {
+          "tipo": "texto",
+          "max": 290
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

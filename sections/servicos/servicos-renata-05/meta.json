@@ -1,0 +1,47 @@
+{
+  "id": "servicos-renata-05",
+  "tipo": "servicos",
+  "origem": "renata",
+  "descricao": "Cabeçalho com eyebrow, título e subtítulo, seguido de grade de cards clicáveis (3 colunas) que expandem a descrição ao toque; fundo suave. Usa section.js próprio para o toggle e o reveal (sem dependências globais).",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "listas de especialidades ou áreas de atuação de qualquer profissional ou clínica"
+  ],
+  "libs": [],
+  "animacao": "fade-up ao rolar (IntersectionObserver) e card expansível ao clique",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 130
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 9,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 130
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

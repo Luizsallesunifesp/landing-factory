@@ -1,0 +1,34 @@
+<section class="s-hero-thais-02" data-secao="hero-thais-02" aria-labelledby="hero-thais-02-h">
+  <div class="hero-thais-02__doc">
+    <div class="hero-thais-02__grid">
+      <div class="hero-thais-02__texto">
+        <h1 class="hero-thais-02__titulo" id="hero-thais-02-h">{{titulo}}</h1>
+        <p class="hero-thais-02__lede">{{subtitulo}}</p>
+        <div class="hero-thais-02__ctas">
+          <a class="hero-thais-02__btn hero-thais-02__btn--primario" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}}</a>
+          <a class="hero-thais-02__btn hero-thais-02__btn--fio" href="{{cta2_link}}">{{cta2_texto}}</a>
+        </div>
+      </div>
+
+      <div class="hero-thais-02__etiqueta">
+        <div class="hero-thais-02__faixa">
+          <span>{{faixa_a}}</span>
+          <span>{{faixa_b}}</span>
+        </div>
+        <figure class="hero-thais-02__figura">
+          <img src="{{img:principal}}" alt="{{alt:principal}}" loading="eager" fetchpriority="high" decoding="async">
+        </figure>
+        <div class="hero-thais-02__legenda">
+          <span>{{profissional}}</span>
+          <span>{{cidade}}</span>
+        </div>
+      </div>
+    </div>
+
+    <dl class="hero-thais-02__dados">
+      {{#dados}}
+      <div><dt>{{rotulo}}</dt><dd>{{valor}}</dd></div>
+      {{/dados}}
+    </dl>
+  </div>
+</section>

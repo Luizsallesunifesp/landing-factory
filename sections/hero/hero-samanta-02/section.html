@@ -1,0 +1,18 @@
+<section class="s-hero-samanta-02" data-secao="hero-samanta-02" aria-labelledby="hero-samanta-02-titulo">
+  <div class="lf-wrap hero-samanta-02__grid">
+    <div class="hero-samanta-02__principal">
+      <p class="hero-samanta-02__especialidade">{{etiqueta}}</p>
+      <h1 id="hero-samanta-02-titulo" class="hero-samanta-02__titulo">{{titulo}} <span>{{subtitulo}}</span></h1>
+    </div>
+    <div class="hero-samanta-02__aside">
+      <p class="hero-samanta-02__texto">{{texto}}</p>
+      <ul class="hero-samanta-02__pills" role="list">
+        {{#itens}}
+        <li>{{nome}}</li>
+        {{/itens}}
+      </ul>
+      <a class="hero-samanta-02__cta" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}} <span aria-hidden="true">↗</span></a>
+      <p class="hero-samanta-02__mono">{{profissao}} · {{cidade}}{{#registro}} · {{registro}}{{/registro}}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+@property --cta-final-mestre-hiroshi-11-ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+
+.s-cta-final-mestre-hiroshi-11{position:relative;overflow:hidden;text-align:center;padding-block:var(--section-y);background:var(--c-bg);color:var(--c-text);border-top:1px solid var(--c-line)}
+.cta-final-mestre-hiroshi-11__wrap{position:relative;z-index:2;max-width:var(--max-w);margin:0 auto;padding-inline:var(--space)}
+.cta-final-mestre-hiroshi-11__titulo{font-family:var(--f-display);font-size:clamp(1.9rem,7.4vw,4.2rem);max-width:16ch;margin-inline:auto}
+.cta-final-mestre-hiroshi-11__par{display:flex;flex-wrap:wrap;gap:var(--space);align-items:center;justify-content:center;margin-top:clamp(24px,3.4vw,36px)}
+
+.cta-final-mestre-hiroshi-11__glow{position:relative;display:inline-flex;isolation:isolate}
+.cta-final-mestre-hiroshi-11__glow::before{
+  content:"";position:absolute;inset:-4px;border-radius:999px;
+  background:conic-gradient(from var(--cta-final-mestre-hiroshi-11-ang) at 50% 50%,
+    color-mix(in srgb,var(--c-primary) 60%,var(--c-on-primary)),var(--c-primary),color-mix(in srgb,var(--c-primary) 60%,var(--c-bg)),var(--c-accent),color-mix(in srgb,var(--c-primary) 60%,var(--c-on-primary)));
+  filter:blur(16px);opacity:.85;transform:scale(1);
+  animation:cta-final-mestre-hiroshi-11-gira calc(6s / max(var(--motion),.01)) linear infinite;
+  transition:transform .34s var(--ease),opacity .25s ease;
+  z-index:-1;pointer-events:none;
+}
+.cta-final-mestre-hiroshi-11__glow:hover::before{transform:scale(1.08);opacity:1}
+@keyframes cta-final-mestre-hiroshi-11-gira{to{--cta-final-mestre-hiroshi-11-ang:360deg}}
+
+.cta-final-mestre-hiroshi-11__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--c-primary);color:var(--c-on-primary);
+  font-family:var(--f-display);font-weight:700;font-size:1.02rem;letter-spacing:-.012em;text-decoration:none;
+  padding:17px 30px;min-height:54px;border-radius:999px;border:0;cursor:pointer;
+  white-space:nowrap;position:relative;overflow:hidden;
+  box-shadow:0 10px 24px -12px color-mix(in srgb,var(--c-dark) 85%,transparent),0 2px 5px -2px color-mix(in srgb,var(--c-dark) 60%,transparent);
+  transition:background .2s ease,transform .16s var(--ease),box-shadow .2s ease;
+}
+.cta-final-mestre-hiroshi-11__btn:hover{
+  background:color-mix(in srgb,var(--c-primary) 85%,var(--c-on-primary));transform:translateY(-2px);
+  box-shadow:0 18px 34px -12px color-mix(in srgb,var(--c-dark) 90%,transparent),0 3px 7px -2px color-mix(in srgb,var(--c-dark) 65%,transparent);
+}
+.cta-final-mestre-hiroshi-11__btn:active{transform:translateY(1px) scale(.985)}
+.cta-final-mestre-hiroshi-11__btn::after{
+  content:"";position:absolute;top:0;left:0;width:42%;height:100%;
+  background:linear-gradient(100deg,transparent,color-mix(in srgb,var(--c-on-primary) 32%,transparent),transparent);
+  transform:translateX(-260%) skewX(-18deg);
+  animation:cta-final-mestre-hiroshi-11-varredura calc(7s / max(var(--motion),.01)) ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes cta-final-mestre-hiroshi-11-varredura{
+  0%,68%{transform:translateX(-260%) skewX(-18deg)}
+  100%{transform:translateX(360%) skewX(-18deg)}
+}
+.cta-final-mestre-hiroshi-11__ic{width:19px;height:19px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .24s var(--ease)}
+.cta-final-mestre-hiroshi-11__btn:hover .cta-final-mestre-hiroshi-11__ic{transform:translateX(4px)}
+
+.cta-final-mestre-hiroshi-11__zap{margin:26px 0 0;color:var(--c-muted);font-size:.94rem}
+.cta-final-mestre-hiroshi-11__zap a{
+  color:var(--c-text);font-weight:600;text-decoration:underline;
+  text-decoration-color:color-mix(in srgb,var(--c-primary) 60%,var(--c-bg));
+  text-underline-offset:4px;transition:text-decoration-color .2s ease;
+}
+.cta-final-mestre-hiroshi-11__zap a:hover{text-decoration-color:var(--c-primary)}
+
+@media(max-width:640px){
+  .cta-final-mestre-hiroshi-11__glow::before{filter:blur(13px)}
+}
+@media(max-width:540px){
+  .cta-final-mestre-hiroshi-11__glow,.cta-final-mestre-hiroshi-11__par{width:100%}
+  .cta-final-mestre-hiroshi-11__btn{width:100%;padding-inline:18px;font-size:.98rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .cta-final-mestre-hiroshi-11__btn::after,.cta-final-mestre-hiroshi-11__glow::before{animation:none}
+}

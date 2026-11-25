@@ -1,0 +1,81 @@
+{
+  "id": "hero-thais-02",
+  "tipo": "hero",
+  "origem": "thais",
+  "descricao": "Hero editorial clínico em duas colunas: título grande com segunda linha em itálico, lede e dois CTAs à esquerda; à direita cartão etiqueta com faixa de cor primária, retrato com parallax leve e legenda. Abaixo, tira de 4 dados. Usa fonte variável com eixo wdth (ex.: Archivo; degrada sem ele). Parallax usa gsap + ScrollTrigger se existirem.",
+  "estilo": [
+    "editorial",
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "dermatologia",
+    "estética avançada",
+    "fisioterapia",
+    "nutrição",
+    "odontologia estética"
+  ],
+  "libs": [
+    "gsap"
+  ],
+  "animacao": "parallax suave da foto dentro da etiqueta ao rolar (scrub)",
+  "slots": {
+    "titulo": {
+      "tipo": "richtext",
+      "max": 50,
+      "descricao": "pode usar <br> e <em> na segunda linha"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 260
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "âncora interna, ex.: #posologia"
+    },
+    "faixa_a": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "ex.: substância/procedimento"
+    },
+    "faixa_b": {
+      "tipo": "texto_curto",
+      "max": 34
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato vertical (aprox. 4:5)"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    },
+    "dados": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 4,
+      "descricao": "tira de dados abaixo do hero",
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 24
+        },
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 45
+        }
+      }
+    }
+  },
+  "mobile_ok": false,
+  "nota": 4,
+  "aprovada": false
+}

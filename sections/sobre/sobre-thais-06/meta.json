@@ -1,0 +1,54 @@
+{
+  "id": "sobre-thais-06",
+  "tipo": "sobre",
+  "origem": "thais",
+  "descricao": "Duas colunas: à esquerda, retrato em formato de etiqueta com legenda de nome e registro; à direita, título grande, dois parágrafos e lista de formação em pares rótulo/valor. Régua superior desenha ao rolar (gsap opcional).",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "profissional de saúde cuja credencial é o principal argumento de confiança"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "régua capilar desenha ao entrar na tela",
+  "slots": {
+    "retrato": {
+      "tipo": "img",
+      "descricao": "retrato vertical (aprox. 4:5)"
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 90
+    },
+    "paragrafo_1": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "paragrafo_2": {
+      "tipo": "texto",
+      "max": 240
+    },
+    "formacao": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 40
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

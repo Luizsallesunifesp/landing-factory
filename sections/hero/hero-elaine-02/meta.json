@@ -1,0 +1,86 @@
+{
+  "id": "hero-elaine-02",
+  "tipo": "hero",
+  "origem": "elaine",
+  "descricao": "Hero em duas colunas: régua com cidade e linha, título serifado com palavra em itálico, lede, dois CTAs (WhatsApp sólido e secundário fantasma), credenciais; foto retrato em moldura 4:5 (acima no mobile). Abaixo, faixa escura com serviços em marquee CSS em loop (conteúdo duplicado no HTML). Sem dependências globais.",
+  "estilo": [
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "saúde integrativa",
+    "farmácia e nutrição",
+    "consultórios",
+    "clínicas de medicina preventiva",
+    "profissionais com registro em conselho"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up na entrada (AOS); faixa de texto em loop via CSS",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "ex.: Consultas online e presenciais (cidade vem automática)"
+    },
+    "titulo_inicio": {
+      "tipo": "texto",
+      "max": 52,
+      "descricao": "início do título, antes do destaque"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 21,
+      "descricao": "palavras em itálico"
+    },
+    "titulo_fim": {
+      "tipo": "texto_curto",
+      "max": 21,
+      "descricao": "final do título"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 250
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "âncora, ex.: #servicos"
+    },
+    "credencial_extra": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "opcional, ex.: RQE 17742-39 (registro e instagram são automáticos)"
+    },
+    "faixa": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "campos": {
+        "item": {
+          "tipo": "texto_curto",
+          "max": 32
+        }
+      }
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, proporção 4:5"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

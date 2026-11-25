@@ -1,0 +1,40 @@
+{
+  "id": "faixa-tiago-head-spa-03",
+  "tipo": "faixa",
+  "origem": "tiago-head-spa",
+  "descricao": "Faixa escura estreita com bordas finas e 3 indicadores em grid horizontal (número grande em destaque e legenda pequena em caixa alta); sem imagem. Reveal escalonado em JS próprio (IntersectionObserver), sem dependência global.",
+  "estilo": [
+    "minimalista",
+    "clínico",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas",
+    "academias",
+    "escolas",
+    "agências",
+    "qualquer negócio que quer prova rápida logo após o hero"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (fade + translateY)",
+  "slots": {
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "numero": {
+          "tipo": "texto_curto",
+          "max": 8
+        },
+        "legenda": {
+          "tipo": "texto_curto",
+          "max": 32
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

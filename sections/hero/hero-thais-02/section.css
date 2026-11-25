@@ -1,0 +1,124 @@
+.s-hero-thais-02{
+  position:relative;
+  padding-top:clamp(28px,4.2vw,60px);
+  padding-bottom:0;
+  background:var(--c-bg);
+  color:var(--c-text);
+  font-family:var(--f-body);
+  font-variation-settings:'wdth' 100;
+  line-height:1.6;
+  letter-spacing:-0.006em;
+  font-variant-numeric:tabular-nums;
+}
+.s-hero-thais-02 *,
+.s-hero-thais-02 *::before,
+.s-hero-thais-02 *::after{ box-sizing:border-box; }
+
+.hero-thais-02__doc{
+  width:100%; max-width:var(--max-w); margin-inline:auto;
+  padding-inline:clamp(20px,5vw,56px);
+  position:relative;
+}
+
+.hero-thais-02__grid{
+  display:grid; grid-template-columns:1fr;
+  gap:clamp(34px,4.5vw,58px); align-items:start;
+}
+@media (min-width:900px){
+  .hero-thais-02__grid{ grid-template-columns:1.08fr .92fr; gap:clamp(48px,5vw,72px); }
+}
+
+.hero-thais-02__titulo{
+  margin:0 0 .4em;
+  font-family:var(--f-body);
+  font-variation-settings:'wdth' 100;
+  font-size:clamp(2.5rem, 6vw, 4.55rem);
+  font-weight:600; letter-spacing:-0.033em; line-height:1.03;
+  text-wrap:balance;
+}
+.hero-thais-02__titulo em{ font-style:italic; font-weight:400; font-size:1em; }
+
+.hero-thais-02__lede{
+  margin:0 0 1.05em;
+  font-size:clamp(1.09rem, 3.2vw, 1.26rem);
+  line-height:1.55; letter-spacing:-0.01em;
+  color:color-mix(in srgb, var(--c-text) 88%, var(--c-bg));
+  max-width:38ch;
+}
+
+.hero-thais-02__ctas{ display:flex; flex-wrap:wrap; gap:calc(var(--space) / 2); margin-top:calc(var(--space) * 1.4); }
+
+.hero-thais-02__btn{
+  display:inline-flex; align-items:center; gap:.6em; cursor:pointer;
+  font-family:var(--f-body); font-variation-settings:'wdth' 84;
+  font-size:12.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; text-decoration:none;
+  padding:15px 24px; min-height:46px; border-radius:var(--radius); border:1px solid transparent;
+  transition:background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.hero-thais-02__btn--primario{ background:var(--c-primary); color:var(--c-on-primary); }
+.hero-thais-02__btn--primario:hover{ background:color-mix(in srgb, var(--c-primary) 85%, var(--c-dark)); }
+.hero-thais-02__btn--fio{
+  border-color:color-mix(in srgb, var(--c-text) 25%, var(--c-bg));
+  color:var(--c-text); background:transparent;
+}
+.hero-thais-02__btn--fio:hover{
+  border-color:var(--c-text);
+  background:color-mix(in srgb, var(--c-text) 4%, transparent);
+}
+.hero-thais-02__btn:focus-visible{ outline:2px solid var(--c-primary); outline-offset:3px; }
+
+/* etiqueta com a foto */
+.hero-thais-02__etiqueta{
+  border:1px solid color-mix(in srgb, var(--c-text) 25%, var(--c-bg));
+  border-radius:var(--radius);
+  background:var(--c-bg); overflow:hidden;
+}
+.hero-thais-02__faixa{
+  background:var(--c-primary); color:var(--c-on-primary);
+  font-family:var(--f-body); font-variation-settings:'wdth' 84; font-size:11px;
+  letter-spacing:.12em; text-transform:uppercase; padding:9px 15px;
+  display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+}
+.hero-thais-02__figura{ margin:0; overflow:hidden; height:min(56svh, 520px); }
+.hero-thais-02__figura img{
+  display:block; width:100%; max-width:100%;
+  height:118%; margin-top:-9%;
+  object-fit:cover; object-position:50% 22%;
+}
+@media (max-width:899px){
+  .hero-thais-02__figura{ height:min(52svh, 430px); }
+}
+.hero-thais-02__legenda{
+  padding:14px 16px 16px; border-top:1px solid var(--c-line);
+  font-family:var(--f-body); font-variation-settings:'wdth' 84; font-size:12px; letter-spacing:.02em;
+  color:var(--c-muted);
+  display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;
+}
+
+/* faixa de dados */
+.hero-thais-02__dados{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:0;
+  border-top:1px solid color-mix(in srgb, var(--c-text) 25%, var(--c-bg));
+  border-bottom:1px solid color-mix(in srgb, var(--c-text) 25%, var(--c-bg));
+  margin:clamp(40px,6vw,78px) 0 0;
+}
+@media (min-width:760px){
+  .hero-thais-02__dados{ grid-template-columns:repeat(4,1fr); }
+}
+.hero-thais-02__dados > div{ padding:20px 22px 22px; border-right:1px solid var(--c-line); }
+.hero-thais-02__dados > div:nth-child(2n){ border-right:0; }
+@media (min-width:760px){
+  .hero-thais-02__dados > div{ border-right:1px solid var(--c-line); }
+  .hero-thais-02__dados > div:nth-child(2n){ border-right:1px solid var(--c-line); }
+  .hero-thais-02__dados > div:last-child{ border-right:0; }
+}
+.hero-thais-02__dados dt{
+  font-family:var(--f-body); font-variation-settings:'wdth' 84; font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--c-muted); margin-bottom:8px;
+}
+.hero-thais-02__dados dd{ margin:0; font-size:15.5px; line-height:1.32; letter-spacing:-0.01em; }
+
+@media (max-width:520px){
+  .hero-thais-02__btn{ padding:14px 18px; font-size:12px; }
+  .hero-thais-02__ctas .hero-thais-02__btn{ flex:1 1 100%; justify-content:center; }
+}

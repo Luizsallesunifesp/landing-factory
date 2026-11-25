@@ -1,0 +1,44 @@
+{
+  "id": "cta-final-mestre-hiroshi-11",
+  "tipo": "cta-final",
+  "origem": "mestre-hiroshi",
+  "descricao": "Fechamento centralizado: título grande de uma frase, botão CTA único com glow giratório e varredura de brilho, e link secundário de WhatsApp abaixo. O reveal ao rolar usa data-aos (AOS) e o título entra inteiro, sem animação palavra a palavra; sem AOS a seção aparece normalmente.",
+  "estilo": [
+    "bold",
+    "minimalista"
+  ],
+  "nicho": [
+    "lançamentos",
+    "cursos",
+    "mentorias",
+    "página com CTA único de conversão"
+  ],
+  "libs": [],
+  "animacao": "glow giratório e varredura de brilho no botão (CSS, escalam com --motion); reveal fade-up via data-aos",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 48
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "cta_link": {
+      "tipo": "url",
+      "max": 200,
+      "descricao": "destino do botão, ex.: #preco ou checkout"
+    },
+    "zap_pergunta": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "zap_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,42 @@
+<section class="s-servicos-carol-benedetti-05" data-secao="servicos-carol-benedetti-05">
+  <div class="servicos-carol-benedetti-05__wrap">
+    <div class="servicos-carol-benedetti-05__head servicos-carol-benedetti-05__reveal">
+      <span class="servicos-carol-benedetti-05__eyebrow">{{eyebrow}}</span>
+      <h2 class="servicos-carol-benedetti-05__titulo">{{titulo}}</h2>
+      <p class="servicos-carol-benedetti-05__sub">{{subtitulo}}</p>
+    </div>
+
+    <div class="servicos-carol-benedetti-05__tabs servicos-carol-benedetti-05__reveal" role="tablist">
+      <button class="servicos-carol-benedetti-05__tab-btn servicos-carol-benedetti-05__active" role="tab" data-tab="1">{{aba1_nome}}</button>
+      <button class="servicos-carol-benedetti-05__tab-btn" role="tab" data-tab="2">{{aba2_nome}}</button>
+      <button class="servicos-carol-benedetti-05__tab-btn" role="tab" data-tab="3">{{aba3_nome}}</button>
+      <button class="servicos-carol-benedetti-05__tab-btn" role="tab" data-tab="4">{{aba4_nome}}</button>
+    </div>
+
+    <div class="servicos-carol-benedetti-05__panels servicos-carol-benedetti-05__reveal">
+      <div class="servicos-carol-benedetti-05__panel servicos-carol-benedetti-05__active" data-panel="1">
+        {{#aba1_itens}}
+        <div class="servicos-carol-benedetti-05__svc"><span class="servicos-carol-benedetti-05__num">{{@num}}</span><h3 class="servicos-carol-benedetti-05__nome">{{nome}}</h3><p class="servicos-carol-benedetti-05__desc">{{descricao}}</p></div>
+        {{/aba1_itens}}
+      </div>
+
+      <div class="servicos-carol-benedetti-05__panel" data-panel="2">
+        {{#aba2_itens}}
+        <div class="servicos-carol-benedetti-05__svc"><span class="servicos-carol-benedetti-05__num">{{@num}}</span><h3 class="servicos-carol-benedetti-05__nome">{{nome}}</h3><p class="servicos-carol-benedetti-05__desc">{{descricao}}</p></div>
+        {{/aba2_itens}}
+      </div>
+
+      <div class="servicos-carol-benedetti-05__panel" data-panel="3">
+        {{#aba3_itens}}
+        <div class="servicos-carol-benedetti-05__svc"><span class="servicos-carol-benedetti-05__num">{{@num}}</span><h3 class="servicos-carol-benedetti-05__nome">{{nome}}</h3><p class="servicos-carol-benedetti-05__desc">{{descricao}}</p></div>
+        {{/aba3_itens}}
+      </div>
+
+      <div class="servicos-carol-benedetti-05__panel" data-panel="4">
+        {{#aba4_itens}}
+        <div class="servicos-carol-benedetti-05__svc"><span class="servicos-carol-benedetti-05__num">{{@num}}</span><h3 class="servicos-carol-benedetti-05__nome">{{nome}}</h3><p class="servicos-carol-benedetti-05__desc">{{descricao}}</p></div>
+        {{/aba4_itens}}
+      </div>
+    </div>
+  </div>
+</section>

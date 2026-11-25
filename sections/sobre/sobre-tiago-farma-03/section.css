@@ -1,0 +1,25 @@
+.s-sobre-tiago-farma-03{padding:var(--section-y) 0;background:var(--c-bg);font-family:var(--f-body);color:var(--c-text)}
+.sobre-tiago-farma-03__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.4)}
+.sobre-tiago-farma-03__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:calc(var(--space)*2.7);align-items:center}
+.sobre-tiago-farma-03__reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.sobre-tiago-farma-03__reveal.in{opacity:1;transform:translateY(0)}
+.sobre-tiago-farma-03__portrait{aspect-ratio:4/5;border-radius:var(--radius-lg);background:linear-gradient(155deg,var(--c-surface-2),var(--c-bg));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid var(--c-line)}
+.sobre-tiago-farma-03__img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.sobre-tiago-farma-03__badge{position:absolute;bottom:22px;left:22px;right:22px;background:color-mix(in srgb,var(--c-surface) 92%,transparent);backdrop-filter:blur(6px);border-radius:var(--radius);padding:16px 18px}
+.sobre-tiago-farma-03__badge strong{display:block;font-family:var(--f-display);color:var(--c-primary);font-size:1rem}
+.sobre-tiago-farma-03__badge span{font-size:.78rem;color:var(--c-muted)}
+.sobre-tiago-farma-03__eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sobre-tiago-farma-03__eyebrow::before{content:'';width:26px;height:1px;background:var(--c-accent);display:inline-block}
+.sobre-tiago-farma-03__titulo{font-family:var(--f-display);font-weight:500;color:var(--c-primary);letter-spacing:-.01em;font-size:clamp(1.75rem,3.6vw,2.6rem);line-height:1.15}
+.sobre-tiago-farma-03__texto{color:var(--c-muted);font-size:1rem;margin-top:18px;max-width:520px}
+.sobre-tiago-farma-03__list{margin-top:28px;display:flex;flex-direction:column;gap:18px}
+.sobre-tiago-farma-03__row{display:flex;gap:var(--space);align-items:flex-start}
+.sobre-tiago-farma-03__ico{width:38px;height:38px;border-radius:10px;background:var(--c-surface-2);color:var(--c-primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;font-size:.95rem}
+.sobre-tiago-farma-03__item-titulo{font-family:var(--f-body);font-size:.97rem;font-weight:700;color:var(--c-text);margin-bottom:3px}
+.sobre-tiago-farma-03__item-desc{font-size:.9rem;color:var(--c-muted)}
+@media (max-width:900px){
+  .sobre-tiago-farma-03__grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .sobre-tiago-farma-03__container{padding:0 var(--space)}
+}

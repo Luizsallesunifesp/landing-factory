@@ -1,0 +1,45 @@
+{
+  "id": "nav-karol-01",
+  "tipo": "nav",
+  "origem": "karol",
+  "descricao": "Barra sticky com marca (nome do profissional + profissão em mono pequeno) à esquerda, links âncora no centro e botão de WhatsApp em destaque à direita; hambúrguer no mobile. Usa fontes display/mono dos tokens; JS próprio só para toggle e link ativo (sem animação, independe de --motion).",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "consultórios de saúde",
+    "profissionais liberais",
+    "nutrição",
+    "fisioterapia",
+    "psicologia",
+    "personal"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 3,
+  "aprovada": false
+}

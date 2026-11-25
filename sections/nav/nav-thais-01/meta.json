@@ -1,0 +1,43 @@
+{
+  "id": "nav-thais-01",
+  "tipo": "nav",
+  "origem": "thais",
+  "descricao": "Cabeçalho horizontal sticky com blur: marca (nome e profissão/registro) à esquerda, menu de âncoras no centro (oculto no mobile) e botão de WhatsApp com ícone à direita. Depende de a página ter as âncoras do menu e #topo.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "saúde",
+    "profissional liberal",
+    "site com menu de âncoras curto e CTA fixo"
+  ],
+  "libs": [],
+  "animacao": "sublinhado animado nos links e borda inferior ao rolar (classe preso via section.js)",
+  "slots": {
+    "menu": {
+      "tipo": "lista",
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      },
+      "min_itens": 3,
+      "max_itens": 6,
+      "descricao": "links de âncora do menu"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 14,
+      "descricao": "texto do botão de WhatsApp"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

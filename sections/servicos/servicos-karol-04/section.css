@@ -1,0 +1,16 @@
+.s-servicos-karol-04{padding:var(--section-y) 0;background:var(--c-bg)}
+.servicos-karol-04__head{max-width:640px;margin-bottom:calc(var(--space)*2.4)}
+.servicos-karol-04__eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-primary);display:flex;align-items:center;gap:.6em;margin-bottom:1.1rem}
+.servicos-karol-04__eyebrow::before{content:"";width:22px;height:1px;background:var(--c-primary);display:inline-block}
+.servicos-karol-04__titulo{font-family:var(--f-display);font-size:clamp(1.9rem,3vw,2.5rem)}
+.servicos-karol-04__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--c-line);border:1px solid var(--c-line)}
+.servicos-karol-04__card{background:var(--c-bg);padding:calc(var(--space)*1.6) calc(var(--space)*1.25);transition:background .25s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
+.servicos-karol-04__card:hover{background:var(--c-surface-2);transform:translateY(-6px);box-shadow:0 18px 30px -20px color-mix(in srgb,var(--c-text) 35%,transparent);position:relative;z-index:2}
+.servicos-karol-04__idx{font-family:var(--f-mono);font-size:.72rem;color:var(--c-accent);margin-bottom:22px;display:block}
+.servicos-karol-04__nome{font-family:var(--f-display);font-size:1.25rem;font-weight:500;margin-bottom:14px}
+.servicos-karol-04__desc{color:var(--c-muted);font-size:.94rem;margin:0}
+.s-servicos-karol-04.is-armed .servicos-karol-04__reveal{opacity:0;transform:translateY(calc(18px*var(--motion,1)));transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.s-servicos-karol-04.is-armed .servicos-karol-04__reveal.in-view{opacity:1;transform:none}
+@media (max-width:900px){
+  .servicos-karol-04__grid{grid-template-columns:1fr}
+}

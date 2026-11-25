@@ -1,0 +1,60 @@
+{
+  "id": "hero-samanta-02",
+  "tipo": "hero",
+  "origem": "samanta",
+  "descricao": "Hero tipográfico em duas colunas: rótulo de especialidade e título grande com subtítulo em cinza à esquerda; parágrafo, pílulas de procedimentos, botão de WhatsApp e linha mono com credenciais à direita. Sem imagem. Usa .lf-wrap do shell.",
+  "estilo": [
+    "clínico",
+    "editorial",
+    "tipográfico"
+  ],
+  "nicho": [
+    "odontologia",
+    "medicina",
+    "clínicas especializadas",
+    "profissionais de saúde com especialidade"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "especialidade, ex.: Especialista em Endodontia"
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60,
+      "descricao": "promessa principal com cidade"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 65,
+      "descricao": "frase em destaque cinza ao fim do título"
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 250,
+      "descricao": "parágrafo de apresentação e formação"
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "descricao": "procedimentos em pílulas",
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

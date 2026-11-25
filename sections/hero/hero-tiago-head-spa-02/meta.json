@@ -1,0 +1,83 @@
+{
+  "id": "hero-tiago-head-spa-02",
+  "tipo": "hero",
+  "origem": "tiago-head-spa",
+  "descricao": "Hero escuro e editorial com texto à esquerda: eyebrow, título serifado grande com a última frase em dourado itálico, subtítulo, dois CTAs (WhatsApp dourado e ghost) e chips de diferenciais; fundo fotográfico com véu escuro e parallax. Sem dependências globais (parallax e reveal em section.js).",
+  "estilo": [
+    "escuro",
+    "luxo",
+    "editorial"
+  ],
+  "nicho": [
+    "barbearias premium",
+    "clínicas estéticas e dermatológicas",
+    "consultórios de saúde de alto padrão",
+    "spas"
+  ],
+  "libs": [],
+  "animacao": "parallax no fundo (data-speed 0.22); entrada escalonada com reveal e atrasos; indicador de scroll",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 50,
+      "descricao": "especialidade / categoria"
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 40,
+      "descricao": "primeira linha do título"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 22,
+      "descricao": "segunda linha, em dourado itálico"
+    },
+    "subtitulo": {
+      "tipo": "richtext",
+      "max": 380,
+      "descricao": "parágrafo de apoio; aceita <b> para destacar uma palavra"
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "botão principal (WhatsApp)"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "botão secundário"
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "âncora ou link do botão secundário"
+    },
+    "chips": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "richtext",
+          "max": 55
+        }
+      }
+    },
+    "scroll_texto": {
+      "tipo": "texto_curto",
+      "max": 10,
+      "descricao": "indicador de rolagem"
+    },
+    "img:fundo": {
+      "tipo": "img",
+      "descricao": "foto de fundo horizontal, escura ou que aceite véu"
+    },
+    "alt:fundo": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 6,
+  "nota": 4,
+  "aprovada": false
+}

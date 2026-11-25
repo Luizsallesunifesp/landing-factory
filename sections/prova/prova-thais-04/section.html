@@ -1,0 +1,33 @@
+<section class="s-prova-thais-04" data-secao="prova-thais-04" aria-labelledby="prova-thais-04-h">
+  <h2 id="prova-thais-04-h" class="prova-thais-04__sr">{{titulo_sr}}</h2>
+
+  <!-- Fonte dos dados da roda e, sem JS/GSAP/movimento, grade estática de fallback -->
+  <ul class="prova-thais-04__grade" data-roda-fonte>
+    {{#itens}}
+    <li class="prova-thais-04__placa" data-rotulo="{{rotulo}}" data-sub="{{sub}}">
+      <img class="prova-thais-04__foto" src="{{foto}}" alt="{{rotulo}}. {{sub}}" loading="lazy" decoding="async">
+      <div class="prova-thais-04__pe">
+        <p class="prova-thais-04__t">{{rotulo}}</p>
+        <p class="prova-thais-04__s">{{sub}}</p>
+      </div>
+    </li>
+    {{/itens}}
+  </ul>
+
+  <div class="prova-thais-04__roda" hidden>
+    <div class="prova-thais-04__viewport">
+      <div class="prova-thais-04__corpo"><div class="prova-thais-04__palco"></div></div>
+
+      <div class="prova-thais-04__legenda">
+        <div class="prova-thais-04__legenda-in">
+          <p class="prova-thais-04__sub"></p>
+          <div class="prova-thais-04__trilho-viewport">
+            <div class="prova-thais-04__trilho"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="prova-thais-04__aviso">{{aviso}}</p>
+    </div>
+  </div>
+</section>

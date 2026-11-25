@@ -1,0 +1,22 @@
+<section class="s-prova-thais-07 prova-thais-07__campo" data-secao="prova-thais-07" aria-labelledby="prova-thais-07-h">
+  <div class="prova-thais-07__doc">
+    <div class="prova-thais-07__topo">
+      <div class="prova-thais-07__regua"></div>
+    </div>
+    <h2 class="prova-thais-07__titulo" id="prova-thais-07-h">{{titulo}}</h2>
+    <div class="prova-thais-07__grade">
+      {{#itens}}
+      <figure class="prova-thais-07__placa">
+        <img src="{{foto}}" alt="{{rotulo}}. {{sub}}" loading="lazy" decoding="async">
+        <figcaption class="prova-thais-07__pe">
+          <p class="prova-thais-07__t">{{rotulo}}</p>
+          <p class="prova-thais-07__s">{{sub}}</p>
+        </figcaption>
+      </figure>
+      {{/itens}}
+    </div>
+    <p class="prova-thais-07__aviso">
+      <b>{{aviso_rotulo}}</b> {{aviso_texto}}
+    </p>
+  </div>
+</section>

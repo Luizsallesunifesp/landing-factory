@@ -1,0 +1,93 @@
+.s-especial-renata-03{
+  background:var(--c-primary);
+  color:var(--c-on-primary);
+  padding:calc(var(--section-y) * .7) 0;
+  position:relative;
+  overflow:hidden;
+}
+.s-especial-renata-03::before{
+  content:""; position:absolute; inset:0;
+  background:radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--c-on-primary) 25%, transparent), transparent 60%);
+  pointer-events:none;
+}
+.s-especial-renata-03 .especial-renata-03__wrap{
+  max-width:var(--max-w); margin:0 auto; padding:0 calc(var(--space) * 1.4);
+}
+.s-especial-renata-03 .especial-renata-03__grid{
+  display:grid; grid-template-columns:.9fr 1.1fr; gap:calc(var(--space) * 2.5); align-items:center; position:relative;
+}
+.s-especial-renata-03 .especial-renata-03__eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--f-body);
+  font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  background:color-mix(in srgb, var(--c-on-primary) 10%, transparent);
+  color:color-mix(in srgb, var(--c-on-primary) 80%, var(--c-primary));
+  padding:7px 14px; border-radius:100px; margin-bottom:calc(var(--space) * .9);
+}
+.s-especial-renata-03 .especial-renata-03__eyebrow::before{content:"●"; color:var(--c-accent); font-size:.6rem;}
+.s-especial-renata-03 .especial-renata-03__titulo{
+  font-family:var(--f-display);
+  color:var(--c-on-primary); font-size:clamp(1.9rem,3.2vw,2.6rem); margin:0 0 var(--space);
+}
+.s-especial-renata-03 .especial-renata-03__texto{
+  font-family:var(--f-body);
+  color:color-mix(in srgb, var(--c-on-primary) 78%, transparent);
+  max-width:440px; margin:0 0 calc(var(--space) * 1.2); font-size:1.02rem;
+}
+.s-especial-renata-03 .especial-renata-03__stage{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:calc(var(--space) * 1.1);
+}
+.s-especial-renata-03 .especial-renata-03__circle-wrap{
+  position:relative; width:260px; height:260px;
+  display:flex; align-items:center; justify-content:center;
+}
+.s-especial-renata-03 .especial-renata-03__ring{
+  position:absolute; inset:0; border-radius:50%;
+  border:1px solid color-mix(in srgb, var(--c-on-primary) 18%, transparent);
+}
+.s-especial-renata-03 .especial-renata-03__ring--2{inset:18px;}
+.s-especial-renata-03 .especial-renata-03__circle{
+  width:150px; height:150px; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,
+    color-mix(in srgb, var(--c-on-primary) 70%, var(--c-primary)),
+    color-mix(in srgb, var(--c-on-primary) 40%, var(--c-primary)) 60%,
+    color-mix(in srgb, var(--c-dark) 40%, var(--c-primary)));
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 0 60px color-mix(in srgb, var(--c-on-primary) 40%, transparent);
+  transition:transform calc(4s * var(--motion, 1)) ease-in-out;
+  transform:scale(1);
+}
+.s-especial-renata-03 .especial-renata-03__circle.is-inhale{transform:scale(1.45); transition:transform calc(4s * var(--motion, 1)) ease-in-out;}
+.s-especial-renata-03 .especial-renata-03__circle.is-hold{transform:scale(1.45); transition:transform .3s ease;}
+.s-especial-renata-03 .especial-renata-03__circle.is-exhale{transform:scale(1); transition:transform calc(6s * var(--motion, 1)) ease-in-out;}
+.s-especial-renata-03 .especial-renata-03__label{
+  font-family:var(--f-display); font-size:1.1rem; color:var(--c-primary); font-weight:500;
+}
+.s-especial-renata-03 .especial-renata-03__btn{
+  font-family:var(--f-body);
+  background:var(--c-accent); color:var(--c-on-primary); border:none;
+  padding:13px 26px; border-radius:100px; font-weight:700; font-size:.9rem; cursor:pointer;
+  transition:transform .2s var(--ease);
+}
+.s-especial-renata-03 .especial-renata-03__btn:hover{transform:translateY(-2px);}
+.s-especial-renata-03 .especial-renata-03__hint{
+  font-family:var(--f-body);
+  font-size:.82rem; color:color-mix(in srgb, var(--c-on-primary) 55%, transparent);
+}
+
+@media (max-width:900px){
+  .s-especial-renata-03 .especial-renata-03__grid{grid-template-columns:1fr; gap:44px; text-align:center;}
+  .s-especial-renata-03 .especial-renata-03__texto{margin-left:auto; margin-right:auto;}
+  .s-especial-renata-03 .especial-renata-03__stage{order:2;}
+}
+@media (max-width:780px){
+  .s-especial-renata-03{padding:70px 0;}
+}
+@media (max-width:520px){
+  .s-especial-renata-03 .especial-renata-03__wrap{padding:0 20px;}
+  .s-especial-renata-03 .especial-renata-03__eyebrow{font-size:.72rem; padding:6px 12px;}
+  .s-especial-renata-03 .especial-renata-03__circle-wrap{width:200px; height:200px;}
+  .s-especial-renata-03 .especial-renata-03__circle{width:112px; height:112px;}
+  .s-especial-renata-03 .especial-renata-03__label{font-size:.96rem;}
+}

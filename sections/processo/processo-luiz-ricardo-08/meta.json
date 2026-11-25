@@ -1,0 +1,44 @@
+{
+  "id": "processo-luiz-ricardo-08",
+  "tipo": "processo",
+  "origem": "luiz-ricardo",
+  "descricao": "Fundo escuro com título em caixa alta espaçado e rota horizontal com nós que acendem ao rolar; cada etapa tem número, título e texto curto (vira linha vertical no celular). Usa tokens escuros (--c-dark); JS próprio para parallax e progresso, sem dependência global.",
+  "estilo": [
+    "minimalista",
+    "tech",
+    "escuro"
+  ],
+  "nicho": [
+    "agências",
+    "serviços por projeto",
+    "consultorias",
+    "reformas",
+    "método em etapas"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar, linha de progresso que preenche e nós que acendem, parallax leve no fundo",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 110
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

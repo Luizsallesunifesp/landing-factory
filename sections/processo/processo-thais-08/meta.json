@@ -1,0 +1,43 @@
+{
+  "id": "processo-thais-08",
+  "tipo": "processo",
+  "origem": "thais",
+  "descricao": "Título e passos em sequência (lista numerada), cada um com número em destaque, título curto e parágrafo em duas colunas no desktop, separados por fios. Sem imagens nem ícones; hierarquia só pela tipografia.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "consultorias",
+    "cirurgias",
+    "tratamentos contínuos",
+    "onboarding",
+    "qualquer serviço com etapas definidas"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 32
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "richtext",
+          "max": 320
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

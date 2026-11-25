@@ -1,0 +1,24 @@
+<section class="s-processo-vanessa-04" data-secao="processo-vanessa-04">
+  <div class="processo-vanessa-04__container">
+    <div class="processo-vanessa-04__head" data-reveal>
+      <span class="processo-vanessa-04__eyebrow">{{eyebrow}}</span>
+      <h2 class="processo-vanessa-04__titulo">{{titulo}}</h2>
+      <p class="processo-vanessa-04__subtitulo">{{subtitulo}}</p>
+    </div>
+    <p class="processo-vanessa-04__tagline" data-reveal>{{tagline}}</p>
+    <div class="processo-vanessa-04__steps" data-stagger="">
+      {{#passos}}
+      <div class="processo-vanessa-04__step">
+        <span class="processo-vanessa-04__num">{{@num}}</span>
+        <h3 class="processo-vanessa-04__nome">{{nome}}</h3>
+        <p class="processo-vanessa-04__desc">{{descricao}}</p>
+      </div>
+      {{/passos}}
+    </div>
+    <div class="processo-vanessa-04__formats">
+      {{#formatos}}
+      <div class="processo-vanessa-04__pill">{{icone}} <b>{{destaque}}</b> {{texto}}</div>
+      {{/formatos}}
+    </div>
+  </div>
+</section>

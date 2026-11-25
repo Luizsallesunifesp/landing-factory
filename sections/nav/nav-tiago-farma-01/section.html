@@ -1,0 +1,18 @@
+<header class="s-nav-tiago-farma-01" data-secao="nav-tiago-farma-01">
+  <div class="nav-tiago-farma-01__inner">
+    <a href="#top" class="nav-tiago-farma-01__logo">{{logo_nome}}<span>{{logo_sub}}</span></a>
+    <nav class="nav-tiago-farma-01__links">
+      {{#links}}
+      <a href="{{href}}">{{texto}}</a>
+      {{/links}}
+    </nav>
+    <a href="{{whatsapp_link}}" class="nav-tiago-farma-01__btn nav-tiago-farma-01__btn--primary nav-tiago-farma-01__btn--sm" target="_blank" rel="noopener">{{cta_texto}}</a>
+    <button type="button" class="nav-tiago-farma-01__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-tiago-farma-01__mobile-menu">
+    {{#links}}
+    <a href="{{href}}">{{texto}}</a>
+    {{/links}}
+    <a href="{{whatsapp_link}}" class="nav-tiago-farma-01__mobile-cta" target="_blank" rel="noopener">{{cta_mobile_texto}}</a>
+  </div>
+</header>

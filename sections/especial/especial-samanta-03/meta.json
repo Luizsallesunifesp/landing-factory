@@ -1,0 +1,93 @@
+{
+  "id": "especial-samanta-03",
+  "tipo": "especial",
+  "origem": "samanta",
+  "descricao": "Scrollytelling pinado: título e texto à esquerda; palco central com ilustração 3D (canvas de frames) que gira com a rolagem e quatro etiquetas numeradas com linhas SVG apontando para as partes. Nota final com botão de WhatsApp. Depende de gsap + ScrollTrigger globais e de uma sequência de frames webp 720x900 (f_0000.webp..., 120 frames; versão leve com 60) nas pastas frames_pasta e frames_pasta_leve. Sem gsap ou com --motion 0 mostra a imagem estática com as etiquetas visíveis. Recorte do canvas (144,96,432,720) fixo no JS.",
+  "estilo": [
+    "tech",
+    "clínico"
+  ],
+  "nicho": [
+    "medicina",
+    "odontologia",
+    "engenharia",
+    "produtos técnicos que precisam explicar anatomia ou componentes"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger",
+    "canvas",
+    "svg"
+  ],
+  "animacao": "canvas com sequência de frames guiada pelo scroll em seção pinada; etiquetas e linhas guia entram em sequência",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 29
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 51
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 168
+    },
+    "dente": {
+      "tipo": "img",
+      "descricao": "primeiro frame (estático) 720x900; alt usado também no canvas"
+    },
+    "frames_pasta": {
+      "tipo": "url",
+      "max": 200,
+      "descricao": "pasta com f_0000.webp...f_0119.webp (120 frames)"
+    },
+    "frames_pasta_leve": {
+      "tipo": "url",
+      "max": 200,
+      "descricao": "pasta com 60 frames para mobile/saveData"
+    },
+    "notas": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "texto": {
+          "tipo": "texto",
+          "max": 80
+        },
+        "lado": {
+          "tipo": "texto_curto",
+          "max": 1,
+          "descricao": "e (esquerda) ou d (direita)"
+        },
+        "ancora": {
+          "tipo": "texto_curto",
+          "max": 16,
+          "descricao": "x,y de 0 a 1 no recorte do quadro, ex.: 0.45,0.142"
+        },
+        "y": {
+          "tipo": "texto_curto",
+          "max": 8,
+          "descricao": "altura da etiqueta em %, ex.: 14.2%"
+        }
+      }
+    },
+    "nota_final": {
+      "tipo": "texto",
+      "max": 164
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 43
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 2,
+  "nota": 4,
+  "aprovada": false
+}

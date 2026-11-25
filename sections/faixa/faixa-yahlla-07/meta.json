@@ -1,0 +1,42 @@
+{
+  "id": "faixa-yahlla-07",
+  "tipo": "faixa",
+  "origem": "yahlla",
+  "descricao": "Faixa em tela cheia com foto de ambiente como fundo, scrim escuro que funde no fundo da página e texto curto (eyebrow, H2 e parágrafo) alinhado à esquerda sobre a imagem. Autônoma: reveal e parallax no section.js; o gradiente termina em --c-bg, então a seção seguinte deve ter esse fundo.",
+  "estilo": [
+    "luxo",
+    "acolhedor",
+    "cinematográfico"
+  ],
+  "nicho": [
+    "spas",
+    "hotéis",
+    "restaurantes",
+    "studios",
+    "imobiliário de alto padrão",
+    "negócios que vendem atmosfera"
+  ],
+  "libs": [],
+  "animacao": "parallax da imagem ao rolar (scale + translateY) e reveal escalonado dos textos",
+  "slots": {
+    "fundo": {
+      "tipo": "img",
+      "descricao": "foto de ambiente, horizontal, área escura/neutra embaixo para o texto"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 40
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 200
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,27 @@
+.s-servicos-renata-05{padding:var(--section-y) 0;background:var(--c-surface-2);font-family:var(--f-body);color:var(--c-text)}
+.servicos-renata-05__wrap{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.2)}
+.servicos-renata-05__head{max-width:620px;margin-bottom:calc(var(--space)*2.2)}
+.servicos-renata-05__eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--c-primary);background:color-mix(in srgb,var(--c-primary) 14%,transparent);padding:7px 14px;border-radius:100px;margin-bottom:calc(var(--space)*.9)}
+.servicos-renata-05__eyebrow::before{content:"●";color:var(--c-accent);font-size:.6rem}
+.servicos-renata-05__titulo{font-family:var(--f-display);font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:14px}
+.servicos-renata-05__subtitulo{color:var(--c-muted);font-size:1.02rem}
+.servicos-renata-05__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--space)*.7)}
+.servicos-renata-05__card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--radius);padding:calc(var(--space)*.9) var(--space);cursor:pointer;transition:border-color .25s,box-shadow .25s,background .25s}
+.servicos-renata-05__card:hover{box-shadow:0 12px 26px color-mix(in srgb,var(--c-primary) 16%,transparent);border-color:var(--c-accent)}
+.servicos-renata-05__card.active{background:var(--c-primary);border-color:var(--c-primary)}
+.servicos-renata-05__nome{font-family:var(--f-body);font-size:1rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.servicos-renata-05__card.active .servicos-renata-05__nome{color:var(--c-on-primary)}
+.servicos-renata-05__desc{font-size:.87rem;color:var(--c-muted);max-height:0;overflow:hidden;transition:max-height .3s;margin-top:0}
+.servicos-renata-05__card.active .servicos-renata-05__desc{max-height:100px;color:color-mix(in srgb,var(--c-on-primary) 85%,transparent);margin-top:8px}
+.servicos-renata-05__ico{font-size:.75rem;opacity:.5}
+.servicos-renata-05__fade-up{opacity:0;transform:translateY(calc(24px*var(--motion,1)));transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.servicos-renata-05__fade-up.in{opacity:1;transform:translateY(0)}
+@media (max-width:780px){
+  .s-servicos-renata-05 .servicos-renata-05__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+  .s-servicos-renata-05 .servicos-renata-05__grid{grid-template-columns:1fr}
+  .servicos-renata-05__head{margin-bottom:calc(var(--space)*1.5)}
+  .servicos-renata-05__card{padding:calc(var(--space)*.8)}
+  .servicos-renata-05__eyebrow{font-size:.72rem;padding:6px 12px}
+}

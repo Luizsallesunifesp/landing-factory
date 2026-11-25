@@ -1,0 +1,160 @@
+{
+  "id": "prova-luiz-ricardo-06",
+  "tipo": "prova",
+  "origem": "luiz-ricardo",
+  "descricao": "Dois cards de portfólio lado a lado, cada um com barra de navegador (três bolinhas e URL) sobre um mockup de página em miniatura que percorre no scroll/toque, seguido de categoria, título, texto e chips. Fundo escuro. Mockup colorido pelos tokens do site. Depende só de section.js (sem libs globais).",
+  "estilo": [
+    "editorial",
+    "elegante",
+    "escuro"
+  ],
+  "nicho": [
+    "agências",
+    "estúdios",
+    "freelancers",
+    "clínicas",
+    "negócios que mostram sites entregues"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar; mockup com pan vertical dirigido por scroll, hover e toque (--pan/--prog); trilho de progresso; parallax no fundo",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 170
+    },
+    "dica": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "projetos": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 2,
+      "campos": {
+        "url_exibida": {
+          "tipo": "texto_curto",
+          "max": 36
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "categoria": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 180
+        },
+        "chip1": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "chip2": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "chip3": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "link": {
+          "tipo": "url",
+          "max": 200
+        },
+        "link_texto": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "mock_marca": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_menu1": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "mock_menu2": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "mock_menu3": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "mock_titulo": {
+          "tipo": "texto",
+          "max": 80
+        },
+        "mock_texto": {
+          "tipo": "texto",
+          "max": 150
+        },
+        "mock_botao": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c1_nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c1_desc": {
+          "tipo": "texto",
+          "max": 60
+        },
+        "mock_c2_nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c2_desc": {
+          "tipo": "texto",
+          "max": 60
+        },
+        "mock_c3_nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c3_desc": {
+          "tipo": "texto",
+          "max": 60
+        },
+        "mock_faixa": {
+          "tipo": "texto_curto",
+          "max": 35
+        },
+        "mock_bloco_titulo": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "mock_bloco_texto": {
+          "tipo": "texto",
+          "max": 120
+        },
+        "mock_c4_nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c4_desc": {
+          "tipo": "texto_curto",
+          "max": 35
+        },
+        "mock_c5_nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "mock_c5_desc": {
+          "tipo": "texto_curto",
+          "max": 35
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

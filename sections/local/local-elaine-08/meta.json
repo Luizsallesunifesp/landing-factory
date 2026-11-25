@@ -1,0 +1,60 @@
+{
+  "id": "local-elaine-08",
+  "tipo": "local",
+  "origem": "elaine",
+  "descricao": "Seção escura em duas colunas: título e lista rótulo/valor (endereço, WhatsApp, Instagram, atendimento) à esquerda; bloco de CTA com frase e botão de WhatsApp à direita. Sem mapa nem imagem. Usa slots automáticos (maps_url, endereco, telefone, instagram, whatsapp_link).",
+  "estilo": [
+    "clínico",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "consultórios",
+    "clínicas",
+    "serviços presenciais e online",
+    "negócios com endereço e agendamento"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar nas duas colunas (IntersectionObserver, respeita --motion)",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "label_endereco": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "label_whatsapp": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "label_instagram": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "label_atendimento": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "atendimento": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "cta_frase": {
+      "tipo": "texto",
+      "max": 90
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

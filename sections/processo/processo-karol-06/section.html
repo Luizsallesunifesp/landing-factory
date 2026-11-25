@@ -1,0 +1,25 @@
+<section class="s-processo-karol-06" data-secao="processo-karol-06">
+  <div class="lf-wrap">
+    <div class="processo-karol-06__eyebrow" data-aos="fade-up">{{eyebrow}}</div>
+    <h2 class="processo-karol-06__titulo" data-aos="fade-up">{{titulo}}</h2>
+    <div class="processo-karol-06__trail" data-aos="fade-up">
+      <svg class="processo-karol-06__svg" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+        <polyline class="processo-karol-06__linha" points="0,70 150,66 300,30 450,50 600,14 750,42 900,24 1050,54 1200,44" fill="none" stroke-width="1.6"></polyline>
+        <circle class="processo-karol-06__ponto" cx="0" cy="70" r="4"></circle>
+        <circle class="processo-karol-06__ponto" cx="300" cy="30" r="4"></circle>
+        <circle class="processo-karol-06__ponto" cx="600" cy="14" r="4"></circle>
+        <circle class="processo-karol-06__ponto" cx="900" cy="24" r="4"></circle>
+        <circle class="processo-karol-06__ponto" cx="1200" cy="44" r="4"></circle>
+      </svg>
+      <div class="processo-karol-06__steps">
+        {{#itens}}
+        <div class="processo-karol-06__step">
+          <span class="processo-karol-06__n">{{@num}} · {{rotulo}}</span>
+          <h4 class="processo-karol-06__nome">{{nome}}</h4>
+          <p class="processo-karol-06__desc">{{descricao}}</p>
+        </div>
+        {{/itens}}
+      </div>
+    </div>
+  </div>
+</section>

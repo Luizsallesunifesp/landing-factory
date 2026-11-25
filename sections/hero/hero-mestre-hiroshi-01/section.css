@@ -1,0 +1,131 @@
+.s-hero-mestre-hiroshi-01{
+  position:relative;overflow:hidden;
+  padding-block:clamp(24px,4.5vw,42px) 0;
+  color:var(--c-text);font-family:var(--f-body);line-height:1.6;
+}
+.s-hero-mestre-hiroshi-01 *{box-sizing:border-box}
+.hero-mestre-hiroshi-01__wrap{
+  position:relative;z-index:2;
+  max-width:var(--max-w);margin:0 auto;padding-inline:var(--space);
+}
+.hero-mestre-hiroshi-01__destaque{color:var(--c-accent)}
+
+/* marca em três linhas */
+.hero-mestre-hiroshi-01__marca{display:inline-flex;flex-direction:column;line-height:.88}
+.hero-mestre-hiroshi-01__m1{font-family:var(--f-display);font-size:.72rem;font-weight:600;letter-spacing:.4em;color:var(--c-accent)}
+.hero-mestre-hiroshi-01__m2{font-family:var(--f-display);font-size:clamp(1.7rem,3.8vw,2.3rem);font-weight:800;letter-spacing:-.045em;margin-top:8px}
+.hero-mestre-hiroshi-01__m3{font-family:var(--f-display);font-size:.8rem;font-weight:600;letter-spacing:.22em;color:var(--c-muted);margin-top:6px}
+
+.hero-mestre-hiroshi-01__grade{
+  position:relative;z-index:2;
+  display:grid;gap:clamp(24px,4vw,48px);
+  margin-top:clamp(30px,5vw,54px);
+  padding-bottom:var(--section-y);
+}
+@media(min-width:900px){
+  .hero-mestre-hiroshi-01__grade{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);align-items:end}
+}
+.hero-mestre-hiroshi-01__titulo{
+  margin:0;font-family:var(--f-display);font-weight:800;
+  line-height:1.03;letter-spacing:-.042em;text-wrap:balance;
+  font-size:var(--fs-hero);max-width:15ch;
+}
+.hero-mestre-hiroshi-01__palavra{display:inline-block;will-change:transform,opacity,filter}
+.hero-mestre-hiroshi-01__sub{margin:18px 0 26px;font-size:clamp(1rem,3.3vw,1.15rem);color:var(--c-muted);max-width:44ch}
+
+/* botões */
+.hero-mestre-hiroshi-01__cta-par{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center}
+.hero-mestre-hiroshi-01__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--c-primary);color:var(--c-on-primary);text-decoration:none;
+  font-family:var(--f-display);font-weight:700;font-size:1.02rem;letter-spacing:-.012em;
+  padding:17px 30px;min-height:54px;border-radius:999px;border:0;cursor:pointer;
+  white-space:nowrap;position:relative;overflow:hidden;
+  box-shadow:0 10px 24px -12px color-mix(in srgb,var(--c-dark) 85%,transparent),0 2px 5px -2px color-mix(in srgb,var(--c-dark) 60%,transparent);
+  transition:background .2s ease,transform .16s var(--ease),box-shadow .2s ease;
+}
+.hero-mestre-hiroshi-01__btn:hover{
+  background:color-mix(in srgb,var(--c-primary) 85%,var(--c-on-primary));
+  transform:translateY(-2px);
+  box-shadow:0 18px 34px -12px color-mix(in srgb,var(--c-dark) 90%,transparent),0 3px 7px -2px color-mix(in srgb,var(--c-dark) 65%,transparent);
+}
+.hero-mestre-hiroshi-01__btn:active{transform:translateY(1px) scale(.985)}
+.hero-mestre-hiroshi-01__ic{
+  width:19px;height:19px;flex:0 0 auto;fill:none;stroke:currentColor;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  transition:transform .24s var(--ease);
+}
+.hero-mestre-hiroshi-01__btn:hover .hero-mestre-hiroshi-01__ic{transform:translateX(4px)}
+.hero-mestre-hiroshi-01__btn--vaz{
+  background:transparent;color:var(--c-text);
+  border:1px solid var(--c-line);box-shadow:none;
+}
+.hero-mestre-hiroshi-01__btn--vaz:hover{
+  background:var(--c-surface);border-color:var(--c-accent);box-shadow:none;
+}
+@media(max-width:540px){
+  .hero-mestre-hiroshi-01__btn{width:100%;padding-inline:18px;font-size:.98rem}
+}
+
+/* varredura de brilho no botão principal */
+.hero-mestre-hiroshi-01__btn--cta::after{
+  content:"";position:absolute;top:0;left:0;width:42%;height:100%;
+  background:linear-gradient(100deg,transparent,color-mix(in srgb,var(--c-on-primary) 32%,transparent),transparent);
+  transform:translateX(-260%) skewX(-18deg);
+  animation:hero-mestre-hiroshi-01-varredura 7s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes hero-mestre-hiroshi-01-varredura{
+  0%,68%{transform:translateX(-260%) skewX(-18deg)}
+  100%  {transform:translateX(360%) skewX(-18deg)}
+}
+
+/* glow rotativo atrás do botão */
+@property --hero-mestre-hiroshi-01-ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+.hero-mestre-hiroshi-01__glow{position:relative;display:inline-flex;isolation:isolate}
+.hero-mestre-hiroshi-01__glow::before{
+  content:"";position:absolute;inset:-4px;border-radius:999px;
+  background:conic-gradient(from var(--hero-mestre-hiroshi-01-ang) at 50% 50%,
+    color-mix(in srgb,var(--c-accent) 60%,var(--c-on-primary)),
+    var(--c-accent),
+    color-mix(in srgb,var(--c-accent) 60%,var(--c-dark)),
+    color-mix(in srgb,var(--c-accent) 85%,var(--c-on-primary)),
+    color-mix(in srgb,var(--c-accent) 60%,var(--c-on-primary)));
+  filter:blur(16px);opacity:.85;
+  transform:scale(1);
+  animation:hero-mestre-hiroshi-01-gira 6s linear infinite;
+  transition:transform .34s cubic-bezier(.34,1.4,.64,1),opacity .25s ease;
+  z-index:-1;pointer-events:none;
+}
+.hero-mestre-hiroshi-01__glow:hover::before{transform:scale(1.08);opacity:1}
+@keyframes hero-mestre-hiroshi-01-gira{to{--hero-mestre-hiroshi-01-ang:360deg}}
+@media(max-width:640px){
+  .hero-mestre-hiroshi-01__glow::before{animation-duration:9s;filter:blur(13px)}
+}
+
+.hero-mestre-hiroshi-01__selo{margin:15px 0 0;color:var(--c-muted);font-size:.88rem}
+
+/* contador gigante */
+.hero-mestre-hiroshi-01__cronos{display:block;text-align:right;pointer-events:none;will-change:transform}
+.hero-mestre-hiroshi-01__cronos-n{
+  display:block;
+  font-family:var(--f-display);font-weight:800;font-size:clamp(4.2rem,24vw,13.5rem);
+  line-height:.94;letter-spacing:-.07em;color:transparent;
+  -webkit-text-stroke:2px var(--c-accent);
+  font-variant-numeric:tabular-nums;
+}
+.hero-mestre-hiroshi-01__cronos-leg{
+  display:block;margin-top:10px;
+  font-family:var(--f-display);font-size:.74rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--c-muted);white-space:nowrap;
+}
+@media(max-width:899px){
+  .hero-mestre-hiroshi-01__cronos{text-align:left;margin-top:16px}
+  .hero-mestre-hiroshi-01__cronos-n{font-size:clamp(4.2rem,18vw,6.6rem)}
+  .hero-mestre-hiroshi-01__cronos-leg{letter-spacing:.16em}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero-mestre-hiroshi-01__btn--cta::after,
+  .hero-mestre-hiroshi-01__glow::before{animation:none}
+}

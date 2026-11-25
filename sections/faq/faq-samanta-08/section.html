@@ -1,0 +1,16 @@
+<section class="s-faq-samanta-08" data-secao="faq-samanta-08" aria-labelledby="faq-samanta-08-titulo">
+  <div class="faq-samanta-08__wrap faq-samanta-08__grid">
+    <div class="faq-samanta-08__topo">
+      <p class="faq-samanta-08__rotulo">{{rotulo}}</p>
+      <h2 id="faq-samanta-08-titulo" class="faq-samanta-08__titulo">{{titulo}}</h2>
+    </div>
+    <div class="faq-samanta-08__lista">
+      {{#itens}}
+      <details class="faq-samanta-08__item">
+        <summary><span>{{pergunta}}</span><span class="faq-samanta-08__seta" aria-hidden="true">↓</span></summary>
+        <div class="faq-samanta-08__resp"><p>{{resposta}}</p></div>
+      </details>
+      {{/itens}}
+    </div>
+  </div>
+</section>

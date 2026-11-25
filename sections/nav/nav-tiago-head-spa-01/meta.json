@@ -1,0 +1,55 @@
+{
+  "id": "nav-tiago-head-spa-01",
+  "tipo": "nav",
+  "origem": "tiago-head-spa",
+  "descricao": "Cabeçalho fixo escuro: emblema e nome com subtítulo à esquerda, links de âncora ao centro, botão dourado de WhatsApp à direita e hambúrguer com menu em tela cheia no mobile. Fundo com blur ao rolar (classe is-stuck via section.js). O emblema era um sprite SVG global (#cti); agora é o slot de imagem logo.",
+  "estilo": [
+    "luxo",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "spas",
+    "barbearias",
+    "estúdios de bem-estar",
+    "serviços premium"
+  ],
+  "libs": [],
+  "animacao": "fundo com blur ao rolar, menu mobile em tela cheia, hover nos links e botão",
+  "slots": {
+    "marca_nome": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "marca_sub": {
+      "tipo": "texto_curto",
+      "max": 42
+    },
+    "img:logo": {
+      "tipo": "img",
+      "descricao": "emblema/logo quadrado (SVG ou PNG)"
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

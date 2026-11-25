@@ -1,0 +1,50 @@
+<section class="s-prova-luiz-ricardo-06" data-secao="prova-luiz-ricardo-06">
+  <div class="prova-luiz-ricardo-06__depth" data-depth="0.12" aria-hidden="true"></div>
+  <div class="prova-luiz-ricardo-06__wrap">
+    <h2 class="prova-luiz-ricardo-06__stamp">{{titulo}}</h2>
+    <p class="prova-luiz-ricardo-06__lede" data-reveal="">{{subtitulo}}</p>
+
+    <div class="prova-luiz-ricardo-06__works">
+      {{#projetos}}
+      <article class="prova-luiz-ricardo-06__work" data-reveal="">
+        <div class="prova-luiz-ricardo-06__chrome"><i></i><i></i><i></i><span class="prova-luiz-ricardo-06__url">{{url_exibida}}</span></div>
+        <div class="prova-luiz-ricardo-06__shot" aria-hidden="true" style="--pan:-47%">
+          <div class="prova-luiz-ricardo-06__shot-rail" aria-hidden="true"><i></i></div>
+          <div class="prova-luiz-ricardo-06__shot-hint" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M7 10l5-5 5 5M7 14l5 5 5-5"></path></svg>{{dica}}</div>
+          <div class="prova-luiz-ricardo-06__shot-inner prova-luiz-ricardo-06__mini">
+            <div class="prova-luiz-ricardo-06__m-nav"><span class="prova-luiz-ricardo-06__m-serif" style="font-size:8px;letter-spacing:.04em">{{mock_marca}}</span><span><u>{{mock_menu1}}</u><u>{{mock_menu2}}</u><u>{{mock_menu3}}</u></span></div>
+            <div class="prova-luiz-ricardo-06__m-hero">
+              <div class="prova-luiz-ricardo-06__m-h1 prova-luiz-ricardo-06__m-serif">{{mock_titulo}}</div>
+              <div class="prova-luiz-ricardo-06__m-p">{{mock_texto}}</div>
+              <span class="prova-luiz-ricardo-06__m-btn">{{mock_botao}}</span>
+            </div>
+            <div class="prova-luiz-ricardo-06__m-band">
+              <div class="prova-luiz-ricardo-06__m-card"><b>{{mock_c1_nome}}</b><i>{{mock_c1_desc}}</i></div>
+              <div class="prova-luiz-ricardo-06__m-card"><b>{{mock_c2_nome}}</b><i>{{mock_c2_desc}}</i></div>
+              <div class="prova-luiz-ricardo-06__m-card"><b>{{mock_c3_nome}}</b><i>{{mock_c3_desc}}</i></div>
+            </div>
+            <div class="prova-luiz-ricardo-06__m-strip">{{mock_faixa}}</div>
+            <div class="prova-luiz-ricardo-06__m-split">
+              <div class="prova-luiz-ricardo-06__m-ph"></div>
+              <div class="prova-luiz-ricardo-06__m-tx"><b class="prova-luiz-ricardo-06__m-serif">{{mock_bloco_titulo}}</b><i>{{mock_bloco_texto}}</i></div>
+            </div>
+            <div class="prova-luiz-ricardo-06__m-band">
+              <div class="prova-luiz-ricardo-06__m-card"><b>{{mock_c4_nome}}</b><i>{{mock_c4_desc}}</i></div>
+              <div class="prova-luiz-ricardo-06__m-card"><b>{{mock_c5_nome}}</b><i>{{mock_c5_desc}}</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="prova-luiz-ricardo-06__work-body">
+          <div class="prova-luiz-ricardo-06__cat">{{categoria}}</div>
+          <h3 class="prova-luiz-ricardo-06__nome">{{nome}}</h3>
+          <p class="prova-luiz-ricardo-06__desc">{{descricao}}</p>
+          <div class="prova-luiz-ricardo-06__chips"><span>{{chip1}}</span><span>{{chip2}}</span><span>{{chip3}}</span></div>
+          <a class="prova-luiz-ricardo-06__work-link" href="{{link}}" target="_blank" rel="noopener">{{link_texto}}
+            <svg class="prova-luiz-ricardo-06__btn-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </article>
+      {{/projetos}}
+    </div>
+  </div>
+</section>

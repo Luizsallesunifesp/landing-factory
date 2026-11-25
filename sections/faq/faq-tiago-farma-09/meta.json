@@ -1,0 +1,46 @@
+{
+  "id": "faq-tiago-farma-09",
+  "tipo": "faq",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho centralizado e lista vertical de perguntas em acordeão; sinal de mais à direita gira e abre a resposta (uma aberta por vez). Sem mídia, bloco de texto limpo. Sem dependências globais; o JS próprio cuida do acordeão e do reveal.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "serviços",
+    "cursos",
+    "clínicas",
+    "SaaS"
+  ],
+  "libs": [],
+  "animacao": "acordeão com max-height e reveal por IntersectionObserver",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 52
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 70
+        },
+        "resposta": {
+          "tipo": "texto",
+          "max": 220
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

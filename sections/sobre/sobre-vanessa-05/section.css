@@ -1,0 +1,57 @@
+.s-sobre-vanessa-05{background:var(--c-bg);padding:var(--section-y) 0;font-family:var(--f-body);}
+.sobre-vanessa-05__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space) * 1.5);}
+.sobre-vanessa-05__grid{
+  display:grid;
+  grid-template-columns:0.75fr 1.25fr;
+  gap:calc(var(--space) * 2.7);
+  align-items:center;
+}
+.sobre-vanessa-05__photo{position:relative;perspective:1200px;}
+.sobre-vanessa-05__frame{
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--c-line);
+  box-shadow:0 24px 50px color-mix(in srgb, var(--c-primary) 16%, transparent);
+}
+.sobre-vanessa-05__tilt{transition:transform .12s ease-out, box-shadow .3s ease;transform-style:preserve-3d;will-change:transform;}
+.sobre-vanessa-05__tilt:hover{box-shadow:0 40px 70px color-mix(in srgb, var(--c-dark) 50%, transparent);}
+.sobre-vanessa-05__frame img{width:100%;display:block;object-fit:cover;}
+.sobre-vanessa-05__eyebrow{
+  display:block;margin-bottom:14px;
+  font-family:var(--f-mono, var(--f-body));
+  text-transform:uppercase;letter-spacing:0.14em;
+  font-size:12px;font-weight:700;
+  color:var(--c-accent);
+}
+.sobre-vanessa-05__titulo{
+  font-family:var(--f-display);font-weight:600;letter-spacing:-0.01em;
+  font-size:clamp(26px,3.2vw,36px);color:var(--c-primary);
+  margin:0 0 18px;line-height:1.18;
+}
+.sobre-vanessa-05__texto{color:var(--c-muted);font-size:16.5px;line-height:1.7;margin:0 0 16px;}
+.sobre-vanessa-05__texto b{color:var(--c-text);}
+.sobre-vanessa-05__credentials{display:flex;gap:var(--space);margin-top:26px;flex-wrap:wrap;}
+.sobre-vanessa-05__credential{
+  display:flex;align-items:center;gap:12px;
+  border:1px solid var(--c-line);
+  background:var(--c-surface);
+  border-radius:calc(var(--radius) * 0.85);
+  padding:14px 18px;
+  transition:transform .25s var(--ease), box-shadow .25s var(--ease), opacity .6s var(--ease);
+}
+.sobre-vanessa-05__credential:hover{transform:translateY(-3px);box-shadow:0 12px 24px color-mix(in srgb, var(--c-primary) 12%, transparent);}
+.sobre-vanessa-05__credential:hover .sobre-vanessa-05__badge{transform:rotate(-8deg) scale(1.08);}
+.sobre-vanessa-05__badge{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--c-primary);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--c-accent);font-size:18px;flex-shrink:0;
+  transition:transform .25s ease;
+}
+.sobre-vanessa-05__credential b{display:block;font-size:14px;color:var(--c-primary);}
+.sobre-vanessa-05__credential span{font-size:12.5px;color:var(--c-muted);}
+.sobre-vanessa-05__credential.is-pre{opacity:0;transform:translateY(16px);}
+@media (max-width:860px){
+  .sobre-vanessa-05__grid{grid-template-columns:1fr;gap:calc(var(--space) * 1.5);}
+  .sobre-vanessa-05__frame{max-width:280px;margin:0 auto;}
+}

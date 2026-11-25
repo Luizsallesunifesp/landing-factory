@@ -1,0 +1,17 @@
+.s-cta-final-carol-benedetti-09{position:relative;padding:var(--section-y) 0;text-align:center;color:var(--c-text);background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--c-primary) 20%,transparent),transparent 60%),var(--c-surface-2)}
+.cta-final-carol-benedetti-09__wrap{max-width:var(--max-w);margin:0 auto;padding:0 clamp(20px,3vw,32px)}
+.cta-final-carol-benedetti-09__eyebrow{display:inline-block;font-family:var(--f-body);text-transform:uppercase;letter-spacing:.32em;font-size:.7rem;font-weight:500;color:var(--c-primary)}
+.cta-final-carol-benedetti-09__titulo{font-family:var(--f-display);font-size:clamp(2.3rem,5.5vw,3.8rem);max-width:760px;margin:0 auto calc(var(--space)*1);line-height:1.12;color:var(--c-text)}
+.cta-final-carol-benedetti-09__texto{font-family:var(--f-body);color:var(--c-muted);font-weight:300;max-width:480px;margin:0 auto calc(var(--space)*1.8);line-height:1.7}
+.cta-final-carol-benedetti-09__btns{display:flex;gap:calc(var(--space)*.7);justify-content:center;flex-wrap:wrap}
+.cta-final-carol-benedetti-09__btn{display:inline-flex;align-items:center;gap:10px;padding:19px 44px;font-family:var(--f-body);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;border-radius:2px;cursor:pointer;text-decoration:none;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .3s,color .3s}
+.cta-final-carol-benedetti-09__btn--primary{background:var(--c-primary);color:var(--c-on-primary);border:1px solid var(--c-primary);box-shadow:0 10px 30px color-mix(in srgb,var(--c-primary) 40%,transparent)}
+.cta-final-carol-benedetti-09__btn--primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px color-mix(in srgb,var(--c-primary) 55%,transparent)}
+.cta-final-carol-benedetti-09__btn--ghost{background:transparent;border:1px solid var(--c-text);color:var(--c-text)}
+.cta-final-carol-benedetti-09__btn--ghost:hover{background:color-mix(in srgb,var(--c-text) 8%,transparent)}
+.s-cta-final-carol-benedetti-09.is-ready .cta-final-carol-benedetti-09__reveal{opacity:0;transform:translateY(calc(34px*var(--motion,1)));transition:opacity calc(1s*var(--motion,1)) var(--ease),transform calc(1s*var(--motion,1)) var(--ease)}
+.s-cta-final-carol-benedetti-09.is-ready .cta-final-carol-benedetti-09__reveal.is-in{opacity:1;transform:translateY(0)}
+.s-cta-final-carol-benedetti-09.is-ready .cta-final-carol-benedetti-09__reveal-delay-1{transition-delay:calc(.12s*var(--motion,1))}
+.s-cta-final-carol-benedetti-09.is-ready .cta-final-carol-benedetti-09__reveal-delay-2{transition-delay:calc(.24s*var(--motion,1))}
+.s-cta-final-carol-benedetti-09.is-ready .cta-final-carol-benedetti-09__reveal-delay-3{transition-delay:calc(.36s*var(--motion,1))}
+@media (max-width:600px){.cta-final-carol-benedetti-09__btn{padding:17px 28px}}

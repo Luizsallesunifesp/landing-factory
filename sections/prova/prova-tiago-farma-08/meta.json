@@ -1,0 +1,70 @@
+{
+  "id": "prova-tiago-farma-08",
+  "tipo": "prova",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho centralizado e três cards de depoimento lado a lado, cada um com estrelas, citação, avatar com iniciais e rótulo do serviço. Faixa inferior com dois indicadores (local e horário). Sem fotos. Reveal ao rolar via section.js próprio (sem dependência global).",
+  "estilo": [
+    "acolhedor",
+    "clínico"
+  ],
+  "nicho": [
+    "clínicas",
+    "escolas",
+    "consultorias",
+    "academias",
+    "serviços com depoimentos"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (fade-up) no grid e na faixa de indicadores",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "depoimentos": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 3,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 170
+        },
+        "inicial": {
+          "tipo": "texto_curto",
+          "max": 3
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "servico": {
+          "tipo": "texto_curto",
+          "max": 35
+        }
+      }
+    },
+    "indicadores": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 35
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

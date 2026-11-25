@@ -1,0 +1,61 @@
+{
+  "id": "footer-tiago-head-spa-18",
+  "tipo": "footer",
+  "origem": "tiago-head-spa",
+  "descricao": "Rodapé escuro em duas faixas: logo com slogan à esquerda, links de âncora no centro e ícones de Instagram e WhatsApp à direita; abaixo, linha de copyright com crédito e aviso clínico em texto miúdo. Depende do símbolo SVG global #cti (emblema da marca) definido na página.",
+  "estilo": [
+    "clínico",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas de saúde e estética",
+    "consultórios",
+    "negócios com aviso informativo obrigatório"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "marca": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "marca_descritor": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "slogan": {
+      "tipo": "texto",
+      "max": 105
+    },
+    "links": {
+      "tipo": "lista",
+      "max": 8,
+      "campos": {
+        "href": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        }
+      }
+    },
+    "copyright": {
+      "tipo": "texto",
+      "max": 90
+    },
+    "credito": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "aviso": {
+      "tipo": "texto",
+      "max": 450
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

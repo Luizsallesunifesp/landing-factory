@@ -1,0 +1,141 @@
+{
+  "id": "sobre-tiago-head-spa-13",
+  "tipo": "sobre",
+  "origem": "tiago-head-spa",
+  "descricao": "Seção escura: cabeçalho centralizado e duas cartas de profissionais lado a lado (retrato, selo de função, nome, tags, texto e botão fantasma para WhatsApp); abaixo, citação em destaque e lista de quatro credenciais com check dourado em duas colunas. Usa AOS para o reveal (o original usava .rv global). Fundo escuro (--c-dark).",
+  "estilo": [
+    "clínico",
+    "editorial",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas com equipe multidisciplinar",
+    "consultórios",
+    "escritórios",
+    "escolas",
+    "negócios que apresentam quem atende"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up ao rolar com atraso no segundo card; hover com leve elevação",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "lead": {
+      "tipo": "texto",
+      "max": 190
+    },
+    "prof_1": {
+      "tipo": "img",
+      "descricao": "retrato quadrado do profissional 1"
+    },
+    "p1_funcao": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "p1_nome": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p1_cargo": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "p1_tag_1": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p1_tag_2": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p1_tag_3": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "p1_texto": {
+      "tipo": "richtext",
+      "max": 460,
+      "descricao": "aceita <b> para destaque"
+    },
+    "p1_cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "prof_2": {
+      "tipo": "img",
+      "descricao": "retrato quadrado do profissional 2"
+    },
+    "p2_funcao": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p2_nome": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p2_cargo": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "p2_tag_1": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p2_tag_2": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "p2_tag_3": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "p2_texto": {
+      "tipo": "richtext",
+      "max": 400,
+      "descricao": "aceita <b> para destaque"
+    },
+    "p2_cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "citacao": {
+      "tipo": "texto",
+      "max": 130
+    },
+    "citacao_destaque": {
+      "tipo": "texto",
+      "max": 120
+    },
+    "creds": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "titulo": {
+          "tipo": "texto_curto",
+          "max": 55
+        },
+        "texto": {
+          "tipo": "texto",
+          "max": 150
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 4,
+  "nota": 4,
+  "aprovada": false
+}

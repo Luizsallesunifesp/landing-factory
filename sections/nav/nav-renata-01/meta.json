@@ -1,0 +1,50 @@
+{
+  "id": "nav-renata-01",
+  "tipo": "nav",
+  "origem": "renata",
+  "descricao": "Barra superior fixa com blur: marca em texto com sobrenome em destaque (itálico, cor de destaque) à esquerda, links de âncora ao centro (somem no mobile) e botão pílula à direita. O botão aponta para o WhatsApp (original apontava para #contato). Usa fontes display/body dos tokens.",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "consultórios",
+    "psicólogos",
+    "coaches",
+    "profissionais liberais com página de âncoras"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "marca": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "marca_destaque": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 18
+        },
+        "ancora": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

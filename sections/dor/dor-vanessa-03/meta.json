@@ -1,0 +1,50 @@
+{
+  "id": "dor-vanessa-03",
+  "tipo": "dor",
+  "origem": "vanessa",
+  "descricao": "Cabeçalho centralizado com eyebrow, título de pergunta e subtítulo, seguido de grade de seis cartões com marcador de X e frase de dor; fecha com citação em destaque centralizada. Reveal ao rolar via section.js (sem dependências globais).",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "educação",
+    "emagrecimento",
+    "coaching",
+    "qualquer serviço em que o cliente já tentou antes sem resultado"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar no cabeçalho e na citação; stagger na grade de cartões",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 70
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 135
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 140
+        }
+      }
+    },
+    "nota": {
+      "tipo": "texto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

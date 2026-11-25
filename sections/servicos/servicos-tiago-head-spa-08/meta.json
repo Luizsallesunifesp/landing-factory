@@ -1,0 +1,78 @@
+{
+  "id": "servicos-tiago-head-spa-08",
+  "tipo": "servicos",
+  "origem": "tiago-head-spa",
+  "descricao": "Seção escura em duas colunas: foto à esquerda com selo sobreposto; à direita eyebrow, título com destaque em itálico, lead, grade 2x2 de cards com ícone de linha fina e botão dourado de WhatsApp. Reveal próprio via section.js (sem dependência global).",
+  "estilo": [
+    "minimalista",
+    "escuro",
+    "acolhedor"
+  ],
+  "nicho": [
+    "barbearias",
+    "estética masculina",
+    "dermatologia",
+    "clínicas que detalham um subserviço dentro de um serviço maior"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar com atraso no bloco de texto",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "foto vertical 3:4"
+    },
+    "selo_titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "selo_texto": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 35
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "parte normal do título"
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 15,
+      "descricao": "palavra em itálico com cor de destaque"
+    },
+    "lead": {
+      "tipo": "texto",
+      "max": 210
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "icone": {
+          "tipo": "richtext",
+          "max": 300,
+          "descricao": "elementos SVG internos (path/circle) em viewBox 24x24, traço fino"
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 35
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 125
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 35
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

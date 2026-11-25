@@ -1,0 +1,29 @@
+<header class="s-nav-luiz-ricardo-01" data-secao="nav-luiz-ricardo-01">
+  <div class="lf-wrap nav-luiz-ricardo-01__inner">
+    <a class="nav-luiz-ricardo-01__brandmark" href="#top" aria-label="{{nome_negocio}}">
+      <svg class="nav-luiz-ricardo-01__rosette" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="5"><circle cx="50" cy="50" r="12"></circle><ellipse cx="50" cy="26" rx="10" ry="18"></ellipse><ellipse cx="50" cy="74" rx="10" ry="18"></ellipse><ellipse cx="26" cy="50" rx="18" ry="10"></ellipse><ellipse cx="74" cy="50" rx="18" ry="10"></ellipse></g></svg>
+      <span class="nav-luiz-ricardo-01__word">{{marca_a}}<em>{{marca_b}}</em></span>
+    </a>
+    <nav class="nav-luiz-ricardo-01__links" aria-label="Seções">
+      {{#links}}<a href="{{href}}">{{rotulo}}</a>
+      {{/links}}
+    </nav>
+    <div class="nav-luiz-ricardo-01__right">
+      <a class="nav-luiz-ricardo-01__btn nav-luiz-ricardo-01__wa" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}}</a>
+      <button class="nav-luiz-ricardo-01__burger" type="button" aria-expanded="false" aria-controls="nav-luiz-ricardo-01-sheet" aria-label="Abrir menu">
+        <span class="nav-luiz-ricardo-01__bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-luiz-ricardo-01__sheet" id="nav-luiz-ricardo-01-sheet" inert>
+    <nav class="nav-luiz-ricardo-01__sheet-inner" aria-label="Menu">
+      <span class="nav-luiz-ricardo-01__sheet-label">{{menu_label}}</span>
+      {{#links}}<a href="{{href}}"><span>{{rotulo}}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+      {{/links}}
+      <a class="nav-luiz-ricardo-01__btn nav-luiz-ricardo-01__btn--accent nav-luiz-ricardo-01__sheet-cta" href="{{whatsapp_link}}" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A10.4 10.4 0 0 0 12 0C6.4 0 1.8 4.5 1.8 10.1a10 10 0 0 0 1.4 5.1L1.7 20.3l5.2-1.4a10.4 10.4 0 0 0 5 1.3c5.6 0 10.2-4.6 10.2-10.1a10 10 0 0 0-2.6-6.6zM12 18.4a8.5 8.5 0 0 1-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.3 8.3 0 0 1-1.3-4.4c0-4.6 3.8-8.4 8.5-8.4a8.4 8.4 0 0 1 8.4 8.4c0 4.6-3.8 8.3-8.5 8.3zm4.7-6.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.8 6.8 0 0 1-3.4-3c-.3-.4.2-.4.6-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"></path></svg>
+        {{cta_menu_texto}}
+      </a>
+    </nav>
+  </div>
+</header>

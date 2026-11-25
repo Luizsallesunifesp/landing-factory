@@ -1,0 +1,45 @@
+{
+  "id": "processo-tiago-farma-05",
+  "tipo": "processo",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho com eyebrow e quatro etapas em grade horizontal (2 colunas no mobile), cada uma em card com número, título, texto curto e linha conectora entre os passos. Sem imagem. Revelação via AOS (a página original usava classe reveal com IntersectionObserver global).",
+  "estilo": [
+    "minimalista",
+    "clinico"
+  ],
+  "nicho": [
+    "qualquer jornada em etapas: onboarding de clientes, agendamento, processos de atendimento, cursos"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up no cabeçalho e no conjunto de etapas; hover levanta o card",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 90
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 110
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

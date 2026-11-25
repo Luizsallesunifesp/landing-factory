@@ -1,0 +1,62 @@
+{
+  "id": "hero-yahlla-03",
+  "tipo": "hero",
+  "origem": "yahlla",
+  "descricao": "Hero em tela cheia com imagem de fundo (img absoluta com parallax no scroll), véu escuro, brilho pulsante, texto à esquerda com eyebrow, título serifado com palavra em itálico, subtítulo e dois botões (WhatsApp sólido e ghost). Depende de --c-dark/--c-accent; o JS de parallax roda só neste hero.",
+  "estilo": [
+    "escuro",
+    "orgânico",
+    "luxo"
+  ],
+  "nicho": [
+    "spas",
+    "massoterapia",
+    "hotelaria",
+    "restaurantes",
+    "clínicas de bem-estar",
+    "turismo de experiência"
+  ],
+  "libs": [],
+  "animacao": "brilho pulsante em CSS (breathe) e parallax/zoom da imagem de fundo ao rolar (JS, respeita --motion)",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 45,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 60,
+      "descricao": "promessa principal; use <br> e <em> no trecho de destaque"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 230
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28,
+      "descricao": "botão WhatsApp"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "botão secundário"
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "descricao": "ex.: #servicos"
+    },
+    "img:fundo": {
+      "tipo": "img",
+      "descricao": "foto de fundo ampla, horizontal, tons escuros"
+    },
+    "alt:fundo": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "especial-yahlla-01",
+  "tipo": "especial",
+  "origem": "yahlla",
+  "descricao": "Barra vertical fixa de progresso de rolagem em forma de pavio de vela: trilho fino, preenchimento que sobe, pontos clicaveis por secao com rotulo e chama SVG no topo. Apenas desktop (oculta abaixo de 980px). Depende de section.js (cria os pontos a partir de todos os [data-secao] da pagina, exceto nav/header/footer) e de fundo escuro (usa --c-bg nos pontos).",
+  "estilo": [
+    "organico",
+    "escuro"
+  ],
+  "nicho": [
+    "spas",
+    "massoterapia",
+    "velas e aromaterapia",
+    "wellness",
+    "lojas artesanais",
+    "restaurantes de experiencia"
+  ],
+  "libs": [],
+  "animacao": "preenchimento e chama acompanham o scroll; chama tremula (flicker); ponto ativo via IntersectionObserver",
+  "slots": {
+    "aria_label": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "rotulo de acessibilidade da navegacao, ex.: Progresso da pagina"
+    },
+    "rotulos": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "descricao": "rotulos dos pontos, na ordem das secoes da pagina",
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 16
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

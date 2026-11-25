@@ -1,0 +1,16 @@
+<section class="s-faq-tiago-farma-09" data-secao="faq-tiago-farma-09" id="faq">
+  <div class="faq-tiago-farma-09__container">
+    <div class="faq-tiago-farma-09__header faq-tiago-farma-09__reveal">
+      <div class="faq-tiago-farma-09__eyebrow">{{eyebrow}}</div>
+      <h2 class="faq-tiago-farma-09__titulo">{{titulo}}</h2>
+    </div>
+    <div class="faq-tiago-farma-09__list faq-tiago-farma-09__reveal">
+      {{#itens}}
+      <div class="faq-tiago-farma-09__item">
+        <button class="faq-tiago-farma-09__q" type="button" aria-expanded="false">{{pergunta}} <span class="faq-tiago-farma-09__plus" aria-hidden="true">+</span></button>
+        <div class="faq-tiago-farma-09__a"><p>{{resposta}}</p></div>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

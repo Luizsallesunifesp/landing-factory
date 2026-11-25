@@ -1,0 +1,42 @@
+<section class="s-servicos-tiago-farma-04" data-secao="servicos-tiago-farma-04">
+  <div class="lf-wrap">
+    <div class="servicos-tiago-farma-04__header" data-aos="fade-up">
+      <div class="servicos-tiago-farma-04__eyebrow">{{eyebrow}}</div>
+      <h2 class="servicos-tiago-farma-04__titulo">{{titulo}}</h2>
+      <p class="servicos-tiago-farma-04__subtitulo">{{subtitulo}}</p>
+    </div>
+    <div class="servicos-tiago-farma-04__tabs" role="tablist" data-aos="fade-up">
+      {{#itens}}
+      <button type="button" class="servicos-tiago-farma-04__tab-btn" role="tab" data-tab="{{@num}}">{{aba}}</button>
+      {{/itens}}
+    </div>
+
+    {{#itens}}
+    <div class="servicos-tiago-farma-04__panel" role="tabpanel" data-panel="{{@num}}">
+      <div class="servicos-tiago-farma-04__card">
+        <div>
+          <h3 class="servicos-tiago-farma-04__nome">{{nome}}</h3>
+          <p class="servicos-tiago-farma-04__desc">{{descricao}}</p>
+          <div class="servicos-tiago-farma-04__stats">
+            <div class="servicos-tiago-farma-04__st"><div class="servicos-tiago-farma-04__n">{{stat1_valor}}</div><div class="servicos-tiago-farma-04__l">{{stat1_rotulo}}</div></div>
+            <div class="servicos-tiago-farma-04__st"><div class="servicos-tiago-farma-04__n">{{stat2_valor}}</div><div class="servicos-tiago-farma-04__l">{{stat2_rotulo}}</div></div>
+          </div>
+          <ul class="servicos-tiago-farma-04__features">
+            <li>{{feature1}}</li>
+            <li>{{feature2}}</li>
+            <li>{{feature3}}</li>
+          </ul>
+        </div>
+        <div class="servicos-tiago-farma-04__visual">
+          <div class="servicos-tiago-farma-04__compare">
+            <div class="servicos-tiago-farma-04__bar-wrap"><div class="servicos-tiago-farma-04__bar" data-h="{{barra1_altura}}"></div><div class="servicos-tiago-farma-04__day-lbl">{{barra1_rotulo}}</div></div>
+            <div class="servicos-tiago-farma-04__bar-wrap"><div class="servicos-tiago-farma-04__bar" data-h="{{barra2_altura}}"></div><div class="servicos-tiago-farma-04__day-lbl">{{barra2_rotulo}}</div></div>
+          </div>
+          <p class="servicos-tiago-farma-04__caption">{{legenda}}</p>
+        </div>
+        <div class="servicos-tiago-farma-04__disclaimer">⚠ {{aviso}}</div>
+      </div>
+    </div>
+    {{/itens}}
+  </div>
+</section>

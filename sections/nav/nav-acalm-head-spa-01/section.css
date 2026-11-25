@@ -1,0 +1,39 @@
+.s-nav-acalm-head-spa-01{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:calc(var(--space)*.95) calc(var(--space)*1.4);
+  color:var(--c-on-dark);
+  transition:background calc(.4s*var(--motion)) var(--ease), padding calc(.4s*var(--motion)) var(--ease), box-shadow calc(.4s*var(--motion)) var(--ease);
+}
+.s-nav-acalm-head-spa-01.is-scrolled{
+  background:color-mix(in srgb, var(--c-dark) 86%, transparent);
+  backdrop-filter:blur(10px);
+  padding:calc(var(--space)*.6) calc(var(--space)*1.4);
+  box-shadow:0 8px 30px color-mix(in srgb, var(--c-dark) 30%, transparent);
+}
+.nav-acalm-head-spa-01__logo{
+  font-family:var(--f-display);font-size:1.25rem;color:var(--c-on-dark);letter-spacing:.02em;
+  display:flex;align-items:center;gap:8px;
+}
+.nav-acalm-head-spa-01__leaf{color:var(--c-accent);font-size:.9rem}
+.nav-acalm-head-spa-01__links{display:flex;gap:calc(var(--space)*1.4);align-items:center}
+.nav-acalm-head-spa-01__link{
+  color:var(--c-on-dark);opacity:.82;font-family:var(--f-body);font-size:.85rem;font-weight:500;letter-spacing:.02em;
+  position:relative;padding-bottom:3px;text-decoration:none;
+}
+.nav-acalm-head-spa-01__link::after{
+  content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--c-accent);
+  transition:width calc(.3s*var(--motion)) var(--ease);
+}
+.nav-acalm-head-spa-01__link:hover{opacity:1}
+.nav-acalm-head-spa-01__link:hover::after{width:100%}
+.nav-acalm-head-spa-01__cta{
+  background:var(--c-accent);color:var(--c-dark);
+  padding:10px 22px;border-radius:999px;font-family:var(--f-body);font-weight:600;font-size:.82rem;
+  letter-spacing:.01em;text-decoration:none;
+  transition:transform calc(.25s*var(--motion)) var(--ease), background calc(.25s*var(--motion)) var(--ease);
+}
+.nav-acalm-head-spa-01__cta:hover{background:color-mix(in srgb, var(--c-accent) 80%, var(--c-on-dark));transform:translateY(calc(-2px*var(--motion)))}
+@media (max-width:760px){
+  .nav-acalm-head-spa-01__links,.nav-acalm-head-spa-01__cta{display:none}
+}

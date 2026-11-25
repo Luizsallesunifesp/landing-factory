@@ -1,0 +1,48 @@
+{
+  "id": "footer-luiz-ricardo-10",
+  "tipo": "footer",
+  "origem": "luiz-ricardo",
+  "descricao": "Rodapé escuro em duas linhas: marca com roseta SVG e palavra em mono com final em destaque à esquerda, menu de links à direita; abaixo slogan, relógio BRT ao vivo e coração pulsante, e linha de direitos. Depende do sprite SVG global #rosette (symbol) na página; sem ele a roseta não aparece.",
+  "estilo": [
+    "minimalista",
+    "tech",
+    "escuro"
+  ],
+  "nicho": [
+    "qualquer"
+  ],
+  "libs": [],
+  "animacao": "relógio BRT atualizado por JS a cada segundo; coração pulsa via CSS",
+  "slots": {
+    "marca_inicio": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "marca_fim": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 80
+        }
+      }
+    },
+    "slogan": {
+      "tipo": "texto_curto",
+      "max": 40
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

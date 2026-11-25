@@ -1,0 +1,16 @@
+<section class="s-faq-vanessa-07" data-secao="faq-vanessa-07">
+  <div class="faq-vanessa-07__container">
+    <div class="faq-vanessa-07__head" data-reveal>
+      <span class="faq-vanessa-07__eyebrow">{{eyebrow}}</span>
+      <h2 class="faq-vanessa-07__titulo">{{titulo}}</h2>
+    </div>
+    <div class="faq-vanessa-07__list" data-stagger>
+      {{#itens}}
+      <details class="faq-vanessa-07__item">
+        <summary class="faq-vanessa-07__pergunta">{{pergunta}} <span class="faq-vanessa-07__plus">+</span></summary>
+        <p class="faq-vanessa-07__resposta">{{resposta}}</p>
+      </details>
+      {{/itens}}
+    </div>
+  </div>
+</section>

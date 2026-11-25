@@ -1,0 +1,129 @@
+.s-nav-luiz-ricardo-01{
+  --nlr-t:calc(.4s*var(--motion,1));
+  position:fixed;top:0;left:0;right:0;z-index:600;
+  border-bottom:1px solid transparent;
+  transition:border-color calc(.5s*var(--motion,1)) var(--ease);
+  color:var(--c-on-dark);
+}
+/* vidro fosco no pseudo-elemento: backdrop-filter no header prenderia o .sheet fixed */
+.s-nav-luiz-ricardo-01::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:color-mix(in srgb,var(--c-dark) 0%,transparent);
+  transition:background calc(.5s*var(--motion,1)) var(--ease);
+}
+.s-nav-luiz-ricardo-01.scrolled{border-bottom-color:color-mix(in srgb,var(--c-on-dark) 12%,transparent)}
+.s-nav-luiz-ricardo-01.scrolled::before{
+  background:color-mix(in srgb,var(--c-dark) 72%,transparent);
+  backdrop-filter:blur(14px) saturate(1.3);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+}
+.nav-luiz-ricardo-01__inner{display:flex;align-items:center;justify-content:space-between;gap:calc(var(--space)*1.2);height:74px}
+.nav-luiz-ricardo-01__brandmark{display:flex;align-items:center;gap:calc(var(--space)*.5);color:inherit;text-decoration:none}
+.nav-luiz-ricardo-01__rosette{width:26px;height:26px;flex:none;color:var(--c-accent)}
+.nav-luiz-ricardo-01__word{font-family:var(--f-mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--c-on-dark);font-weight:500}
+.nav-luiz-ricardo-01__word em{font-style:normal;color:var(--c-accent)}
+.nav-luiz-ricardo-01__links{display:flex;align-items:center;gap:calc(var(--space)*1.4)}
+.nav-luiz-ricardo-01__links a{
+  font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  color:color-mix(in srgb,var(--c-on-dark) 66%,transparent);padding:10px 0;position:relative;
+  transition:color calc(.35s*var(--motion,1)) var(--ease);
+}
+.nav-luiz-ricardo-01__links a::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--c-on-dark);
+  transform:scaleX(0);transform-origin:right;transition:transform calc(.5s*var(--motion,1)) var(--ease);
+}
+.nav-luiz-ricardo-01__links a:hover{color:var(--c-on-dark)}
+.nav-luiz-ricardo-01__links a:hover::after{transform:scaleX(1);transform-origin:left}
+
+.nav-luiz-ricardo-01__btn{
+  display:inline-flex;align-items:center;gap:calc(var(--space)*.5);
+  font-family:var(--f-body);font-size:15px;font-weight:400;letter-spacing:-.01em;text-decoration:none;
+  background:var(--c-dark);color:var(--c-on-dark);
+  border:1px solid var(--c-on-dark);border-radius:var(--radius);
+  padding:15px 22px;position:relative;
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;
+  transition:background var(--nlr-t) var(--ease),color var(--nlr-t) var(--ease),border-color var(--nlr-t) var(--ease),transform calc(.18s*var(--motion,1)) var(--ease);
+}
+.nav-luiz-ricardo-01__btn:hover{background:var(--c-on-dark);color:var(--c-dark)}
+.nav-luiz-ricardo-01__btn:active{transform:scale(.97)}
+.nav-luiz-ricardo-01__btn svg{flex:none}
+.nav-luiz-ricardo-01__btn--accent{background:var(--c-accent);border-color:var(--c-accent);color:var(--c-dark);font-weight:500}
+.nav-luiz-ricardo-01__btn--accent:hover{background:color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark));border-color:color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark));color:var(--c-dark)}
+.nav-luiz-ricardo-01__wa{padding:11px 18px;font-size:13px}
+
+.nav-luiz-ricardo-01__right{display:flex;align-items:center;gap:calc(var(--space)*.45)}
+.nav-luiz-ricardo-01__burger{
+  display:none;width:44px;height:44px;border-radius:var(--radius);
+  background:transparent;cursor:pointer;
+  border:1px solid color-mix(in srgb,var(--c-on-dark) 22%,transparent);
+  place-items:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
+  transition:transform calc(.18s*var(--motion,1)) var(--ease),border-color var(--nlr-t) var(--ease);
+}
+.nav-luiz-ricardo-01__burger:active{transform:scale(.92)}
+.nav-luiz-ricardo-01__bars{display:block;width:17px;height:11px;position:relative}
+.nav-luiz-ricardo-01__bars i{
+  position:absolute;left:0;right:0;height:1.5px;background:var(--c-on-dark);border-radius:2px;
+  transition:transform calc(.5s*var(--motion,1)) var(--ease),opacity calc(.3s*var(--motion,1)) var(--ease);
+}
+.nav-luiz-ricardo-01__bars i:first-child{top:0}
+.nav-luiz-ricardo-01__bars i:last-child{bottom:0}
+.s-nav-luiz-ricardo-01.menu-open .nav-luiz-ricardo-01__bars i:first-child{transform:translateY(4.75px) rotate(45deg)}
+.s-nav-luiz-ricardo-01.menu-open .nav-luiz-ricardo-01__bars i:last-child{transform:translateY(-4.75px) rotate(-45deg)}
+
+.nav-luiz-ricardo-01__sheet{
+  position:fixed;inset:0;z-index:-2;
+  background:color-mix(in srgb,var(--c-dark) 94%,transparent);
+  backdrop-filter:blur(18px) saturate(1.2);
+  -webkit-backdrop-filter:blur(18px) saturate(1.2);
+  display:flex;align-items:flex-end;
+  opacity:0;visibility:hidden;
+  transition:opacity calc(.45s*var(--motion,1)) var(--ease),visibility calc(.45s*var(--motion,1));
+}
+.nav-luiz-ricardo-01__sheet[inert]{pointer-events:none}
+.nav-luiz-ricardo-01__sheet.open{opacity:1;visibility:visible}
+.nav-luiz-ricardo-01__sheet-inner{
+  width:100%;
+  padding:0 clamp(20px,5vw,32px) calc(env(safe-area-inset-bottom,0px) + 26px);
+  display:flex;flex-direction:column;
+}
+.nav-luiz-ricardo-01__sheet-label{
+  font-family:var(--f-mono);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 50%,transparent);padding:0 0 14px;
+}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta){
+  display:flex;align-items:center;justify-content:space-between;gap:var(--space);
+  font-family:var(--f-body);font-size:clamp(23px,6.4vw,30px);font-weight:300;letter-spacing:-.03em;text-decoration:none;
+  color:var(--c-on-dark);
+  padding:17px 14px 17px 0;
+  border-top:1px solid color-mix(in srgb,var(--c-on-dark) 12%,transparent);
+  border-radius:var(--radius);
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;
+  transition:background calc(.25s*var(--motion,1)) var(--ease);
+}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta):active{background:color-mix(in srgb,var(--c-on-dark) 7%,transparent)}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta) svg{color:color-mix(in srgb,var(--c-on-dark) 50%,transparent);flex:none;transition:color var(--nlr-t) var(--ease),transform calc(.5s*var(--motion,1)) var(--ease)}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta) span{display:block;transition:transform calc(.45s*var(--motion,1)) var(--ease)}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta):active span{transform:translateX(10px)}
+.nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta):active svg{color:var(--c-accent);transform:translateX(4px)}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta){
+  animation:nav-luiz-ricardo-01-in calc(.6s*var(--motion,1)) var(--ease) backwards;
+}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:nth-of-type(1){animation-delay:.06s}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:nth-of-type(2){animation-delay:.12s}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:nth-of-type(3){animation-delay:.18s}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:nth-of-type(4){animation-delay:.24s}
+.nav-luiz-ricardo-01__sheet.open .nav-luiz-ricardo-01__sheet-inner a:nth-of-type(5){animation-delay:.30s}
+@keyframes nav-luiz-ricardo-01-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.nav-luiz-ricardo-01__sheet-cta{justify-content:center;margin-top:calc(var(--space)*1.1);padding:19px 24px;font-size:16px;width:100%;box-sizing:border-box}
+
+@media (max-width:900px){
+  .nav-luiz-ricardo-01__links{display:none}
+  .nav-luiz-ricardo-01__burger{display:grid}
+  .nav-luiz-ricardo-01__wa{display:none}
+}
+@media (max-width:520px){
+  .nav-luiz-ricardo-01__inner{height:64px}
+}
+@media (prefers-reduced-motion:reduce){
+  .nav-luiz-ricardo-01__sheet-inner a:not(.nav-luiz-ricardo-01__sheet-cta){opacity:1;transform:none;animation:none!important}
+}

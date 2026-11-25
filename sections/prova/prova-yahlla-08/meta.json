@@ -1,0 +1,39 @@
+{
+  "id": "prova-yahlla-08",
+  "tipo": "prova",
+  "origem": "yahlla",
+  "descricao": "Faixa horizontal fina com três diferenciais em linha, cada um com ícone SVG de traço fino seguido de frase curta com trecho em negrito; sem títulos, números ou depoimentos. Ícones fixos (balão, relógio, pessoas).",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "serviços com atendimento diferenciado",
+    "consultórios",
+    "agências",
+    "serviços a domicílio",
+    "negócios com diferenciais de atendimento"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "item_1": {
+      "tipo": "richtext",
+      "max": 40,
+      "descricao": "Frase curta; use <b> no trecho de destaque. Ex.: Atendimento em <b>5 idiomas</b>"
+    },
+    "item_2": {
+      "tipo": "richtext",
+      "max": 40,
+      "descricao": "Frase curta; use <b> no destaque. Ex.: <b>Hora marcada</b>, sem correria"
+    },
+    "item_3": {
+      "tipo": "richtext",
+      "max": 50,
+      "descricao": "Frase curta; use <b> no destaque. Ex.: A domicílio para <b>casais e grupos</b>"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

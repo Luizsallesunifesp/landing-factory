@@ -1,0 +1,27 @@
+.s-servicos-tiago-head-spa-06{padding:var(--section-y) 0;position:relative;background:var(--c-dark);color:var(--c-on-dark)}
+.servicos-tiago-head-spa-06__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.servicos-tiago-head-spa-06__head{max-width:760px;margin:0 auto calc(var(--space)*2.4);text-align:center}
+.servicos-tiago-head-spa-06__eyebrow{font-family:var(--f-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px}
+.servicos-tiago-head-spa-06__eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--c-accent));flex:none}
+.servicos-tiago-head-spa-06__eyebrow::after{content:"";width:34px;height:1px;background:linear-gradient(270deg,transparent,var(--c-accent));flex:none}
+.servicos-tiago-head-spa-06__titulo{font-family:var(--f-display);font-weight:500;line-height:1.12;letter-spacing:-.01em;font-size:clamp(1.95rem,4.4vw,3.25rem)}
+.servicos-tiago-head-spa-06__destaque{font-style:italic;color:var(--c-accent)}
+.servicos-tiago-head-spa-06__lead{font-size:1.06rem;color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);max-width:62ch;margin:18px auto 0}
+.servicos-tiago-head-spa-06__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space)}
+.servicos-tiago-head-spa-06__card{position:relative;padding:30px 28px 28px;border-radius:var(--radius);background:color-mix(in srgb,var(--c-on-dark) 6%,var(--c-dark));border:1px solid color-mix(in srgb,var(--c-on-dark) 10%,transparent);transition:.45s var(--ease);overflow:hidden}
+.servicos-tiago-head-spa-06__card::after{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;background:var(--c-accent);opacity:0;transition:.45s;pointer-events:none;-webkit-mask:linear-gradient(var(--c-dark) 0 0) content-box,linear-gradient(var(--c-dark) 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.servicos-tiago-head-spa-06__card:hover{transform:translateY(-6px);background:color-mix(in srgb,var(--c-on-dark) 9%,var(--c-dark));box-shadow:0 26px 60px -30px color-mix(in srgb,var(--c-dark) 95%,transparent)}
+.servicos-tiago-head-spa-06__card:hover::after{opacity:1}
+.servicos-tiago-head-spa-06__num{font-family:var(--f-display);font-size:2.5rem;line-height:1;color:transparent;-webkit-text-stroke:1px color-mix(in srgb,var(--c-accent) 55%,transparent);position:absolute;top:20px;right:24px;transition:.45s}
+.servicos-tiago-head-spa-06__card:hover .servicos-tiago-head-spa-06__num{-webkit-text-stroke-color:var(--c-accent);opacity:.9}
+.servicos-tiago-head-spa-06__nome{font-family:var(--f-body);font-size:1.02rem;font-weight:600;color:var(--c-on-dark);margin:0 70px 10px 0;letter-spacing:0;line-height:1.35}
+.servicos-tiago-head-spa-06__desc{font-size:.875rem;color:color-mix(in srgb,var(--c-on-dark) 70%,transparent);line-height:1.62}
+.servicos-tiago-head-spa-06__tag{display:inline-block;margin-top:15px;padding:5px 12px;border-radius:100px;font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid color-mix(in srgb,var(--c-accent) 30%,transparent);color:var(--c-accent);background:color-mix(in srgb,var(--c-accent) 6%,transparent)}
+
+/* reveal (ativado pelo section.js; sem JS o conteudo fica visivel) */
+.servicos-tiago-head-spa-06--js .servicos-tiago-head-spa-06__rv{opacity:0;transform:translateY(calc(28px*var(--motion,1)));transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.servicos-tiago-head-spa-06--js .servicos-tiago-head-spa-06__rv.in{opacity:1;transform:none}
+.servicos-tiago-head-spa-06--js .servicos-tiago-head-spa-06__card:nth-child(3n+2){transition-delay:.08s}
+.servicos-tiago-head-spa-06--js .servicos-tiago-head-spa-06__card:nth-child(3n){transition-delay:.16s}
+
+@media(max-width:768px){.s-servicos-tiago-head-spa-06{padding:calc(var(--section-y)*.65) 0}}

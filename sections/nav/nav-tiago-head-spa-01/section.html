@@ -1,0 +1,21 @@
+<header class="s-nav-tiago-head-spa-01" data-secao="nav-tiago-head-spa-01">
+  <div class="nav-tiago-head-spa-01__wrap nav-tiago-head-spa-01__inner">
+    <a href="#topo" class="nav-tiago-head-spa-01__logo" aria-label="{{marca_nome}} — {{marca_sub}}">
+      <span class="nav-tiago-head-spa-01__mark"><img class="nav-tiago-head-spa-01__emblem" src="{{img:logo}}" alt="{{alt:logo}}" loading="eager" decoding="async"></span>
+      <span class="nav-tiago-head-spa-01__txt"><b>{{marca_nome}}</b><span>{{marca_sub}}</span></span>
+    </a>
+    <nav class="nav-tiago-head-spa-01__desk">
+      {{#links}}
+      <a href="{{href}}">{{texto}}</a>
+      {{/links}}
+    </nav>
+    <a href="{{whatsapp_link}}" class="nav-tiago-head-spa-01__btn" target="_blank" rel="noopener">{{cta_texto}}</a>
+    <button class="nav-tiago-head-spa-01__burger" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-tiago-head-spa-01__drawer">
+    {{#links}}
+    <a href="{{href}}">{{texto}}</a>
+    {{/links}}
+    <a href="{{whatsapp_link}}" class="nav-tiago-head-spa-01__btn" target="_blank" rel="noopener">{{cta_texto}}</a>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+<section class="s-servicos-samanta-07" data-secao="servicos-samanta-07" aria-labelledby="servicos-samanta-07-titulo">
+  <div class="servicos-samanta-07__wrap servicos-samanta-07__grid">
+    <div class="servicos-samanta-07__topo">
+      <p class="servicos-samanta-07__rotulo">{{rotulo}}</p>
+      <h2 id="servicos-samanta-07-titulo" class="servicos-samanta-07__titulo">{{titulo}}</h2>
+    </div>
+    <article class="servicos-samanta-07__area servicos-samanta-07__area--destaque">
+      <div class="servicos-samanta-07__texto">
+        <h3 class="servicos-samanta-07__nome servicos-samanta-07__nome--destaque">{{destaque_nome}}</h3>
+        <p class="servicos-samanta-07__corpo">{{destaque_texto}}</p>
+        <a class="servicos-samanta-07__link" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}} <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="servicos-samanta-07__foto">
+        <img src="{{img:foto}}" alt="{{alt:foto}}" loading="lazy" decoding="async">
+        <figcaption>{{legenda_foto}}</figcaption>
+      </figure>
+    </article>
+    {{#itens}}
+    <article class="servicos-samanta-07__area servicos-samanta-07__area--simples">
+      <h3 class="servicos-samanta-07__nome">{{nome}}</h3>
+      <p>{{descricao}}</p>
+    </article>
+    {{/itens}}
+  </div>
+</section>

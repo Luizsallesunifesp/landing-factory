@@ -1,0 +1,109 @@
+{
+  "id": "servicos-tiago-farma-04",
+  "tipo": "servicos",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho e abas de planos/protocolos; cada painel traz card com descrição, dois indicadores, lista de 3 itens e gráfico de duas barras comparativas (início vs. fim) com disclaimer no rodapé. Abas e barras dependem do section.js (sem JS, todos os painéis aparecem empilhados). Usa .lf-wrap e data-aos globais.",
+  "estilo": [
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "clínicas",
+    "academias",
+    "consultorias",
+    "cursos",
+    "planos de assinatura"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "barras crescem até data-h, troca de abas com fade, fade-up no cabeçalho",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 14
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "aba": {
+          "tipo": "texto_curto",
+          "max": 34
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 34
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 250
+        },
+        "stat1_valor": {
+          "tipo": "texto_curto",
+          "max": 12
+        },
+        "stat1_rotulo": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "stat2_valor": {
+          "tipo": "texto_curto",
+          "max": 12
+        },
+        "stat2_rotulo": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "feature1": {
+          "tipo": "texto_curto",
+          "max": 52
+        },
+        "feature2": {
+          "tipo": "texto_curto",
+          "max": 52
+        },
+        "feature3": {
+          "tipo": "texto_curto",
+          "max": 52
+        },
+        "barra1_altura": {
+          "tipo": "texto_curto",
+          "max": 3
+        },
+        "barra1_rotulo": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "barra2_altura": {
+          "tipo": "texto_curto",
+          "max": 3
+        },
+        "barra2_rotulo": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "legenda": {
+          "tipo": "texto",
+          "max": 92
+        },
+        "aviso": {
+          "tipo": "texto",
+          "max": 222
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

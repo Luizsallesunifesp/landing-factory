@@ -1,0 +1,34 @@
+{
+  "id": "cta-final-samanta-10",
+  "tipo": "cta-final",
+  "origem": "samanta",
+  "descricao": "Bloco de chamada com título grande em formato de pergunta, parágrafo curto explicando o primeiro passo e um único botão de WhatsApp com seta. Sem dependências globais.",
+  "estilo": [
+    "bold",
+    "clínico"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultorias",
+    "serviços por avaliação"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 70
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 180
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

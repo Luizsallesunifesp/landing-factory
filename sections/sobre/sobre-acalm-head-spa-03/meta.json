@@ -1,0 +1,51 @@
+{
+  "id": "sobre-acalm-head-spa-03",
+  "tipo": "sobre",
+  "origem": "acalm-head-spa",
+  "descricao": "Duas colunas: foto em moldura com contorno deslocado à esquerda e, à direita, eyebrow com linha decorativa, título serifado, dois parágrafos e assinatura com nome e cargo. Original usava .reveal (JS da página); aqui convertido para data-aos fade-up.",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "clínicas",
+    "estúdios",
+    "consultórios",
+    "profissionais autônomos que vendem pessoa e marca"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up ao rolar (AOS) nas duas colunas",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato do profissional/fundador, proporção livre"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 95
+    },
+    "paragrafo_1": {
+      "tipo": "richtext",
+      "max": 330,
+      "descricao": "aceita <strong> para destacar o nome do negócio"
+    },
+    "paragrafo_2": {
+      "tipo": "texto",
+      "max": 295
+    },
+    "cargo": {
+      "tipo": "texto_curto",
+      "max": 50,
+      "descricao": "cargo sob o nome do profissional"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

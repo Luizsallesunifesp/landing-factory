@@ -1,0 +1,71 @@
+{
+  "id": "dor-tiago-head-spa-04",
+  "tipo": "dor",
+  "origem": "tiago-head-spa",
+  "descricao": "Fundo escuro. Cabeçalho com eyebrow, título com palavra em destaque itálico na cor de acento e lead; grid de cards com ícone de linha fina, título curto e descrição; bloco de insight com aspas grandes encerra a seção. O ícone de cada card é o conteúdo interno de um SVG 24x24 (paths). Reveal por IntersectionObserver no section.js.",
+  "estilo": [
+    "editorial",
+    "clínico",
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "saúde e estética",
+    "clínicas de especialidade",
+    "serviços que listam sintomas ou problemas do público antes da solução"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar com atrasos escalonados nos cards",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 50
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "lead": {
+      "tipo": "texto",
+      "max": 380
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 8,
+      "campos": {
+        "icone": {
+          "tipo": "richtext",
+          "max": 400
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 120
+        }
+      }
+    },
+    "insight_inicio": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "insight_destaque": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "insight_fim": {
+      "tipo": "texto",
+      "max": 200
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

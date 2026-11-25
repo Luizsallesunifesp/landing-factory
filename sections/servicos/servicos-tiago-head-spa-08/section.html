@@ -1,0 +1,23 @@
+<section class="s-servicos-tiago-head-spa-08" data-secao="servicos-tiago-head-spa-08">
+  <div class="servicos-tiago-head-spa-08__wrap servicos-tiago-head-spa-08__in">
+    <div class="servicos-tiago-head-spa-08__img servicos-tiago-head-spa-08__rv">
+      <img src="{{img:foto}}" alt="{{alt:foto}}" loading="lazy" decoding="async">
+      <div class="servicos-tiago-head-spa-08__badge"><b>{{selo_titulo}}</b><span>{{selo_texto}}</span></div>
+    </div>
+    <div class="servicos-tiago-head-spa-08__txt servicos-tiago-head-spa-08__rv servicos-tiago-head-spa-08__d1">
+      <div class="servicos-tiago-head-spa-08__eyebrow">{{eyebrow}}</div>
+      <h2 class="servicos-tiago-head-spa-08__titulo">{{titulo}} <em class="servicos-tiago-head-spa-08__g">{{titulo_destaque}}</em></h2>
+      <p class="servicos-tiago-head-spa-08__lead">{{lead}}</p>
+      <div class="servicos-tiago-head-spa-08__grid">
+        {{#itens}}
+        <div class="servicos-tiago-head-spa-08__card">
+          <svg class="servicos-tiago-head-spa-08__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">{{{icone}}}</svg>
+          <h4>{{nome}}</h4>
+          <p>{{descricao}}</p>
+        </div>
+        {{/itens}}
+      </div>
+      <a href="{{whatsapp_link}}" class="servicos-tiago-head-spa-08__btn">{{cta_texto}}</a>
+    </div>
+  </div>
+</section>

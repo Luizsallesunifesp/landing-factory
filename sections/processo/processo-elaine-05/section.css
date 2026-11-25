@@ -1,0 +1,11 @@
+.s-processo-elaine-05{position:relative;padding:var(--section-y) 0}
+.processo-elaine-05__eyebrow{display:flex;align-items:center;gap:.7rem;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent)}
+.processo-elaine-05__eyebrow::before{content:"";display:inline-block;width:22px;height:1px;background:var(--c-accent)}
+.processo-elaine-05__lista{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--space)*1.5);margin-top:calc(var(--space)*2)}
+.processo-elaine-05__etapa{border-top:2px solid var(--c-primary);padding-top:var(--space)}
+.processo-elaine-05__num{font-family:var(--f-mono);font-size:.8rem;color:var(--c-accent)}
+.processo-elaine-05__titulo{font-family:var(--f-display);font-size:1.3rem;font-weight:400;margin:.6rem 0}
+.processo-elaine-05__texto{font-size:.9rem;color:var(--c-muted)}
+.s-processo-elaine-05.is-reveal .processo-elaine-05__reveal{opacity:0;transform:translateY(calc(18px*var(--motion,1)));transition:opacity calc(.7s*var(--motion,1)) var(--ease),transform calc(.7s*var(--motion,1)) var(--ease)}
+.s-processo-elaine-05.is-reveal .processo-elaine-05__reveal.in{opacity:1;transform:none}
+@media (max-width:760px){.processo-elaine-05__lista{grid-template-columns:1fr}}

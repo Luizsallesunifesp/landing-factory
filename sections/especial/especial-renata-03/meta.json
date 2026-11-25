@@ -1,0 +1,80 @@
+{
+  "id": "especial-renata-03",
+  "tipo": "especial",
+  "origem": "renata",
+  "descricao": "Seção interativa escura em duas colunas: texto e botão de iniciar exercício à esquerda; à direita círculo central com dois anéis e rótulo de fase, com dica do ciclo de respiração 4-4-6. Depende só do section.js próprio (textos de cada fase vêm de data-attributes); sem --motion (0) o JS não roda e o botão fica inerte. Fundo usa --c-primary.",
+  "estilo": [
+    "acolhedor",
+    "orgânico",
+    "escuro"
+  ],
+  "nicho": [
+    "terapia",
+    "bem-estar",
+    "yoga",
+    "meditação",
+    "spa",
+    "medicina integrativa",
+    "saúde mental"
+  ],
+  "libs": [],
+  "animacao": "círculo de respiração interativo (inspire 4s, segure 4s, expire 6s) controlado por JS e transições CSS",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 300
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "cta_parar": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "rotulo_pronto": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "rotulo_inspire": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "rotulo_segure": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "rotulo_expire": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "dica_inicial": {
+      "tipo": "texto",
+      "max": 90,
+      "descricao": "evitar aspas duplas (vai em data-attribute)"
+    },
+    "dica_inspire": {
+      "tipo": "texto",
+      "max": 70
+    },
+    "dica_segure": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "dica_expire": {
+      "tipo": "texto",
+      "max": 70
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

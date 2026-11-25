@@ -1,0 +1,21 @@
+<header class="s-nav-elaine-01" data-secao="nav-elaine-01">
+  <div class="nav-elaine-01__wrap nav-elaine-01__nav">
+    <div class="nav-elaine-01__brand">
+      <span class="nav-elaine-01__seal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 C7 6 4 10 4 14a8 8 0 0 0 16 0c0-4-3-8-8-12z"></path></svg>
+      </span>
+      <div class="nav-elaine-01__brand-name">
+        <b>{{profissional}}</b>
+        <span>{{profissao}}</span>
+      </div>
+    </div>
+    <nav class="nav-elaine-01__links">
+      {{#links}}
+      <a href="{{ancora}}">{{texto}}</a>
+      {{/links}}
+    </nav>
+    <div class="nav-elaine-01__cta">
+      <a class="nav-elaine-01__btn" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}}</a>
+    </div>
+  </div>
+</header>

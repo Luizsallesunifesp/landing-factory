@@ -1,0 +1,43 @@
+{
+  "id": "nav-yahlla-02",
+  "tipo": "nav",
+  "origem": "yahlla",
+  "descricao": "Cabeçalho fixo horizontal: marca com ponto de destaque à esquerda, menu central de links de âncora e botão pequeno de WhatsApp à direita; ganha fundo translúcido ao rolar (classe is-scrolled via section.js). Seletor de idioma PT/EN/ES do original foi removido (dependia de JS i18n externo). Menu some abaixo de 820px.",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "massoterapia",
+    "estética",
+    "turismo",
+    "hotelaria",
+    "consultórios"
+  ],
+  "libs": [],
+  "animacao": "fundo e padding mudam ao rolar a página",
+  "slots": {
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 14
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "ancora": {
+          "tipo": "url",
+          "max": 30
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

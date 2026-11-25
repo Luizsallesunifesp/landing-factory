@@ -1,0 +1,20 @@
+<section class="s-processo-renata-04" data-secao="processo-renata-04">
+  <div class="processo-renata-04__wrap">
+    <div class="processo-renata-04__head processo-renata-04__fade">
+      <div class="processo-renata-04__eyebrow">{{eyebrow}}</div>
+      <h2 class="processo-renata-04__titulo">{{titulo}}</h2>
+      <p class="processo-renata-04__subtitulo">{{subtitulo}}</p>
+    </div>
+    <div class="processo-renata-04__list processo-renata-04__fade">
+      {{#itens}}
+      <div class="processo-renata-04__item">
+        <div class="processo-renata-04__item-head">
+          <h3><span class="processo-renata-04__num">{{@num}}</span> {{nome}}</h3>
+          <div class="processo-renata-04__plus"></div>
+        </div>
+        <div class="processo-renata-04__body"><p>{{descricao}}</p></div>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

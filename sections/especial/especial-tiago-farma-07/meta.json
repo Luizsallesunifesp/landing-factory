@@ -1,0 +1,122 @@
+{
+  "id": "especial-tiago-farma-07",
+  "tipo": "especial",
+  "origem": "tiago-farma",
+  "descricao": "Cabeçalho centralizado e cartão único de quiz com três perguntas: barra de progresso segmentada, opções como botões em grade, erro por passo, link de voltar e tela final com check e botão para enviar as respostas no WhatsApp. Depende de section.js (troca de passos e montagem do texto do link); o link usa o slot automático whatsapp_link como base.",
+  "estilo": [
+    "acolhedor",
+    "clínico"
+  ],
+  "nicho": [
+    "captação com triagem: clínicas, consultorias, educação, funis que qualificam o lead antes do contato"
+  ],
+  "libs": [],
+  "animacao": "troca de passos e barra de progresso por JS (.is-active), validação de opção, fade entre passos",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "pergunta_1": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "opcoes_1": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 55
+        }
+      }
+    },
+    "pergunta_2": {
+      "tipo": "texto",
+      "max": 90
+    },
+    "opcoes_2": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 40
+        }
+      }
+    },
+    "pergunta_3": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "opcoes_3": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 60
+        }
+      }
+    },
+    "erro": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "voltar": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "resultado_titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "resultado_texto": {
+      "tipo": "texto",
+      "max": 220
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "wa_intro": {
+      "tipo": "texto",
+      "max": 80,
+      "descricao": "Primeira linha da mensagem de WhatsApp (ex.: Olá! Fiz a avaliação rápida no site:)"
+    },
+    "rotulo_1": {
+      "tipo": "texto_curto",
+      "max": 30,
+      "descricao": "Rótulo da resposta 1 na mensagem (ex.: Objetivo:)"
+    },
+    "rotulo_2": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "Rótulo da resposta 2 na mensagem"
+    },
+    "rotulo_3": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "Rótulo da resposta 3 na mensagem"
+    },
+    "wa_fim": {
+      "tipo": "texto",
+      "max": 60,
+      "descricao": "Última linha da mensagem (ex.: Gostaria de agendar minha avaliação.)"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

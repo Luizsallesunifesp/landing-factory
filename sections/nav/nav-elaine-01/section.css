@@ -1,0 +1,16 @@
+.s-nav-elaine-01{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--c-bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--c-line)}
+.nav-elaine-01__wrap{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.2)}
+.nav-elaine-01__nav{display:flex;align-items:center;justify-content:space-between;padding:calc(var(--space)*.75) 0}
+.nav-elaine-01__brand{display:flex;align-items:center;gap:12px;font-family:var(--f-display);font-size:19px;letter-spacing:.01em}
+.nav-elaine-01__seal{width:34px;height:34px;border-radius:50%;border:1px solid var(--c-primary);display:flex;align-items:center;justify-content:center;color:var(--c-primary)}
+.nav-elaine-01__seal svg{width:16px;height:16px}
+.nav-elaine-01__brand-name{display:flex;flex-direction:column;line-height:1.15}
+.nav-elaine-01__brand-name b{font-weight:500}
+.nav-elaine-01__brand-name span{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;color:var(--c-primary);text-transform:uppercase}
+.nav-elaine-01__links{display:flex;gap:32px;align-items:center;font-size:14px;font-weight:500}
+.nav-elaine-01__links a{opacity:.8;transition:opacity .2s}
+.nav-elaine-01__links a:hover{opacity:1}
+.nav-elaine-01__cta{display:flex}
+.nav-elaine-01__btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-body);font-weight:600;font-size:13.5px;padding:11px 20px;border-radius:2px;cursor:pointer;border:1px solid transparent;background:var(--c-primary);color:var(--c-on-primary);transition:transform .25s var(--ease),background .25s var(--ease),color .25s var(--ease)}
+.nav-elaine-01__btn:hover{transform:translateY(-2px);background:var(--c-text)}
+@media (max-width:820px){.nav-elaine-01__links{display:none}}

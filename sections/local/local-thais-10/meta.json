@@ -1,0 +1,55 @@
+{
+  "id": "local-thais-10",
+  "tipo": "local",
+  "origem": "thais",
+  "descricao": "Ficha de contato em duas colunas: à esquerda título, endereço, WhatsApp, Instagram e botão de mapa com seta; à direita tabela de horários semanais (dias fechados entram como texto, sem estilo especial). Sem mídia, tipografia sans, régua decorativa no topo (estática, sem animação).",
+  "estilo": [
+    "editorial",
+    "minimalista"
+  ],
+  "nicho": [
+    "clínicas e consultórios com endereço físico e horário fixo (estética, médico, odontológico, escritórios)"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "rotulo_endereco": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "endereco_complemento": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo_horario": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "horarios": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 7,
+      "campos": {
+        "dia": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "horas": {
+          "tipo": "texto_curto",
+          "max": 20
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

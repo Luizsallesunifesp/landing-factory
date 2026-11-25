@@ -1,0 +1,19 @@
+<section class="s-servicos-tiago-head-spa-06" data-secao="servicos-tiago-head-spa-06">
+  <div class="servicos-tiago-head-spa-06__wrap">
+    <div class="servicos-tiago-head-spa-06__head servicos-tiago-head-spa-06__rv">
+      <div class="servicos-tiago-head-spa-06__eyebrow">{{eyebrow}}</div>
+      <h2 class="servicos-tiago-head-spa-06__titulo">{{titulo}} <em class="servicos-tiago-head-spa-06__destaque">{{titulo_destaque}}</em></h2>
+      <p class="servicos-tiago-head-spa-06__lead">{{subtitulo}}</p>
+    </div>
+
+    <div class="servicos-tiago-head-spa-06__grid">
+      {{#itens}}
+      <article class="servicos-tiago-head-spa-06__card servicos-tiago-head-spa-06__rv"><span class="servicos-tiago-head-spa-06__num">{{@num}}</span>
+        <h3 class="servicos-tiago-head-spa-06__nome">{{nome}}</h3>
+        <p class="servicos-tiago-head-spa-06__desc">{{descricao}}</p>
+        <span class="servicos-tiago-head-spa-06__tag">{{tag}}</span>
+      </article>
+      {{/itens}}
+    </div>
+  </div>
+</section>

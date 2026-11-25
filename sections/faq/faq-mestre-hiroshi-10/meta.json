@@ -1,0 +1,43 @@
+{
+  "id": "faq-mestre-hiroshi-10",
+  "tipo": "faq",
+  "origem": "mestre-hiroshi",
+  "descricao": "Título à esquerda e seis perguntas em acordeão à direita, cada uma com ícone de mais e resposta curta expansível. Fundo escuro (--c-dark). Usa gsap/ScrollTrigger opcionais para o reveal.",
+  "estilo": [
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "produto ou serviço digital com dúvidas frequentes sobre acesso, pagamento e garantia"
+  ],
+  "libs": [
+    "details/summary nativo",
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "título palavra a palavra e escalonamento das perguntas ao rolar; abertura nativa sem JavaScript",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 8,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 60
+        },
+        "resposta": {
+          "tipo": "texto",
+          "max": 200
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

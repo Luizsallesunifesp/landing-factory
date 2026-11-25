@@ -1,0 +1,42 @@
+{
+  "id": "nav-elaine-01",
+  "tipo": "nav",
+  "origem": "elaine",
+  "descricao": "Barra horizontal sticky: marca à esquerda com selo SVG de gota/folha e nome em duas linhas (nome e profissão em mono pequeno), links centrais em linha (ocultos no mobile) e botão primário de WhatsApp à direita. Sem dependência global; usa fontes dos tokens.",
+  "estilo": [
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "saúde e farmácia",
+    "clínicas",
+    "consultórios",
+    "profissionais liberais com agendamento por WhatsApp"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 16
+        },
+        "ancora": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

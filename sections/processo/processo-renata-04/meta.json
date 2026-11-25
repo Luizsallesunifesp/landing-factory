@@ -1,0 +1,52 @@
+{
+  "id": "processo-renata-04",
+  "tipo": "processo",
+  "origem": "renata",
+  "descricao": "Cabeçalho com eyebrow em pílula, título serifado e parágrafo; abaixo, acordeão de etapas numeradas com sinal de '+' (primeiro item aberto). Acordeão e reveal ao rolar vêm do section.js próprio; sem dependências globais.",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "serviços com etapas definidas",
+    "consultorias",
+    "clínicas",
+    "escritórios",
+    "agências",
+    "cursos"
+  ],
+  "libs": [],
+  "animacao": "reveal fade-up ao rolar e acordeão por clique",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 65
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 180
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 48
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 180
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

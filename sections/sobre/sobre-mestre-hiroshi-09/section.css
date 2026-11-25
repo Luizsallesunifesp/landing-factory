@@ -1,0 +1,30 @@
+.s-sobre-mestre-hiroshi-09{padding-block:var(--section-y);background:var(--c-dark);color:var(--c-on-dark);border-top:1px solid var(--c-line);font-family:var(--f-body)}
+.sobre-mestre-hiroshi-09__wrap{max-width:var(--max-w);margin:0 auto;padding-inline:var(--space)}
+.sobre-mestre-hiroshi-09__grade{display:grid;gap:calc(var(--space)*2);align-items:center}
+@media(min-width:900px){.sobre-mestre-hiroshi-09__grade{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)}}
+
+.sobre-mestre-hiroshi-09__retrato{aspect-ratio:4/5;border-radius:var(--radius);border:1px solid var(--c-line);background:linear-gradient(155deg,var(--c-surface-2),var(--c-dark));position:relative;overflow:hidden}
+.sobre-mestre-hiroshi-09__retrato img{display:block;width:100%;height:100%;object-fit:cover}
+
+.sobre-mestre-hiroshi-09__titulo{font-family:var(--f-display);font-size:clamp(1.5rem,5.6vw,2.9rem);margin:0 0 calc(var(--space)*.85)}
+.sobre-mestre-hiroshi-09__corpo{font-size:clamp(1rem,1.35vw,1.08rem);color:var(--c-muted);max-width:68ch;margin:0 0 1em}
+.sobre-mestre-hiroshi-09__cta-par{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center;margin-top:calc(var(--space)*1.1)}
+
+.sobre-mestre-hiroshi-09__ic{width:19px;height:19px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .24s var(--ease)}
+
+.sobre-mestre-hiroshi-09__btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden;white-space:nowrap;min-height:54px;padding:17px 30px;border-radius:999px;background:var(--c-accent);color:var(--c-dark);font-family:var(--f-display);font-weight:700;font-size:1.02rem;letter-spacing:-.012em;text-decoration:none;cursor:pointer;box-shadow:0 10px 24px -12px color-mix(in srgb,var(--c-dark) 85%,transparent),0 2px 5px -2px color-mix(in srgb,var(--c-dark) 60%,transparent);transition:background .2s ease,transform .16s var(--ease),box-shadow .2s ease}
+.sobre-mestre-hiroshi-09__btn:hover{background:color-mix(in srgb,var(--c-accent) 85%,var(--c-on-dark));transform:translateY(-2px);box-shadow:0 18px 34px -12px color-mix(in srgb,var(--c-dark) 90%,transparent),0 3px 7px -2px color-mix(in srgb,var(--c-dark) 65%,transparent)}
+.sobre-mestre-hiroshi-09__btn:active{transform:translateY(1px) scale(.985)}
+.sobre-mestre-hiroshi-09__btn:hover .sobre-mestre-hiroshi-09__ic{transform:translateX(4px)}
+.sobre-mestre-hiroshi-09__btn::after{content:"";position:absolute;top:0;left:0;width:42%;height:100%;background:linear-gradient(100deg,transparent,color-mix(in srgb,var(--c-on-dark) 32%,transparent),transparent);transform:translateX(-260%) skewX(-18deg);animation:sobre-mestre-hiroshi-09-varredura 7s ease-in-out infinite;pointer-events:none}
+@keyframes sobre-mestre-hiroshi-09-varredura{0%,68%{transform:translateX(-260%) skewX(-18deg)}100%{transform:translateX(360%) skewX(-18deg)}}
+@media(max-width:540px){.sobre-mestre-hiroshi-09__btn{width:100%;padding-inline:18px;font-size:.98rem}.sobre-mestre-hiroshi-09__glow{display:flex;width:100%}}
+
+@property --sobre-mestre-hiroshi-09-ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+.sobre-mestre-hiroshi-09__glow{position:relative;display:inline-flex;isolation:isolate}
+.sobre-mestre-hiroshi-09__glow::before{content:"";position:absolute;inset:-4px;border-radius:999px;background:conic-gradient(from var(--sobre-mestre-hiroshi-09-ang) at 50% 50%,color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark)),var(--c-accent),color-mix(in srgb,var(--c-accent) 55%,var(--c-dark)),color-mix(in srgb,var(--c-accent) 85%,var(--c-on-dark)),color-mix(in srgb,var(--c-accent) 60%,var(--c-on-dark)));filter:blur(16px);opacity:.85;transform:scale(1);animation:sobre-mestre-hiroshi-09-gira 6s linear infinite;transition:transform .34s var(--ease),opacity .25s ease;z-index:-1;pointer-events:none}
+.sobre-mestre-hiroshi-09__glow:hover::before{transform:scale(1.08);opacity:1}
+@keyframes sobre-mestre-hiroshi-09-gira{to{--sobre-mestre-hiroshi-09-ang:360deg}}
+@media(max-width:640px){.sobre-mestre-hiroshi-09__glow::before{animation-duration:9s;filter:blur(13px)}}
+
+@media(prefers-reduced-motion:reduce){.sobre-mestre-hiroshi-09__btn::after,.sobre-mestre-hiroshi-09__glow::before{animation:none}}

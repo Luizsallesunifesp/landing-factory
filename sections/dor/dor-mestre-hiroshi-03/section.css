@@ -1,0 +1,47 @@
+.s-dor-mestre-hiroshi-03{
+  padding-block:var(--section-y);
+  background:var(--c-dark);
+  color:var(--c-on-dark);
+}
+.dor-mestre-hiroshi-03__wrap{
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding-inline:var(--space);
+}
+.dor-mestre-hiroshi-03__duas{
+  display:grid;
+  gap:calc(var(--space) * 2);
+}
+.s-dor-mestre-hiroshi-03 .dor-mestre-hiroshi-03__titulo{
+  margin:0;
+  font-family:var(--f-display);
+  font-weight:800;
+  line-height:1.03;
+  letter-spacing:-.042em;
+  text-wrap:balance;
+  font-size:clamp(1.5rem,5.6vw,2.9rem);
+}
+.dor-mestre-hiroshi-03__itens{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:2px;
+}
+.dor-mestre-hiroshi-03__itens li{
+  position:relative;
+  padding:var(--space) 0;
+  border-top:1px solid var(--c-line);
+  color:color-mix(in srgb, var(--c-on-dark) 65%, transparent);
+  font-family:var(--f-body);
+  font-size:1rem;
+  line-height:1.5;
+}
+.dor-mestre-hiroshi-03__itens li:last-child{
+  border-bottom:1px solid var(--c-line);
+}
+@media(min-width:900px){
+  .dor-mestre-hiroshi-03__duas{
+    grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  }
+}

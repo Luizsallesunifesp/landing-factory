@@ -1,0 +1,52 @@
+{
+  "id": "cta-final-tiago-head-spa-17",
+  "tipo": "cta-final",
+  "origem": "tiago-head-spa",
+  "descricao": "CTA final em tela cheia: foto de fundo com parallax e véu escuro, emblema centralizado no topo, título grande com trecho em destaque, parágrafo curto e dois botões (sólido e fantasma). Dependência: o emblema usa <use href=\"#cti\">, um símbolo SVG global da página; sem ele o emblema não aparece. O segundo botão aponta para uma âncora da página (ex.: #avaliacao).",
+  "estilo": [
+    "escuro",
+    "luxo"
+  ],
+  "nicho": [
+    "clínicas estéticas",
+    "barbearias premium",
+    "spas",
+    "saúde masculina",
+    "estúdios de bem-estar"
+  ],
+  "libs": [],
+  "animacao": "Revelação escalonada ao rolar (IntersectionObserver) e parallax no fundo, em section.js, escalados por --motion.",
+  "slots": {
+    "fundo": {
+      "tipo": "imagem",
+      "max": 0
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 40
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 205
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 32
+    },
+    "cta2_link": {
+      "tipo": "link",
+      "max": 60
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

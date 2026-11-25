@@ -1,0 +1,24 @@
+<section class="s-hero-karol-02" data-secao="hero-karol-02">
+  <div class="lf-wrap hero-karol-02__grid">
+    <div class="hero-karol-02__copy hero-karol-02__reveal">
+      <div class="hero-karol-02__eyebrow">{{etiqueta}}</div>
+      <h1 class="hero-karol-02__titulo">{{titulo}}</h1>
+      <p class="hero-karol-02__lead">{{subtitulo}}</p>
+      <div class="hero-karol-02__ctas">
+        <a href="{{whatsapp_link}}" target="_blank" rel="noopener" class="hero-karol-02__btn hero-karol-02__btn--primary">{{cta_texto}}</a>
+        <a href="{{cta2_link}}" class="hero-karol-02__btn hero-karol-02__btn--ghost">{{cta2_texto}}</a>
+      </div>
+      <div class="hero-karol-02__stats">
+        {{#stats}}
+        <div class="hero-karol-02__stat"><span class="hero-karol-02__num">{{valor}}</span><span class="hero-karol-02__lbl">{{rotulo}}</span></div>
+        {{/stats}}
+      </div>
+    </div>
+    <div class="hero-karol-02__photo hero-karol-02__reveal">
+      <div class="hero-karol-02__frame">
+        <img src="{{img:principal}}" alt="{{alt:principal}}" loading="eager" fetchpriority="high" decoding="async">
+        <div class="hero-karol-02__badge"><b>{{profissional}}</b>{{instagram}}</div>
+      </div>
+    </div>
+  </div>
+</section>

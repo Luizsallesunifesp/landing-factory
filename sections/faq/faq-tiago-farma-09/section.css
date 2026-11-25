@@ -1,0 +1,18 @@
+.s-faq-tiago-farma-09{padding:var(--section-y) 0;background:var(--c-surface-2)}
+.faq-tiago-farma-09__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.4)}
+.faq-tiago-farma-09__header{max-width:640px;margin:0 auto calc(var(--space)*2.4);text-align:center}
+.faq-tiago-farma-09__eyebrow{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:calc(var(--space)*.75);font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent)}
+.faq-tiago-farma-09__eyebrow::before{content:'';display:inline-block;width:26px;height:1px;background:var(--c-accent)}
+.faq-tiago-farma-09__titulo{font-family:var(--f-display);font-weight:500;font-size:clamp(1.75rem,3.6vw,2.6rem);line-height:1.15;letter-spacing:-.01em;color:var(--c-text)}
+.faq-tiago-farma-09__list{max-width:760px;margin:0 auto}
+.faq-tiago-farma-09__item{border-bottom:1px solid var(--c-line)}
+.faq-tiago-farma-09__q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--space)*.9) 4px;background:none;border:0;cursor:pointer;font-family:var(--f-display);font-size:1.06rem;font-weight:500;text-align:left;color:var(--c-text)}
+.faq-tiago-farma-09__plus{font-size:1.4rem;color:var(--c-accent);transition:transform .3s var(--ease);flex-shrink:0;margin-left:20px}
+.faq-tiago-farma-09__item.is-open .faq-tiago-farma-09__plus{transform:rotate(45deg)}
+.faq-tiago-farma-09__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-tiago-farma-09__a p{padding:0 4px calc(var(--space)*1.0);color:var(--c-muted);font-family:var(--f-body);font-size:.92rem;max-width:640px}
+.s-faq-tiago-farma-09.is-js .faq-tiago-farma-09__reveal{opacity:0;transform:translateY(calc(28px*var(--motion,1)));transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.s-faq-tiago-farma-09.is-js .faq-tiago-farma-09__reveal.is-in{opacity:1;transform:none}
+@media (max-width:768px){
+  .faq-tiago-farma-09__container{padding:0 var(--space)}
+}

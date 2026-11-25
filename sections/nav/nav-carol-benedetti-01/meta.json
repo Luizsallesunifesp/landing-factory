@@ -1,0 +1,38 @@
+{
+  "id": "nav-carol-benedetti-01",
+  "tipo": "nav",
+  "origem": "carol-benedetti",
+  "descricao": "Barra fixa transparente (mix-blend-mode: difference) com logotipo textual em serif caixa-alta à esquerda e links de texto à direita, sem botão; links somem no mobile. Depende de fundo atrás para o efeito de blend e de ids de âncora na página.",
+  "estilo": [
+    "minimalista",
+    "luxo"
+  ],
+  "nicho": [
+    "estética",
+    "clínicas",
+    "consultórios",
+    "marcas pessoais de serviço"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "href": {
+          "tipo": "url",
+          "max": 60
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

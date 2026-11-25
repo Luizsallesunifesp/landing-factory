@@ -1,0 +1,17 @@
+<section class="s-servicos-karol-04" data-secao="servicos-karol-04">
+  <div class="lf-wrap">
+    <div class="servicos-karol-04__head servicos-karol-04__reveal">
+      <div class="servicos-karol-04__eyebrow">{{eyebrow}}</div>
+      <h2 class="servicos-karol-04__titulo">{{titulo}}</h2>
+    </div>
+    <div class="servicos-karol-04__grid servicos-karol-04__reveal">
+      {{#itens}}
+      <div class="servicos-karol-04__card">
+        <span class="servicos-karol-04__idx">{{@num}}</span>
+        <h3 class="servicos-karol-04__nome">{{nome}}</h3>
+        <p class="servicos-karol-04__desc">{{descricao}}</p>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

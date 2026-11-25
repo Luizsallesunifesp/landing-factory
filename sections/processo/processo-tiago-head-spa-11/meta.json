@@ -1,0 +1,52 @@
+{
+  "id": "processo-tiago-head-spa-11",
+  "tipo": "processo",
+  "origem": "tiago-head-spa",
+  "descricao": "Seção escura com cabeçalho centralizado e quatro passos em colunas, cada um com marcador circular numerado ligado por linha fina, título e texto curto; sem imagem.",
+  "estilo": [
+    "minimalista",
+    "clínico",
+    "escuro"
+  ],
+  "nicho": [
+    "consultorias",
+    "clínicas",
+    "agências",
+    "cursos",
+    "serviços com jornada de contratação"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (IntersectionObserver, respeita --motion)",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 35
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 35
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 215
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

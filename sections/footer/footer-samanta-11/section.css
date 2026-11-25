@@ -1,0 +1,10 @@
+.s-footer-samanta-11{ border-top:1px solid var(--c-line); padding-top:calc(var(--space) * 2); padding-bottom:calc(var(--space) * 2 + 72px + env(safe-area-inset-bottom)); font-family:var(--f-body); font-size:15px; color:var(--c-text); background:var(--c-bg); }
+.footer-samanta-11__grid{ display:grid; gap:calc(var(--space) * 1.5); }
+.footer-samanta-11__nome{ font-family:var(--f-display); font-size:30px; line-height:1.1; color:var(--c-text); margin-bottom:10px; }
+.footer-samanta-11__id p:not(.footer-samanta-11__nome),.footer-samanta-11__contato p{ line-height:1.7; }
+.s-footer-samanta-11 a{ text-decoration-color:var(--c-line); text-underline-offset:4px; }
+.s-footer-samanta-11 a:hover{ text-decoration-color:var(--c-text); }
+.footer-samanta-11__nota{ font-family:var(--f-mono); font-weight:500; font-size:12px; line-height:1.5; text-transform:uppercase; color:var(--c-muted); max-width:24rem; }
+.footer-samanta-11__credito{ margin-top:calc(var(--space) * 1.7); padding-top:var(--space); border-top:1px solid var(--c-line); font-family:var(--f-mono); font-weight:500; font-size:11px; line-height:1.5; letter-spacing:-0.01em; text-transform:uppercase; color:var(--c-muted); }
+.footer-samanta-11__credito a{ color:var(--c-text); }
+@media (min-width:1024px){ .footer-samanta-11__grid{ grid-template-columns:5fr 4fr 3fr; } }

@@ -1,0 +1,73 @@
+.s-hero-renata-02{
+  display:flex;align-items:center;min-height:100vh;position:relative;
+  padding:calc(var(--section-y)*.8) 0 calc(var(--section-y)*.5);
+  background:
+    radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--c-primary) 30%, transparent), transparent 55%),
+    radial-gradient(circle at 10% 90%, color-mix(in srgb, var(--c-accent) 14%, transparent), transparent 45%),
+    linear-gradient(180deg, var(--c-bg) 0%, var(--c-surface-2) 100%);
+}
+.hero-renata-02__wrap{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.2)}
+.hero-renata-02__grid{display:grid;grid-template-columns:1fr;gap:calc(var(--space)*2);align-items:center}
+.hero-renata-02__eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--c-primary);background:color-mix(in srgb, var(--c-primary) 14%, transparent);
+  padding:7px 14px;border-radius:999px;margin-bottom:calc(var(--space)*1);
+}
+.hero-renata-02__eyebrow::before{content:"●";color:var(--c-accent);font-size:.6rem}
+.hero-renata-02__titulo{
+  font-family:var(--f-display);font-size:var(--fs-hero);line-height:1.08;margin:0 0 var(--space);
+  color:var(--c-text);
+}
+.hero-renata-02__titulo em{color:var(--c-primary);font-style:italic;font-weight:400}
+.hero-renata-02__lead{font-size:1.05rem;color:var(--c-muted);max-width:480px;margin:0 0 calc(var(--space)*1.5)}
+.hero-renata-02__cta-row{display:flex;gap:calc(var(--space)*.6);flex-wrap:wrap;align-items:center;flex-direction:column}
+.hero-renata-02__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  padding:14px 22px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;
+  cursor:pointer;transition:transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
+}
+.hero-renata-02__btn-primary{
+  background:var(--c-primary);color:var(--c-on-primary);
+  box-shadow:0 10px 24px color-mix(in srgb, var(--c-primary) 30%, transparent);
+}
+.hero-renata-02__btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px color-mix(in srgb, var(--c-primary) 35%, transparent)}
+.hero-renata-02__btn-ghost{background:transparent;color:var(--c-primary);border:1.5px solid color-mix(in srgb, var(--c-primary) 25%, transparent)}
+.hero-renata-02__btn-ghost:hover{border-color:var(--c-primary)}
+.hero-renata-02__meta{
+  display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:calc(var(--space)*1.6);padding-top:calc(var(--space)*1.2);
+  border-top:1px solid var(--c-line);
+}
+.hero-renata-02__meta strong{display:block;font-family:var(--f-display);font-size:1.2rem;color:var(--c-primary)}
+.hero-renata-02__meta span{font-size:.8rem;color:var(--c-muted)}
+.hero-renata-02__photo{position:relative;max-width:420px;margin:0 auto;width:100%}
+.hero-renata-02__photo-card{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;
+  box-shadow:0 30px 60px color-mix(in srgb, var(--c-primary) 25%, transparent);
+  background:linear-gradient(160deg, color-mix(in srgb, var(--c-primary) 30%, var(--c-bg)), var(--c-primary));
+}
+.hero-renata-02__photo-card img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-renata-02__photo-tag{
+  position:absolute;bottom:20px;left:20px;right:20px;
+  background:color-mix(in srgb, var(--c-bg) 92%, transparent);backdrop-filter:blur(6px);
+  border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;
+}
+.hero-renata-02__dot{
+  flex:none;width:10px;height:10px;border-radius:50%;background:var(--c-primary);
+  box-shadow:0 0 0 4px color-mix(in srgb, var(--c-primary) 20%, transparent);
+}
+.hero-renata-02__photo-tag strong{font-size:.88rem;display:block;color:var(--c-text)}
+.hero-renata-02__photo-tag span{font-size:.76rem;color:var(--c-muted)}
+@media (min-width:601px){
+  .hero-renata-02__cta-row{flex-direction:row}
+  .hero-renata-02__btn{width:auto;padding:15px 28px;font-size:.96rem}
+  .hero-renata-02__meta strong{font-size:1.4rem}
+  .hero-renata-02__lead{font-size:1.12rem}
+}
+@media (min-width:901px){
+  .hero-renata-02__grid{grid-template-columns:1.05fr .95fr;gap:56px}
+  .hero-renata-02__meta{flex-wrap:nowrap;gap:26px}
+}
+@media (max-width:600px){
+  .s-hero-renata-02{min-height:auto;padding:104px 0 56px}
+}

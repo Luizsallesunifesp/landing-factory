@@ -1,0 +1,63 @@
+{
+  "id": "servicos-karol-05",
+  "tipo": "servicos",
+  "origem": "karol",
+  "descricao": "Cabecalho em duas colunas (eyebrow e titulo a esquerda, paragrafo a direita), grade de 6 cards com icone SVG de linha em circulo, titulo e descricao (tilt 3D ao passar o mouse); ao final, faixa escura com tag e aviso (ex.: convenio). O slot icone recebe o SVG inline (viewBox 0 0 24 24, tracos). Autossuficiente: section.js faz o reveal, sem depender de JS global.",
+  "estilo": [
+    "minimalista",
+    "clinico"
+  ],
+  "nicho": [
+    "clinicas",
+    "consultorias",
+    "agencias (o que inclui o projeto)",
+    "mentorias",
+    "auditorias"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (IntersectionObserver) e tilt 3D nos cards no hover",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 32
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 82
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 224
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "icone": {
+          "tipo": "richtext",
+          "max": 400
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 42
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 160
+        }
+      }
+    },
+    "nota_tag": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "nota_texto": {
+      "tipo": "texto",
+      "max": 182
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

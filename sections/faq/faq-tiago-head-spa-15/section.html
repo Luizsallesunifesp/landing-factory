@@ -1,0 +1,16 @@
+<section class="s-faq-tiago-head-spa-15" data-secao="faq-tiago-head-spa-15">
+  <div class="faq-tiago-head-spa-15__wrap">
+    <div class="faq-tiago-head-spa-15__head faq-tiago-head-spa-15__rv">
+      <div class="faq-tiago-head-spa-15__eyebrow">{{eyebrow}}</div>
+      <h2 class="faq-tiago-head-spa-15__titulo">{{titulo}} <em class="faq-tiago-head-spa-15__destaque">{{titulo_destaque}}</em></h2>
+    </div>
+    <div class="faq-tiago-head-spa-15__list">
+      {{#itens}}
+      <div class="faq-tiago-head-spa-15__fq faq-tiago-head-spa-15__rv">
+        <button type="button" class="faq-tiago-head-spa-15__btn" aria-expanded="false">{{pergunta}}<span class="faq-tiago-head-spa-15__pm" aria-hidden="true">+</span></button>
+        <div class="faq-tiago-head-spa-15__ans"><p>{{resposta}}</p></div>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

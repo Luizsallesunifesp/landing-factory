@@ -1,0 +1,47 @@
+{
+  "id": "faq-tiago-head-spa-15",
+  "tipo": "faq",
+  "origem": "tiago-head-spa",
+  "descricao": "Cabeçalho centralizado com eyebrow e lista vertical de perguntas em acordeão (uma aberta por vez), botão de linha inteira e sinal de mais à direita; fundo escuro. Sem imagens. Acordeão e reveal por scroll no section.js, sem dependência global.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "qualquer negócio com dúvidas recorrentes antes da decisão (saúde, educação, software, imobiliário, serviços)"
+  ],
+  "libs": [],
+  "animacao": "expansão e recolhimento do acordeão ao clicar; reveal fade-up por item",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 8,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 80
+        },
+        "resposta": {
+          "tipo": "texto",
+          "max": 430
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

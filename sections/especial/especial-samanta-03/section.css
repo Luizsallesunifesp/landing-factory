@@ -1,0 +1,107 @@
+/* especial-samanta-03: scrollytelling pinado com canvas de frames e etiquetas.
+   O quadro mostra um recorte 3:5 (432x720, x=144 y=96) dos frames 720x900; as âncoras (data-ancora, --y) usam esse recorte.
+   Modo animado: a classe .is-anim é colocada na raiz pelo section.js. */
+.s-especial-samanta-03{ position:relative; padding-inline:var(--space); background:var(--c-bg); color:var(--c-muted); font-family:var(--f-body); }
+.s-especial-samanta-03 *,.s-especial-samanta-03 *::before,.s-especial-samanta-03 *::after{ box-sizing:border-box; }
+.s-especial-samanta-03 img{ display:block; max-width:100%; }
+.s-especial-samanta-03 h2,.s-especial-samanta-03 p,.s-especial-samanta-03 ol{ margin:0; }
+.s-especial-samanta-03 ol{ padding:0; list-style:none; }
+.especial-samanta-03__pin{ position:relative; max-width:calc(var(--max-w) - 2 * var(--space)); margin-inline:auto; padding-block:12px; }
+.especial-samanta-03__wash{
+  position:absolute; z-index:0; pointer-events:none;
+  top:-170px; right:2%; width:min(460px, 70%); height:360px; border-radius:50%;
+  background:
+    radial-gradient(circle at 30% 45%, color-mix(in srgb, var(--c-accent) 80%, transparent), transparent 60%),
+    radial-gradient(circle at 68% 40%, color-mix(in srgb, var(--c-primary) 55%, var(--c-bg)), transparent 62%),
+    radial-gradient(circle at 52% 78%, color-mix(in srgb, var(--c-surface-2) 85%, transparent), transparent 60%);
+  filter:blur(56px);
+}
+.especial-samanta-03__card{ position:relative; z-index:1; display:grid; gap:24px; padding:28px 20px; background:color-mix(in srgb, var(--c-primary) 20%, var(--c-bg)); border-radius:var(--radius-lg); overflow:hidden; }
+.especial-samanta-03__intro{ display:grid; gap:14px; }
+.especial-samanta-03__rotulo{ font:500 12px/1.3 var(--f-mono); letter-spacing:-0.01em; text-transform:uppercase; color:var(--c-muted); }
+.especial-samanta-03__titulo{ font-family:var(--f-display); font-weight:400; color:var(--c-text); letter-spacing:-0.02em; text-wrap:balance; font-size:clamp(34px, 9.2vw, 44px); line-height:1.08; }
+.especial-samanta-03__texto{ font-size:16px; max-width:34rem; }
+.especial-samanta-03__palco{ position:relative; min-width:0; min-height:0; }
+.especial-samanta-03__stage{ position:relative; display:grid; justify-items:center; gap:20px; }
+.especial-samanta-03__quadro{ position:relative; width:min(58%, 240px); aspect-ratio:3 / 5; }
+.especial-samanta-03__img{ position:absolute; left:-33.333%; top:-13.333%; width:166.667%; height:125%; max-width:none; filter:drop-shadow(0 24px 24px color-mix(in srgb, var(--c-text) 12%, transparent)); }
+.especial-samanta-03__canvas{ position:absolute; inset:0; width:100%; height:100%; display:none; filter:drop-shadow(0 24px 24px color-mix(in srgb, var(--c-text) 12%, transparent)); }
+.especial-samanta-03__linhas{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; display:none; }
+.especial-samanta-03__linhas path{ fill:none; stroke:var(--c-line); stroke-width:1.5; }
+.especial-samanta-03__linhas circle{ fill:var(--c-text); }
+.especial-samanta-03__notas{ display:grid; gap:12px; width:100%; }
+.especial-samanta-03__nota{ display:grid; gap:8px; justify-items:start; }
+.especial-samanta-03__nota p{ font-size:15px; line-height:1.45; color:var(--c-muted); }
+.especial-samanta-03__node{ display:inline-flex; align-items:center; gap:10px; padding:10px 18px; background:var(--c-bg); border:1px solid var(--c-line); border-radius:9999px; font:500 13px/1 var(--f-mono); letter-spacing:-0.02em; text-transform:uppercase; color:var(--c-text); white-space:nowrap; }
+.especial-samanta-03__node-n{ font-size:11px; color:var(--c-muted); }
+.especial-samanta-03__fim{ display:grid; gap:20px; justify-items:start; }
+.especial-samanta-03__nota-final{ font-family:var(--f-display); font-size:20px; line-height:1.3; color:var(--c-text); max-width:28rem; }
+.especial-samanta-03__btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:12px;
+  min-height:48px; max-width:100%; padding:14px 28px;
+  border:1px solid transparent; border-radius:9999px;
+  background:var(--c-primary); color:var(--c-on-primary);
+  font:500 14px/1.25 var(--f-mono); letter-spacing:-0.02em; text-transform:uppercase; text-align:center;
+  text-decoration:none; cursor:pointer;
+  transition:filter .2s var(--ease);
+}
+.especial-samanta-03__btn:hover{ filter:brightness(.9); }
+.especial-samanta-03__btn:focus-visible{ outline:2px solid var(--c-text); outline-offset:3px; }
+@media (max-width:400px){ .especial-samanta-03__btn{ font-size:13px; padding:14px 20px; } }
+
+@media (min-width:768px){
+  .especial-samanta-03__titulo{ font-size:clamp(44px, 5.6vw, 52px); }
+  .especial-samanta-03__card{ height:max(600px, calc(100svh - 24px - 64px)); grid-template-rows:auto minmax(0,1fr) auto; padding:32px; }
+  .especial-samanta-03__palco{ container-type:size; }
+  .especial-samanta-03__stage{
+    --nw:180px;
+    --qw:min(60cqh, 100cqw - 2 * var(--nw));
+    height:100%; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-content:center; gap:0;
+  }
+  .especial-samanta-03__quadro{ grid-column:2; grid-row:1; width:var(--qw); }
+  .especial-samanta-03__linhas{ display:block; }
+  .especial-samanta-03__notas{ display:contents; }
+  .especial-samanta-03__nota{ grid-row:1; align-self:start; position:relative; z-index:2; top:var(--y); transform:translateY(calc(var(--sobe, 0px) - 22px)); width:calc(var(--nw) + var(--qw) * .06 - 6px); }
+  .especial-samanta-03__nota--e{ grid-column:1; justify-self:end; justify-items:end; text-align:right; margin-right:calc(var(--qw) * -.06); }
+  .especial-samanta-03__nota--d{ grid-column:3; justify-self:start; margin-left:calc(var(--qw) * -.06); }
+  .especial-samanta-03__fim{ grid-template-columns:minmax(0,1fr) auto; align-items:end; column-gap:32px; }
+  .especial-samanta-03__fim .especial-samanta-03__btn{ white-space:nowrap; }
+}
+@media (min-width:1024px){
+  .especial-samanta-03__titulo{ font-size:clamp(52px, 4.45vw, 64px); }
+  .especial-samanta-03__texto{ font-size:18px; }
+  .especial-samanta-03__node{ font-size:14px; padding:12px 20px; }
+}
+@media (min-width:1200px){
+  .especial-samanta-03__card{
+    height:max(640px, calc(100svh - 24px));
+    grid-template-columns:minmax(0,4fr) minmax(0,8fr); grid-template-rows:auto minmax(0,1fr) auto;
+    column-gap:32px; padding:40px;
+  }
+  .especial-samanta-03__intro{ grid-column:1; grid-row:1; }
+  .especial-samanta-03__palco{ grid-column:2; grid-row:1 / span 3; }
+  .especial-samanta-03__fim{ grid-column:1; grid-row:3; grid-template-columns:none; }
+  .especial-samanta-03__stage{ --nw:230px; }
+  .especial-samanta-03__nota-final{ font-size:24px; }
+}
+
+/* modo animado (.is-anim): canvas no lugar da imagem, etiquetas entram com a rolagem */
+.s-especial-samanta-03.is-anim .especial-samanta-03__img{ display:none; }
+.s-especial-samanta-03.is-anim .especial-samanta-03__canvas{ display:block; }
+.s-especial-samanta-03.is-anim .especial-samanta-03__nota{ opacity:0; }
+.s-especial-samanta-03.is-anim .especial-samanta-03__linhas path,.s-especial-samanta-03.is-anim .especial-samanta-03__linhas circle{ opacity:0; }
+@media (max-width:767px){
+  .s-especial-samanta-03.is-anim .especial-samanta-03__card{ height:calc(100svh - 88px); min-height:460px; grid-template-rows:auto minmax(0,1fr) auto; gap:16px; padding:24px 20px; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__texto{ display:none; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__palco{ min-height:0; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__stage{ height:100%; grid-template-rows:minmax(0,1fr) auto; gap:16px; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__quadro{ width:auto; height:100%; max-width:100%; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__linhas{ display:block; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__notas{ justify-items:center; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__nota{ grid-area:1 / 1; justify-items:center; text-align:center; max-width:19rem; transform:translateY(var(--sobe, 0px)); }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__fim{ gap:14px; }
+  .s-especial-samanta-03.is-anim .especial-samanta-03__nota-final{ font-size:17px; }
+}
+@media (max-width:767px) and (max-height:799px){
+  .s-especial-samanta-03.is-anim .especial-samanta-03__nota-final{ display:none; }
+}

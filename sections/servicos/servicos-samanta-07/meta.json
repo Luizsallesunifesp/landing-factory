@@ -1,0 +1,72 @@
+{
+  "id": "servicos-samanta-07",
+  "tipo": "servicos",
+  "origem": "samanta",
+  "descricao": "Cabeçalho com rótulo e título, depois card destaque em duas colunas (texto, link de WhatsApp e foto à direita) e 1 a 2 cards de texto simples ao lado, em grade de 12 colunas no desktop. Sem dependência global; link usa whatsapp_link.",
+  "estilo": [
+    "editorial",
+    "clínico"
+  ],
+  "nicho": [
+    "odontologia",
+    "dermatologia",
+    "fisioterapia",
+    "estética",
+    "clínicas com lista de especialidades"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "destaque_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "destaque_texto": {
+      "tipo": "texto",
+      "max": 280
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "img:foto": {
+      "tipo": "img",
+      "descricao": "foto da especialidade em destaque, proporção 4:3 ou retrato"
+    },
+    "alt:foto": {
+      "tipo": "texto_curto",
+      "max": 80
+    },
+    "legenda_foto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 2,
+      "descricao": "cards simples ao lado do destaque; layout previsto para 2",
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 260
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

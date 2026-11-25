@@ -1,0 +1,45 @@
+{
+  "id": "faq-samanta-08",
+  "tipo": "faq",
+  "origem": "samanta",
+  "descricao": "Rótulo e título à esquerda (sticky no desktop), lista de perguntas em details/summary à direita com seta que gira e divisores finos. Opcional: section.js anima a altura da resposta com gsap (sem gsap, usa details nativo).",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "qualquer serviço de saúde ou estético com dúvidas recorrentes antes de agendar"
+  ],
+  "libs": [
+    "gsap"
+  ],
+  "animacao": "abre/fecha da resposta com altura animada (gsap, opcional); seta gira via CSS",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "pergunta": {
+          "tipo": "texto_curto",
+          "max": 60
+        },
+        "resposta": {
+          "tipo": "richtext",
+          "max": 450
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

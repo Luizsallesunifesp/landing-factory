@@ -1,0 +1,87 @@
+{
+  "id": "cta-final-renata-07",
+  "tipo": "cta-final",
+  "origem": "renata",
+  "descricao": "Painel arredondado na cor primária em duas colunas: eyebrow, título e texto à esquerda; card de formulário à direita (nome, modalidade em 3 opções, assunto em dropdown) que abre o WhatsApp com mensagem montada. Usa section.js próprio (sem dependência global); o link base vem de whatsapp_link e a mensagem é montada em JS com ?text=.",
+  "estilo": [
+    "acolhedor",
+    "minimalista"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultorias",
+    "agências",
+    "serviços com agendamento de conversa"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 50
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 270
+    },
+    "label_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "placeholder_nome": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "label_modo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "label_assunto": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "nome_vazio": {
+      "tipo": "texto_curto",
+      "max": 5,
+      "descricao": "valor usado se o nome ficar vazio, ex.: —"
+    },
+    "msg_modelo": {
+      "tipo": "texto",
+      "max": 220,
+      "descricao": "mensagem do WhatsApp com {nome}, {assunto} e {modo}"
+    },
+    "modos": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "modo": {
+          "tipo": "texto_curto",
+          "max": 20
+        }
+      }
+    },
+    "assuntos": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 10,
+      "campos": {
+        "assunto": {
+          "tipo": "texto_curto",
+          "max": 35
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

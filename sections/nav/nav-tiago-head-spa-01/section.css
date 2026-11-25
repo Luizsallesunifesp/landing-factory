@@ -1,0 +1,88 @@
+.s-nav-tiago-head-spa-01{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:20px 0;transition:all calc(.4s * var(--motion)) ease;
+  border-bottom:1px solid transparent;
+  font-family:var(--f-body);
+}
+.s-nav-tiago-head-spa-01.is-stuck{
+  background:color-mix(in srgb, var(--c-dark) 86%, transparent);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  padding:12px 0;border-bottom-color:var(--c-line);
+}
+.nav-tiago-head-spa-01__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.nav-tiago-head-spa-01__inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+.nav-tiago-head-spa-01__logo{display:flex;align-items:center;gap:13px;color:inherit;text-decoration:none}
+.nav-tiago-head-spa-01__mark{width:46px;height:46px;flex:none}
+.nav-tiago-head-spa-01__emblem{width:100%;height:100%;display:block;object-fit:contain}
+.nav-tiago-head-spa-01__txt{line-height:1.1}
+.nav-tiago-head-spa-01__txt b{
+  display:block;font-family:var(--f-display);font-size:1.18rem;font-weight:600;letter-spacing:.16em;
+  color:var(--c-accent);
+}
+.nav-tiago-head-spa-01__txt span{
+  display:block;font-size:.53rem;letter-spacing:.24em;text-transform:uppercase;
+  color:color-mix(in srgb, var(--c-on-dark) 42%, transparent);margin-top:2px;
+}
+
+.nav-tiago-head-spa-01__desk{display:flex;gap:30px}
+.nav-tiago-head-spa-01__desk a{
+  font-size:.79rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  color:color-mix(in srgb, var(--c-on-dark) 62%, transparent);position:relative;padding:4px 0;
+  text-decoration:none;transition:color calc(.3s * var(--motion));
+}
+.nav-tiago-head-spa-01__desk a::after{
+  content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--c-accent);
+  transition:width calc(.35s * var(--motion));
+}
+.nav-tiago-head-spa-01__desk a:hover{color:var(--c-accent)}
+.nav-tiago-head-spa-01__desk a:hover::after{width:100%}
+
+.nav-tiago-head-spa-01__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 22px;border-radius:100px;font-family:var(--f-body);
+  font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  border:1px solid transparent;cursor:pointer;white-space:nowrap;text-decoration:none;
+  background:var(--c-accent);color:var(--c-dark);
+  box-shadow:0 10px 34px -12px color-mix(in srgb, var(--c-accent) 75%, transparent);
+  transition:all calc(.35s * var(--motion)) var(--ease);
+}
+.nav-tiago-head-spa-01__btn:hover{
+  transform:translateY(calc(-3px * var(--motion)));
+  box-shadow:0 18px 44px -12px color-mix(in srgb, var(--c-accent) 90%, transparent);
+}
+
+.nav-tiago-head-spa-01__burger{
+  display:none;width:44px;height:44px;border:1px solid var(--c-line);border-radius:var(--radius);
+  background:color-mix(in srgb, var(--c-accent) 5%, transparent);cursor:pointer;
+  flex-direction:column;justify-content:center;align-items:center;gap:5px;
+}
+.nav-tiago-head-spa-01__burger span{
+  display:block;width:19px;height:1.6px;background:var(--c-accent);transition:all calc(.3s * var(--motion));
+}
+.nav-tiago-head-spa-01__burger.on span:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
+.nav-tiago-head-spa-01__burger.on span:nth-child(2){opacity:0}
+.nav-tiago-head-spa-01__burger.on span:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
+
+.nav-tiago-head-spa-01__drawer{
+  position:fixed;inset:0;z-index:-1;background:color-mix(in srgb, var(--c-dark) 97%, transparent);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  display:none;flex-direction:column;justify-content:center;align-items:center;gap:8px;
+  opacity:0;visibility:hidden;transition:all calc(.4s * var(--motion));
+}
+.nav-tiago-head-spa-01__drawer.on{opacity:1;visibility:visible}
+.nav-tiago-head-spa-01__drawer a{
+  font-family:var(--f-display);font-size:1.75rem;color:var(--c-on-dark);padding:9px 0;
+  text-decoration:none;transition:all calc(.3s * var(--motion));
+}
+.nav-tiago-head-spa-01__drawer a:hover{color:var(--c-accent)}
+.nav-tiago-head-spa-01__drawer .nav-tiago-head-spa-01__btn{
+  margin-top:26px;font-family:var(--f-body);font-size:.74rem;color:var(--c-dark);
+}
+
+@media(max-width:960px){
+  .nav-tiago-head-spa-01__desk,
+  .nav-tiago-head-spa-01__inner > .nav-tiago-head-spa-01__btn{display:none}
+  .nav-tiago-head-spa-01__burger{display:flex}
+  .nav-tiago-head-spa-01__drawer{display:flex}
+}

@@ -1,0 +1,16 @@
+<section class="s-faq-acalm-head-spa-08" data-secao="faq-acalm-head-spa-08">
+  <div class="faq-acalm-head-spa-08__wrap faq-acalm-head-spa-08__grid">
+    <div class="faq-acalm-head-spa-08__head" data-aos="fade-up">
+      <div class="faq-acalm-head-spa-08__eyebrow">{{eyebrow}}</div>
+      <h2 class="faq-acalm-head-spa-08__titulo">{{titulo}}</h2>
+    </div>
+    <div class="faq-acalm-head-spa-08__lista" data-aos="fade-up">
+      {{#itens}}
+      <div class="faq-acalm-head-spa-08__item">
+        <button class="faq-acalm-head-spa-08__q" type="button" aria-expanded="false"><span>{{pergunta}}</span><span class="faq-acalm-head-spa-08__plus" aria-hidden="true">+</span></button>
+        <div class="faq-acalm-head-spa-08__a"><p>{{resposta}}</p></div>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

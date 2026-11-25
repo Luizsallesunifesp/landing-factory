@@ -1,0 +1,51 @@
+{
+  "id": "servicos-carol-benedetti-06",
+  "tipo": "servicos",
+  "origem": "carol-benedetti",
+  "descricao": "Cabeçalho pequeno com eyebrow e título, seguido de três cards lado a lado; cada card tem ícone SVG de traço fino (inline, via slot icone), título e parágrafo. Sem fotos. Reveal ao rolar com escalonamento (JS próprio, sem dependência global).",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "estética",
+    "spas",
+    "clínicas de saúde",
+    "serviços com pacotes ou protocolos"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar com escalonamento por card (IntersectionObserver)",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 30
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "icone": {
+          "tipo": "richtext",
+          "max": 400,
+          "descricao": "SVG inline 22x22, viewBox 0 0 24 24, stroke=currentColor, fill=none, stroke-width 1.4"
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 30
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 310
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

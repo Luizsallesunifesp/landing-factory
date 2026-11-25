@@ -1,0 +1,60 @@
+{
+  "id": "especial-acalm-head-spa-06",
+  "tipo": "especial",
+  "origem": "acalm-head-spa",
+  "descricao": "Duas colunas em fundo escuro: foto de produtos com tag sobreposta à esquerda e, à direita, eyebrow, título, parágrafo e lista de ingredientes ou etapas com nome e descrição. Sem dependências globais; reveal próprio em section.js.",
+  "estilo": [
+    "escuro",
+    "editorial",
+    "luxo"
+  ],
+  "nicho": [
+    "cosméticos",
+    "dermocosméticos",
+    "marcas de produto",
+    "spas com linha própria de produtos"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade-up) nas duas colunas ao rolar, via IntersectionObserver",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "foto da linha de produtos"
+    },
+    "tag": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 48
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 280
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 100
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 2,
+  "nota": 4,
+  "aprovada": false
+}

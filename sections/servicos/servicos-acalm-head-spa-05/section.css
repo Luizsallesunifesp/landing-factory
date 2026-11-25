@@ -1,0 +1,21 @@
+.s-servicos-acalm-head-spa-05{padding:var(--section-y) 0;background:var(--c-surface-2)}
+.servicos-acalm-head-spa-05__head{max-width:640px;margin-bottom:calc(var(--space)*2.6)}
+.servicos-acalm-head-spa-05__eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px;color:var(--c-primary);font-family:var(--f-body);text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:600}
+.servicos-acalm-head-spa-05__eyebrow::before{content:'';width:34px;height:1px;background:var(--c-primary);display:inline-block}
+.servicos-acalm-head-spa-05__titulo{font-family:var(--f-display);font-weight:500;line-height:1.05;font-size:clamp(2rem,3.6vw,2.9rem);color:var(--c-text)}
+.servicos-acalm-head-spa-05__sub{margin-top:18px;color:var(--c-muted);font-size:1.02rem;line-height:1.6;max-width:520px;font-weight:300}
+.servicos-acalm-head-spa-05__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--c-primary);border-radius:calc(var(--radius)/3);overflow:hidden}
+.servicos-acalm-head-spa-05__card{background:var(--c-bg);padding:calc(var(--space)*1.6) var(--space) calc(var(--space)*1.4);min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;cursor:default;transition:background .45s var(--ease)}
+.servicos-acalm-head-spa-05__card::before{content:'';position:absolute;inset:0;background:var(--c-primary);transform:translateY(100%);transition:transform .45s var(--ease);z-index:0}
+.servicos-acalm-head-spa-05__card>*{position:relative;z-index:1}
+.servicos-acalm-head-spa-05__icon{font-family:var(--f-display);font-style:italic;font-size:2.6rem;color:var(--c-accent);margin-bottom:24px;transition:transform .45s var(--ease),color .45s var(--ease)}
+.servicos-acalm-head-spa-05__nome{font-family:var(--f-display);font-weight:500;line-height:1.05;font-size:1.12rem;margin-bottom:10px;color:var(--c-text);transition:color .45s var(--ease)}
+.servicos-acalm-head-spa-05__desc{font-size:.88rem;color:var(--c-muted);line-height:1.55;font-weight:300;transition:color .45s var(--ease)}
+.servicos-acalm-head-spa-05__card:hover::before{transform:translateY(0)}
+.servicos-acalm-head-spa-05__card:hover .servicos-acalm-head-spa-05__icon{color:var(--c-accent);transform:translateY(-4px)}
+.servicos-acalm-head-spa-05__card:hover .servicos-acalm-head-spa-05__nome{color:var(--c-on-primary)}
+.servicos-acalm-head-spa-05__card:hover .servicos-acalm-head-spa-05__desc{color:color-mix(in srgb,var(--c-on-primary) 75%,transparent)}
+.s-servicos-acalm-head-spa-05[data-armed] [data-reveal]{opacity:0;transform:translateY(calc(28px*var(--motion,1)));transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.s-servicos-acalm-head-spa-05[data-armed] [data-reveal].in{opacity:1;transform:translateY(0)}
+@media (max-width:900px){.servicos-acalm-head-spa-05__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.servicos-acalm-head-spa-05__grid{grid-template-columns:1fr}.servicos-acalm-head-spa-05__card{min-height:220px}}

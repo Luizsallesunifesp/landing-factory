@@ -1,0 +1,59 @@
+{
+  "id": "sobre-elaine-06",
+  "tipo": "sobre",
+  "origem": "elaine",
+  "descricao": "Duas colunas: foto retrato à esquerda e, à direita, eyebrow, título, dois blocos de texto e linha de registros profissionais com divisor. Reveal ao rolar via section.js (sem dependências globais).",
+  "estilo": [
+    "clínico",
+    "acolhedor"
+  ],
+  "nicho": [
+    "profissionais liberais",
+    "consultórios",
+    "clínicas",
+    "médicos e terapeutas com registro"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade + translateY) na foto e no texto via IntersectionObserver",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, proporção 3:3.6"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 65
+    },
+    "bio": {
+      "tipo": "richtext",
+      "max": 1050,
+      "descricao": "biografia; quebras de linha preservadas"
+    },
+    "atendimento": {
+      "tipo": "texto",
+      "max": 160
+    },
+    "registros": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 12
+        },
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 16
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

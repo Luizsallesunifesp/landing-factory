@@ -1,0 +1,50 @@
+<section class="s-especial-tiago-farma-07" data-secao="especial-tiago-farma-07">
+  <div class="especial-tiago-farma-07__container">
+    <div class="especial-tiago-farma-07__header">
+      <div class="especial-tiago-farma-07__eyebrow">{{eyebrow}}</div>
+      <h2 class="especial-tiago-farma-07__titulo">{{titulo}}</h2>
+      <p class="especial-tiago-farma-07__subtitulo">{{subtitulo}}</p>
+    </div>
+    <div class="especial-tiago-farma-07__card" data-quiz data-wa-intro="{{wa_intro}}" data-wa-fim="{{wa_fim}}" data-wa-r1="{{rotulo_1}}" data-wa-r2="{{rotulo_2}}" data-wa-r3="{{rotulo_3}}">
+      <div class="especial-tiago-farma-07__progress"><div class="especial-tiago-farma-07__bar"><i data-qp="1"></i></div><div class="especial-tiago-farma-07__bar"><i data-qp="2"></i></div><div class="especial-tiago-farma-07__bar"><i data-qp="3"></i></div></div>
+
+      <div class="especial-tiago-farma-07__step is-active" data-step="1">
+        <h3 class="especial-tiago-farma-07__pergunta">{{pergunta_1}}</h3>
+        <div class="especial-tiago-farma-07__options">
+          {{#opcoes_1}}<button type="button" class="especial-tiago-farma-07__opt" data-q="1">{{texto}}</button>
+          {{/opcoes_1}}
+        </div>
+        <p class="especial-tiago-farma-07__err">{{erro}}</p>
+      </div>
+
+      <div class="especial-tiago-farma-07__step" data-step="2">
+        <h3 class="especial-tiago-farma-07__pergunta">{{pergunta_2}}</h3>
+        <div class="especial-tiago-farma-07__options">
+          {{#opcoes_2}}<button type="button" class="especial-tiago-farma-07__opt" data-q="2">{{texto}}</button>
+          {{/opcoes_2}}
+        </div>
+        <p class="especial-tiago-farma-07__err">{{erro}}</p>
+        <div class="especial-tiago-farma-07__nav"><span class="especial-tiago-farma-07__back" data-back>{{voltar}}</span></div>
+      </div>
+
+      <div class="especial-tiago-farma-07__step" data-step="3">
+        <h3 class="especial-tiago-farma-07__pergunta">{{pergunta_3}}</h3>
+        <div class="especial-tiago-farma-07__options">
+          {{#opcoes_3}}<button type="button" class="especial-tiago-farma-07__opt" data-q="3">{{texto}}</button>
+          {{/opcoes_3}}
+        </div>
+        <p class="especial-tiago-farma-07__err">{{erro}}</p>
+        <div class="especial-tiago-farma-07__nav"><span class="especial-tiago-farma-07__back" data-back>{{voltar}}</span></div>
+      </div>
+
+      <div class="especial-tiago-farma-07__step" data-step="4">
+        <div class="especial-tiago-farma-07__result">
+          <div class="especial-tiago-farma-07__icon">✓</div>
+          <h3 class="especial-tiago-farma-07__pergunta">{{resultado_titulo}}</h3>
+          <p>{{resultado_texto}}</p>
+          <a href="{{whatsapp_link}}" data-quiz-wa class="especial-tiago-farma-07__cta" target="_blank" rel="noopener">{{cta_texto}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+.s-faixa-tiago-head-spa-12{position:relative;overflow:hidden;isolation:isolate;padding:calc(var(--section-y) * .9) 0;text-align:center;background:var(--c-dark);color:var(--c-on-dark)}
+.faixa-tiago-head-spa-12__bg{position:absolute;left:0;right:0;top:-18%;height:136%;will-change:transform;z-index:0}
+.faixa-tiago-head-spa-12__bg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.faixa-tiago-head-spa-12__veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--c-dark) 0%,color-mix(in srgb,var(--c-dark) 72%,transparent) 28%,color-mix(in srgb,var(--c-dark) 72%,transparent) 72%,var(--c-dark) 100%)}
+.faixa-tiago-head-spa-12__wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.faixa-tiago-head-spa-12__eyebrow{font-family:var(--f-body);font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--c-accent);display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px}
+.faixa-tiago-head-spa-12__eyebrow::before,.faixa-tiago-head-spa-12__eyebrow::after{content:"";width:34px;height:1px;flex:none}
+.faixa-tiago-head-spa-12__eyebrow::before{background:linear-gradient(90deg,transparent,var(--c-accent))}
+.faixa-tiago-head-spa-12__eyebrow::after{background:linear-gradient(270deg,transparent,var(--c-accent))}
+.faixa-tiago-head-spa-12__titulo{font-family:var(--f-display);font-weight:500;line-height:1.12;letter-spacing:-.01em;font-size:clamp(1.95rem,4.4vw,3.25rem);max-width:19ch;margin:0 auto;text-shadow:0 4px 30px color-mix(in srgb,var(--c-dark) 70%,transparent)}
+.faixa-tiago-head-spa-12__dest{font-style:italic;color:var(--c-accent)}
+.faixa-tiago-head-spa-12__lead{font-family:var(--f-body);font-size:1.06rem;max-width:62ch;margin:22px auto 0;color:color-mix(in srgb,var(--c-on-dark) 78%,transparent)}
+.s-faixa-tiago-head-spa-12.is-js .faixa-tiago-head-spa-12__rv{opacity:0;transform:translateY(calc(28px * var(--motion)));transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.s-faixa-tiago-head-spa-12.is-js .faixa-tiago-head-spa-12__rv.in{opacity:1;transform:none}
+.s-faixa-tiago-head-spa-12.is-js .faixa-tiago-head-spa-12__d1{transition-delay:.08s}
+.s-faixa-tiago-head-spa-12.is-js .faixa-tiago-head-spa-12__d2{transition-delay:.16s}
+@media(max-width:768px){.s-faixa-tiago-head-spa-12{padding:calc(var(--section-y) * .7) 0}}

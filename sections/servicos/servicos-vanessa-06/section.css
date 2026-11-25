@@ -1,0 +1,16 @@
+.s-servicos-vanessa-06{padding:var(--section-y) 0;background:var(--c-surface)}
+.servicos-vanessa-06__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.1)}
+.servicos-vanessa-06__head{max-width:640px;margin:0 auto calc(var(--space)*2.4);text-align:center}
+.servicos-vanessa-06__eyebrow{display:block;margin-bottom:14px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--c-accent)}
+.servicos-vanessa-06__titulo{font-family:var(--f-display);font-weight:600;letter-spacing:-.01em;font-size:clamp(28px,3.6vw,42px);line-height:1.15;color:var(--c-text)}
+.servicos-vanessa-06__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--space)*.8)}
+.servicos-vanessa-06__card{border:1px solid var(--c-line);border-radius:var(--radius);padding:calc(var(--space)*1.2) var(--space);background:var(--c-bg);transition:transform .2s ease,box-shadow .2s ease}
+.servicos-vanessa-06__card:hover{transform:translateY(-4px);box-shadow:0 16px 32px color-mix(in srgb,var(--c-text) 10%,transparent)}
+.servicos-vanessa-06__icon{display:inline-block;font-size:26px;margin-bottom:14px;transition:transform .25s ease}
+.servicos-vanessa-06__card:hover .servicos-vanessa-06__icon{transform:scale(1.2) rotate(-6deg)}
+.servicos-vanessa-06__nome{font-family:var(--f-body);font-size:16.5px;font-weight:600;color:var(--c-text);margin-bottom:8px}
+.servicos-vanessa-06__desc{font-size:14px;line-height:1.55;color:var(--c-muted)}
+.servicos-vanessa-06 [data-reveal],.servicos-vanessa-06 [data-stagger]>*{transition:opacity calc(.7s*var(--motion,1)) var(--ease),transform calc(.7s*var(--motion,1)) var(--ease)}
+.servicos-vanessa-06__pre{opacity:0;transform:translateY(calc(26px*var(--motion,1)))}
+@media (max-width:900px){.servicos-vanessa-06__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.servicos-vanessa-06__grid{grid-template-columns:1fr}}

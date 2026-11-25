@@ -1,0 +1,55 @@
+{
+  "id": "processo-karol-06",
+  "tipo": "processo",
+  "origem": "karol",
+  "descricao": "Fundo escuro com eyebrow e titulo no topo; abaixo, linha do tempo horizontal em SVG (polyline com pontos de destaque na cor accent, estilo trilha de montanha) e quatro etapas numeradas com rotulo, titulo e texto. Reveal via data-aos (a original usava .reveal com JS global da pagina).",
+  "estilo": [
+    "dinamico",
+    "editorial",
+    "escuro"
+  ],
+  "nicho": [
+    "agencias",
+    "coaching",
+    "educacao",
+    "consultorias",
+    "onboarding de SaaS"
+  ],
+  "libs": [
+    "aos",
+    "svg inline"
+  ],
+  "animacao": "fade-up ao rolar (data-aos); polyline estatica",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 85
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 15
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 35
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 130
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,52 @@
+{
+  "id": "dor-samanta-04",
+  "tipo": "dor",
+  "origem": "samanta",
+  "descricao": "Bloco de texto editorial: rótulo, título e parágrafo longo com sintomas destacados inline por marcador que se preenche ao rolar, mais frase de fecho com filete. Sem cards nem imagens. Depende de gsap + ScrollTrigger (opcional) para o efeito de leitura.",
+  "estilo": [
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "saúde e odontologia",
+    "qualquer serviço em que o cliente reconhece sinais ou sintomas antes de procurar"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "reveal em cascata ao entrar; sintomas acendem de cinza para texto com marcador, conforme a rolagem (scrub)",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 65
+    },
+    "sinais": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "descricao": "Trechos do parágrafo: 'sinal' é a parte destacada, 'complemento' é o texto normal que segue (pode ficar vazio).",
+      "campos": {
+        "sinal": {
+          "tipo": "texto_curto",
+          "max": 45
+        },
+        "complemento": {
+          "tipo": "texto",
+          "max": 120
+        }
+      }
+    },
+    "fecho": {
+      "tipo": "texto",
+      "max": 95
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

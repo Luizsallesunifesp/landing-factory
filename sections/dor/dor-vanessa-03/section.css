@@ -1,0 +1,20 @@
+.s-dor-vanessa-03{background:var(--c-surface);padding:var(--section-y) 0}
+.dor-vanessa-03__container{max-width:var(--max-w);margin:0 auto;padding:0 calc(var(--space)*1.1)}
+.dor-vanessa-03__head{max-width:640px;margin:0 auto calc(var(--space)*2.3);text-align:center}
+.dor-vanessa-03__eyebrow{display:block;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:700;color:var(--c-accent);margin-bottom:.9rem}
+.dor-vanessa-03__titulo{font-family:var(--f-display);font-weight:600;letter-spacing:-.01em;font-size:clamp(1.75rem,3.6vw,2.6rem);color:var(--c-primary);line-height:1.15}
+.dor-vanessa-03__subtitulo{color:var(--c-muted);font-size:1.06rem;margin-top:1rem;line-height:1.6}
+.dor-vanessa-03__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:calc(var(--space)*.75);max-width:920px;margin:0 auto}
+.dor-vanessa-03__card{border:1px solid var(--c-line);border-radius:var(--radius);padding:var(--space) calc(var(--space)*1.1);display:flex;gap:calc(var(--space)*.7);background:var(--c-bg);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.dor-vanessa-03__card:hover{transform:translateY(-4px);box-shadow:0 14px 28px color-mix(in srgb,var(--c-primary) 10%,transparent);border-color:color-mix(in srgb,var(--c-accent) 35%,transparent)}
+.dor-vanessa-03__x{font-family:var(--f-mono);font-weight:700;color:var(--c-accent);font-size:.95rem;flex-shrink:0}
+.dor-vanessa-03__card p{color:var(--c-text);font-size:.97rem;line-height:1.55}
+.dor-vanessa-03__note{max-width:680px;margin:calc(var(--space)*1.8) auto 0;text-align:center;font-family:var(--f-display);font-style:italic;font-size:1.2rem;color:var(--c-primary);line-height:1.5}
+
+.s-dor-vanessa-03.is-armed .dor-vanessa-03__reveal{opacity:0;transform:translateY(calc(26px*var(--motion,1)));transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.s-dor-vanessa-03.is-armed .dor-vanessa-03__reveal.revealed{opacity:1;transform:translateY(0)}
+.s-dor-vanessa-03.is-armed .dor-vanessa-03__card.revealed:hover{transform:translateY(-4px)}
+
+@media (max-width:860px){
+  .dor-vanessa-03__grid{grid-template-columns:1fr}
+}

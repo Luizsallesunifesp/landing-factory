@@ -1,0 +1,53 @@
+{
+  "id": "prova-thais-07",
+  "tipo": "prova",
+  "origem": "thais",
+  "descricao": "Título, régua fina animada, grade responsiva de placas antes/depois com legenda e bloco de aviso legal sobre consentimento e resultados não garantidos. Sem dependência global; o aviso precisa de revisão por nicho.",
+  "estilo": [
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "procedimentos estéticos com antes e depois",
+    "odontologia",
+    "dermatologia",
+    "cirurgia plástica"
+  ],
+  "libs": [],
+  "animacao": "régua do topo cresce da esquerda ao entrar na tela",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 12,
+      "campos": {
+        "foto": {
+          "tipo": "img"
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 50
+        },
+        "sub": {
+          "tipo": "texto",
+          "max": 120
+        }
+      }
+    },
+    "aviso_rotulo": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "aviso_texto": {
+      "tipo": "texto",
+      "max": 480
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

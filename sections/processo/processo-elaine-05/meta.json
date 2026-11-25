@@ -1,0 +1,42 @@
+{
+  "id": "processo-elaine-05",
+  "tipo": "processo",
+  "origem": "elaine",
+  "descricao": "Eyebrow e três etapas em colunas, cada uma com rótulo 'Etapa N', título e parágrafo curto, topo com filete na cor primária. Sem ícones nem imagens. Reveal ao rolar via section.js (IntersectionObserver); sem dependência global.",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "consultórios",
+    "clínicas",
+    "serviços com jornada em etapas",
+    "coaching e acompanhamento"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade-up) da lista de etapas ao rolar",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "etapas": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 4,
+      "campos": {
+        "titulo": {
+          "tipo": "texto_curto",
+          "max": 32
+        },
+        "texto": {
+          "tipo": "texto",
+          "max": 150
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

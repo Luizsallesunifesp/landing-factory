@@ -1,0 +1,57 @@
+{
+  "id": "dor-carol-benedetti-07",
+  "tipo": "dor",
+  "origem": "carol-benedetti",
+  "descricao": "Título centralizado com eyebrow e, em uma única linha horizontal (6 colunas), seis itens; cada item tem um anel circular com ícone SVG de traço fino e rótulo curto abaixo. Ícones fixos no HTML. Reveal próprio via section.js (sem dependências globais).",
+  "estilo": [
+    "minimalista",
+    "clínico"
+  ],
+  "nicho": [
+    "estética e cuidado com a pele",
+    "dermatologia",
+    "nutrição",
+    "saúde preventiva",
+    "bem-estar"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (fade-up) no cabeçalho e na linha de itens",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "habito_1": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "habito_2": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "habito_3": {
+      "tipo": "texto_curto",
+      "max": 38
+    },
+    "habito_4": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "habito_5": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "habito_6": {
+      "tipo": "texto_curto",
+      "max": 25
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 3,
+  "aprovada": false
+}

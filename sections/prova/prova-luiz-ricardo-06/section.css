@@ -1,0 +1,75 @@
+.s-prova-luiz-ricardo-06{padding:var(--section-y) 0;position:relative;isolation:isolate;overflow:hidden;background:var(--c-dark);color:var(--c-on-dark);font-family:var(--f-body)}
+.prova-luiz-ricardo-06__depth{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 52% 40% at 92% 6%,color-mix(in srgb,var(--c-accent) 10%,transparent),transparent 62%)}
+.prova-luiz-ricardo-06__wrap{max-width:var(--max-w);margin:0 auto;padding:0 var(--space);width:100%}
+.prova-luiz-ricardo-06__stamp{font-family:var(--f-mono,var(--f-display));font-weight:400;font-size:clamp(22px,6.2vw,74px);line-height:.9;text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 70%,var(--c-dark));letter-spacing:.05em;margin:0 0 calc(var(--space)*2.2);white-space:nowrap;transition:letter-spacing calc(1.5s*var(--motion,1)) var(--ease),opacity calc(.9s*var(--motion,1)) var(--ease)}
+.prova-luiz-ricardo-06__lede{color:color-mix(in srgb,var(--c-on-dark) 65%,var(--c-dark));font-size:clamp(16px,1.6vw,20px);font-weight:300;line-height:1.55;letter-spacing:-.01em;max-width:62ch;margin:0 0 clamp(36px,4.5vw,54px)}
+@media (max-width:720px){.prova-luiz-ricardo-06__stamp{font-size:clamp(17px,6vw,30px)}}
+
+/* movimento (ativado por section.js via .is-anim) */
+.s-prova-luiz-ricardo-06.is-anim .prova-luiz-ricardo-06__stamp{opacity:.5}
+.s-prova-luiz-ricardo-06.is-anim .prova-luiz-ricardo-06__stamp.in{opacity:1;letter-spacing:.2em}
+.s-prova-luiz-ricardo-06.is-anim [data-reveal]{opacity:.001;transform:translate3d(0,calc(18px*var(--motion,1)),0);filter:blur(6px);transition:opacity calc(.9s*var(--motion,1)) var(--ease),transform calc(1.1s*var(--motion,1)) var(--ease),filter calc(.9s*var(--motion,1)) var(--ease)}
+.s-prova-luiz-ricardo-06.is-anim [data-reveal].in{opacity:1;transform:none;filter:none}
+
+.prova-luiz-ricardo-06__works{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,36px)}
+.prova-luiz-ricardo-06__work{border:1px solid var(--c-line);border-radius:var(--radius);overflow:hidden;background:color-mix(in srgb,var(--c-on-dark) 5%,var(--c-dark));transition:border-color .6s var(--ease)}
+.prova-luiz-ricardo-06__work:hover,.prova-luiz-ricardo-06__work:active{border-color:color-mix(in srgb,var(--c-on-dark) 30%,transparent)}
+.prova-luiz-ricardo-06__chrome{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid color-mix(in srgb,var(--c-on-dark) 12%,transparent);background:color-mix(in srgb,var(--c-on-dark) 3%,transparent)}
+.prova-luiz-ricardo-06__chrome i{width:8px;height:8px;border-radius:50%;background:color-mix(in srgb,var(--c-on-dark) 35%,var(--c-dark));display:block}
+.prova-luiz-ricardo-06__url{margin-left:8px;font-family:var(--f-mono,var(--f-body));font-size:10.5px;color:color-mix(in srgb,var(--c-on-dark) 65%,var(--c-dark));background:color-mix(in srgb,var(--c-dark) 65%,transparent);border-radius:calc(var(--radius)/3);padding:4px 10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* viewport da miniatura */
+.prova-luiz-ricardo-06__shot{height:clamp(230px,26vw,290px);overflow:hidden;position:relative;background:var(--c-surface);cursor:pointer;touch-action:pan-y}
+.prova-luiz-ricardo-06__shot::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 -40px 40px -30px color-mix(in srgb,var(--c-dark) 30%,transparent)}
+.prova-luiz-ricardo-06__shot-inner{position:absolute;top:0;left:0;width:100%;will-change:transform;transform:translateY(calc(var(--pan,-46%)*var(--prog,0)*var(--motion,1)));transition:transform calc(.55s*var(--motion,1)) var(--ease)}
+.prova-luiz-ricardo-06__shot:active .prova-luiz-ricardo-06__shot-inner{transition-duration:calc(.35s*var(--motion,1))}
+.prova-luiz-ricardo-06__shot.dragging .prova-luiz-ricardo-06__shot-inner{transition:none}
+.prova-luiz-ricardo-06__shot-hint{position:absolute;left:50%;bottom:12px;translate:-50% 0;z-index:3;display:none;align-items:center;gap:7px;font-family:var(--f-mono,var(--f-body));font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--c-on-dark);background:color-mix(in srgb,var(--c-dark) 72%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:99px;padding:7px 13px;pointer-events:none;transition:opacity .5s var(--ease)}
+.prova-luiz-ricardo-06__shot-hint svg{color:var(--c-accent)}
+.prova-luiz-ricardo-06__shot.touched .prova-luiz-ricardo-06__shot-hint{opacity:0}
+@media (hover:none){.prova-luiz-ricardo-06__shot-hint{display:flex}}
+.prova-luiz-ricardo-06__shot-rail{position:absolute;right:7px;top:10px;bottom:10px;width:2px;z-index:3;background:color-mix(in srgb,var(--c-dark) 16%,transparent);border-radius:2px;overflow:hidden}
+.prova-luiz-ricardo-06__shot-rail i{display:block;width:100%;height:34%;border-radius:2px;background:color-mix(in srgb,var(--c-dark) 50%,transparent);transform:translateY(calc(var(--prog,0)*190%));transition:transform calc(.55s*var(--motion,1)) var(--ease)}
+.prova-luiz-ricardo-06__shot.dragging .prova-luiz-ricardo-06__shot-rail i{transition:none}
+
+.prova-luiz-ricardo-06__work-body{padding:clamp(22px,2.6vw,30px)}
+.prova-luiz-ricardo-06__nome{font-family:var(--f-display);font-size:20px;font-weight:500;letter-spacing:-.025em;margin:0 0 4px;color:var(--c-on-dark)}
+.prova-luiz-ricardo-06__cat{font-family:var(--f-mono,var(--f-body));font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 65%,var(--c-dark))}
+.prova-luiz-ricardo-06__desc{color:color-mix(in srgb,var(--c-on-dark) 75%,var(--c-dark));font-size:14.5px;font-weight:300;line-height:1.6;margin:14px 0 18px}
+.prova-luiz-ricardo-06__chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
+.prova-luiz-ricardo-06__chips span{font-family:var(--f-mono,var(--f-body));font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--c-on-dark) 65%,var(--c-dark));border:1px solid var(--c-line);border-radius:calc(var(--radius)/2);padding:5px 10px}
+.prova-luiz-ricardo-06__work-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--c-on-dark);position:relative;padding:11px 0;text-decoration:none;transition:color .4s var(--ease)}
+.prova-luiz-ricardo-06__work-link::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:1px;background:color-mix(in srgb,var(--c-on-dark) 30%,transparent);transition:background .4s var(--ease)}
+.prova-luiz-ricardo-06__work-link:hover,.prova-luiz-ricardo-06__work-link:active{color:var(--c-accent)}
+.prova-luiz-ricardo-06__work-link:hover::after,.prova-luiz-ricardo-06__work-link:active::after{background:var(--c-accent)}
+.prova-luiz-ricardo-06__btn-arrow{transition:transform .4s var(--ease)}
+.prova-luiz-ricardo-06__work-link:hover .prova-luiz-ricardo-06__btn-arrow{transform:translate(3px,-3px)}
+
+/* miniaturas: paleta derivada dos tokens (variante 1 clara, variante 2 em superfície) */
+.prova-luiz-ricardo-06__mini{font-family:var(--f-body);line-height:1.35;user-select:none;background:var(--c-bg);color:var(--c-text)}
+.prova-luiz-ricardo-06__mini .prova-luiz-ricardo-06__m-serif{font-family:var(--f-display);font-style:normal}
+.prova-luiz-ricardo-06__m-nav{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;font-size:6px;letter-spacing:.1em;text-transform:uppercase;background:var(--c-bg);border-bottom:1px solid var(--c-line)}
+.prova-luiz-ricardo-06__m-nav u{text-decoration:none;opacity:.75;margin-left:9px}
+.prova-luiz-ricardo-06__m-hero{padding:20px 14px 22px;background:linear-gradient(160deg,var(--c-surface-2),var(--c-bg) 62%)}
+.prova-luiz-ricardo-06__m-h1{font-size:17px;line-height:1.06;margin:0 0 7px;letter-spacing:-.01em;color:var(--c-text)}
+.prova-luiz-ricardo-06__m-p{font-size:6.4px;line-height:1.6;opacity:.72;margin:0 0 10px;max-width:76%}
+.prova-luiz-ricardo-06__m-btn{display:inline-block;font-size:5.6px;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:99px;background:var(--c-primary);color:var(--c-on-primary)}
+.prova-luiz-ricardo-06__m-band{display:flex;gap:5px;padding:12px 14px}
+.prova-luiz-ricardo-06__m-card{flex:1;border-radius:calc(var(--radius)/3);padding:8px 7px;background:var(--c-surface-2)}
+.prova-luiz-ricardo-06__m-card b{display:block;font-size:6px;margin-bottom:3px;color:var(--c-primary)}
+.prova-luiz-ricardo-06__m-card i{display:block;font-style:normal;font-size:5px;opacity:.7;line-height:1.5}
+.prova-luiz-ricardo-06__m-strip{padding:10px 14px;font-size:6px;letter-spacing:.16em;text-transform:uppercase;text-align:center;background:var(--c-accent);color:var(--c-text)}
+.prova-luiz-ricardo-06__m-split{display:flex;gap:8px;padding:12px 14px;align-items:center}
+.prova-luiz-ricardo-06__m-ph{border-radius:calc(var(--radius)/3);flex:0 0 38%;aspect-ratio:3/4;background:linear-gradient(150deg,var(--c-accent),var(--c-primary) 55%,var(--c-text))}
+.prova-luiz-ricardo-06__m-tx b{display:block;font-size:8.5px;margin-bottom:4px;line-height:1.15}
+.prova-luiz-ricardo-06__m-tx i{display:block;font-style:normal;font-size:5.6px;line-height:1.6;opacity:.72}
+
+/* variante do segundo projeto */
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__mini{background:var(--c-surface)}
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__m-nav{background:var(--c-surface)}
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__m-hero{background:linear-gradient(160deg,var(--c-surface-2),var(--c-surface) 60%)}
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__m-card{background:var(--c-surface);border:1px solid var(--c-line)}
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__m-strip{background:var(--c-primary);color:var(--c-on-primary)}
+.prova-luiz-ricardo-06__work:nth-child(even) .prova-luiz-ricardo-06__m-ph{background:linear-gradient(150deg,var(--c-accent),var(--c-accent) 20%,var(--c-primary))}
+
+@media (max-width:720px){.prova-luiz-ricardo-06__work-body{padding:22px 20px 24px}}

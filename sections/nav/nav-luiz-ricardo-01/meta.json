@@ -1,0 +1,59 @@
+{
+  "id": "nav-luiz-ricardo-01",
+  "tipo": "nav",
+  "origem": "luiz-ricardo",
+  "descricao": "Barra fixa escura com vidro fosco ao rolar: marca com roseta e palavra em duas cores à esquerda, links âncora no centro, botão WhatsApp à direita e hambúrguer de duas barras que abre menu em tela cheia no mobile. Inclui o menu mobile (sheet) e o JS do menu/scroll; roseta SVG inline (o sprite #rosette original não veio na seção). Usa --c-dark como fundo.",
+  "estilo": [
+    "editorial",
+    "tech",
+    "escuro"
+  ],
+  "nicho": [
+    "agências digitais",
+    "prestadores de serviço",
+    "captação de leads",
+    "produtos tech"
+  ],
+  "libs": [],
+  "animacao": "vidro fosco ao rolar, sublinhado nos links, hambúrguer vira X, menu mobile com entrada escalonada",
+  "slots": {
+    "marca_a": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "marca_b": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "links": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 5,
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "href": {
+          "tipo": "url",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 14
+    },
+    "cta_menu_texto": {
+      "tipo": "texto_curto",
+      "max": 24
+    },
+    "menu_label": {
+      "tipo": "texto_curto",
+      "max": 14
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

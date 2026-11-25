@@ -1,0 +1,79 @@
+{
+  "id": "sobre-mestre-hiroshi-06",
+  "tipo": "sobre",
+  "origem": "mestre-hiroshi",
+  "descricao": "Fundo escuro. Título grande com palavra destacada em cor, texto explicativo à esquerda e, à direita, dois blocos: 'É para você' (check) e 'Não é para você' (x), em listas com divisores finos. Usa gsap/ScrollTrigger (opcional) para reveal; ícones SVG inline, sem dependência de sprite.",
+  "estilo": [
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "infoprodutos",
+    "consultorias",
+    "academias",
+    "serviços com perfil de cliente definido"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "título palavra a palavra, reveal e listas escalonadas",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo_fim": {
+      "tipo": "texto_curto",
+      "max": 5,
+      "descricao": "pontuação final do título, ex.: ."
+    },
+    "paragrafo_1": {
+      "tipo": "richtext",
+      "max": 140,
+      "descricao": "aceita <b> para destaque"
+    },
+    "paragrafo_2": {
+      "tipo": "richtext",
+      "max": 80,
+      "descricao": "aceita <b> para destaque"
+    },
+    "para_titulo": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "para_itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 70
+        }
+      }
+    },
+    "nao_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "nao_itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 5,
+      "campos": {
+        "texto": {
+          "tipo": "texto",
+          "max": 60
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

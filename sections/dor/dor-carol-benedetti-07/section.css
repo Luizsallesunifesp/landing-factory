@@ -1,0 +1,54 @@
+.s-dor-carol-benedetti-07{
+  position:relative;
+  padding:var(--section-y) 0;
+  background:var(--c-surface);
+  color:var(--c-text);
+  font-family:var(--f-body);
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__head{ text-align:center; max-width:600px; margin:0 auto calc(var(--space) * 2.5); }
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__eyebrow{
+  font-family:var(--f-mono, var(--f-body));
+  text-transform:uppercase;
+  letter-spacing:.32em;
+  font-size:.7rem;
+  font-weight:500;
+  color:var(--c-accent);
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__titulo{
+  font-family:var(--f-display);
+  font-size:clamp(1.9rem,4vw,2.7rem);
+  margin:var(--space) 0;
+  color:var(--c-text);
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__row{
+  display:grid; grid-template-columns:repeat(6,1fr); gap:var(--space);
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__habit{ text-align:center; }
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__ring{
+  width:78px; height:78px; margin:0 auto var(--space);
+  border:1px solid var(--c-primary);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--c-primary);
+  transition:transform calc(.4s * var(--motion, 1)) var(--ease), background .4s, color .4s;
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__habit:hover .dor-carol-benedetti-07__ring{
+  background:var(--c-primary); color:var(--c-on-primary);
+  transform:scale(calc(1 + .08 * var(--motion, 1))) rotate(calc(-4deg * var(--motion, 1)));
+}
+.s-dor-carol-benedetti-07 .dor-carol-benedetti-07__label{
+  font-size:.76rem; letter-spacing:.03em; color:var(--c-muted); line-height:1.4; display:block;
+}
+
+/* reveal: oculto só quando o JS marca a seção como pronta */
+.s-dor-carol-benedetti-07.is-ready .dor-carol-benedetti-07__reveal{
+  opacity:0;
+  transform:translateY(calc(34px * var(--motion, 1)));
+  transition:opacity calc(1s * var(--motion, 1)) var(--ease), transform calc(1s * var(--motion, 1)) var(--ease);
+}
+.s-dor-carol-benedetti-07.is-ready .dor-carol-benedetti-07__reveal.is-in{
+  opacity:1; transform:translateY(0);
+}
+
+@media(max-width:900px){ .s-dor-carol-benedetti-07 .dor-carol-benedetti-07__row{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:520px){ .s-dor-carol-benedetti-07 .dor-carol-benedetti-07__row{grid-template-columns:repeat(2,1fr);} }

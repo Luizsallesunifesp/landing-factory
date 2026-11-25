@@ -1,0 +1,35 @@
+{
+  "id": "footer-acalm-head-spa-11",
+  "tipo": "footer",
+  "origem": "acalm-head-spa",
+  "descricao": "Rodapé escuro em grade: logotipo à esquerda, links de âncora e Instagram à direita, e linha inferior com copyright e endereço (usa slots automáticos nome_negocio, ano, cidade, endereco, instagram_link).",
+  "estilo": [
+    "minimalista",
+    "escuro"
+  ],
+  "nicho": [
+    "qualquer landing page ou site de serviço"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "links": {
+      "tipo": "lista",
+      "campos": {
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 20
+        },
+        "url": {
+          "tipo": "url",
+          "max": 60
+        }
+      },
+      "min_itens": 2,
+      "max_itens": 6
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

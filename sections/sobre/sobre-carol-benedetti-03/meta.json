@@ -1,0 +1,58 @@
+{
+  "id": "sobre-carol-benedetti-03",
+  "tipo": "sobre",
+  "origem": "carol-benedetti",
+  "descricao": "Duas colunas: foto em moldura orgânica (blob) flutuante com brilho atrás à esquerda; à direita eyebrow, título serifado, dois parágrafos e números de destaque em linha. Sem dependências globais.",
+  "estilo": [
+    "luxo",
+    "acolhedor"
+  ],
+  "nicho": [
+    "estética",
+    "clínicas",
+    "consultórios",
+    "profissionais autônomos que vendem pessoa e marca"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (IntersectionObserver) e blob flutuante em loop, ambos escalados por --motion",
+  "slots": {
+    "foto": {
+      "tipo": "img",
+      "descricao": "retrato da profissional, formato vertical ~340x420"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "paragrafo_1": {
+      "tipo": "texto",
+      "max": 330
+    },
+    "paragrafo_2": {
+      "tipo": "texto",
+      "max": 215
+    },
+    "stats": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 3,
+      "campos": {
+        "numero": {
+          "tipo": "texto_curto",
+          "max": 14
+        },
+        "rotulo": {
+          "tipo": "texto_curto",
+          "max": 42
+        }
+      }
+    }
+  },
+  "mobile_ok": false,
+  "nota": 4,
+  "aprovada": false
+}

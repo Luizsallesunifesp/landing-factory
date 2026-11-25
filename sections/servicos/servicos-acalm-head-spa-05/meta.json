@@ -1,0 +1,55 @@
+{
+  "id": "servicos-acalm-head-spa-05",
+  "tipo": "servicos",
+  "origem": "acalm-head-spa",
+  "descricao": "Cabeçalho com eyebrow, título e subtítulo e grade de 4 cards de diferenciais (ícone unicode, título, frase) unidos por filete na cor primária; no hover o card é preenchido pela cor primária. Sem imagens. Reveal ao rolar via section.js próprio.",
+  "estilo": [
+    "minimalista",
+    "acolhedor"
+  ],
+  "nicho": [
+    "spas",
+    "estúdios",
+    "clínicas",
+    "negócios com diferenciais de experiência"
+  ],
+  "libs": [],
+  "animacao": "reveal (fade + translateY) ao rolar no cabeçalho e na grade; hover com preenchimento vertical",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 30
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 170
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "icone": {
+          "tipo": "texto_curto",
+          "max": 2
+        },
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 25
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 150
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "peso_kb": 3,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "processo-samanta-05",
+  "tipo": "processo",
+  "origem": "samanta",
+  "descricao": "Título com rótulo no topo e três passos numerados em grade assimétrica (cards com borda nos passos 1 e 2, passo 3 com filete), foto horizontal 3:2 entre eles; um traço SVG liga os números e se desenha com a rolagem. Requer gsap + ScrollTrigger para o traço (sem eles, números ficam acesos e sem traço). A foto some se o arquivo faltar.",
+  "estilo": [
+    "clínico",
+    "acolhedor",
+    "editorial"
+  ],
+  "nicho": [
+    "clínicas",
+    "consultórios",
+    "serviços com etapas que incluem visita ou foto do local"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "traço SVG que se desenha com a rolagem (scrub) e acende cada número de passo",
+  "slots": {
+    "rotulo": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 45
+    },
+    "passo_label": {
+      "tipo": "texto_curto",
+      "max": 10,
+      "descricao": "palavra antes do número, ex.: Passo"
+    },
+    "passo1_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "passo1_texto": {
+      "tipo": "texto",
+      "max": 130
+    },
+    "passo2_titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "passo2_texto": {
+      "tipo": "texto",
+      "max": 230
+    },
+    "passo3_titulo": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "passo3_texto": {
+      "tipo": "texto",
+      "max": 230
+    },
+    "foto": {
+      "tipo": "img",
+      "descricao": "horizontal 3:2 (consultório)"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

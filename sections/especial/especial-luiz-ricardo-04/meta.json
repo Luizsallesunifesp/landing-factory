@@ -1,0 +1,77 @@
+{
+  "id": "especial-luiz-ricardo-04",
+  "tipo": "especial",
+  "origem": "luiz-ricardo",
+  "descricao": "Comparativo interativo antes e depois: titulo carimbado em mono, dois paineis escuros lado a lado com tres linhas e icone cada, alca central arrastavel que abre com o scroll e legenda. Fundo escuro (--c-dark). Sem dependencia global; o JS proprio faz o reveal e a cortina. Com --motion 0 o JS mantem so o arraste, em 50%.",
+  "estilo": [
+    "tech",
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "agencias",
+    "clinicas",
+    "reformas",
+    "consultorias",
+    "servicos de transformacao"
+  ],
+  "libs": [],
+  "animacao": "cortina que abre com o scroll, arraste da alca, reveal com blur",
+  "slots": {
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 14
+    },
+    "tag_antes": {
+      "tipo": "texto_curto",
+      "max": 26
+    },
+    "antes_1": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "antes_2": {
+      "tipo": "texto",
+      "max": 65
+    },
+    "antes_3": {
+      "tipo": "texto",
+      "max": 65
+    },
+    "tag_depois": {
+      "tipo": "texto_curto",
+      "max": 26
+    },
+    "depois_1": {
+      "tipo": "texto",
+      "max": 80
+    },
+    "depois_2": {
+      "tipo": "texto",
+      "max": 70
+    },
+    "depois_3": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "grip_tag": {
+      "tipo": "texto_curto",
+      "max": 12
+    },
+    "legenda_arraste": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "legenda_antes": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "legenda_depois": {
+      "tipo": "texto_curto",
+      "max": 30
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

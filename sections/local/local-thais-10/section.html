@@ -1,0 +1,41 @@
+<section class="s-local-thais-10" data-secao="local-thais-10" aria-labelledby="local-thais-10-h">
+  <div class="local-thais-10__doc">
+    <div class="local-thais-10__topo">
+      <div class="local-thais-10__regua"></div>
+    </div>
+
+    <div class="local-thais-10__grid">
+      <div>
+        <h2 id="local-thais-10-h" class="local-thais-10__titulo">{{titulo}}</h2>
+        <div class="local-thais-10__contatos">
+          <div class="local-thais-10__linha">
+            <span class="local-thais-10__k">{{rotulo_endereco}}</span>
+            <span>{{endereco}}<br>
+                  <span class="local-thais-10__compl">{{endereco_complemento}}</span></span>
+          </div>
+          <div class="local-thais-10__linha">
+            <span class="local-thais-10__k">WhatsApp</span>
+            <span class="local-thais-10__dado"><a href="{{whatsapp_link}}">{{telefone}}</a></span>
+          </div>
+          <div class="local-thais-10__linha">
+            <span class="local-thais-10__k">Instagram</span>
+            <span class="local-thais-10__dado"><a href="{{instagram_link}}" target="_blank" rel="noopener">{{instagram}}</a></span>
+          </div>
+        </div>
+        <a class="local-thais-10__btn" href="{{maps_url}}" target="_blank" rel="noopener">
+          {{cta_texto}}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"></path></svg>
+        </a>
+      </div>
+
+      <div>
+        <h3 class="local-thais-10__sub">{{titulo_horario}}</h3>
+        <div class="local-thais-10__horarios">
+          {{#horarios}}
+          <div><span>{{dia}}</span><span>{{horas}}</span></div>
+          {{/horarios}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

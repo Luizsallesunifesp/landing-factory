@@ -1,0 +1,72 @@
+{
+  "id": "sobre-yahlla-04",
+  "tipo": "sobre",
+  "origem": "yahlla",
+  "descricao": "Duas colunas: retrato em moldura à esquerda; à direita, eyebrow, título em duas linhas, parágrafo de destaque (lead), corpo de texto, linha de pílulas de idiomas e faixa de três estatísticas com número grande e legenda. Fundo e cores vêm dos tokens (pensada para tema escuro). Reveal via AOS (fade-up com delays escalonados).",
+  "estilo": [
+    "acolhedor",
+    "editorial"
+  ],
+  "nicho": [
+    "profissionais autônomos de saúde e estética",
+    "consultórios",
+    "terapeutas",
+    "atendimento individual"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up escalonado por bloco (data-aos com delay)",
+  "slots": {
+    "retrato": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, proporção vertical"
+    },
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 60,
+      "descricao": "aceita <br> para quebra em duas linhas"
+    },
+    "lead": {
+      "tipo": "texto",
+      "max": 185
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 230
+    },
+    "idiomas": {
+      "tipo": "lista",
+      "min_itens": 0,
+      "max_itens": 6,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 14
+        }
+      }
+    },
+    "stats": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "valor": {
+          "tipo": "texto_curto",
+          "max": 10
+        },
+        "legenda": {
+          "tipo": "texto_curto",
+          "max": 30
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

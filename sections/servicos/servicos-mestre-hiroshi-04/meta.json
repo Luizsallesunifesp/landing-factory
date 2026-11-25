@@ -1,0 +1,54 @@
+{
+  "id": "servicos-mestre-hiroshi-04",
+  "tipo": "servicos",
+  "origem": "mestre-hiroshi",
+  "descricao": "Título grande com linha de apoio, lista de itens de conteúdo em tipografia grande (duas colunas no desktop) com divisores finos, filete no topo e botão de compra com glow ao final. Fundo escuro. Usa gsap/ScrollTrigger se existirem na página.",
+  "estilo": [
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "cursos com módulos",
+    "programas de treinamento",
+    "mentorias",
+    "infoprodutos"
+  ],
+  "libs": [
+    "gsap",
+    "ScrollTrigger"
+  ],
+  "animacao": "revelação de palavras no título, escalonamento dos itens da lista e reveal no corpo e no CTA",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 75
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 100
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 4,
+      "max_itens": 10,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        }
+      }
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "cta_link": {
+      "tipo": "url",
+      "max": 200,
+      "descricao": "link do botão (ex.: #preco)"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

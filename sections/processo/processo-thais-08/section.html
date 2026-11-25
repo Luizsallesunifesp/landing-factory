@@ -1,0 +1,18 @@
+<section class="s-processo-thais-08" data-secao="processo-thais-08" aria-labelledby="processo-thais-08-h">
+  <div class="processo-thais-08__doc">
+    <div class="processo-thais-08__topo">
+      <div class="processo-thais-08__regua"></div>
+    </div>
+    <h2 class="processo-thais-08__titulo" id="processo-thais-08-h">{{titulo}}</h2>
+
+    <div class="processo-thais-08__lista">
+      {{#itens}}
+      <div class="processo-thais-08__passo">
+        <div class="processo-thais-08__n">{{@num}}</div>
+        <h3 class="processo-thais-08__nome">{{nome}}</h3>
+        <p class="processo-thais-08__desc">{{descricao}}</p>
+      </div>
+      {{/itens}}
+    </div>
+  </div>
+</section>

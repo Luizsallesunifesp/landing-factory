@@ -1,0 +1,38 @@
+<section class="s-cta-final-renata-07" data-secao="cta-final-renata-07">
+  <div class="cta-final-renata-07__wrap">
+    <div class="cta-final-renata-07__panel">
+      <div class="cta-final-renata-07__inner">
+        <div class="cta-final-renata-07__grid">
+          <div>
+            <div class="cta-final-renata-07__eyebrow">{{eyebrow}}</div>
+            <h2 class="cta-final-renata-07__titulo">{{titulo}}</h2>
+            <p class="cta-final-renata-07__texto">{{texto}}</p>
+          </div>
+          <div class="cta-final-renata-07__card" data-msg="{{msg_modelo}}" data-vazio="{{nome_vazio}}">
+            <div class="cta-final-renata-07__row">
+              <label for="cta-final-renata-07-nome">{{label_nome}}</label>
+              <input type="text" id="cta-final-renata-07-nome" class="cta-final-renata-07__nome" placeholder="{{placeholder_nome}}">
+            </div>
+            <div class="cta-final-renata-07__row">
+              <label>{{label_modo}}</label>
+              <div class="cta-final-renata-07__radios">
+                {{#modos}}
+                <div class="cta-final-renata-07__radio" data-mode="{{modo}}">{{modo}}</div>
+                {{/modos}}
+              </div>
+            </div>
+            <div class="cta-final-renata-07__row">
+              <label for="cta-final-renata-07-assunto">{{label_assunto}}</label>
+              <select id="cta-final-renata-07-assunto" class="cta-final-renata-07__assunto">
+                {{#assuntos}}
+                <option>{{assunto}}</option>
+                {{/assuntos}}
+              </select>
+            </div>
+            <a class="cta-final-renata-07__submit" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

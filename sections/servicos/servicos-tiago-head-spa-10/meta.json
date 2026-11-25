@@ -1,0 +1,202 @@
+{
+  "id": "servicos-tiago-head-spa-10",
+  "tipo": "servicos",
+  "origem": "tiago-head-spa",
+  "descricao": "Fundo escuro com cabeçalho centralizado e grid de seis cards (foto no topo, título, texto e pills dourados); abaixo, bloco de destaque de linha exclusiva com selo circular de marca. Reveal escalonado via IntersectionObserver próprio (sem dependência global). Dourado derivado de --c-accent.",
+  "estilo": [
+    "tech",
+    "editorial",
+    "luxo",
+    "escuro"
+  ],
+  "nicho": [
+    "clínicas com equipamentos",
+    "academias",
+    "estética avançada",
+    "laboratórios",
+    "serviços que apresentam tecnologias e produtos"
+  ],
+  "libs": [],
+  "animacao": "reveal escalonado ao rolar (fade + translateY) nos cards; hover com zoom na foto",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 60
+    },
+    "titulo": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "titulo_destaque": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 100
+    },
+    "img:t1": {
+      "tipo": "img",
+      "descricao": "foto card 1, proporção 16:10"
+    },
+    "alt:t1": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t1_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "t1_texto": {
+      "tipo": "texto",
+      "max": 220
+    },
+    "t1_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (cada item é uma string, máx. 20 caracteres)"
+    },
+    "img:t2": {
+      "tipo": "img",
+      "descricao": "foto card 2, proporção 16:10"
+    },
+    "alt:t2": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t2_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "t2_texto": {
+      "tipo": "texto",
+      "max": 220
+    },
+    "t2_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (máx. 20 caracteres)"
+    },
+    "img:t3": {
+      "tipo": "img",
+      "descricao": "foto card 3, proporção 16:10"
+    },
+    "alt:t3": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t3_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "t3_texto": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "t3_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (máx. 20 caracteres)"
+    },
+    "img:t4": {
+      "tipo": "img",
+      "descricao": "foto card 4, proporção 16:10"
+    },
+    "alt:t4": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t4_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "t4_texto": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "t4_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (máx. 20 caracteres)"
+    },
+    "img:t5": {
+      "tipo": "img",
+      "descricao": "foto card 5, proporção 16:10"
+    },
+    "alt:t5": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t5_nome": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "t5_texto": {
+      "tipo": "texto",
+      "max": 200
+    },
+    "t5_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (máx. 20 caracteres)"
+    },
+    "img:t6": {
+      "tipo": "img",
+      "descricao": "foto card 6, proporção 16:10"
+    },
+    "alt:t6": {
+      "tipo": "texto_curto",
+      "max": 110
+    },
+    "t6_nome": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "t6_texto": {
+      "tipo": "texto",
+      "max": 220
+    },
+    "t6_tags": {
+      "tipo": "lista",
+      "min_itens": 1,
+      "max_itens": 4,
+      "descricao": "pills de texto simples (máx. 20 caracteres)"
+    },
+    "destaque_kicker": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "destaque_titulo": {
+      "tipo": "texto_curto",
+      "max": 50
+    },
+    "destaque_marca": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "destaque_texto": {
+      "tipo": "texto",
+      "max": 400
+    },
+    "selo_linha1": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "selo_linha2": {
+      "tipo": "texto_curto",
+      "max": 10
+    },
+    "selo_legenda": {
+      "tipo": "texto_curto",
+      "max": 25
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,113 @@
+{
+  "id": "cta-final-thais-11",
+  "tipo": "cta-final",
+  "origem": "thais",
+  "descricao": "Fechamento escuro: título grande e texto de apoio no topo, régua capilar que desenha ao entrar, formulário com três campos (nome, WhatsApp, select de incômodo) com validação e botão que abre o WhatsApp com a mensagem montada. Sem dependência global; o JS próprio faz máscara de telefone e validação (não precisa de servidor).",
+  "estilo": [
+    "clínico",
+    "acolhedor",
+    "escuro",
+    "editorial"
+  ],
+  "nicho": [
+    "estética",
+    "clínicas",
+    "consultorias",
+    "profissionais liberais"
+  ],
+  "libs": [],
+  "animacao": "régua desenha ao entrar na tela (IntersectionObserver, respeita --motion); validação de campos com mensagens de erro",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 47
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 190
+    },
+    "label_nome": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "placeholder_nome": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "erro_nome": {
+      "tipo": "texto_curto",
+      "max": 50
+    },
+    "label_fone": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "placeholder_fone": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "erro_fone": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "label_regiao": {
+      "tipo": "texto_curto",
+      "max": 45
+    },
+    "placeholder_regiao": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "opcoes": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 8,
+      "campos": {
+        "texto": {
+          "tipo": "texto_curto",
+          "max": 55
+        }
+      }
+    },
+    "erro_regiao": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 25
+    },
+    "nota": {
+      "tipo": "texto",
+      "max": 140
+    },
+    "msg_intro": {
+      "tipo": "texto_curto",
+      "max": 60,
+      "descricao": "primeira linha da mensagem do WhatsApp, ex.: Olá! Vim pelo site."
+    },
+    "msg_nome": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "prefixo, ex.: Nome:"
+    },
+    "msg_fone": {
+      "tipo": "texto_curto",
+      "max": 20,
+      "descricao": "prefixo, ex.: WhatsApp:"
+    },
+    "msg_regiao": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "prefixo, ex.: O que me incomoda:"
+    },
+    "msg_final": {
+      "tipo": "texto_curto",
+      "max": 70,
+      "descricao": "última linha da mensagem"
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

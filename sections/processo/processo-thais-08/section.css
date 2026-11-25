@@ -1,0 +1,13 @@
+.s-processo-thais-08{padding:var(--section-y) 0;background:var(--c-surface-2);position:relative}
+.processo-thais-08__doc{width:100%;max-width:var(--max-w);margin-inline:auto;padding-inline:var(--space);position:relative;z-index:1}
+.processo-thais-08__topo{margin-bottom:clamp(26px,3.2vw,44px)}
+.processo-thais-08__regua{height:1px;background:color-mix(in srgb,var(--c-text) 35%,transparent)}
+.processo-thais-08__titulo{font-family:var(--f-display);font-size:clamp(1.95rem,4.6vw,3.2rem);font-weight:600;letter-spacing:-.03em;line-height:1.07;margin:0 0 clamp(30px,3.4vw,46px)}
+.processo-thais-08__lista{border-top:1px solid color-mix(in srgb,var(--c-text) 35%,transparent);padding-top:10px}
+.processo-thais-08__passo{display:grid;grid-template-columns:1fr;gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--c-line)}
+.processo-thais-08__n{font-family:var(--f-mono,var(--f-body));font-size:15px;font-weight:500;letter-spacing:.04em;color:var(--c-accent);padding-top:.3em}
+.processo-thais-08__nome{font-family:var(--f-display);font-size:clamp(1.28rem,3vw,1.55rem);font-weight:600;letter-spacing:-.016em;line-height:1.26;margin:0}
+.processo-thais-08__desc{margin:0;color:var(--c-muted)}
+@media (min-width:760px){
+  .processo-thais-08__passo{grid-template-columns:56px 1fr 1fr;align-items:start;gap:0 32px}
+}

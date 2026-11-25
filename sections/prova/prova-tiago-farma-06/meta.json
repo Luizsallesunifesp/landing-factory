@@ -1,0 +1,64 @@
+{
+  "id": "prova-tiago-farma-06",
+  "tipo": "prova",
+  "origem": "tiago-farma",
+  "descricao": "Seção escura com cabeçalho e grade de 2 cards de antes e depois (foto 4:5, selo de resultado sobreposto, ícone de zoom, legenda) e nota legal. Clique na foto abre lightbox criado pelo section.js (sem dependência global). Fotos reais de pacientes: não reutilizar em outros clientes.",
+  "estilo": [
+    "clínico",
+    "acolhedor",
+    "escuro"
+  ],
+  "nicho": [
+    "estética",
+    "fisioterapia",
+    "academias",
+    "coaching",
+    "nutrição",
+    "serviço com evolução comprovável por foto"
+  ],
+  "libs": [],
+  "animacao": "reveal ao rolar (IntersectionObserver), hover com zoom na foto, lightbox por clique",
+  "slots": {
+    "eyebrow": {
+      "tipo": "texto_curto",
+      "max": 32
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 120
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 2,
+      "max_itens": 4,
+      "campos": {
+        "foto": {
+          "tipo": "img"
+        },
+        "resultado": {
+          "tipo": "texto_curto",
+          "max": 36
+        },
+        "periodo": {
+          "tipo": "texto_curto",
+          "max": 24
+        },
+        "legenda": {
+          "tipo": "texto_curto",
+          "max": 50
+        }
+      }
+    },
+    "nota_legal": {
+      "tipo": "texto",
+      "max": 380
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

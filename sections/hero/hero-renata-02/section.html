@@ -1,0 +1,27 @@
+<section class="s-hero-renata-02" data-secao="hero-renata-02">
+  <div class="hero-renata-02__wrap hero-renata-02__grid">
+    <div>
+      <div class="hero-renata-02__eyebrow">{{etiqueta}}</div>
+      <h1 class="hero-renata-02__titulo">{{titulo_antes}} <em>{{titulo_destaque}}</em> {{titulo_depois}}</h1>
+      <p class="hero-renata-02__lead">{{subtitulo}}</p>
+      <div class="hero-renata-02__cta-row">
+        <a class="hero-renata-02__btn hero-renata-02__btn-primary" href="{{whatsapp_link}}" target="_blank" rel="noopener">{{cta_texto}}</a>
+        <a class="hero-renata-02__btn hero-renata-02__btn-ghost" href="{{cta2_link}}">{{cta2_texto}}</a>
+      </div>
+      <div class="hero-renata-02__meta">
+        {{#metricas}}
+        <div><strong>{{valor}}</strong><span>{{rotulo}}</span></div>
+        {{/metricas}}
+      </div>
+    </div>
+    <div class="hero-renata-02__photo">
+      <div class="hero-renata-02__photo-card">
+        <img src="{{img:principal}}" alt="{{alt:principal}}" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero-renata-02__photo-tag">
+        <div class="hero-renata-02__dot"></div>
+        <div><strong>{{profissional}}</strong><span>{{tag_papel}}</span></div>
+      </div>
+    </div>
+  </div>
+</section>

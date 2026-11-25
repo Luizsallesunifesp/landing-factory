@@ -1,0 +1,100 @@
+{
+  "id": "hero-tiago-farma-02",
+  "tipo": "hero",
+  "origem": "tiago-farma",
+  "descricao": "Hero em duas colunas: foto do profissional em moldura com anel decorativo e dois chips flutuantes com números; à direita etiqueta, título serifado com trecho em itálico (<em>), subtítulo, dois CTAs (WhatsApp e âncora) e faixa de métricas. Contadores numéricos animam de 0 ao valor ao rolar (section.js). Foto vai acima do texto no mobile.",
+  "estilo": [
+    "acolhedor",
+    "clínico",
+    "editorial"
+  ],
+  "nicho": [
+    "saúde",
+    "estética",
+    "consultório",
+    "terapeuta",
+    "coach"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up ao rolar, chips flutuantes em loop, contadores numéricos animados",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 54,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo": {
+      "tipo": "richtext",
+      "max": 110,
+      "descricao": "promessa principal; use <em> no trecho em itálico"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 230
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 38,
+      "descricao": "botão primário (WhatsApp)"
+    },
+    "cta2_texto": {
+      "tipo": "texto_curto",
+      "max": 43,
+      "descricao": "botão secundário (âncora)"
+    },
+    "cta2_link": {
+      "tipo": "url",
+      "max": 60,
+      "descricao": "ex.: #servicos"
+    },
+    "chip1_num": {
+      "tipo": "texto_curto",
+      "max": 8,
+      "descricao": "número animado, ex.: 480+"
+    },
+    "chip1_label": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "chip2_num": {
+      "tipo": "texto_curto",
+      "max": 8,
+      "descricao": "ex.: 100%"
+    },
+    "chip2_label": {
+      "tipo": "texto_curto",
+      "max": 37
+    },
+    "trust1_num": {
+      "tipo": "texto_curto",
+      "max": 8,
+      "descricao": "número animado, ex.: 480+"
+    },
+    "trust1_label": {
+      "tipo": "texto_curto",
+      "max": 30
+    },
+    "trust2_num": {
+      "tipo": "texto_curto",
+      "max": 12,
+      "descricao": "ex.: 09h–21h"
+    },
+    "trust2_label": {
+      "tipo": "texto_curto",
+      "max": 38
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "retrato do profissional, proporção 4:4.7"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 105
+    }
+  },
+  "mobile_ok": true,
+  "nota": 4,
+  "aprovada": false
+}

@@ -1,0 +1,22 @@
+<section class="s-prova-tiago-farma-06" data-secao="prova-tiago-farma-06">
+  <div class="prova-tiago-farma-06__container">
+    <div class="prova-tiago-farma-06__header prova-tiago-farma-06__reveal">
+      <div class="prova-tiago-farma-06__eyebrow">{{eyebrow}}</div>
+      <h2 class="prova-tiago-farma-06__titulo">{{titulo}}</h2>
+      <p class="prova-tiago-farma-06__sub">{{subtitulo}}</p>
+    </div>
+    <div class="prova-tiago-farma-06__grid prova-tiago-farma-06__reveal">
+      {{#itens}}
+      <div class="prova-tiago-farma-06__card" data-img="{{img:foto}}">
+        <div class="prova-tiago-farma-06__imgwrap">
+          <img src="{{img:foto}}" alt="{{alt:foto}}" loading="lazy" decoding="async">
+          <span class="prova-tiago-farma-06__zoom" aria-hidden="true">⤢</span>
+          <span class="prova-tiago-farma-06__delta">{{resultado}}</span>
+        </div>
+        <div class="prova-tiago-farma-06__info"><span>{{periodo}}</span><strong>{{legenda}}</strong></div>
+      </div>
+      {{/itens}}
+    </div>
+    <p class="prova-tiago-farma-06__footnote">{{nota_legal}}</p>
+  </div>
+</section>

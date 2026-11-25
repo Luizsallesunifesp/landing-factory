@@ -1,0 +1,40 @@
+{
+  "id": "footer-samanta-11",
+  "tipo": "footer",
+  "origem": "samanta",
+  "descricao": "Rodapé em grade de três blocos: identificação com nome, registro e especialidade; contato com cidade, Instagram e WhatsApp; nota de privacidade ao lado, e uma linha final de crédito da agência. Usa a classe global lf-wrap e reserva espaço inferior (72px) para barra fixa de WhatsApp.",
+  "estilo": [
+    "clínico",
+    "minimalista"
+  ],
+  "nicho": [
+    "profissionais liberais de saúde com registro em conselho"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "especialidade": {
+      "tipo": "texto_curto",
+      "max": 40
+    },
+    "nota_privacidade": {
+      "tipo": "texto",
+      "max": 105
+    },
+    "credito_prefixo": {
+      "tipo": "texto_curto",
+      "max": 15
+    },
+    "credito_nome": {
+      "tipo": "texto_curto",
+      "max": 20
+    },
+    "credito_url": {
+      "tipo": "url",
+      "max": 200
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}
