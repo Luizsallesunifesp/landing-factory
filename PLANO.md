@@ -203,19 +203,19 @@ landing-factory/
 > Os scripts foram testados com as 13 páginas reais (141 seções extraídas, base64 zerado, cada seção com 4 a 8 KB) e com um cliente fictício (slots → montar → QA → troca simples → override).
 
 ### Fase 1 — Setup (≈ 1 hora)
-- [ ] Copiar esta pasta para `C:\Users\luizr\source\repos\landing-factory`
-- [ ] `npm install` e `npx playwright install chromium`
-- [ ] `git init` e criar o repositório privado no GitHub
-- [ ] `npx wrangler login` (conta Cloudflare da Samanta)
-- [ ] Abrir no Claude Code e rodar `/model sonnet`
+- [x] Copiar esta pasta para `C:\Users\luizr\source\repos\landing-factory`
+- [x] `npm install` e `npx playwright install chromium`
+- [x] `git init` e criar o repositório privado no GitHub
+- [x] `npx wrangler login` (conta Cloudflare da Samanta)
+- [x] Abrir no Claude Code e rodar `/model sonnet`
 
 ### Fase 2 — Biblioteca (≈ 1 a 2 dias)
-- [ ] Descompactar `samanta.zip` na pasta `OneDrive\landing page\samanta`
-- [ ] `npm run extrair -- "C:\Users\luizr\OneDrive\landing page"` → `sections/_raw/` (a pasta `teste` e os arquivos de backup são ignorados)
-- [ ] `/extrair-biblioteca`: Haiku classifica, Sonnet padroniza cada seção com slots e tokens
-- [ ] `npm run previews` → screenshot de cada seção
-- [ ] **Luiz cura:** em cada `meta.json`, nota de 1 a 5 e `aprovada: true/false`. Só as aprovadas entram no catálogo
-- [ ] `npm run catalogo`
+- [x] Descompactar `samanta.zip` na pasta `OneDrive\landing page\samanta`
+- [x] `npm run extrair -- "C:\Users\luizr\OneDrive\landing page"` → `sections/_raw/` (a pasta `teste` e os arquivos de backup são ignorados)
+- [x] `/extrair-biblioteca`: Haiku classifica, Sonnet padroniza cada seção com slots e tokens
+- [x] `npm run previews` → screenshot de cada seção
+- [x] **Luiz cura:** em cada `meta.json`, nota de 1 a 5 e `aprovada: true/false`. Só as aprovadas entram no catálogo
+- [x] `npm run catalogo`
 - **Meta:** pelo menos 4 variações aprovadas de hero, serviços, sobre, processo e CTA final
 
 ### Fase 3 — Primeiro teste (≈ 1 dia)

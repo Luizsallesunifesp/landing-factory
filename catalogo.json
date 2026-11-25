@@ -1,1 +1,2850 @@
-{"secoes":[]}
+{
+  "gerado": "2026-11-25T11:41:46.283Z",
+  "total": 121,
+  "secoes": [
+    {
+      "id": "cta-final-acalm-head-spa-10",
+      "tipo": "cta-final",
+      "origem": "acalm-head-spa",
+      "descricao": "Bloco centralizado de largura total com fundo em degradê escuro, eyebrow com filetes, título serifado grande com palavra em itálico (use <em> no título) e um único botão pílula para WhatsApp; sem imagens.",
+      "estilo": [
+        "editorial",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "qualquer landing page, como fechamento universal"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-carol-benedetti-09",
+      "tipo": "cta-final",
+      "origem": "carol-benedetti",
+      "descricao": "Bloco centralizado com eyebrow, título grande, parágrafo curto e dois botões lado a lado: primário para WhatsApp e fantasma para Instagram. Sem imagem. Reveal escalonado ao rolar via section.js (IntersectionObserver, respeita --motion).",
+      "estilo": [
+        "luxo",
+        "acolhedor"
+      ],
+      "nicho": [
+        "estética",
+        "clínicas",
+        "consultórios",
+        "serviços que agendam por WhatsApp"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao entrar na viewport",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-exemplo-01",
+      "tipo": "cta-final",
+      "origem": "exemplo",
+      "descricao": "[EXEMPLO DE FORMATO] Bloco escuro com título grande alinhado à esquerda, botão na cor de destaque e endereço",
+      "estilo": [
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "qualquer"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-karol-09",
+      "tipo": "cta-final",
+      "origem": "karol",
+      "descricao": "Bloco centralizado de chamada para acao: titulo grande com trecho em italico de destaque e dois botoes lado a lado (WhatsApp primario e Instagram fantasma). Sem midia. Entrada por IntersectionObserver proprio (sem dependencias globais).",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "qualquer"
+      ],
+      "libs": [],
+      "animacao": "Reveal por IntersectionObserver (fade + translateY), respeita --motion",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-mestre-hiroshi-11",
+      "tipo": "cta-final",
+      "origem": "mestre-hiroshi",
+      "descricao": "Fechamento centralizado: título grande de uma frase, botão CTA único com glow giratório e varredura de brilho, e link secundário de WhatsApp abaixo. O reveal ao rolar usa data-aos (AOS) e o título entra inteiro, sem animação palavra a palavra; sem AOS a seção aparece normalmente.",
+      "estilo": [
+        "bold",
+        "minimalista"
+      ],
+      "nicho": [
+        "lançamentos",
+        "cursos",
+        "mentorias",
+        "página com CTA único de conversão"
+      ],
+      "libs": [],
+      "animacao": "glow giratório e varredura de brilho no botão (CSS, escalam com --motion); reveal fade-up via data-aos",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-renata-07",
+      "tipo": "cta-final",
+      "origem": "renata",
+      "descricao": "Painel arredondado na cor primária em duas colunas: eyebrow, título e texto à esquerda; card de formulário à direita (nome, modalidade em 3 opções, assunto em dropdown) que abre o WhatsApp com mensagem montada. Usa section.js próprio (sem dependência global); o link base vem de whatsapp_link e a mensagem é montada em JS com ?text=.",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultorias",
+        "agências",
+        "serviços com agendamento de conversa"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "cta-final-samanta-10",
+      "tipo": "cta-final",
+      "origem": "samanta",
+      "descricao": "Bloco de chamada com título grande em formato de pergunta, parágrafo curto explicando o primeiro passo e um único botão de WhatsApp com seta. Sem dependências globais.",
+      "estilo": [
+        "bold",
+        "clínico"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultorias",
+        "serviços por avaliação"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "cta-final-thais-11",
+      "tipo": "cta-final",
+      "origem": "thais",
+      "descricao": "Fechamento escuro: título grande e texto de apoio no topo, régua capilar que desenha ao entrar, formulário com três campos (nome, WhatsApp, select de incômodo) com validação e botão que abre o WhatsApp com a mensagem montada. Sem dependência global; o JS próprio faz máscara de telefone e validação (não precisa de servidor).",
+      "estilo": [
+        "clínico",
+        "acolhedor",
+        "escuro",
+        "editorial"
+      ],
+      "nicho": [
+        "estética",
+        "clínicas",
+        "consultorias",
+        "profissionais liberais"
+      ],
+      "libs": [],
+      "animacao": "régua desenha ao entrar na tela (IntersectionObserver, respeita --motion); validação de campos com mensagens de erro",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "cta-final-vanessa-08",
+      "tipo": "cta-final",
+      "origem": "vanessa",
+      "descricao": "Faixa escura centralizada sem imagem: tag de urgência no topo, título em uma frase, parágrafo curto, botão grande de WhatsApp (efeito magnético) e microtexto com garantias de atendimento. Reveal e magnetic são tratados no section.js próprio; sem dependências globais.",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "educação",
+        "saúde",
+        "consultoria",
+        "serviço com contato por WhatsApp"
+      ],
+      "libs": [],
+      "animacao": "Reveal ao entrar na viewport no bloco inteiro e botão magnético que acompanha o cursor (JS próprio, respeita --motion).",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "dor-carol-benedetti-07",
+      "tipo": "dor",
+      "origem": "carol-benedetti",
+      "descricao": "Título centralizado com eyebrow e, em uma única linha horizontal (6 colunas), seis itens; cada item tem um anel circular com ícone SVG de traço fino e rótulo curto abaixo. Ícones fixos no HTML. Reveal próprio via section.js (sem dependências globais).",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "estética e cuidado com a pele",
+        "dermatologia",
+        "nutrição",
+        "saúde preventiva",
+        "bem-estar"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (fade-up) no cabeçalho e na linha de itens",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "dor-elaine-03",
+      "tipo": "dor",
+      "origem": "elaine",
+      "descricao": "Cabeçalho em duas colunas (título grande à esquerda, parágrafo à direita); grade de cartões com rótulo pequeno numerado e frase de sintoma; nota final com trecho em negrito como chamada para avaliação. Reveal ao rolar via section.js (IntersectionObserver).",
+      "estilo": [
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "saúde integrativa",
+        "nutrição",
+        "estética",
+        "terapias de bem-estar",
+        "clínicas de sintomas crônicos"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade + translateY) no cabeçalho e na grade ao rolar",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "dor-mestre-hiroshi-03",
+      "tipo": "dor",
+      "origem": "mestre-hiroshi",
+      "descricao": "Título em forma de pergunta grande e lista de três dores em itens com divisores finos, em duas colunas (título à esquerda, lista à direita) sobre fundo escuro. Usa gsap/ScrollTrigger se existirem; sem eles o conteúdo fica visível.",
+      "estilo": [
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "defesa pessoal",
+        "segurança",
+        "academias",
+        "cursos de saúde",
+        "produtos que resolvem medo ou insegurança"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "revelação palavra a palavra no título e escalonamento dos itens da lista",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "dor-samanta-04",
+      "tipo": "dor",
+      "origem": "samanta",
+      "descricao": "Bloco de texto editorial: rótulo, título e parágrafo longo com sintomas destacados inline por marcador que se preenche ao rolar, mais frase de fecho com filete. Sem cards nem imagens. Depende de gsap + ScrollTrigger (opcional) para o efeito de leitura.",
+      "estilo": [
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "saúde e odontologia",
+        "qualquer serviço em que o cliente reconhece sinais ou sintomas antes de procurar"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "reveal em cascata ao entrar; sintomas acendem de cinza para texto com marcador, conforme a rolagem (scrub)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "dor-tiago-head-spa-04",
+      "tipo": "dor",
+      "origem": "tiago-head-spa",
+      "descricao": "Fundo escuro. Cabeçalho com eyebrow, título com palavra em destaque itálico na cor de acento e lead; grid de cards com ícone de linha fina, título curto e descrição; bloco de insight com aspas grandes encerra a seção. O ícone de cada card é o conteúdo interno de um SVG 24x24 (paths). Reveal por IntersectionObserver no section.js.",
+      "estilo": [
+        "editorial",
+        "clínico",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "saúde e estética",
+        "clínicas de especialidade",
+        "serviços que listam sintomas ou problemas do público antes da solução"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar com atrasos escalonados nos cards",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "dor-vanessa-03",
+      "tipo": "dor",
+      "origem": "vanessa",
+      "descricao": "Cabeçalho centralizado com eyebrow, título de pergunta e subtítulo, seguido de grade de seis cartões com marcador de X e frase de dor; fecha com citação em destaque centralizada. Reveal ao rolar via section.js (sem dependências globais).",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "educação",
+        "emagrecimento",
+        "coaching",
+        "qualquer serviço em que o cliente já tentou antes sem resultado"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar no cabeçalho e na citação; stagger na grade de cartões",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-acalm-head-spa-06",
+      "tipo": "especial",
+      "origem": "acalm-head-spa",
+      "descricao": "Duas colunas em fundo escuro: foto de produtos com tag sobreposta à esquerda e, à direita, eyebrow, título, parágrafo e lista de ingredientes ou etapas com nome e descrição. Sem dependências globais; reveal próprio em section.js.",
+      "estilo": [
+        "escuro",
+        "editorial",
+        "luxo"
+      ],
+      "nicho": [
+        "cosméticos",
+        "dermocosméticos",
+        "marcas de produto",
+        "spas com linha própria de produtos"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade-up) nas duas colunas ao rolar, via IntersectionObserver",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-acalm-head-spa-07",
+      "tipo": "especial",
+      "origem": "acalm-head-spa",
+      "descricao": "Painel escuro com copy à esquerda e formulário de agendamento à direita (ritual, dia, nome, resumo dinâmico) que monta a mensagem e abre o WhatsApp. Lógica em section.js; não depende de libs globais. Se o link de WhatsApp já tiver ?text=, ele é substituído.",
+      "estilo": [
+        "escuro",
+        "acolhedor"
+      ],
+      "nicho": [
+        "clínicas",
+        "salões",
+        "consultórios",
+        "oficinas",
+        "estúdios"
+      ],
+      "libs": [],
+      "animacao": "reveal do painel ao rolar (IntersectionObserver, escala por --motion); resumo e link do WhatsApp atualizados ao digitar",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-luiz-ricardo-04",
+      "tipo": "especial",
+      "origem": "luiz-ricardo",
+      "descricao": "Comparativo interativo antes e depois: titulo carimbado em mono, dois paineis escuros lado a lado com tres linhas e icone cada, alca central arrastavel que abre com o scroll e legenda. Fundo escuro (--c-dark). Sem dependencia global; o JS proprio faz o reveal e a cortina. Com --motion 0 o JS mantem so o arraste, em 50%.",
+      "estilo": [
+        "tech",
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "agencias",
+        "clinicas",
+        "reformas",
+        "consultorias",
+        "servicos de transformacao"
+      ],
+      "libs": [],
+      "animacao": "cortina que abre com o scroll, arraste da alca, reveal com blur",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "especial-mestre-hiroshi-07",
+      "tipo": "especial",
+      "origem": "mestre-hiroshi",
+      "descricao": "Duas colunas: à esquerda, lista de bônus com valor riscado, descrição curta e total riscado; à direita, card de oferta com brilho, preço grande parcelado, botão com glow, selos de pagamento e benefícios com ícone de check. Ícones em SVG inline (autônoma, sem sprite global). Para o título, usa o efeito global data-palavras (opcional).",
+      "estilo": [
+        "bold",
+        "escuro",
+        "conversão"
+      ],
+      "nicho": [
+        "infoprodutos",
+        "cursos",
+        "pacotes de serviços",
+        "oferta com bônus"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "reveal nos blocos, realce que segue o cursor no card, glow giratório e varredura de brilho no botão",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-renata-03",
+      "tipo": "especial",
+      "origem": "renata",
+      "descricao": "Seção interativa escura em duas colunas: texto e botão de iniciar exercício à esquerda; à direita círculo central com dois anéis e rótulo de fase, com dica do ciclo de respiração 4-4-6. Depende só do section.js próprio (textos de cada fase vêm de data-attributes); sem --motion (0) o JS não roda e o botão fica inerte. Fundo usa --c-primary.",
+      "estilo": [
+        "acolhedor",
+        "orgânico",
+        "escuro"
+      ],
+      "nicho": [
+        "terapia",
+        "bem-estar",
+        "yoga",
+        "meditação",
+        "spa",
+        "medicina integrativa",
+        "saúde mental"
+      ],
+      "libs": [],
+      "animacao": "círculo de respiração interativo (inspire 4s, segure 4s, expire 6s) controlado por JS e transições CSS",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "especial-samanta-03",
+      "tipo": "especial",
+      "origem": "samanta",
+      "descricao": "Scrollytelling pinado: título e texto à esquerda; palco central com ilustração 3D (canvas de frames) que gira com a rolagem e quatro etiquetas numeradas com linhas SVG apontando para as partes. Nota final com botão de WhatsApp. Depende de gsap + ScrollTrigger globais e de uma sequência de frames webp 720x900 (f_0000.webp..., 120 frames; versão leve com 60) nas pastas frames_pasta e frames_pasta_leve. Sem gsap ou com --motion 0 mostra a imagem estática com as etiquetas visíveis. Recorte do canvas (144,96,432,720) fixo no JS.",
+      "estilo": [
+        "tech",
+        "clínico"
+      ],
+      "nicho": [
+        "medicina",
+        "odontologia",
+        "engenharia",
+        "produtos técnicos que precisam explicar anatomia ou componentes"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger",
+        "canvas",
+        "svg"
+      ],
+      "animacao": "canvas com sequência de frames guiada pelo scroll em seção pinada; etiquetas e linhas guia entram em sequência",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "dente"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-thais-05",
+      "tipo": "especial",
+      "origem": "thais",
+      "descricao": "Título grande com lede e gráfico de curva em largura total (ação em 120 dias) com 5 marcos e linha tracejada de limite; em telas estreitas troca por versão vertical do gráfico. Abaixo, lista de etapas com o dia em destaque. Requer gsap + ScrollTrigger para a curva se desenhar no scroll (sem eles, gráfico estático completo). Os 5 marcos são fixos (posições no SVG).",
+      "estilo": [
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "estética",
+        "depilação a laser",
+        "tratamentos com cronograma e manutenção"
+      ],
+      "libs": [
+        "gsap",
+        "scrolltrigger"
+      ],
+      "animacao": "curva SVG desenhada por scroll (stroke-dashoffset scrub), marcadores aparecem por progresso (data-p), régua que desenha",
+      "nota": 5,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-tiago-farma-07",
+      "tipo": "especial",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho centralizado e cartão único de quiz com três perguntas: barra de progresso segmentada, opções como botões em grade, erro por passo, link de voltar e tela final com check e botão para enviar as respostas no WhatsApp. Depende de section.js (troca de passos e montagem do texto do link); o link usa o slot automático whatsapp_link como base.",
+      "estilo": [
+        "acolhedor",
+        "clínico"
+      ],
+      "nicho": [
+        "captação com triagem: clínicas, consultorias, educação, funis que qualificam o lead antes do contato"
+      ],
+      "libs": [],
+      "animacao": "troca de passos e barra de progresso por JS (.is-active), validação de opção, fade entre passos",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-tiago-head-spa-07",
+      "tipo": "especial",
+      "origem": "tiago-head-spa",
+      "descricao": "Fundo escuro, duas colunas: à esquerda eyebrow, título com destaque em itálico, lead e lista numerada de cinco etapas (ritual) com botão WhatsApp; à direita foto em retrato com selo flutuante. Reveal via data-aos (AOS); sem dependências globais além disso.",
+      "estilo": [
+        "acolhedor",
+        "editorial",
+        "escuro"
+      ],
+      "nicho": [
+        "spas",
+        "barbearias premium",
+        "estúdios de bem-estar",
+        "massoterapia",
+        "clínicas de estética"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up com atraso na imagem; hover com zoom na foto",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-tiago-head-spa-14",
+      "tipo": "especial",
+      "origem": "tiago-head-spa",
+      "descricao": "Cabeçalho centralizado e caixa de quiz escuro de três perguntas com tela de resultado: barra de progresso, opções empilhadas em botões, voltar, recomendação e CTA dourado para WhatsApp com as respostas, mais opção de refazer. Usa JS próprio (section.js) e, por isso, o quiz continua funcional com --motion 0 (só desliga animações e scroll suave). Depende de whatsapp_link para montar a mensagem.",
+      "estilo": [
+        "acolhedor",
+        "clean",
+        "escuro"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultórios",
+        "imobiliárias",
+        "cursos",
+        "funil de qualificação antes do contato"
+      ],
+      "libs": [],
+      "animacao": "troca de etapas com fade, barra de progresso animada, reveal via data-aos",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "especial-yahlla-01",
+      "tipo": "especial",
+      "origem": "yahlla",
+      "descricao": "Barra vertical fixa de progresso de rolagem em forma de pavio de vela: trilho fino, preenchimento que sobe, pontos clicaveis por secao com rotulo e chama SVG no topo. Apenas desktop (oculta abaixo de 980px). Depende de section.js (cria os pontos a partir de todos os [data-secao] da pagina, exceto nav/header/footer) e de fundo escuro (usa --c-bg nos pontos).",
+      "estilo": [
+        "organico",
+        "escuro"
+      ],
+      "nicho": [
+        "spas",
+        "massoterapia",
+        "velas e aromaterapia",
+        "wellness",
+        "lojas artesanais",
+        "restaurantes de experiencia"
+      ],
+      "libs": [],
+      "animacao": "preenchimento e chama acompanham o scroll; chama tremula (flicker); ponto ativo via IntersectionObserver",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faixa-carol-benedetti-04",
+      "tipo": "faixa",
+      "origem": "carol-benedetti",
+      "descricao": "Faixa curta centralizada com ícone de estrela, citação grande em serif itálico entre aspas e atribuição pequena em caixa alta; sem imagem nem botão. Reveal ao rolar via section.js (classe .in).",
+      "estilo": [
+        "minimalista",
+        "luxo"
+      ],
+      "nicho": [
+        "qualquer landing page como pausa visual entre seções, manifestos ou frases de marca"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (IntersectionObserver) e brilho pulsante suave no texto",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "faixa-mestre-hiroshi-08",
+      "tipo": "faixa",
+      "origem": "mestre-hiroshi",
+      "descricao": "Bloco de garantia em duas colunas: à esquerda, número grande em destaque com 'dias para desistir'; à direita, parágrafo explicativo com frase final em negrito. Usa gsap/ScrollTrigger (opcional) para o reveal; sem eles o conteúdo fica visível.",
+      "estilo": [
+        "bold",
+        "direto"
+      ],
+      "nicho": [
+        "produto com garantia incondicional",
+        "infoprodutos",
+        "serviços de baixo risco"
+      ],
+      "libs": [],
+      "animacao": "reveal nos dois blocos ao rolar (gsap, opcional)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "faixa-tiago-head-spa-03",
+      "tipo": "faixa",
+      "origem": "tiago-head-spa",
+      "descricao": "Faixa escura estreita com bordas finas e 3 indicadores em grid horizontal (número grande em destaque e legenda pequena em caixa alta); sem imagem. Reveal escalonado em JS próprio (IntersectionObserver), sem dependência global.",
+      "estilo": [
+        "minimalista",
+        "clínico",
+        "escuro"
+      ],
+      "nicho": [
+        "clínicas",
+        "academias",
+        "escolas",
+        "agências",
+        "qualquer negócio que quer prova rápida logo após o hero"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (fade + translateY)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faixa-tiago-head-spa-05",
+      "tipo": "faixa",
+      "origem": "tiago-head-spa",
+      "descricao": "Faixa de largura total com foto de fundo em parallax e véu escuro, texto centralizado (eyebrow, título com palavra em destaque, lead curto) e botão de conversão para WhatsApp. Usa section.js próprio (reveal e parallax), sem dependência global.",
+      "estilo": [
+        "escuro",
+        "editorial"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultórios",
+        "estúdios",
+        "hotéis",
+        "serviços com chamada entre seções"
+      ],
+      "libs": [],
+      "animacao": "parallax no fundo (data-speed 0.3) e reveal escalonado ao rolar, ambos escalados por --motion",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "faixa-tiago-head-spa-09",
+      "tipo": "faixa",
+      "origem": "tiago-head-spa",
+      "descricao": "Faixa de largura total com foto de fundo escurecida (parallax), texto centralizado com eyebrow, título de duas partes (a segunda em dourado/destaque) e parágrafo curto; sem botão. Independente de libs globais; o section.js aplica a imagem de fundo (data-bg), o parallax e o reveal.",
+      "estilo": [
+        "escuro",
+        "editorial"
+      ],
+      "nicho": [
+        "pausa de posicionamento entre seções de serviços em qualquer segmento"
+      ],
+      "libs": [],
+      "animacao": "parallax no fundo (data-speed 0.28) e reveal escalonado ao rolar",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "faixa-tiago-head-spa-12",
+      "tipo": "faixa",
+      "origem": "tiago-head-spa",
+      "descricao": "Faixa de largura total com foto de fundo escurecida em parallax, texto centralizado (eyebrow, título com palavra em destaque itálico, lead) e sem botão. Autônoma: parallax e reveal no section.js (sem libs).",
+      "estilo": [
+        "escuro",
+        "editorial"
+      ],
+      "nicho": [
+        "pausa de posicionamento entre seções em qualquer segmento"
+      ],
+      "libs": [],
+      "animacao": "parallax no fundo (data-speed 0.26) e reveal escalonado ao rolar, ambos multiplicados por --motion",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "faixa-yahlla-07",
+      "tipo": "faixa",
+      "origem": "yahlla",
+      "descricao": "Faixa em tela cheia com foto de ambiente como fundo, scrim escuro que funde no fundo da página e texto curto (eyebrow, H2 e parágrafo) alinhado à esquerda sobre a imagem. Autônoma: reveal e parallax no section.js; o gradiente termina em --c-bg, então a seção seguinte deve ter esse fundo.",
+      "estilo": [
+        "luxo",
+        "acolhedor",
+        "cinematográfico"
+      ],
+      "nicho": [
+        "spas",
+        "hotéis",
+        "restaurantes",
+        "studios",
+        "imobiliário de alto padrão",
+        "negócios que vendem atmosfera"
+      ],
+      "libs": [],
+      "animacao": "parallax da imagem ao rolar (scale + translateY) e reveal escalonado dos textos",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "faq-acalm-head-spa-08",
+      "tipo": "faq",
+      "origem": "acalm-head-spa",
+      "descricao": "Cabeçalho com eyebrow e título à esquerda e lista de perguntas em acordeão com sinal de mais à direita (2 colunas, 1 no mobile), primeiro item aberto. Usa section.js próprio para o acordeão; sem dependência global.",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "qualquer negócio de serviço que precisa responder dúvidas antes do agendamento"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up (data-aos) no cabeçalho e na lista; acordeão com expansão por max-height",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-mestre-hiroshi-10",
+      "tipo": "faq",
+      "origem": "mestre-hiroshi",
+      "descricao": "Título à esquerda e seis perguntas em acordeão à direita, cada uma com ícone de mais e resposta curta expansível. Fundo escuro (--c-dark). Usa gsap/ScrollTrigger opcionais para o reveal.",
+      "estilo": [
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "produto ou serviço digital com dúvidas frequentes sobre acesso, pagamento e garantia"
+      ],
+      "libs": [
+        "details/summary nativo",
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "título palavra a palavra e escalonamento das perguntas ao rolar; abertura nativa sem JavaScript",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-samanta-08",
+      "tipo": "faq",
+      "origem": "samanta",
+      "descricao": "Rótulo e título à esquerda (sticky no desktop), lista de perguntas em details/summary à direita com seta que gira e divisores finos. Opcional: section.js anima a altura da resposta com gsap (sem gsap, usa details nativo).",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "qualquer serviço de saúde ou estético com dúvidas recorrentes antes de agendar"
+      ],
+      "libs": [
+        "gsap"
+      ],
+      "animacao": "abre/fecha da resposta com altura animada (gsap, opcional); seta gira via CSS",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-thais-09",
+      "tipo": "faq",
+      "origem": "thais",
+      "descricao": "Título com régua fina e lista de perguntas em acordeão (details/summary) com divisores finos e seta, respostas em texto recuado, sem mídia. Um item aberto por vez via section.js; sem JS funciona como details nativo.",
+      "estilo": [
+        "editorial",
+        "minimalista"
+      ],
+      "nicho": [
+        "procedimentos com objeções e riscos a explicar antes de agendar",
+        "saúde",
+        "estética"
+      ],
+      "libs": [],
+      "animacao": "acordeão com altura animada (grid-template-rows), respeita --motion; chama ScrollTrigger.refresh se existir",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-tiago-farma-09",
+      "tipo": "faq",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho centralizado e lista vertical de perguntas em acordeão; sinal de mais à direita gira e abre a resposta (uma aberta por vez). Sem mídia, bloco de texto limpo. Sem dependências globais; o JS próprio cuida do acordeão e do reveal.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "serviços",
+        "cursos",
+        "clínicas",
+        "SaaS"
+      ],
+      "libs": [],
+      "animacao": "acordeão com max-height e reveal por IntersectionObserver",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-tiago-head-spa-15",
+      "tipo": "faq",
+      "origem": "tiago-head-spa",
+      "descricao": "Cabeçalho centralizado com eyebrow e lista vertical de perguntas em acordeão (uma aberta por vez), botão de linha inteira e sinal de mais à direita; fundo escuro. Sem imagens. Acordeão e reveal por scroll no section.js, sem dependência global.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "qualquer negócio com dúvidas recorrentes antes da decisão (saúde, educação, software, imobiliário, serviços)"
+      ],
+      "libs": [],
+      "animacao": "expansão e recolhimento do acordeão ao clicar; reveal fade-up por item",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "faq-vanessa-07",
+      "tipo": "faq",
+      "origem": "vanessa",
+      "descricao": "Cabeçalho centralizado com eyebrow e título, seguido de lista vertical de perguntas em acordeão nativo (details/summary), primeira já aberta, com sinal de + que gira ao abrir. Reveal em cascata ao rolar via section.js (sem dependência global).",
+      "estilo": [
+        "minimalista"
+      ],
+      "nicho": [
+        "qualquer landing page de serviço ou produto"
+      ],
+      "libs": [],
+      "animacao": "acordeão nativo; reveal ao rolar no cabeçalho e em cascata nos itens",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "footer-acalm-head-spa-11",
+      "tipo": "footer",
+      "origem": "acalm-head-spa",
+      "descricao": "Rodapé escuro em grade: logotipo à esquerda, links de âncora e Instagram à direita, e linha inferior com copyright e endereço (usa slots automáticos nome_negocio, ano, cidade, endereco, instagram_link).",
+      "estilo": [
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "qualquer landing page ou site de serviço"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "footer-karol-10",
+      "tipo": "footer",
+      "origem": "karol",
+      "descricao": "Rodape escuro em tres colunas: marca com frase curta, contato (WhatsApp e Instagram) e endereco; linha inferior com copyright e registro profissional. Usa o slot automatico registro (o original tinha placeholder nao preenchido).",
+      "estilo": [
+        "clinico",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "profissional de saude",
+        "negocio local com contato, endereco e registro"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "footer-luiz-ricardo-10",
+      "tipo": "footer",
+      "origem": "luiz-ricardo",
+      "descricao": "Rodapé escuro em duas linhas: marca com roseta SVG e palavra em mono com final em destaque à esquerda, menu de links à direita; abaixo slogan, relógio BRT ao vivo e coração pulsante, e linha de direitos. Depende do sprite SVG global #rosette (symbol) na página; sem ele a roseta não aparece.",
+      "estilo": [
+        "minimalista",
+        "tech",
+        "escuro"
+      ],
+      "nicho": [
+        "qualquer"
+      ],
+      "libs": [],
+      "animacao": "relógio BRT atualizado por JS a cada segundo; coração pulsa via CSS",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "footer-samanta-11",
+      "tipo": "footer",
+      "origem": "samanta",
+      "descricao": "Rodapé em grade de três blocos: identificação com nome, registro e especialidade; contato com cidade, Instagram e WhatsApp; nota de privacidade ao lado, e uma linha final de crédito da agência. Usa a classe global lf-wrap e reserva espaço inferior (72px) para barra fixa de WhatsApp.",
+      "estilo": [
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "profissionais liberais de saúde com registro em conselho"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "footer-yahlla-10",
+      "tipo": "footer",
+      "origem": "yahlla",
+      "descricao": "Rodapé em uma linha com marca (ponto de destaque e nome) à esquerda e links à direita (Instagram, WhatsApp, voltar ao topo), com linha de copyright pequena abaixo. Link de topo aponta para #hero.",
+      "estilo": [
+        "minimalista",
+        "discreto"
+      ],
+      "nicho": [
+        "qualquer landing page de negócio local ou profissional liberal"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-acalm-head-spa-02",
+      "tipo": "hero",
+      "origem": "acalm-head-spa",
+      "descricao": "Hero escuro em duas colunas: eyebrow com filete, título serifado grande com palavra em itálico destacada, lede, CTA primário e link ghost, stats; foto com canto superior direito arredondado; textura de grão e indicador de scroll na base. Ocupa 100svh. O link ghost aponta para uma âncora da página.",
+      "estilo": [
+        "acolhedor",
+        "editorial",
+        "escuro"
+      ],
+      "nicho": [
+        "spas",
+        "clínicas estéticas",
+        "consultórios que vendem experiência",
+        "negócios com fundador como rosto da marca"
+      ],
+      "libs": [],
+      "animacao": "Pulso CSS no indicador de scroll; sem JS.",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-carol-benedetti-02",
+      "tipo": "hero",
+      "origem": "carol-benedetti",
+      "descricao": "Hero de tela cheia com imagem de fundo (zoom lento e overlay escuro), eyebrow com linha, título serifado grande com trecho em itálico <em> (aceita <br>), subtítulo e dois CTAs (primário e ghost, o ghost aponta para #servicos). Animações só em CSS (fade-up em cascata), respeitam --motion. Sem dependência global.",
+      "estilo": [
+        "luxo",
+        "editorial"
+      ],
+      "nicho": [
+        "estética facial e corporal",
+        "spas",
+        "clínicas premium",
+        "consultórios de beleza"
+      ],
+      "libs": [],
+      "animacao": "fade-up em cascata (eyebrow, título, subtítulo, CTAs), zoom lento na imagem de fundo e pulso de brilho no trecho em itálico",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-elaine-02",
+      "tipo": "hero",
+      "origem": "elaine",
+      "descricao": "Hero em duas colunas: régua com cidade e linha, título serifado com palavra em itálico, lede, dois CTAs (WhatsApp sólido e secundário fantasma), credenciais; foto retrato em moldura 4:5 (acima no mobile). Abaixo, faixa escura com serviços em marquee CSS em loop (conteúdo duplicado no HTML). Sem dependências globais.",
+      "estilo": [
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "saúde integrativa",
+        "farmácia e nutrição",
+        "consultórios",
+        "clínicas de medicina preventiva",
+        "profissionais com registro em conselho"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up na entrada (AOS); faixa de texto em loop via CSS",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-exemplo-01",
+      "tipo": "hero",
+      "origem": "exemplo",
+      "descricao": "[EXEMPLO DE FORMATO] Hero em duas colunas: etiqueta mono, título serifado grande, CTA em pílula; foto em arco à direita (abaixo no mobile)",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "saúde",
+        "bem-estar",
+        "profissional liberal"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up no título e subtítulo",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-karol-02",
+      "tipo": "hero",
+      "origem": "karol",
+      "descricao": "Hero em duas colunas: à esquerda etiqueta mono, título serifado grande com trecho em itálico (use <em>), parágrafo, dois CTAs (primário e fantasma) e grade de estatísticas com rótulo em caixa alta; à direita foto em moldura 4:5 com selo de nome e Instagram (foto vai acima no mobile). Sem dependências globais.",
+      "estilo": [
+        "editorial",
+        "esportivo",
+        "acolhedor"
+      ],
+      "nicho": [
+        "nutrição esportiva",
+        "fisioterapia",
+        "personal trainer",
+        "coaches",
+        "médicos",
+        "profissional de saúde com foto de autoridade"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade + subida) nos blocos de texto e foto via IntersectionObserver, respeita --motion",
+      "nota": 4,
+      "mobile_ok": false,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-luiz-ricardo-03",
+      "tipo": "hero",
+      "origem": "luiz-ricardo",
+      "descricao": "Hero tipografico escuro em tela cheia com canvas de circuito no fundo e bloom com parallax; titulo em tres linhas alternando serifa italica e sans. Base com lede e meta a esquerda e cartao de embarque a direita (rota De/Para, terminal digitado, dois botoes, codigo de barras). Usa fundo --c-dark e --c-accent como cor de sinal; funciona melhor com tokens escuros. Depende de JS proprio (canvas, digitacao); sem --motion mostra o texto final estatico.",
+      "estilo": [
+        "tech",
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "agencias",
+        "SaaS",
+        "produtos digitais",
+        "consultorias de tecnologia"
+      ],
+      "libs": [
+        "canvas"
+      ],
+      "animacao": "canvas de nos conectados reativo ao ponteiro, digitacao no terminal, barras, reveal no cartao, parallax no bloom, aviao animado na rota",
+      "nota": 5,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-mestre-hiroshi-01",
+      "tipo": "hero",
+      "origem": "mestre-hiroshi",
+      "descricao": "Hero escuro em duas colunas: marca em três linhas, título grande com trecho em cor de acento, subtítulo, botão principal com glow e varredura de brilho + botão vazado; à direita contador gigante contornado (ex.: 3) que regride ao rolar. Usa tag header. Sem imagens. Funciona melhor em páginas de fundo escuro (--c-bg escuro). Título e botões dependem de gsap/ScrollTrigger só para animação (opcional).",
+      "estilo": [
+        "bold",
+        "impactante",
+        "escuro"
+      ],
+      "nicho": [
+        "lançamento de infoproduto",
+        "curso",
+        "academia",
+        "esporte",
+        "defesa pessoal",
+        "saúde com oferta de vaga"
+      ],
+      "libs": [
+        "gsap",
+        "scrolltrigger"
+      ],
+      "animacao": "título palavra a palavra, reveal em cascata, contagem regressiva do contador ligada à rolagem, parallax de saída, glow rotativo e varredura de brilho no botão",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-renata-02",
+      "tipo": "hero",
+      "origem": "renata",
+      "descricao": "Hero em duas colunas: à esquerda etiqueta em pílula, título serifado com trecho em itálico, texto de apoio, botão WhatsApp e botão fantasma, faixa de três métricas; à direita card de foto 4:5 com tag flutuante de identidade. Usa tokens de fonte (display + body). Sem dependência global.",
+      "estilo": [
+        "acolhedor",
+        "editorial"
+      ],
+      "nicho": [
+        "psicologia",
+        "terapia",
+        "mentoria",
+        "coaching",
+        "consultoria pessoal com foto do profissional"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-samanta-02",
+      "tipo": "hero",
+      "origem": "samanta",
+      "descricao": "Hero tipográfico em duas colunas: rótulo de especialidade e título grande com subtítulo em cinza à esquerda; parágrafo, pílulas de procedimentos, botão de WhatsApp e linha mono com credenciais à direita. Sem imagem. Usa .lf-wrap do shell.",
+      "estilo": [
+        "clínico",
+        "editorial",
+        "tipográfico"
+      ],
+      "nicho": [
+        "odontologia",
+        "medicina",
+        "clínicas especializadas",
+        "profissionais de saúde com especialidade"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-thais-02",
+      "tipo": "hero",
+      "origem": "thais",
+      "descricao": "Hero editorial clínico em duas colunas: título grande com segunda linha em itálico, lede e dois CTAs à esquerda; à direita cartão etiqueta com faixa de cor primária, retrato com parallax leve e legenda. Abaixo, tira de 4 dados. Usa fonte variável com eixo wdth (ex.: Archivo; degrada sem ele). Parallax usa gsap + ScrollTrigger se existirem.",
+      "estilo": [
+        "editorial",
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "dermatologia",
+        "estética avançada",
+        "fisioterapia",
+        "nutrição",
+        "odontologia estética"
+      ],
+      "libs": [
+        "gsap"
+      ],
+      "animacao": "parallax suave da foto dentro da etiqueta ao rolar (scrub)",
+      "nota": 4,
+      "mobile_ok": false,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-tiago-farma-02",
+      "tipo": "hero",
+      "origem": "tiago-farma",
+      "descricao": "Hero em duas colunas: foto do profissional em moldura com anel decorativo e dois chips flutuantes com números; à direita etiqueta, título serifado com trecho em itálico (<em>), subtítulo, dois CTAs (WhatsApp e âncora) e faixa de métricas. Contadores numéricos animam de 0 ao valor ao rolar (section.js). Foto vai acima do texto no mobile.",
+      "estilo": [
+        "acolhedor",
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "saúde",
+        "estética",
+        "consultório",
+        "terapeuta",
+        "coach"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up ao rolar, chips flutuantes em loop, contadores numéricos animados",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-tiago-head-spa-02",
+      "tipo": "hero",
+      "origem": "tiago-head-spa",
+      "descricao": "Hero escuro e editorial com texto à esquerda: eyebrow, título serifado grande com a última frase em dourado itálico, subtítulo, dois CTAs (WhatsApp dourado e ghost) e chips de diferenciais; fundo fotográfico com véu escuro e parallax. Sem dependências globais (parallax e reveal em section.js).",
+      "estilo": [
+        "escuro",
+        "luxo",
+        "editorial"
+      ],
+      "nicho": [
+        "barbearias premium",
+        "clínicas estéticas e dermatológicas",
+        "consultórios de saúde de alto padrão",
+        "spas"
+      ],
+      "libs": [],
+      "animacao": "parallax no fundo (data-speed 0.22); entrada escalonada com reveal e atrasos; indicador de scroll",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "hero-vanessa-02",
+      "tipo": "hero",
+      "origem": "vanessa",
+      "descricao": "Hero escuro em duas colunas: etiqueta mono, título serifado com trecho em itálico, subtítulo, botão de WhatsApp magnético e três selos (o primeiro com número animado); à direita foto inclinável em moldura com carimbo circular sobreposto; traço pontilhado com marcador animado ao fundo. Requer section.js (contador, tilt e magnético). Usa título e subtítulo como richtext (<br>, <em>, <b>).",
+      "estilo": [
+        "editorial",
+        "acolhedor",
+        "escuro"
+      ],
+      "nicho": [
+        "professores e tutores",
+        "coaches",
+        "consultores com certificação",
+        "educação",
+        "idiomas"
+      ],
+      "libs": [],
+      "animacao": "contador numérico, tilt 3D na foto, botão magnético, trajetória SVG decorativa (tudo escalado por --motion)",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "principal"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "hero-yahlla-03",
+      "tipo": "hero",
+      "origem": "yahlla",
+      "descricao": "Hero em tela cheia com imagem de fundo (img absoluta com parallax no scroll), véu escuro, brilho pulsante, texto à esquerda com eyebrow, título serifado com palavra em itálico, subtítulo e dois botões (WhatsApp sólido e ghost). Depende de --c-dark/--c-accent; o JS de parallax roda só neste hero.",
+      "estilo": [
+        "escuro",
+        "orgânico",
+        "luxo"
+      ],
+      "nicho": [
+        "spas",
+        "massoterapia",
+        "hotelaria",
+        "restaurantes",
+        "clínicas de bem-estar",
+        "turismo de experiência"
+      ],
+      "libs": [],
+      "animacao": "brilho pulsante em CSS (breathe) e parallax/zoom da imagem de fundo ao rolar (JS, respeita --motion)",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "fundo"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "local-elaine-08",
+      "tipo": "local",
+      "origem": "elaine",
+      "descricao": "Seção escura em duas colunas: título e lista rótulo/valor (endereço, WhatsApp, Instagram, atendimento) à esquerda; bloco de CTA com frase e botão de WhatsApp à direita. Sem mapa nem imagem. Usa slots automáticos (maps_url, endereco, telefone, instagram, whatsapp_link).",
+      "estilo": [
+        "clínico",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "consultórios",
+        "clínicas",
+        "serviços presenciais e online",
+        "negócios com endereço e agendamento"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar nas duas colunas (IntersectionObserver, respeita --motion)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "local-renata-06",
+      "tipo": "local",
+      "origem": "renata",
+      "descricao": "Cabeçalho com eyebrow e título, seguido de dois cards lado a lado: presencial (endereço e link do Google Maps) e online (descrição do formato). Usa slots automáticos endereco e maps_url.",
+      "estilo": [
+        "clínico",
+        "acolhedor"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultórios",
+        "profissionais com atendimento presencial e online",
+        "academias",
+        "escritórios"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up (data-aos) no cabeçalho e nos cards",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "local-thais-10",
+      "tipo": "local",
+      "origem": "thais",
+      "descricao": "Ficha de contato em duas colunas: à esquerda título, endereço, WhatsApp, Instagram e botão de mapa com seta; à direita tabela de horários semanais (dias fechados entram como texto, sem estilo especial). Sem mídia, tipografia sans, régua decorativa no topo (estática, sem animação).",
+      "estilo": [
+        "editorial",
+        "minimalista"
+      ],
+      "nicho": [
+        "clínicas e consultórios com endereço físico e horário fixo (estética, médico, odontológico, escritórios)"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-acalm-head-spa-01",
+      "tipo": "nav",
+      "origem": "acalm-head-spa",
+      "descricao": "Barra fixa com logotipo em serif precedido de ícone ✦ à esquerda, links de âncora ao centro e botão de WhatsApp em destaque à direita; ganha fundo escuro desfocado ao rolar (section.js alterna .is-scrolled). Escondida links e CTA no mobile (sem menu hambúrguer). Texto é claro: precisa de hero escuro/imagem atrás.",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "clínicas",
+        "spas",
+        "salões",
+        "consultórios",
+        "negócios com agendamento"
+      ],
+      "libs": [],
+      "animacao": "fundo sólido com blur ao rolar (>40px) e sublinhado nos links no hover",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-carol-benedetti-01",
+      "tipo": "nav",
+      "origem": "carol-benedetti",
+      "descricao": "Barra fixa transparente (mix-blend-mode: difference) com logotipo textual em serif caixa-alta à esquerda e links de texto à direita, sem botão; links somem no mobile. Depende de fundo atrás para o efeito de blend e de ids de âncora na página.",
+      "estilo": [
+        "minimalista",
+        "luxo"
+      ],
+      "nicho": [
+        "estética",
+        "clínicas",
+        "consultórios",
+        "marcas pessoais de serviço"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-elaine-01",
+      "tipo": "nav",
+      "origem": "elaine",
+      "descricao": "Barra horizontal sticky: marca à esquerda com selo SVG de gota/folha e nome em duas linhas (nome e profissão em mono pequeno), links centrais em linha (ocultos no mobile) e botão primário de WhatsApp à direita. Sem dependência global; usa fontes dos tokens.",
+      "estilo": [
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "saúde e farmácia",
+        "clínicas",
+        "consultórios",
+        "profissionais liberais com agendamento por WhatsApp"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-karol-01",
+      "tipo": "nav",
+      "origem": "karol",
+      "descricao": "Barra sticky com marca (nome do profissional + profissão em mono pequeno) à esquerda, links âncora no centro e botão de WhatsApp em destaque à direita; hambúrguer no mobile. Usa fontes display/mono dos tokens; JS próprio só para toggle e link ativo (sem animação, independe de --motion).",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "consultórios de saúde",
+        "profissionais liberais",
+        "nutrição",
+        "fisioterapia",
+        "psicologia",
+        "personal"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-luiz-ricardo-01",
+      "tipo": "nav",
+      "origem": "luiz-ricardo",
+      "descricao": "Barra fixa escura com vidro fosco ao rolar: marca com roseta e palavra em duas cores à esquerda, links âncora no centro, botão WhatsApp à direita e hambúrguer de duas barras que abre menu em tela cheia no mobile. Inclui o menu mobile (sheet) e o JS do menu/scroll; roseta SVG inline (o sprite #rosette original não veio na seção). Usa --c-dark como fundo.",
+      "estilo": [
+        "editorial",
+        "tech",
+        "escuro"
+      ],
+      "nicho": [
+        "agências digitais",
+        "prestadores de serviço",
+        "captação de leads",
+        "produtos tech"
+      ],
+      "libs": [],
+      "animacao": "vidro fosco ao rolar, sublinhado nos links, hambúrguer vira X, menu mobile com entrada escalonada",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-luiz-ricardo-02",
+      "tipo": "nav",
+      "origem": "luiz-ricardo",
+      "descricao": "Menu mobile em painel (sheet) escuro: rotulo em caixa alta, lista vertical de links com seta a direita e botao de WhatsApp em destaque ao final. Depende de painel pai (.sheet com classe .open) e de JS externo de abertura (burger com aria-controls) fornecidos pelo shell/pagina; a entrada escalonada dos links usa a classe .open de um ancestral.",
+      "estilo": [
+        "minimalista",
+        "tech",
+        "escuro"
+      ],
+      "nicho": [
+        "qualquer site com menu mobile em painel"
+      ],
+      "libs": [
+        "svg inline"
+      ],
+      "animacao": "entrada escalonada dos links via CSS quando o painel pai recebe .open; respeita --motion",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-renata-01",
+      "tipo": "nav",
+      "origem": "renata",
+      "descricao": "Barra superior fixa com blur: marca em texto com sobrenome em destaque (itálico, cor de destaque) à esquerda, links de âncora ao centro (somem no mobile) e botão pílula à direita. O botão aponta para o WhatsApp (original apontava para #contato). Usa fontes display/body dos tokens.",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "consultórios",
+        "psicólogos",
+        "coaches",
+        "profissionais liberais com página de âncoras"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-samanta-01",
+      "tipo": "nav",
+      "origem": "samanta",
+      "descricao": "Cabeçalho mínimo (não fixo): nome da profissional em destaque com profissão e registro em mono caixa-alta abaixo, à direita botão fantasma pequeno de WhatsApp com seta; prefixo do botão some no mobile estreito. Usa f-display e f-mono (a seção espera --f-mono definido).",
+      "estilo": [
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "clínicas e consultórios de saúde",
+        "profissionais liberais com agendamento por WhatsApp"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "nav-thais-01",
+      "tipo": "nav",
+      "origem": "thais",
+      "descricao": "Cabeçalho horizontal sticky com blur: marca (nome e profissão/registro) à esquerda, menu de âncoras no centro (oculto no mobile) e botão de WhatsApp com ícone à direita. Depende de a página ter as âncoras do menu e #topo.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "saúde",
+        "profissional liberal",
+        "site com menu de âncoras curto e CTA fixo"
+      ],
+      "libs": [],
+      "animacao": "sublinhado animado nos links e borda inferior ao rolar (classe preso via section.js)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-tiago-farma-01",
+      "tipo": "nav",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho fixo em linha: logo textual com subtítulo à esquerda, links de âncora no centro, botão primário de WhatsApp à direita e hambúrguer no mobile com menu sobreposto. Fixo no topo (position:fixed), então a página precisa de padding-top; ganha fundo mais opaco ao rolar.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "profissional liberal",
+        "clínica",
+        "saúde"
+      ],
+      "libs": [],
+      "animacao": "estado 'scrolled' ao rolar e abertura do menu mobile via JS (sem libs)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "nav-yahlla-02",
+      "tipo": "nav",
+      "origem": "yahlla",
+      "descricao": "Cabeçalho fixo horizontal: marca com ponto de destaque à esquerda, menu central de links de âncora e botão pequeno de WhatsApp à direita; ganha fundo translúcido ao rolar (classe is-scrolled via section.js). Seletor de idioma PT/EN/ES do original foi removido (dependia de JS i18n externo). Menu some abaixo de 820px.",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "massoterapia",
+        "estética",
+        "turismo",
+        "hotelaria",
+        "consultórios"
+      ],
+      "libs": [],
+      "animacao": "fundo e padding mudam ao rolar a página",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-acalm-head-spa-04",
+      "tipo": "processo",
+      "origem": "acalm-head-spa",
+      "descricao": "Fundo escuro com cabeçalho e lista vertical de etapas numeradas em círculos, com linha de progresso que preenche ao rolar, título, texto e duração; sem imagens. JS próprio (scroll), sem dependência global.",
+      "estilo": [
+        "escuro",
+        "editorial"
+      ],
+      "nicho": [
+        "tratamentos",
+        "consultorias",
+        "onboarding de clientes",
+        "serviços explicados em etapas"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar e linha de progresso preenchida pelo scroll, ativando as etapas",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-elaine-05",
+      "tipo": "processo",
+      "origem": "elaine",
+      "descricao": "Eyebrow e três etapas em colunas, cada uma com rótulo 'Etapa N', título e parágrafo curto, topo com filete na cor primária. Sem ícones nem imagens. Reveal ao rolar via section.js (IntersectionObserver); sem dependência global.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "consultórios",
+        "clínicas",
+        "serviços com jornada em etapas",
+        "coaching e acompanhamento"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade-up) da lista de etapas ao rolar",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-karol-06",
+      "tipo": "processo",
+      "origem": "karol",
+      "descricao": "Fundo escuro com eyebrow e titulo no topo; abaixo, linha do tempo horizontal em SVG (polyline com pontos de destaque na cor accent, estilo trilha de montanha) e quatro etapas numeradas com rotulo, titulo e texto. Reveal via data-aos (a original usava .reveal com JS global da pagina).",
+      "estilo": [
+        "dinamico",
+        "editorial",
+        "escuro"
+      ],
+      "nicho": [
+        "agencias",
+        "coaching",
+        "educacao",
+        "consultorias",
+        "onboarding de SaaS"
+      ],
+      "libs": [
+        "aos",
+        "svg inline"
+      ],
+      "animacao": "fade-up ao rolar (data-aos); polyline estatica",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-luiz-ricardo-08",
+      "tipo": "processo",
+      "origem": "luiz-ricardo",
+      "descricao": "Fundo escuro com título em caixa alta espaçado e rota horizontal com nós que acendem ao rolar; cada etapa tem número, título e texto curto (vira linha vertical no celular). Usa tokens escuros (--c-dark); JS próprio para parallax e progresso, sem dependência global.",
+      "estilo": [
+        "minimalista",
+        "tech",
+        "escuro"
+      ],
+      "nicho": [
+        "agências",
+        "serviços por projeto",
+        "consultorias",
+        "reformas",
+        "método em etapas"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar, linha de progresso que preenche e nós que acendem, parallax leve no fundo",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-renata-04",
+      "tipo": "processo",
+      "origem": "renata",
+      "descricao": "Cabeçalho com eyebrow em pílula, título serifado e parágrafo; abaixo, acordeão de etapas numeradas com sinal de '+' (primeiro item aberto). Acordeão e reveal ao rolar vêm do section.js próprio; sem dependências globais.",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "serviços com etapas definidas",
+        "consultorias",
+        "clínicas",
+        "escritórios",
+        "agências",
+        "cursos"
+      ],
+      "libs": [],
+      "animacao": "reveal fade-up ao rolar e acordeão por clique",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-samanta-05",
+      "tipo": "processo",
+      "origem": "samanta",
+      "descricao": "Título com rótulo no topo e três passos numerados em grade assimétrica (cards com borda nos passos 1 e 2, passo 3 com filete), foto horizontal 3:2 entre eles; um traço SVG liga os números e se desenha com a rolagem. Requer gsap + ScrollTrigger para o traço (sem eles, números ficam acesos e sem traço). A foto some se o arquivo faltar.",
+      "estilo": [
+        "clínico",
+        "acolhedor",
+        "editorial"
+      ],
+      "nicho": [
+        "clínicas",
+        "consultórios",
+        "serviços com etapas que incluem visita ou foto do local"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "traço SVG que se desenha com a rolagem (scrub) e acende cada número de passo",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "processo-thais-08",
+      "tipo": "processo",
+      "origem": "thais",
+      "descricao": "Título e passos em sequência (lista numerada), cada um com número em destaque, título curto e parágrafo em duas colunas no desktop, separados por fios. Sem imagens nem ícones; hierarquia só pela tipografia.",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "consultorias",
+        "cirurgias",
+        "tratamentos contínuos",
+        "onboarding",
+        "qualquer serviço com etapas definidas"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-tiago-farma-05",
+      "tipo": "processo",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho com eyebrow e quatro etapas em grade horizontal (2 colunas no mobile), cada uma em card com número, título, texto curto e linha conectora entre os passos. Sem imagem. Revelação via AOS (a página original usava classe reveal com IntersectionObserver global).",
+      "estilo": [
+        "minimalista",
+        "clinico"
+      ],
+      "nicho": [
+        "qualquer jornada em etapas: onboarding de clientes, agendamento, processos de atendimento, cursos"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up no cabeçalho e no conjunto de etapas; hover levanta o card",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-tiago-head-spa-11",
+      "tipo": "processo",
+      "origem": "tiago-head-spa",
+      "descricao": "Seção escura com cabeçalho centralizado e quatro passos em colunas, cada um com marcador circular numerado ligado por linha fina, título e texto curto; sem imagem.",
+      "estilo": [
+        "minimalista",
+        "clínico",
+        "escuro"
+      ],
+      "nicho": [
+        "consultorias",
+        "clínicas",
+        "agências",
+        "cursos",
+        "serviços com jornada de contratação"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (IntersectionObserver, respeita --motion)",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-vanessa-04",
+      "tipo": "processo",
+      "origem": "vanessa",
+      "descricao": "Fundo escuro com cabeçalho (eyebrow, título, subtítulo) e tagline em itálico, quatro passos numerados em cards com conector pontilhado, e linha de pílulas com formatos de atendimento. Reveal em JS próprio (IntersectionObserver), sem dependência global.",
+      "estilo": [
+        "editorial",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "consultorias",
+        "mentorias",
+        "clínicas com protocolo",
+        "qualquer serviço com etapas claras"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar no cabeçalho e stagger nos passos",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "processo-yahlla-05",
+      "tipo": "processo",
+      "origem": "yahlla",
+      "descricao": "Cabeçalho com eyebrow e H2, seguido de passos numerados em grade de 3 colunas com divisores finos, ícone de chama, título e parágrafo; sem imagem. Reveal próprio via IntersectionObserver (section.js).",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "spas",
+        "estética",
+        "clínicas de bem-estar",
+        "psicologia",
+        "coaching",
+        "serviço com jornada em etapas"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar com atraso escalonado (CSS + IntersectionObserver)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-luiz-ricardo-06",
+      "tipo": "prova",
+      "origem": "luiz-ricardo",
+      "descricao": "Dois cards de portfólio lado a lado, cada um com barra de navegador (três bolinhas e URL) sobre um mockup de página em miniatura que percorre no scroll/toque, seguido de categoria, título, texto e chips. Fundo escuro. Mockup colorido pelos tokens do site. Depende só de section.js (sem libs globais).",
+      "estilo": [
+        "editorial",
+        "elegante",
+        "escuro"
+      ],
+      "nicho": [
+        "agências",
+        "estúdios",
+        "freelancers",
+        "clínicas",
+        "negócios que mostram sites entregues"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar; mockup com pan vertical dirigido por scroll, hover e toque (--pan/--prog); trilho de progresso; parallax no fundo",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-thais-04",
+      "tipo": "prova",
+      "origem": "thais",
+      "descricao": "Roda orbital de resultados antes e depois: cartões de foto em anel que gira com o scroll (seção sticky ~210vh), legenda em caixa alta e trilho de títulos clicáveis embaixo, com aviso pequeno. Depende de GSAP + ScrollTrigger (usa window.lenis se existir); sem GSAP ou com --motion 0 vira grade estática de cards.",
+      "estilo": [
+        "clínico",
+        "editorial"
+      ],
+      "nicho": [
+        "estética",
+        "odontologia",
+        "dermatologia",
+        "fisioterapia",
+        "reabilitação"
+      ],
+      "libs": [
+        "gsap",
+        "scrolltrigger"
+      ],
+      "animacao": "roda orbital controlada por scroll (scrub) com foco, desfoque e escala; trilho de navegação clicável",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-thais-07",
+      "tipo": "prova",
+      "origem": "thais",
+      "descricao": "Título, régua fina animada, grade responsiva de placas antes/depois com legenda e bloco de aviso legal sobre consentimento e resultados não garantidos. Sem dependência global; o aviso precisa de revisão por nicho.",
+      "estilo": [
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "procedimentos estéticos com antes e depois",
+        "odontologia",
+        "dermatologia",
+        "cirurgia plástica"
+      ],
+      "libs": [],
+      "animacao": "régua do topo cresce da esquerda ao entrar na tela",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-tiago-farma-06",
+      "tipo": "prova",
+      "origem": "tiago-farma",
+      "descricao": "Seção escura com cabeçalho e grade de 2 cards de antes e depois (foto 4:5, selo de resultado sobreposto, ícone de zoom, legenda) e nota legal. Clique na foto abre lightbox criado pelo section.js (sem dependência global). Fotos reais de pacientes: não reutilizar em outros clientes.",
+      "estilo": [
+        "clínico",
+        "acolhedor",
+        "escuro"
+      ],
+      "nicho": [
+        "estética",
+        "fisioterapia",
+        "academias",
+        "coaching",
+        "nutrição",
+        "serviço com evolução comprovável por foto"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (IntersectionObserver), hover com zoom na foto, lightbox por clique",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-tiago-farma-08",
+      "tipo": "prova",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho centralizado e três cards de depoimento lado a lado, cada um com estrelas, citação, avatar com iniciais e rótulo do serviço. Faixa inferior com dois indicadores (local e horário). Sem fotos. Reveal ao rolar via section.js próprio (sem dependência global).",
+      "estilo": [
+        "acolhedor",
+        "clínico"
+      ],
+      "nicho": [
+        "clínicas",
+        "escolas",
+        "consultorias",
+        "academias",
+        "serviços com depoimentos"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (fade-up) no grid e na faixa de indicadores",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "prova-yahlla-08",
+      "tipo": "prova",
+      "origem": "yahlla",
+      "descricao": "Faixa horizontal fina com três diferenciais em linha, cada um com ícone SVG de traço fino seguido de frase curta com trecho em negrito; sem títulos, números ou depoimentos. Ícones fixos (balão, relógio, pessoas).",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "serviços com atendimento diferenciado",
+        "consultórios",
+        "agências",
+        "serviços a domicílio",
+        "negócios com diferenciais de atendimento"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "servicos-acalm-head-spa-05",
+      "tipo": "servicos",
+      "origem": "acalm-head-spa",
+      "descricao": "Cabeçalho com eyebrow, título e subtítulo e grade de 4 cards de diferenciais (ícone unicode, título, frase) unidos por filete na cor primária; no hover o card é preenchido pela cor primária. Sem imagens. Reveal ao rolar via section.js próprio.",
+      "estilo": [
+        "minimalista",
+        "acolhedor"
+      ],
+      "nicho": [
+        "spas",
+        "estúdios",
+        "clínicas",
+        "negócios com diferenciais de experiência"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade + translateY) ao rolar no cabeçalho e na grade; hover com preenchimento vertical",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-carol-benedetti-05",
+      "tipo": "servicos",
+      "origem": "carol-benedetti",
+      "descricao": "Cabeçalho centralizado com eyebrow, título e parágrafo; abaixo, 4 abas horizontais que alternam painéis em grade de protocolos numerados com título e texto curto. Sem imagens, tipografia é o destaque. JS próprio para abas e reveal; sem dependência global.",
+      "estilo": [
+        "editorial",
+        "minimalista"
+      ],
+      "nicho": [
+        "estética facial e corporal",
+        "clínicas de dermatologia",
+        "spas e centros de bem-estar",
+        "salões de beleza"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (IntersectionObserver, respeita --motion); troca de aba por JS",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-carol-benedetti-06",
+      "tipo": "servicos",
+      "origem": "carol-benedetti",
+      "descricao": "Cabeçalho pequeno com eyebrow e título, seguido de três cards lado a lado; cada card tem ícone SVG de traço fino (inline, via slot icone), título e parágrafo. Sem fotos. Reveal ao rolar com escalonamento (JS próprio, sem dependência global).",
+      "estilo": [
+        "minimalista",
+        "clínico"
+      ],
+      "nicho": [
+        "estética",
+        "spas",
+        "clínicas de saúde",
+        "serviços com pacotes ou protocolos"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar com escalonamento por card (IntersectionObserver)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-elaine-04",
+      "tipo": "servicos",
+      "origem": "elaine",
+      "descricao": "Fundo escuro com eyebrow e título de duas linhas; grade de cards numerados (4 colunas) em formato acordeão: número com sinal de mais e título, ao clicar expande a descrição. Sem imagens. Requer section.js (acordeão e reveal ao rolar).",
+      "estilo": [
+        "clínico",
+        "minimalista",
+        "escuro"
+      ],
+      "nicho": [
+        "saúde integrativa",
+        "clínicas",
+        "estética",
+        "farmácia",
+        "serviços com lista extensa de procedimentos"
+      ],
+      "libs": [],
+      "animacao": "acordeão por clique (toggle JS) e reveal ao rolar via IntersectionObserver",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-exemplo-01",
+      "tipo": "servicos",
+      "origem": "exemplo",
+      "descricao": "[EXEMPLO DE FORMATO] Lista numerada editorial com divisores finos, sem cards",
+      "estilo": [
+        "editorial",
+        "minimalista"
+      ],
+      "nicho": [
+        "qualquer"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up por item",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-karol-04",
+      "tipo": "servicos",
+      "origem": "karol",
+      "descricao": "Cabecalho com eyebrow e titulo, seguido de grade de tres cards sem imagem com indice numerado (01, 02, 03), titulo curto e descricao. Em mobile vira coluna unica. Sem dependencias globais.",
+      "estilo": [
+        "minimalista",
+        "editorial"
+      ],
+      "nicho": [
+        "clinicas",
+        "estudios",
+        "consultorias",
+        "escritorios",
+        "prestador com 2 a 4 servicos"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (fade + translateY) no cabecalho e na grade, via IntersectionObserver",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-karol-05",
+      "tipo": "servicos",
+      "origem": "karol",
+      "descricao": "Cabecalho em duas colunas (eyebrow e titulo a esquerda, paragrafo a direita), grade de 6 cards com icone SVG de linha em circulo, titulo e descricao (tilt 3D ao passar o mouse); ao final, faixa escura com tag e aviso (ex.: convenio). O slot icone recebe o SVG inline (viewBox 0 0 24 24, tracos). Autossuficiente: section.js faz o reveal, sem depender de JS global.",
+      "estilo": [
+        "minimalista",
+        "clinico"
+      ],
+      "nicho": [
+        "clinicas",
+        "consultorias",
+        "agencias (o que inclui o projeto)",
+        "mentorias",
+        "auditorias"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (IntersectionObserver) e tilt 3D nos cards no hover",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-luiz-ricardo-07",
+      "tipo": "servicos",
+      "origem": "luiz-ricardo",
+      "descricao": "Lista vertical de linhas empilhadas (ícone SVG de traço fino, título curto e frase de apoio com trecho em negrito), com reveal ao rolar e parallax sutil no fundo. Sem dependências globais; o JS próprio faz o reveal. Ícone é slot richtext com SVG inline (usa currentColor).",
+      "estilo": [
+        "minimalista",
+        "editorial"
+      ],
+      "nicho": [
+        "consultorias",
+        "agências",
+        "prestadores de serviço",
+        "SaaS"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar por linha (fade, blur, translate), parallax no fundo, linha ativa no centro em touch",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-mestre-hiroshi-04",
+      "tipo": "servicos",
+      "origem": "mestre-hiroshi",
+      "descricao": "Título grande com linha de apoio, lista de itens de conteúdo em tipografia grande (duas colunas no desktop) com divisores finos, filete no topo e botão de compra com glow ao final. Fundo escuro. Usa gsap/ScrollTrigger se existirem na página.",
+      "estilo": [
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "cursos com módulos",
+        "programas de treinamento",
+        "mentorias",
+        "infoprodutos"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "revelação de palavras no título, escalonamento dos itens da lista e reveal no corpo e no CTA",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-renata-05",
+      "tipo": "servicos",
+      "origem": "renata",
+      "descricao": "Cabeçalho com eyebrow, título e subtítulo, seguido de grade de cards clicáveis (3 colunas) que expandem a descrição ao toque; fundo suave. Usa section.js próprio para o toggle e o reveal (sem dependências globais).",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "listas de especialidades ou áreas de atuação de qualquer profissional ou clínica"
+      ],
+      "libs": [],
+      "animacao": "fade-up ao rolar (IntersectionObserver) e card expansível ao clique",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-samanta-07",
+      "tipo": "servicos",
+      "origem": "samanta",
+      "descricao": "Cabeçalho com rótulo e título, depois card destaque em duas colunas (texto, link de WhatsApp e foto à direita) e 1 a 2 cards de texto simples ao lado, em grade de 12 colunas no desktop. Sem dependência global; link usa whatsapp_link.",
+      "estilo": [
+        "editorial",
+        "clínico"
+      ],
+      "nicho": [
+        "odontologia",
+        "dermatologia",
+        "fisioterapia",
+        "estética",
+        "clínicas com lista de especialidades"
+      ],
+      "libs": [],
+      "animacao": "nenhuma",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-tiago-farma-04",
+      "tipo": "servicos",
+      "origem": "tiago-farma",
+      "descricao": "Cabeçalho e abas de planos/protocolos; cada painel traz card com descrição, dois indicadores, lista de 3 itens e gráfico de duas barras comparativas (início vs. fim) com disclaimer no rodapé. Abas e barras dependem do section.js (sem JS, todos os painéis aparecem empilhados). Usa .lf-wrap e data-aos globais.",
+      "estilo": [
+        "clínico",
+        "minimalista"
+      ],
+      "nicho": [
+        "clínicas",
+        "academias",
+        "consultorias",
+        "cursos",
+        "planos de assinatura"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "barras crescem até data-h, troca de abas com fade, fade-up no cabeçalho",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-tiago-head-spa-06",
+      "tipo": "servicos",
+      "origem": "tiago-head-spa",
+      "descricao": "Seção escura com cabeçalho centralizado e grid de cards numerados (contorno dourado) com título, descrição e tag em pílula; sem imagens, leitura de catálogo. Reveal escalonado em JS próprio (IntersectionObserver).",
+      "estilo": [
+        "minimalista",
+        "clínico",
+        "escuro"
+      ],
+      "nicho": [
+        "clínicas",
+        "academias",
+        "consultorias",
+        "escolas de especialidades",
+        "catálogo de serviços com muitos itens"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (fade-up) com atraso por coluna",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-tiago-head-spa-08",
+      "tipo": "servicos",
+      "origem": "tiago-head-spa",
+      "descricao": "Seção escura em duas colunas: foto à esquerda com selo sobreposto; à direita eyebrow, título com destaque em itálico, lead, grade 2x2 de cards com ícone de linha fina e botão dourado de WhatsApp. Reveal próprio via section.js (sem dependência global).",
+      "estilo": [
+        "minimalista",
+        "escuro",
+        "acolhedor"
+      ],
+      "nicho": [
+        "barbearias",
+        "estética masculina",
+        "dermatologia",
+        "clínicas que detalham um subserviço dentro de um serviço maior"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar com atraso no bloco de texto",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-tiago-head-spa-10",
+      "tipo": "servicos",
+      "origem": "tiago-head-spa",
+      "descricao": "Fundo escuro com cabeçalho centralizado e grid de seis cards (foto no topo, título, texto e pills dourados); abaixo, bloco de destaque de linha exclusiva com selo circular de marca. Reveal escalonado via IntersectionObserver próprio (sem dependência global). Dourado derivado de --c-accent.",
+      "estilo": [
+        "tech",
+        "editorial",
+        "luxo",
+        "escuro"
+      ],
+      "nicho": [
+        "clínicas com equipamentos",
+        "academias",
+        "estética avançada",
+        "laboratórios",
+        "serviços que apresentam tecnologias e produtos"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (fade + translateY) nos cards; hover com zoom na foto",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-vanessa-06",
+      "tipo": "servicos",
+      "origem": "vanessa",
+      "descricao": "Cabeçalho centralizado com eyebrow e título, seguido de grade de cartões (3 colunas) com emoji, título curto de perfil de público e uma linha de descrição. Reveal escalonado ao rolar (JS próprio, sem dependências).",
+      "estilo": [
+        "acolhedor",
+        "minimalista"
+      ],
+      "nicho": [
+        "educação",
+        "saúde",
+        "consultoria",
+        "turismo",
+        "serviços profissionais"
+      ],
+      "libs": [],
+      "animacao": "reveal no cabeçalho e escalonado nos cartões ao rolar (IntersectionObserver)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "servicos-yahlla-06",
+      "tipo": "servicos",
+      "origem": "yahlla",
+      "descricao": "Cabeçalho com eyebrow e H2 em duas linhas, grade de seis cartas com foto de fundo na frente (categoria e nome) que giram em flip 3D ao toque revelando descrição, tags e CTA de WhatsApp; abaixo, banner de temporada com texto à esquerda e imagem à direita. Pensada para tema escuro. Sem dependência global; o flip usa section.js próprio. Os seis cartões são slots fixos (c1..c6).",
+      "estilo": [
+        "acolhedor",
+        "sensorial",
+        "editorial"
+      ],
+      "nicho": [
+        "catálogos de serviços",
+        "clínicas",
+        "estúdios",
+        "salões",
+        "cursos com módulos",
+        "ofertas com várias opções"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "flip 3D das cartas ao toque (data-card) com hint; fade-up escalonado por data-aos",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "banner"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "sobre-acalm-head-spa-03",
+      "tipo": "sobre",
+      "origem": "acalm-head-spa",
+      "descricao": "Duas colunas: foto em moldura com contorno deslocado à esquerda e, à direita, eyebrow com linha decorativa, título serifado, dois parágrafos e assinatura com nome e cargo. Original usava .reveal (JS da página); aqui convertido para data-aos fade-up.",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "clínicas",
+        "estúdios",
+        "consultórios",
+        "profissionais autônomos que vendem pessoa e marca"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up ao rolar (AOS) nas duas colunas",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "sobre-carol-benedetti-03",
+      "tipo": "sobre",
+      "origem": "carol-benedetti",
+      "descricao": "Duas colunas: foto em moldura orgânica (blob) flutuante com brilho atrás à esquerda; à direita eyebrow, título serifado, dois parágrafos e números de destaque em linha. Sem dependências globais.",
+      "estilo": [
+        "luxo",
+        "acolhedor"
+      ],
+      "nicho": [
+        "estética",
+        "clínicas",
+        "consultórios",
+        "profissionais autônomos que vendem pessoa e marca"
+      ],
+      "libs": [],
+      "animacao": "reveal escalonado ao rolar (IntersectionObserver) e blob flutuante em loop, ambos escalados por --motion",
+      "nota": 4,
+      "mobile_ok": false,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-elaine-06",
+      "tipo": "sobre",
+      "origem": "elaine",
+      "descricao": "Duas colunas: foto retrato à esquerda e, à direita, eyebrow, título, dois blocos de texto e linha de registros profissionais com divisor. Reveal ao rolar via section.js (sem dependências globais).",
+      "estilo": [
+        "clínico",
+        "acolhedor"
+      ],
+      "nicho": [
+        "profissionais liberais",
+        "consultórios",
+        "clínicas",
+        "médicos e terapeutas com registro"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade + translateY) na foto e no texto via IntersectionObserver",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-karol-03",
+      "tipo": "sobre",
+      "origem": "karol",
+      "descricao": "Duas colunas: foto 3:4 a esquerda, texto a direita com eyebrow, titulo em duas linhas (usa <br>), dois paragrafos e chips em caixa mono como tags de credencial. Fundo surface-2. Reveal via data-aos (requer AOS no shell).",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "profissionais de saude",
+        "consultores",
+        "advogados",
+        "coaches"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up nas duas colunas; zoom suave na foto no hover",
+      "nota": 3,
+      "mobile_ok": false,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-luiz-ricardo-05",
+      "tipo": "sobre",
+      "origem": "luiz-ricardo",
+      "descricao": "Duas colunas em fundo escuro: retrato P&B em moldura a esquerda com legenda sobreposta; a direita, titulo com trecho em italico, lede, linha do tempo vertical de etapas (a ultima destacada como atual) e citacao. Camada de profundidade (parallax) no fundo. Usa --c-dark como fundo da propria secao.",
+      "estilo": [
+        "editorial",
+        "tech",
+        "escuro"
+      ],
+      "nicho": [
+        "Fundadores",
+        "consultores",
+        "profissionais autonomos",
+        "agencias que vendem pela autoridade da pessoa"
+      ],
+      "libs": [],
+      "animacao": "reveal ao rolar (IntersectionObserver) nos blocos e etapas; parallax na camada de fundo via data-depth. Ambos controlados por --motion.",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-mestre-hiroshi-06",
+      "tipo": "sobre",
+      "origem": "mestre-hiroshi",
+      "descricao": "Fundo escuro. Título grande com palavra destacada em cor, texto explicativo à esquerda e, à direita, dois blocos: 'É para você' (check) e 'Não é para você' (x), em listas com divisores finos. Usa gsap/ScrollTrigger (opcional) para reveal; ícones SVG inline, sem dependência de sprite.",
+      "estilo": [
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "infoprodutos",
+        "consultorias",
+        "academias",
+        "serviços com perfil de cliente definido"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "título palavra a palavra, reveal e listas escalonadas",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-mestre-hiroshi-09",
+      "tipo": "sobre",
+      "origem": "mestre-hiroshi",
+      "descricao": "Duas colunas em fundo escuro: retrato 4:5 à esquerda; à direita nome em título grande, dois parágrafos de biografia e botão com glow giratório e brilho varrendo. Reveal com blur via GSAP (opcional, sem GSAP fica visível).",
+      "estilo": [
+        "bold",
+        "escuro"
+      ],
+      "nicho": [
+        "infoprodutos",
+        "consultorias",
+        "profissionais liberais",
+        "cursos com autor visível"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "reveal com fade, subida e blur nos blocos; botão com glow rotativo e varredura de brilho",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": false
+    },
+    {
+      "id": "sobre-samanta-06",
+      "tipo": "sobre",
+      "origem": "samanta",
+      "descricao": "Duas colunas: à esquerda retrato vertical 4:5 com foto de atendimento 3:2 sobreposta; à direita rótulo, nome em título, registro em mono, citação em destaque, assinatura estilizada e lista de formação em pares rótulo/valor com traços finos. Requer gsap + ScrollTrigger (opcional, sem eles a seção aparece estática). Usa slots automáticos profissional, profissao e registro.",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "dentistas",
+        "médicos",
+        "fisioterapeutas",
+        "psicólogos",
+        "nutricionistas"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "reveal em cascata ao rolar, traços da lista de formação se desenham e assinatura aparece da esquerda para a direita",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "retrato",
+        "atendimento",
+        "assinatura"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-thais-03",
+      "tipo": "sobre",
+      "origem": "thais",
+      "descricao": "Seção só de texto: régua fina no topo, manifesto em título grande (2 colunas no desktop) e três parágrafos com um trecho de destaque maior no meio. Sem imagem. Régua anima (scaleX) ao entrar na tela.",
+      "estilo": [
+        "editorial",
+        "minimalista"
+      ],
+      "nicho": [
+        "dermatologia",
+        "nutrição",
+        "laboratórios",
+        "advocacia",
+        "consultorias técnicas"
+      ],
+      "libs": [],
+      "animacao": "régua horizontal se desenha ao rolar (gsap ScrollTrigger opcional, fallback IntersectionObserver)",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [],
+      "tem_lista": false
+    },
+    {
+      "id": "sobre-thais-06",
+      "tipo": "sobre",
+      "origem": "thais",
+      "descricao": "Duas colunas: à esquerda, retrato em formato de etiqueta com legenda de nome e registro; à direita, título grande, dois parágrafos e lista de formação em pares rótulo/valor. Régua superior desenha ao rolar (gsap opcional).",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "profissional de saúde cuja credencial é o principal argumento de confiança"
+      ],
+      "libs": [
+        "gsap",
+        "ScrollTrigger"
+      ],
+      "animacao": "régua capilar desenha ao entrar na tela",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "retrato"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-tiago-farma-03",
+      "tipo": "sobre",
+      "origem": "tiago-farma",
+      "descricao": "Duas colunas: retrato vertical do profissional com badge de nome e especialidade sobreposto na base; à direita eyebrow, título serifado, parágrafo e lista de itens numerados com título e descrição. Usa slot automático {{profissional}} no badge. Sem dependências globais.",
+      "estilo": [
+        "acolhedor",
+        "clínico"
+      ],
+      "nicho": [
+        "consultórios e profissionais liberais que precisam apresentar credencial e método de trabalho"
+      ],
+      "libs": [],
+      "animacao": "reveal (fade + subida) nas colunas ao rolar, via IntersectionObserver",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-tiago-head-spa-13",
+      "tipo": "sobre",
+      "origem": "tiago-head-spa",
+      "descricao": "Seção escura: cabeçalho centralizado e duas cartas de profissionais lado a lado (retrato, selo de função, nome, tags, texto e botão fantasma para WhatsApp); abaixo, citação em destaque e lista de quatro credenciais com check dourado em duas colunas. Usa AOS para o reveal (o original usava .rv global). Fundo escuro (--c-dark).",
+      "estilo": [
+        "clínico",
+        "editorial",
+        "escuro"
+      ],
+      "nicho": [
+        "clínicas com equipe multidisciplinar",
+        "consultórios",
+        "escritórios",
+        "escolas",
+        "negócios que apresentam quem atende"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up ao rolar com atraso no segundo card; hover com leve elevação",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "prof_1",
+        "prof_2"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-vanessa-05",
+      "tipo": "sobre",
+      "origem": "vanessa",
+      "descricao": "Duas colunas: foto retangular em moldura com inclinação 3D ao passar o mouse à esquerda; à direita, rótulo, nome como título, dois parágrafos e uma linha de cartões de credencial com emblema (emoji) e legenda. Sem dependências globais.",
+      "estilo": [
+        "editorial",
+        "acolhedor"
+      ],
+      "nicho": [
+        "profissionais autônomos com certificação ou formação acadêmica (saúde, educação, consultoria, estética)"
+      ],
+      "libs": [],
+      "animacao": "Tilt 3D na foto (hover) e reveal escalonado dos cartões de credencial (section.js, respeita --motion)",
+      "nota": 3,
+      "mobile_ok": true,
+      "slots_img": [
+        "foto"
+      ],
+      "tem_lista": true
+    },
+    {
+      "id": "sobre-yahlla-04",
+      "tipo": "sobre",
+      "origem": "yahlla",
+      "descricao": "Duas colunas: retrato em moldura à esquerda; à direita, eyebrow, título em duas linhas, parágrafo de destaque (lead), corpo de texto, linha de pílulas de idiomas e faixa de três estatísticas com número grande e legenda. Fundo e cores vêm dos tokens (pensada para tema escuro). Reveal via AOS (fade-up com delays escalonados).",
+      "estilo": [
+        "acolhedor",
+        "editorial"
+      ],
+      "nicho": [
+        "profissionais autônomos de saúde e estética",
+        "consultórios",
+        "terapeutas",
+        "atendimento individual"
+      ],
+      "libs": [
+        "aos"
+      ],
+      "animacao": "fade-up escalonado por bloco (data-aos com delay)",
+      "nota": 4,
+      "mobile_ok": true,
+      "slots_img": [
+        "retrato"
+      ],
+      "tem_lista": true
+    }
+  ]
+}
