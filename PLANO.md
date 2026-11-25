@@ -221,7 +221,7 @@ landing-factory/
 ### Fase 3 — Primeiro teste (≈ 1 dia)
 - [x] Recriar uma página antiga (sugestão: Renata, a mais leve) só a partir de um briefing escrito
 - [x] Comparar com a original: o sistema chega perto? Onde errou?
-- [ ] Ajustar os prompts dos agentes e as regras do CLAUDE.md
+- [x] Ajustar os prompts dos agentes e as regras do CLAUDE.md
 
 ### Fase 4 — Primeiro cliente real
 - [ ] `npm run novo-cliente <slug>` → `/gerar-landing <slug>` → preview → ajustes → produção

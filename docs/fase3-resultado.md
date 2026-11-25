@@ -31,3 +31,9 @@ Briefing escrito a partir do texto da página original, foto placeholder, WhatsA
 - Juiz (ciclo 3, fora do limite por autorização do Luiz): **nota 8, não aprovado**. O alerta "link do Maps vazio" foi falso positivo (o link usa o endereço do briefing).
 - Restam, como itens médios: nav a ~1000px quebra em 2 linhas e o FAQ (`faq-thais-09`) fica mais estreito que as outras seções, com título pequeno. Corrigir na biblioteca antes do primeiro cliente real.
 - Lição: o juiz lê só screenshots e pode errar sobre dados; o maestro deve checar itens de "dado ausente" no HTML antes de despachar.
+
+## Resultado final da Fase 3
+- Correções na biblioteca: `nav-karol-01` (sem quebra a ~1000px) e `faq-thais-09` (container e título de h2).
+- Juiz (Opus): **nota 8, aprovado**, sem item alto ou crítico. Restam 4 itens baixos de polimento (FAQ em meia largura no desktop, cabeçalho de serviços centralizado, vazios entre seções de mesmo fundo, peso dos h2 do sobre e do FAQ).
+- Antes de qualquer publicação real: WhatsApp real, confirmação de CITRG/CRPP e descrição de mentoria e palestras.
+- Conclusão: o sistema chega perto do original sem ver a página antiga, só pelo briefing. Teve de ser corrigido na biblioteca (slots com HTML, links condicionais, hierarquia tipográfica, âncoras), o que melhora todo cliente futuro.
