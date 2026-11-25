@@ -154,8 +154,15 @@ async function telaCliente(slug) {
           <div class="fotos">${c.fotos_lista.map((f) => `<figure><img loading="lazy" src="/foto/${slug}/${encodeURIComponent(f)}" alt="${esc(f)}"><button data-f="${esc(f)}" title="Remover">×</button></figure>`).join('')}</div>
         </div>
         <div class="card"><h2>2 · Gerar a página</h2>
-          <p class="sub" style="margin:0 0 10px">Os agentes rodam no Claude Code. Copie o comando e cole lá:</p>
-          <div class="cmd"><span>${esc(c.comando)}</span><button class="btn pequeno" id="cp-cmd">Copiar</button></div>
+          ${!c.pronto.briefing || !c.pronto.fotos ? `<div class="aviso">Antes de gerar, falta: ${[!c.pronto.briefing && 'briefing (salve o texto acima)', !c.pronto.fotos && 'ao menos 1 foto'].filter(Boolean).join(' e ')}.</div>` : `<div class="aviso" style="border-color:var(--ok);background:color-mix(in srgb,var(--ok) 10%,transparent)">Material completo. Pode gerar.</div>`}
+          <ol style="margin:0 0 12px;padding-left:20px;display:grid;gap:10px;font-size:14px">
+            <li>Abra o <b>Claude Code (desktop)</b> <u>nesta pasta</u>:<div class="cmd" style="margin-top:6px"><span>${esc(c.raiz)}</span><button class="btn pequeno" id="cp-raiz">Copiar pasta</button></div></li>
+            <li>Cole o comando e dê Enter:
+              <label style="display:block;margin:6px 0;font-size:13px;color:var(--muted)"><input type="checkbox" id="sem-juiz"> pular o juiz final (mais rápido, sem nota)</label>
+              <div class="cmd"><span id="cmd-txt">${esc(c.tem_plano ? c.comando + ' (já existe plano: ele vai perguntar se refaz)' : c.comando)}</span></div>
+              <button class="btn pri" id="cp-cmd" style="margin-top:8px;width:100%;justify-content:center" ${c.pronto.briefing && c.pronto.fotos ? '' : 'disabled'}>Copiar comando de gerar</button></li>
+            <li>Volte aqui: esta tela se atualiza sozinha a cada poucos segundos, mostrando etapas, nota do juiz e a página.</li>
+          </ol>
           <p class="sub" style="margin:14px 0 8px">Etapas sem tokens, direto daqui:</p>
           <div class="linha">
             <button class="btn pequeno" data-acao="preparar">Tratar fotos</button>
@@ -183,7 +190,21 @@ async function telaCliente(slug) {
     </div>`;
 
   $('#salva-brief').onclick = async () => { await api(`/api/clientes/${slug}/briefing`, json('PUT', { texto: $('#brief').value })); aviso('Briefing salvo'); };
-  $('#cp-cmd').onclick = () => copiar(c.comando);
+  $('#cp-raiz').onclick = () => copiar(c.raiz);
+  $('#sem-juiz').onchange = (e) => { $('#cmd-txt').textContent = c.comando + (e.target.checked ? ' --sem-juiz' : ''); };
+  $('#cp-cmd').onclick = () => copiar(c.comando + ($('#sem-juiz').checked ? ' --sem-juiz' : ''));
+  // atualização automática enquanto o Claude Code trabalha (não mexe se você está editando o briefing)
+  clearInterval(window.__poll);
+  const carimbo = (d) => [d.atualizado, d.fotos, d.nota, d.pagina, d.secoes, d.pronto.briefing].join('|');
+  let ultimo = carimbo(c);
+  window.__poll = setInterval(async () => {
+    if (!location.hash.includes('cliente/' + slug)) return clearInterval(window.__poll);
+    try {
+      const d = await api('/api/clientes/' + slug);
+      const sujo = $('#brief') && ($('#brief').value !== c.briefing);
+      if (carimbo(d) !== ultimo && !sujo && !document.querySelector('[data-acao]:disabled')) { ultimo = carimbo(d); telaCliente(slug); }
+    } catch {}
+  }, 4000);
   $('#ver-perguntas').onclick = async () => { try { const t = await (await fetch('/arquivo/briefing-perguntas')).text(); copiar(t); } catch { aviso('Arquivo não encontrado'); } };
   const solta = $('#solta'), arq = $('#arq');
   solta.onclick = () => arq.click();

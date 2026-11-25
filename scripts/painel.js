@@ -73,7 +73,8 @@ function detalheCliente(slug) {
   return {
     ...base, etapas: st.etapas || [], briefing: briefingMd ? fs.readFileSync(briefingMd, 'utf8').replace(/^# Briefing\s+Cole aqui as respostas do cliente[^\n]*\n?\s*$/, '') : '', fotos_lista: fotos,
     veredito: ver && { nota: ver.nota, aprovado: ver.aprovado, recado_luiz: ver.recado_luiz, feedback: ver.feedback || [] },
-    feedback: fb?.itens || fb?.feedback || [], comando: `/gerar-landing ${slug}`,
+    feedback: fb?.itens || fb?.feedback || [], comando: `/gerar-landing ${slug}`, raiz: ROOT, tem_plano: !!plano,
+    pronto: { briefing: (briefingMd ? fs.readFileSync(briefingMd, 'utf8').replace(/^# Briefing\s+Cole aqui[^\n]*\n?/, '').trim().length : 0) >= 80, fotos: fotos.length > 0 },
     plano: plano && { posicionamento: plano.posicionamento, secoes: (plano.secoes || []).map((s) => ({ chave: s.chave, tipo: s.tipo, id: s.id, objetivo: s.objetivo, ajuste_custom: !!s.ajuste_custom })) },
     qa_imagens: qa
   };
