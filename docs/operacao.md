@@ -34,4 +34,5 @@ Anote aqui o que travou em cada cliente, para ajustar os agentes:
 
 | Data | Cliente | Problema | Ajuste feito |
 |---|---|---|---|
+| 2026-11 | renata-teste (Fase 3) | Slot com HTML escapado; link Maps sem condição; âncoras do nav inexistentes; nav quebrando a 1000px; juiz com falso positivo de dado | Corrigido na biblioteca e no motor (ver docs/fase3-resultado.md) |
 | | | | |
