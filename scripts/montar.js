@@ -62,6 +62,7 @@ for (const s of [...plano.secoes].sort((a, b) => a.ordem - b.ordem)) {
   };
   let html = render(sec.html, dados, resolver, miss);
   html = marcarRaiz(html, s.chave);
+  if (s.ancora) html = html.replace(/^(\s*<[a-z][\w-]*)/i, (_, t) => `${t} id="${s.ancora}" style="scroll-margin-top:80px"`);
   miss.forEach((k) => !k.startsWith('img:') && faltando.push(`${s.chave} → ${k}`));
   corpo.push(`<!-- ${s.chave} -->\n${html}`);
   if (sec.css) css.push(`/* ${s.chave} */\n${sec.css}`);

@@ -21,6 +21,7 @@ Grave `clients/<slug>/plano.json`:
    - **Misture origens:** no máximo 3 seções vindas do mesmo cliente de origem.
    - Prefira seções com `nota` 4 ou 5 e estilo compatível entre si.
    - `imagens`: associe cada slot de imagem a uma foto não bloqueada de `assets.json` (arquivo em `work/web/`). Para imagens dentro de listas, use `<nome>.<n>` (ex.: `"foto.1": "foto-03.webp"`, `"foto.2": ...`). Não repita a mesma foto em duas seções, se houver alternativa.
+   - `ancora` (opcional): id da seção para links do nav (ex.: "sobre", "duvidas"). Os hrefs do nav na copy usam esses mesmos ids; sem `ancora` o link do nav não funciona.
    - `ajuste_custom`: use só quando uma seção precisar de personalização que slots e tokens não resolvem. Máximo 2 por página.
 3. **Design:** todos os tokens de `docs/tokens.md`. Paleta derivada do negócio, das cores do cliente e das inspirações. Contraste AA.
    - **Tipografia:** não repita o par display + body de nenhum dos últimos 3 clientes do histórico. Fraunces + Manrope já foi usado 4 vezes: evite.

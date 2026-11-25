@@ -58,6 +58,10 @@
           "ajuste_custom": {
             "type": "string",
             "description": "vazio se não precisar; senão, o que o montador (Sonnet) deve personalizar"
+          },
+          "ancora": {
+            "type": "string",
+            "description": "id HTML da seção para âncoras do nav"
           }
         },
         "required": [

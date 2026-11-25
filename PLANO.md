@@ -219,8 +219,8 @@ landing-factory/
 - **Meta:** pelo menos 4 variações aprovadas de hero, serviços, sobre, processo e CTA final
 
 ### Fase 3 — Primeiro teste (≈ 1 dia)
-- [ ] Recriar uma página antiga (sugestão: Renata, a mais leve) só a partir de um briefing escrito
-- [ ] Comparar com a original: o sistema chega perto? Onde errou?
+- [x] Recriar uma página antiga (sugestão: Renata, a mais leve) só a partir de um briefing escrito
+- [x] Comparar com a original: o sistema chega perto? Onde errou?
 - [ ] Ajustar os prompts dos agentes e as regras do CLAUDE.md
 
 ### Fase 4 — Primeiro cliente real
