@@ -26,7 +26,7 @@ export function contextoAuto(briefing = {}, plano = {}) {
   return {
     ano: String(new Date().getFullYear()), nome_negocio: n.nome || '', profissional: n.profissional || '', profissao: n.profissao || '',
     registro: n.registro || '', cidade: n.cidade || '', endereco: n.endereco || '', horario: n.horario || '',
-    instagram: ig ? '@' + ig : '', instagram_link: ig ? `https://instagram.com/${ig}` : '', maps_url: c.maps_url || (n.endereco ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n.endereco + ' ' + (n.cidade || ''))}` : ''),
+    instagram: ig ? '@' + ig : '', instagram_link: ig ? `https://instagram.com/${ig}` : '', maps_url: c.maps_url || (n.endereco ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n.cidade && !n.endereco.includes(String(n.cidade).replace(/\s*\(.*\)\s*$/, '')) ? n.endereco + ' ' + n.cidade : n.endereco)}` : ''),
     email: c.email || '', telefone: tel
   };
 }

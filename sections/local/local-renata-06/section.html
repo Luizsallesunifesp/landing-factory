@@ -10,7 +10,7 @@
         <h3 class="local-renata-06__nome">{{presencial_titulo}}</h3>
         <p class="local-renata-06__texto">{{presencial_texto}}</p>
         <div class="local-renata-06__addr"><strong>{{presencial_rotulo}}</strong>{{endereco}}</div>
-        <a class="local-renata-06__map" href="{{maps_url}}" target="_blank" rel="noopener">{{maps_texto}}</a>
+        {{#maps_url}}<a class="local-renata-06__map" href="{{maps_url}}" target="_blank" rel="noopener">{{maps_texto}}</a>{{/maps_url}}
       </div>
       <div class="local-renata-06__card">
         <span class="local-renata-06__tag">{{online_tag}}</span>

@@ -1,10 +1,10 @@
 .s-hero-samanta-02{ position:relative; z-index:1; padding-block:calc(var(--space) * 1.5) var(--section-y); background:var(--c-bg); color:var(--c-text); font-family:var(--f-body); }
 .hero-samanta-02__grid{ display:grid; gap:calc(var(--space) * 1.2); }
-.hero-samanta-02__principal{ display:grid; gap:var(--space); justify-items:start; }
+.hero-samanta-02__principal{ display:grid; gap:var(--space); justify-items:start; min-width:0; }
 .hero-samanta-02__especialidade{ display:inline-flex; align-items:center; gap:10px; margin:0; padding:9px 16px; border:1px solid var(--c-line); border-radius:999px; font:500 12px/1.2 var(--f-mono); letter-spacing:-0.01em; text-transform:uppercase; color:var(--c-text); }
 .hero-samanta-02__especialidade::before{ content:""; width:7px; height:7px; border-radius:50%; background:var(--c-text); }
-.hero-samanta-02__titulo{ margin:0; font-family:var(--f-display); font-weight:400; font-size:var(--fs-hero); line-height:1.06; letter-spacing:-0.02em; text-wrap:balance; color:var(--c-text); }
-.hero-samanta-02__titulo span{ color:var(--c-muted); }
+.hero-samanta-02__titulo{ margin:0; font-family:var(--f-display); font-weight:400; font-size:var(--fs-hero); line-height:1.06; letter-spacing:-0.02em; text-wrap:balance; overflow-wrap:break-word; max-width:100%; color:var(--c-text); }
+.hero-samanta-02__subtitulo{ margin:calc(var(--space) * -0.4) 0 0; max-width:34ch; font-family:var(--f-body); font-weight:300; font-size:clamp(1.125rem, 2.4vw, 1.5rem); line-height:1.5; letter-spacing:0; color:var(--c-muted); text-wrap:pretty; }
 .hero-samanta-02__aside{ display:grid; gap:calc(var(--space) * .85); justify-items:start; max-width:30rem; }
 .hero-samanta-02__texto{ margin:0; font-size:17px; line-height:1.55; }
 .hero-samanta-02__pills{ display:flex; flex-wrap:wrap; gap:8px; margin:-8px 0 0; padding:0; list-style:none; }

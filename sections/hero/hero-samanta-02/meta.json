@@ -2,7 +2,7 @@
   "id": "hero-samanta-02",
   "tipo": "hero",
   "origem": "samanta",
-  "descricao": "Hero tipográfico em duas colunas: rótulo de especialidade e título grande com subtítulo em cinza à esquerda; parágrafo, pílulas de procedimentos, botão de WhatsApp e linha mono com credenciais à direita. Sem imagem. Usa .lf-wrap do shell.",
+  "descricao": "Hero tipográfico em duas colunas: rótulo de especialidade, título grande e subtítulo menor em cinza abaixo (corpo 18-24px, ~34ch) à esquerda; parágrafo, pílulas de procedimentos, botão de WhatsApp e linha mono com credenciais à direita. Sem imagem. Usa .lf-wrap do shell.",
   "estilo": [
     "clínico",
     "editorial",
@@ -30,7 +30,7 @@
     "subtitulo": {
       "tipo": "texto",
       "max": 65,
-      "descricao": "frase em destaque cinza ao fim do título"
+      "descricao": "subtítulo em cinza, parágrafo separado abaixo do título"
     },
     "texto": {
       "tipo": "texto",

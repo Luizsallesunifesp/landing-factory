@@ -24,3 +24,10 @@ Briefing escrito a partir do texto da página original, foto placeholder, WhatsA
 ## Pendências antes de usar com cliente real
 - Corrigir os 3 itens altos e remontar.
 - Confirmar registro, WhatsApp e URL do Maps.
+
+## Rodada de correção (após o aval do Luiz)
+- Corrigidos na biblioteca: `dor-elaine-03` (`{{{nota_final}}}`), `local-renata-06` (link do Maps condicional, `presencial_texto` sem endereço), `hero-samanta-02` (hierarquia título/subtítulo). Corrigido no motor: busca do Maps não repete mais a cidade.
+- Overrides do cliente: grid 2x2 em serviços, nav sem rótulo mono abaixo de 1200px.
+- Juiz (ciclo 3, fora do limite por autorização do Luiz): **nota 8, não aprovado**. O alerta "link do Maps vazio" foi falso positivo (o link usa o endereço do briefing).
+- Restam, como itens médios: nav a ~1000px quebra em 2 linhas e o FAQ (`faq-thais-09`) fica mais estreito que as outras seções, com título pequeno. Corrigir na biblioteca antes do primeiro cliente real.
+- Lição: o juiz lê só screenshots e pode errar sobre dados; o maestro deve checar itens de "dado ausente" no HTML antes de despachar.

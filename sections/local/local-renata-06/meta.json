@@ -2,7 +2,7 @@
   "id": "local-renata-06",
   "tipo": "local",
   "origem": "renata",
-  "descricao": "Cabeçalho com eyebrow e título, seguido de dois cards lado a lado: presencial (endereço e link do Google Maps) e online (descrição do formato). Usa slots automáticos endereco e maps_url.",
+  "descricao": "Cabeçalho com eyebrow e título, seguido de dois cards lado a lado: presencial (endereço e link do Google Maps) e online (descrição do formato). Usa slots automáticos endereco e maps_url. O link do Google Maps (maps_texto) fica envolvido em {{#maps_url}}...{{/maps_url}}: some quando maps_url está vazio.",
   "estilo": [
     "clínico",
     "acolhedor"
@@ -37,7 +37,8 @@
     },
     "presencial_texto": {
       "tipo": "texto",
-      "max": 140
+      "descricao": "frase de contexto, sem repetir o endereço",
+      "max": 100
     },
     "presencial_rotulo": {
       "tipo": "texto_curto",
