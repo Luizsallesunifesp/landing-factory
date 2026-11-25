@@ -41,7 +41,7 @@ Responda sempre em português.
 
 ## Terminal
 - `npm run gerar -- <slug>` gera a página sem acompanhamento (sem publicar). Código em `scripts/gerar.js`.
-- Sempre abra o Claude Code e o terminal dentro de `C:Usersluizrsourceeposlanding-factory`. Não existe outra cópia do projeto.
+- Sempre abra o Claude Code e o terminal dentro de `C:\Users\luizr\source\repos\landing-factory`. Não existe outra cópia do projeto.
 
 ## Comandos
 - `/extrair-biblioteca [slug|pasta]`: transforma páginas em seções da biblioteca
