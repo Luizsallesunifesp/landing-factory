@@ -149,8 +149,8 @@ async function telaCliente(slug) {
           ${!c.tem_briefing || c.fotos === 0 ? `<div class="aviso">${!c.tem_briefing ? 'Falta o briefing. ' : ''}${c.fotos === 0 ? 'Nenhuma foto enviada.' : ''}</div>` : ''}
           <textarea id="brief" placeholder="Cole aqui as respostas do cliente, do jeito que vieram no WhatsApp">${esc(c.briefing)}</textarea>
           <div class="linha" style="margin-top:10px"><button class="btn" id="salva-brief">Salvar briefing</button><a class="btn pequeno" href="#" id="ver-perguntas" onclick="return false">Copiar perguntas para o cliente</a></div>
-          <div class="solta" id="solta" style="margin-top:14px">Arraste as fotos aqui ou clique para escolher (JPG, PNG, WebP)</div>
-          <input type="file" id="arq" accept="image/jpeg,image/png,image/webp" multiple hidden>
+          <div class="solta" id="solta" style="margin-top:14px">Arraste as fotos aqui ou clique para escolher (JPG, PNG, WebP, AVIF, HEIC)</div>
+          <input type="file" id="arq" accept="image/*,.heic,.heif,.avif,.tif,.tiff" multiple hidden>
           <div class="fotos">${c.fotos_lista.map((f) => `<figure><img loading="lazy" src="/foto/${slug}/${encodeURIComponent(f)}" alt="${esc(f)}"><button data-f="${esc(f)}" title="Remover">×</button></figure>`).join('')}</div>
         </div>
         <div class="card"><h2>2 · Gerar a página</h2>
@@ -190,8 +190,11 @@ async function telaCliente(slug) {
   solta.ondragover = (e) => { e.preventDefault(); solta.classList.add('sobre'); };
   solta.ondragleave = () => solta.classList.remove('sobre');
   const enviar = async (files) => {
-    for (const f of files) { try { await api(`/api/clientes/${slug}/fotos?nome=${encodeURIComponent(f.name)}`, { method: 'POST', body: f }); } catch (e) { aviso(e.message); } }
-    telaCliente(slug);
+    const erros = [];
+    for (const f of files) { try { await api(`/api/clientes/${slug}/fotos?nome=${encodeURIComponent(f.name)}`, { method: 'POST', body: f }); } catch (e) { erros.push(`${f.name}: ${e.message}`); } }
+    await telaCliente(slug);
+    if (erros.length) { const a = document.createElement('div'); a.className = 'aviso'; a.style.borderColor = 'var(--bad)'; a.textContent = 'Não consegui enviar: ' + erros.join(' | '); $('#solta').before(a); }
+    else aviso(files.length + ' foto(s) enviada(s)');
   };
   solta.ondrop = (e) => { e.preventDefault(); solta.classList.remove('sobre'); enviar(e.dataTransfer.files); };
   arq.onchange = () => enviar(arq.files);

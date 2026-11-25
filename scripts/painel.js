@@ -10,7 +10,7 @@ import { ROOT, P, clientDir, readJSON, writeJSON, exists, mkdir, slugify, walk }
 const PORT = Number(process.env.PAINEL_PORT || 4300);
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.mp4': 'video/mp4', '.webm': 'video/webm', '.woff2': 'font/woff2', '.md': 'text/plain; charset=utf-8' };
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
-const FOTO_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp']);
+const FOTO_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.tif', '.tiff', '.heic', '.heif']); // mesmas que o scripts/tratar-imagens.js aceita
 const ACOES = { // ações permitidas pelo painel (scripts sem tokens)
   preparar: (s) => ['preparar.js', s], slots: (s) => ['slots.js', s], montar: (s) => ['montar.js', s],
   'montar-rascunho': (s) => ['montar.js', s, '--rascunho'], qa: (s) => ['qa.js', s, '--ciclo', '1'], 'qa-2': (s) => ['qa.js', s, '--ciclo', '2']
@@ -71,7 +71,7 @@ function detalheCliente(slug) {
   const fotos = exists(d('entrada', 'fotos')) ? fs.readdirSync(d('entrada', 'fotos')).filter((f) => FOTO_EXT.has(path.extname(f).toLowerCase())) : [];
   const qa = exists(d('qa')) ? fs.readdirSync(d('qa')).filter((f) => f.endsWith('.png')).sort() : [];
   return {
-    ...base, etapas: st.etapas || [], briefing: briefingMd ? fs.readFileSync(briefingMd, 'utf8') : '', fotos_lista: fotos,
+    ...base, etapas: st.etapas || [], briefing: briefingMd ? fs.readFileSync(briefingMd, 'utf8').replace(/^# Briefing\s+Cole aqui as respostas do cliente[^\n]*\n?\s*$/, '') : '', fotos_lista: fotos,
     veredito: ver && { nota: ver.nota, aprovado: ver.aprovado, recado_luiz: ver.recado_luiz, feedback: ver.feedback || [] },
     feedback: fb?.itens || fb?.feedback || [], comando: `/gerar-landing ${slug}`,
     plano: plano && { posicionamento: plano.posicionamento, secoes: (plano.secoes || []).map((s) => ({ chave: s.chave, tipo: s.tipo, id: s.id, objetivo: s.objetivo, ajuste_custom: !!s.ajuste_custom })) },
