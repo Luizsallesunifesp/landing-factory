@@ -20,7 +20,8 @@
     "qa": "node scripts/qa.js",
     "publicar": "node scripts/publicar.js",
     "status": "node scripts/status.js",
-    "painel": "node scripts/painel.js"
+    "painel": "node scripts/painel.js",
+    "gerar": "node scripts/gerar.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0",

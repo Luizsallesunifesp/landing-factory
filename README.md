@@ -27,6 +27,12 @@ Cole o briefing, as fotos e os links de inspiração em `entrada/`, e então no 
 /publicar nome-do-cliente producao
 ```
 
+## Gerar pelo terminal
+```
+npm run gerar -- <slug>
+```
+Faz a checagem (briefing e fotos), chama o Claude Code em modo automático e mostra as etapas. Não publica nada: publicar continua sendo com /publicar. Precisa do Claude Code instalado (`npm install -g @anthropic-ai/claude-code`, depois `claude` uma vez para o login). Rode sempre dentro desta pasta.
+
 ## Painel (interface local)
 ```
 npm run painel
