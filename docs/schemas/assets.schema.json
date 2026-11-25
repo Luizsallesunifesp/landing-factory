@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Curadoria de fotos (A3)",
+  "type": "object",
+  "properties": {
+    "fotos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "nome em work/web/, ex.: foto-03.webp"
+          },
+          "tipo": {
+            "enum": [
+              "profissional",
+              "equipe",
+              "ambiente",
+              "fachada",
+              "produto",
+              "procedimento",
+              "antes_depois",
+              "detalhe",
+              "outro"
+            ]
+          },
+          "qualidade": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "orientacao": {
+            "enum": [
+              "retrato",
+              "paisagem",
+              "quadrada"
+            ]
+          },
+          "pessoa_visivel": {
+            "type": "boolean"
+          },
+          "usar_em": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "tipo de seção"
+            }
+          },
+          "foco": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            },
+            "description": "ponto focal 0-1 para object-position"
+          },
+          "bloqueada": {
+            "type": "boolean"
+          },
+          "motivo": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "tipo",
+          "qualidade"
+        ]
+      }
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "arquivo": {
+          "type": "string"
+        },
+        "fundo": {
+          "enum": [
+            "claro",
+            "escuro",
+            "transparente"
+          ]
+        }
+      }
+    },
+    "faltando": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "fotos"
+  ]
+}

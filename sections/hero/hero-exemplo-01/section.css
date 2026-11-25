@@ -1,0 +1,10 @@
+.s-hero-exemplo-01{padding:calc(var(--section-y)*.6) 0 var(--section-y)}
+.hero-exemplo-01__grid{display:grid;gap:calc(var(--space)*2);align-items:end}
+.hero-exemplo-01__etiqueta{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-accent);margin-bottom:var(--space)}
+.hero-exemplo-01__titulo{font-size:var(--fs-hero);letter-spacing:-.02em}
+.hero-exemplo-01__sub{margin-top:var(--space);max-width:34ch;color:var(--c-muted);font-size:1.1rem}
+.hero-exemplo-01__cta{display:inline-flex;align-items:center;min-height:52px;margin-top:calc(var(--space)*1.5);padding:0 26px;border-radius:999px;background:var(--c-primary);color:var(--c-on-primary);text-decoration:none;font-weight:600}
+.hero-exemplo-01__registro{margin-top:var(--space);font-size:.85rem;color:var(--c-muted)}
+.hero-exemplo-01__foto{margin:0;border-radius:var(--radius-lg) var(--radius-lg) 50vw 50vw;overflow:hidden;aspect-ratio:4/5}
+.hero-exemplo-01__foto img{width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.hero-exemplo-01__grid{grid-template-columns:1.2fr .8fr}}

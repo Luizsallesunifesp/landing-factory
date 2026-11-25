@@ -1,0 +1,32 @@
+{
+  "id": "cta-final-exemplo-01",
+  "tipo": "cta-final",
+  "origem": "exemplo",
+  "descricao": "[EXEMPLO DE FORMATO] Bloco escuro com título grande alinhado à esquerda, botão na cor de destaque e endereço",
+  "estilo": [
+    "bold",
+    "escuro"
+  ],
+  "nicho": [
+    "qualquer"
+  ],
+  "libs": [],
+  "animacao": "nenhuma",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "texto": {
+      "tipo": "texto",
+      "max": 160
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

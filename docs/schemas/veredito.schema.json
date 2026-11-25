@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Veredito do juiz (A9, Opus)",
+  "type": "object",
+  "properties": {
+    "aprovado": {
+      "type": "boolean"
+    },
+    "nota": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "ciclo": {
+      "type": "integer"
+    },
+    "pontos_fortes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "feedback": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "origem": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "A3",
+              "A4",
+              "A5",
+              "A6",
+              "A7",
+              "A8",
+              "A9",
+              "A10",
+              "A11",
+              "script",
+              "luiz"
+            ]
+          },
+          "destino": {
+            "type": "string",
+            "enum": [
+              "A1",
+              "A2",
+              "A3",
+              "A4",
+              "A5",
+              "A6",
+              "A7",
+              "A8",
+              "A9",
+              "A10",
+              "A11",
+              "script",
+              "luiz"
+            ]
+          },
+          "secao": {
+            "type": "string",
+            "description": "chave da seção no plano, ex.: '01-hero-samanta-01'; 'pagina' para algo global"
+          },
+          "slot": {
+            "type": "string",
+            "description": "slot afetado; vazio se for a seção inteira"
+          },
+          "severidade": {
+            "type": "string",
+            "enum": [
+              "critica",
+              "alta",
+              "media",
+              "baixa"
+            ]
+          },
+          "problema": {
+            "type": "string"
+          },
+          "correcao": {
+            "type": "string",
+            "description": "instrução concreta e verificável"
+          },
+          "ciclo": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          }
+        },
+        "required": [
+          "origem",
+          "destino",
+          "secao",
+          "severidade",
+          "problema",
+          "correcao"
+        ]
+      }
+    },
+    "recado_luiz": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "aprovado",
+    "nota",
+    "feedback"
+  ]
+}

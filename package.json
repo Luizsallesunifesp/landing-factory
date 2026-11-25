@@ -1,0 +1,32 @@
+{
+  "name": "landing-factory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fábrica de landing pages da Tech Salles (uso pessoal)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "novo-cliente": "node scripts/novo-cliente.js",
+    "preparar": "node scripts/preparar.js",
+    "extrair": "node scripts/extrair-secoes.js",
+    "raw-resumo": "node scripts/raw-resumo.js",
+    "previews": "node scripts/previews.js",
+    "checar-secoes": "node scripts/checar-secoes.js",
+    "catalogo": "node scripts/catalogo.js",
+    "slots": "node scripts/slots.js",
+    "montar": "node scripts/montar.js",
+    "override": "node scripts/override.js",
+    "troca": "node scripts/troca.js",
+    "qa": "node scripts/qa.js",
+    "publicar": "node scripts/publicar.js",
+    "status": "node scripts/status.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "playwright": "^1.48.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

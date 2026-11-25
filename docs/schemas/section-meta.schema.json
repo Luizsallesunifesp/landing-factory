@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Meta de uma seção da biblioteca",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "ex.: hero-samanta-01"
+    },
+    "tipo": {
+      "enum": [
+        "nav",
+        "hero",
+        "dor",
+        "sobre",
+        "servicos",
+        "processo",
+        "prova",
+        "faq",
+        "faixa",
+        "local",
+        "cta-final",
+        "footer",
+        "especial"
+      ]
+    },
+    "origem": {
+      "type": "string",
+      "description": "cliente de onde veio"
+    },
+    "descricao": {
+      "type": "string",
+      "description": "1 linha: como é visualmente"
+    },
+    "estilo": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ex.: editorial, minimalista, escuro, orgânico, tech"
+    },
+    "nicho": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "onde funciona bem"
+    },
+    "libs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "animacao": {
+      "type": "string",
+      "description": "ex.: reveal ao rolar, sequência de frames, parallax"
+    },
+    "slots": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "enum": [
+              "texto",
+              "texto_curto",
+              "richtext",
+              "img",
+              "lista",
+              "url"
+            ]
+          },
+          "max": {
+            "type": "integer",
+            "description": "limite de caracteres"
+          },
+          "descricao": {
+            "type": "string"
+          },
+          "campos": {
+            "type": "object",
+            "description": "para tipo lista: campo → {tipo,max}"
+          },
+          "min_itens": {
+            "type": "integer"
+          },
+          "max_itens": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "mobile_ok": {
+      "type": "boolean"
+    },
+    "peso_kb": {
+      "type": "number"
+    },
+    "nota": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "aprovada": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "tipo",
+    "descricao",
+    "slots",
+    "aprovada"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Status do cliente",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "criado": {
+      "type": "string"
+    },
+    "fase": {
+      "type": "string"
+    },
+    "rodadas_ajuste": {
+      "type": "integer"
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "etapa": {
+            "type": "string"
+          },
+          "resultado": {
+            "type": "string"
+          },
+          "em": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "preview": {
+          "type": "string"
+        },
+        "producao": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Briefing normalizado (A1)",
+  "type": "object",
+  "properties": {
+    "negocio": {
+      "type": "object",
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "profissional": {
+          "type": "string"
+        },
+        "profissao": {
+          "type": "string"
+        },
+        "registro": {
+          "type": "string",
+          "description": "ex.: CRO-SP 12345"
+        },
+        "frase": {
+          "type": "string",
+          "description": "o que faz, em 1 frase"
+        },
+        "cidade": {
+          "type": "string"
+        },
+        "endereco": {
+          "type": "string"
+        },
+        "horario": {
+          "type": "string"
+        },
+        "anos_experiencia": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nome",
+        "frase",
+        "cidade"
+      ]
+    },
+    "contato": {
+      "type": "object",
+      "properties": {
+        "whatsapp": {
+          "type": "string",
+          "description": "só dígitos com 55, ex.: 5512999999999"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "maps_url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "whatsapp"
+      ]
+    },
+    "servicos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "descricao": {
+            "type": "string"
+          },
+          "destaque": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "nome"
+        ]
+      }
+    },
+    "publico": {
+      "type": "object",
+      "properties": {
+        "perfil": {
+          "type": "string"
+        },
+        "dores": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "desejos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "diferenciais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "somente o que o cliente disse"
+    },
+    "oferta": {
+      "type": "string"
+    },
+    "tom": {
+      "type": "string",
+      "description": "ex.: acolhedor, técnico, premium, jovem"
+    },
+    "cores": {
+      "type": "object",
+      "properties": {
+        "gosta": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evitar": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "depoimentos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "texto": {
+            "type": "string"
+          },
+          "autor": {
+            "type": "string"
+          },
+          "autorizado": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "nicho": {
+      "type": "string",
+      "description": "ex.: odontologia, head spa, professor de inglês"
+    },
+    "regulado": {
+      "type": "boolean"
+    },
+    "nicho_regulado": {
+      "type": "string",
+      "description": "ex.: CFO, CFF, CFP"
+    },
+    "faltando": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "campo": {
+            "type": "string"
+          },
+          "essencial": {
+            "type": "boolean"
+          },
+          "pergunta": {
+            "type": "string",
+            "description": "pergunta pronta para o WhatsApp"
+          }
+        },
+        "required": [
+          "campo",
+          "essencial",
+          "pergunta"
+        ]
+      }
+    },
+    "observacoes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "negocio",
+    "contato",
+    "servicos",
+    "nicho",
+    "regulado",
+    "faltando"
+  ]
+}

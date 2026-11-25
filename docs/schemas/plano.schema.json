@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Plano da página (A4, Opus)",
+  "type": "object",
+  "properties": {
+    "posicionamento": {
+      "type": "object",
+      "properties": {
+        "angulo": {
+          "type": "string"
+        },
+        "promessa": {
+          "type": "string",
+          "description": "sem garantia de resultado"
+        },
+        "publico_alvo": {
+          "type": "string"
+        },
+        "tom": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "angulo",
+        "promessa",
+        "tom"
+      ]
+    },
+    "secoes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ordem": {
+            "type": "integer"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "description": "id da variação no catalogo.json"
+          },
+          "chave": {
+            "type": "string",
+            "description": "ordem com 2 dígitos + id, ex.: 01-hero-samanta-01"
+          },
+          "objetivo": {
+            "type": "string"
+          },
+          "imagens": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "slot de imagem → arquivo em work/web/"
+          },
+          "ajuste_custom": {
+            "type": "string",
+            "description": "vazio se não precisar; senão, o que o montador (Sonnet) deve personalizar"
+          }
+        },
+        "required": [
+          "ordem",
+          "tipo",
+          "id",
+          "chave",
+          "objetivo"
+        ]
+      }
+    },
+    "design": {
+      "type": "object",
+      "properties": {
+        "tokens": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "todos os tokens de docs/tokens.md"
+        },
+        "fontes": {
+          "type": "object",
+          "properties": {
+            "display": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "mono": {
+              "type": "string"
+            },
+            "google_fonts_url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "display",
+            "body",
+            "google_fonts_url"
+          ]
+        },
+        "libs": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "aos",
+              "gsap",
+              "scrolltrigger",
+              "lenis"
+            ]
+          }
+        },
+        "estilo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tokens",
+        "fontes",
+        "libs"
+      ]
+    },
+    "whatsapp": {
+      "type": "object",
+      "properties": {
+        "numero": {
+          "type": "string"
+        },
+        "mensagem": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "numero",
+        "mensagem"
+      ]
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "og_imagem": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ]
+    },
+    "regras": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "regras de nicho e do cliente que a copy deve seguir"
+    },
+    "criterios_sucesso": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "usados pelo juiz-final"
+    },
+    "observacoes_luiz": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "posicionamento",
+    "secoes",
+    "design",
+    "whatsapp",
+    "seo",
+    "criterios_sucesso"
+  ]
+}

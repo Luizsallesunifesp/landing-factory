@@ -1,0 +1,41 @@
+{
+  "id": "servicos-exemplo-01",
+  "tipo": "servicos",
+  "origem": "exemplo",
+  "descricao": "[EXEMPLO DE FORMATO] Lista numerada editorial com divisores finos, sem cards",
+  "estilo": [
+    "editorial",
+    "minimalista"
+  ],
+  "nicho": [
+    "qualquer"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up por item",
+  "slots": {
+    "titulo": {
+      "tipo": "texto",
+      "max": 60
+    },
+    "itens": {
+      "tipo": "lista",
+      "min_itens": 3,
+      "max_itens": 6,
+      "campos": {
+        "nome": {
+          "tipo": "texto_curto",
+          "max": 40
+        },
+        "descricao": {
+          "tipo": "texto",
+          "max": 150
+        }
+      }
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Roteamento de ajuste (A10)",
+  "type": "object",
+  "properties": {
+    "pedido_original": {
+      "type": "string"
+    },
+    "classe": {
+      "enum": [
+        "troca_simples",
+        "texto",
+        "estrutura",
+        "mudanca_direcao"
+      ]
+    },
+    "conta_rodada": {
+      "type": "boolean"
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "destino": {
+            "enum": [
+              "script",
+              "A5",
+              "A6",
+              "A4"
+            ]
+          },
+          "secao": {
+            "type": "string"
+          },
+          "slot": {
+            "type": "string"
+          },
+          "mudanca": {
+            "type": "string"
+          },
+          "valor_novo": {
+            "type": "string",
+            "description": "para troca_simples: o valor exato"
+          }
+        },
+        "required": [
+          "destino",
+          "mudanca"
+        ]
+      }
+    },
+    "pergunta_cliente": {
+      "type": "string",
+      "description": "se o pedido estiver ambíguo"
+    }
+  },
+  "required": [
+    "classe",
+    "itens"
+  ]
+}

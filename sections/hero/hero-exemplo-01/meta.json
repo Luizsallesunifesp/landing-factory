@@ -1,0 +1,50 @@
+{
+  "id": "hero-exemplo-01",
+  "tipo": "hero",
+  "origem": "exemplo",
+  "descricao": "[EXEMPLO DE FORMATO] Hero em duas colunas: etiqueta mono, título serifado grande, CTA em pílula; foto em arco à direita (abaixo no mobile)",
+  "estilo": [
+    "editorial",
+    "acolhedor"
+  ],
+  "nicho": [
+    "saúde",
+    "bem-estar",
+    "profissional liberal"
+  ],
+  "libs": [
+    "aos"
+  ],
+  "animacao": "fade-up no título e subtítulo",
+  "slots": {
+    "etiqueta": {
+      "tipo": "texto_curto",
+      "max": 40,
+      "descricao": "especialidade + cidade"
+    },
+    "titulo": {
+      "tipo": "texto",
+      "max": 70,
+      "descricao": "promessa principal, específica"
+    },
+    "subtitulo": {
+      "tipo": "texto",
+      "max": 160
+    },
+    "cta_texto": {
+      "tipo": "texto_curto",
+      "max": 28
+    },
+    "img:principal": {
+      "tipo": "img",
+      "descricao": "foto do profissional, retrato"
+    },
+    "alt:principal": {
+      "tipo": "texto_curto",
+      "max": 120
+    }
+  },
+  "mobile_ok": true,
+  "nota": 3,
+  "aprovada": false
+}

@@ -1,0 +1,7 @@
+.s-servicos-exemplo-01{padding:var(--section-y) 0;background:var(--c-surface-2)}
+.servicos-exemplo-01__titulo{font-size:clamp(2rem,5vw,3.4rem);max-width:18ch}
+.servicos-exemplo-01__lista{list-style:none;margin:calc(var(--space)*2) 0 0;padding:0}
+.servicos-exemplo-01__item{display:grid;grid-template-columns:3.2rem 1fr;gap:var(--space);padding:calc(var(--space)*1.2) 0;border-top:1px solid var(--c-line)}
+.servicos-exemplo-01__num{font-family:var(--f-mono);color:var(--c-accent);padding-top:.35rem}
+.servicos-exemplo-01__nome{font-size:1.45rem}
+.servicos-exemplo-01__desc{color:var(--c-muted);margin-top:.4rem;max-width:56ch}

@@ -1,0 +1,13 @@
+<section class="s-servicos-exemplo-01" data-secao="servicos-exemplo-01">
+  <div class="lf-wrap">
+    <h2 class="servicos-exemplo-01__titulo">{{titulo}}</h2>
+    <ol class="servicos-exemplo-01__lista">
+      {{#itens}}
+      <li class="servicos-exemplo-01__item" data-aos="fade-up">
+        <span class="servicos-exemplo-01__num">{{@num}}</span>
+        <div><h3 class="servicos-exemplo-01__nome">{{nome}}</h3><p class="servicos-exemplo-01__desc">{{descricao}}</p></div>
+      </li>
+      {{/itens}}
+    </ol>
+  </div>
+</section>

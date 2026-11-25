@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(node scripts/*)",
+      "Bash(npx wrangler pages *)",
+      "Read(./**)",
+      "Write(./clients/**)",
+      "Write(./sections/**)",
+      "Edit(./clients/**)",
+      "Edit(./sections/**)"
+    ],
+    "deny": [
+      "Read(./clients/*/entrada/fotos/**)"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+.s-cta-final-exemplo-01{padding:var(--section-y) 0;background:var(--c-dark);color:var(--c-on-dark);text-align:left}
+.cta-final-exemplo-01__titulo{font-size:clamp(2.2rem,6vw,4.4rem);max-width:16ch}
+.cta-final-exemplo-01__texto{margin-top:var(--space);max-width:44ch;opacity:.8}
+.cta-final-exemplo-01__cta{display:inline-flex;align-items:center;min-height:56px;margin-top:calc(var(--space)*1.6);padding:0 30px;border-radius:999px;background:var(--c-accent);color:var(--c-dark);font-weight:700;text-decoration:none}
+.cta-final-exemplo-01__info{margin-top:calc(var(--space)*2);font-size:.85rem;opacity:.65}

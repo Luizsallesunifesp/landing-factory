@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Copy por seção e slot (A5)",
+  "type": "object",
+  "properties": {
+    "secoes": {
+      "type": "object",
+      "description": "chave da seção → {slot: valor}. Slots de lista recebem array de objetos.",
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "headline_alternativa": {
+      "type": "string",
+      "description": "2ª opção para o hero"
+    },
+    "whatsapp_mensagem": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "secoes"
+  ]
+}

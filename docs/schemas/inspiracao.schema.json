@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Leitura das inspirações (A2)",
+  "type": "object",
+  "properties": {
+    "referencias": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "ordem_secoes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "estilo": {
+            "type": "string"
+          },
+          "paleta": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tipografia": {
+            "type": "string"
+          },
+          "densidade_texto": {
+            "enum": [
+              "baixa",
+              "media",
+              "alta"
+            ]
+          },
+          "animacoes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tom": {
+            "type": "string"
+          },
+          "o_que_aproveitar": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    "sintese": {
+      "type": "object",
+      "properties": {
+        "estilo_dominante": {
+          "type": "string"
+        },
+        "palavras_chave": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evitar": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "referencias",
+    "sintese"
+  ]
+}
