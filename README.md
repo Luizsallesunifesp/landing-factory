@@ -27,6 +27,12 @@ Cole o briefing, as fotos e os links de inspiração em `entrada/`, e então no 
 /publicar nome-do-cliente producao
 ```
 
+## Painel (interface local)
+```
+npm run painel
+```
+Abre em http://localhost:4300 (só no seu computador). Mostra os clientes e a etapa de cada um, abre a página e as capturas do QA, edita briefing e fotos, cria cliente novo e faz a curadoria da biblioteca (nota 1 a 5, aprovar, gerar catálogo). Gerar a página continua sendo no Claude Code: o painel mostra o comando `/gerar-landing <slug>` para copiar.
+
 ## Scripts (não gastam tokens)
 | Comando | O que faz |
 |---|---|

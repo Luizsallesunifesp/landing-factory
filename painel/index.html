@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel · Landing Factory</title>
+<style>
+:root{
+  --bg:#f4f1ec;--surface:#fffdf9;--surface-2:#ece7df;--line:#ddd5c8;--text:#1d1b18;--muted:#6f685d;
+  --accent:#1f5f4a;--accent-ink:#fff;--ok:#1f6b45;--warn:#9a6a10;--bad:#a23a2a;--shadow:0 1px 2px rgba(30,25,15,.06),0 6px 20px rgba(30,25,15,.05);
+  --r:12px;--f:'Segoe UI',system-ui,-apple-system,sans-serif;--mono:ui-monospace,'Cascadia Code',Consolas,monospace
+}
+@media (prefers-color-scheme:dark){:root{--bg:#161512;--surface:#1f1d19;--surface-2:#2a2722;--line:#37332c;--text:#efebe3;--muted:#a39b8d;--accent:#58b894;--accent-ink:#10231b;--ok:#6cc79a;--warn:#e0b050;--bad:#e8806e;--shadow:none}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 var(--f)}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--accent)}
+.app{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:100vh}
+nav.lado{background:var(--surface);border-right:1px solid var(--line);padding:22px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}
+.marca{font-weight:700;letter-spacing:-.01em;font-size:17px;padding:0 10px 14px}
+.marca small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+nav.lado a{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:9px;color:var(--text);text-decoration:none}
+nav.lado a:hover{background:var(--surface-2)}
+nav.lado a.on{background:var(--accent);color:var(--accent-ink)}
+nav.lado .rodape{margin-top:auto;font-size:12px;color:var(--muted);padding:10px}
+main{padding:28px clamp(16px,3vw,40px) 60px;min-width:0}
+h1{font-size:24px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:16px;margin:0 0 12px}
+.sub{color:var(--muted);margin:0 0 22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.cli{display:block;text-decoration:none;color:inherit;cursor:pointer}
+.cli:hover{border-color:var(--accent)}
+.cli h3{margin:0 0 2px;font-size:16px}
+.cli .slug{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.cli .et{margin:10px 0;color:var(--muted);font-size:13px;min-height:2.6em}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:2px 9px;border-radius:99px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.tag.ok{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.tag.warn{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.tag.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:9px;cursor:pointer;text-decoration:none;color:var(--text);font-size:14px}
+.btn:hover{border-color:var(--accent)}
+.btn.pri{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.pequeno{padding:5px 10px;font-size:13px}
+.btn[disabled]{opacity:.5;cursor:wait}
+.linha{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.col2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:980px){.col2{grid-template-columns:minmax(0,1fr)}.app{grid-template-columns:minmax(0,1fr)}nav.lado{position:static;height:auto;flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--line)}nav.lado .rodape,.marca small{display:none}.marca{padding:0 10px 0 0}}
+.pilha{display:grid;gap:16px;min-width:0}
+.card{min-width:0;overflow-wrap:anywhere}
+textarea,input[type=text],input[type=search],select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:9px 12px}
+textarea{min-height:220px;resize:vertical;font-family:var(--mono);font-size:13px}
+.etapas{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:13px}
+.etapas li{display:grid;grid-template-columns:120px 1fr auto;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.etapas b{font-weight:600}.etapas time{color:var(--muted);font-size:12px}
+.cmd{font-family:var(--mono);background:var(--surface-2);padding:8px 12px;border-radius:9px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px;overflow-wrap:anywhere}
+.fotos{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:10px}
+.fotos figure{margin:0;position:relative;aspect-ratio:1;border-radius:9px;overflow:hidden;background:var(--surface-2)}
+.fotos img{width:100%;height:100%;object-fit:cover;display:block}
+.fotos button{position:absolute;top:4px;right:4px;border:0;border-radius:99px;background:rgba(0,0,0,.6);color:#fff;width:22px;height:22px;cursor:pointer;line-height:1}
+.solta{border:2px dashed var(--line);border-radius:var(--r);padding:16px;text-align:center;color:var(--muted);cursor:pointer}
+.solta.sobre{border-color:var(--accent);color:var(--accent)}
+.fb{display:grid;gap:8px}
+.fb div{padding:9px 12px;border-radius:9px;background:var(--surface-2);font-size:13px}
+.fb .sev{font-weight:700;text-transform:uppercase;font-size:11px;margin-right:6px}
+.nota{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.moldura{max-width:100%;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;margin:0 auto;transition:width .2s}
+.moldura iframe{width:100%;height:560px;border:0;display:block}
+.saida{white-space:pre-wrap;font-family:var(--mono);font-size:12px;background:var(--surface-2);padding:10px 12px;border-radius:9px;max-height:200px;overflow:auto;margin-top:10px}
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.filtros>*{width:auto;min-width:150px}
+.sec{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.sec .img{aspect-ratio:16/10;background:var(--surface-2);overflow:hidden}
+.sec .img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;cursor:zoom-in}
+.sec .corpo{padding:12px 14px;display:grid;gap:8px}
+.sec .id{font-family:var(--mono);font-size:12px;font-weight:600;overflow-wrap:anywhere}
+.sec .desc{font-size:12.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.estrelas{display:flex;gap:2px}
+.estrelas button{border:0;background:none;cursor:pointer;font-size:19px;padding:0 1px;color:var(--line)}
+.estrelas button.on{color:#d49a1c}
+.vazio{padding:50px 20px;text-align:center;color:var(--muted)}
+.aviso{border-left:3px solid var(--warn);padding:10px 14px;background:color-mix(in srgb,var(--warn) 10%,transparent);border-radius:0 9px 9px 0;font-size:13px;margin-bottom:16px}
+dialog{border:0;border-radius:var(--r);padding:0;max-width:min(96vw,1100px);background:var(--surface);color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog img{display:block;max-width:100%;max-height:88vh}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="lado">
+    <div class="marca">Landing Factory<small>Tech Salles · painel local</small></div>
+    <a href="#/clientes" data-r="clientes">Clientes</a>
+    <a href="#/biblioteca" data-r="biblioteca">Biblioteca <span class="tag" id="cont-lib"></span></a>
+    <a href="#/novo" data-r="novo">+ Novo cliente</a>
+    <div class="rodape">Gerar a página é no Claude Code:<br><code>/gerar-landing &lt;slug&gt;</code></div>
+  </nav>
+  <main id="tela"></main>
+</div>
+<dialog id="zoom"><img alt=""></dialog>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const api = async (url, opt = {}) => {
+  const r = await fetch(url, { ...opt, headers: { 'x-painel': '1', ...(opt.headers || {}) } });
+  const t = await r.text(); let d; try { d = JSON.parse(t); } catch { d = { erro: t }; }
+  if (!r.ok) throw new Error(d.erro || 'Erro ' + r.status);
+  return d;
+};
+const json = (method, body) => ({ method, headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+let toastT; const aviso = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2400); };
+const quando = (iso) => iso ? new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) : '';
+const copiar = async (txt) => { try { await navigator.clipboard.writeText(txt); aviso('Copiado'); } catch { aviso('Não consegui copiar'); } };
+const tagNota = (c) => c.nota == null ? '<span class="tag">sem juiz</span>' : `<span class="tag ${c.aprovado ? 'ok' : c.nota >= 7 ? 'warn' : 'bad'}">juiz ${c.nota}${c.aprovado ? ' · aprovado' : ''}</span>`;
+
+/* ---------- Clientes ---------- */
+async function telaClientes() {
+  const lista = await api('/api/clientes');
+  $('#tela').innerHTML = `<h1>Clientes</h1><p class="sub">${lista.length} cliente(s). Clique para ver etapas, briefing, fotos e a página.</p>` +
+    (lista.length ? `<div class="grade">${lista.map((c) => `
+      <a class="card cli" href="#/cliente/${c.slug}">
+        <h3>${esc(c.nome)}</h3><div class="slug">${esc(c.slug)}</div>
+        <div class="et">${esc(c.ultima_etapa || 'sem etapas')}<br><small>${quando(c.atualizado)}</small></div>
+        <div class="tags">${tagNota(c)}
+          ${c.pagina ? `<span class="tag ok">página montada${c.peso_kb ? ' · ' + c.peso_kb + ' KB' : ''}</span>` : '<span class="tag">sem página</span>'}
+          ${c.secoes ? `<span class="tag">${c.secoes} seções</span>` : ''}
+          <span class="tag">${c.fotos} foto(s)</span>
+          ${c.regulado ? '<span class="tag warn">nicho regulado</span>' : ''}
+          ${!c.tem_briefing ? '<span class="tag bad">sem briefing</span>' : ''}
+        </div></a>`).join('')}</div>`
+    : `<div class="card vazio">Nenhum cliente ainda. <a href="#/novo">Criar o primeiro</a>.</div>`);
+}
+
+async function telaCliente(slug) {
+  const c = await api('/api/clientes/' + slug);
+  const sev = { critica: 'bad', alta: 'bad', media: 'warn', baixa: '' };
+  const itensFb = (c.veredito?.feedback?.length ? c.veredito.feedback : c.feedback) || [];
+  $('#tela').innerHTML = `
+    <p><a href="#/clientes">← Clientes</a></p>
+    <div class="linha" style="justify-content:space-between;margin-bottom:6px"><div><h1>${esc(c.nome)}</h1><div class="sub" style="margin:0">${esc(c.slug)}${c.nicho ? ' · ' + esc(c.nicho) : ''}${c.regulado ? ' · nicho regulado' : ''}</div></div>
+      <div class="linha">${c.pagina ? `<a class="btn pri" target="_blank" href="/preview/${slug}/">Abrir página ↗</a>` : ''}</div></div>
+    <div class="col2" style="margin-top:18px">
+      <div class="pilha">
+        <div class="card"><h2>1 · Material do cliente</h2>
+          ${!c.tem_briefing || c.fotos === 0 ? `<div class="aviso">${!c.tem_briefing ? 'Falta o briefing. ' : ''}${c.fotos === 0 ? 'Nenhuma foto enviada.' : ''}</div>` : ''}
+          <textarea id="brief" placeholder="Cole aqui as respostas do cliente, do jeito que vieram no WhatsApp">${esc(c.briefing)}</textarea>
+          <div class="linha" style="margin-top:10px"><button class="btn" id="salva-brief">Salvar briefing</button><a class="btn pequeno" href="#" id="ver-perguntas" onclick="return false">Copiar perguntas para o cliente</a></div>
+          <div class="solta" id="solta" style="margin-top:14px">Arraste as fotos aqui ou clique para escolher (JPG, PNG, WebP)</div>
+          <input type="file" id="arq" accept="image/jpeg,image/png,image/webp" multiple hidden>
+          <div class="fotos">${c.fotos_lista.map((f) => `<figure><img loading="lazy" src="/foto/${slug}/${encodeURIComponent(f)}" alt="${esc(f)}"><button data-f="${esc(f)}" title="Remover">×</button></figure>`).join('')}</div>
+        </div>
+        <div class="card"><h2>2 · Gerar a página</h2>
+          <p class="sub" style="margin:0 0 10px">Os agentes rodam no Claude Code. Copie o comando e cole lá:</p>
+          <div class="cmd"><span>${esc(c.comando)}</span><button class="btn pequeno" id="cp-cmd">Copiar</button></div>
+          <p class="sub" style="margin:14px 0 8px">Etapas sem tokens, direto daqui:</p>
+          <div class="linha">
+            <button class="btn pequeno" data-acao="preparar">Tratar fotos</button>
+            <button class="btn pequeno" data-acao="montar" ${c.secoes ? '' : 'disabled title="Precisa do plano e da copy (gerar-landing)"'}>Montar página</button>
+            <button class="btn pequeno" data-acao="qa" ${c.pagina ? '' : 'disabled'}>Rodar QA (ciclo 1)</button>
+            <button class="btn pequeno" data-acao="qa-2" ${c.pagina ? '' : 'disabled'}>QA (ciclo 2)</button>
+          </div><div class="saida" id="saida" hidden></div>
+        </div>
+        <div class="card"><h2>Linha do tempo</h2><ul class="etapas">${[...c.etapas].reverse().map((e) => `<li><b>${esc(e.etapa)}</b><span>${esc(e.resultado)}</span><time>${quando(e.em)}</time></li>`).join('') || '<li>Nada ainda.</li>'}</ul></div>
+      </div>
+      <div class="pilha">
+        <div class="card"><h2>Veredito do juiz</h2>
+          ${c.veredito ? `<div class="linha" style="margin-bottom:12px"><span class="nota">${c.veredito.nota}</span>${tagNota(c)}</div>
+            ${c.veredito.recado_luiz ? `<p style="margin:0 0 12px">${esc(c.veredito.recado_luiz)}</p>` : ''}` : '<p class="sub" style="margin:0">Ainda sem veredito.</p>'}
+          ${itensFb.length ? `<div class="fb">${itensFb.map((f) => `<div><span class="sev tag ${sev[f.severidade] || ''}">${esc(f.severidade || '')}</span><b>${esc(f.secao || '')}</b> ${f.slot ? '· ' + esc(f.slot) : ''}<br>${esc(f.problema || f.detalhe || '')}${f.correcao ? `<br><small style="color:var(--muted)">→ ${esc(f.correcao)}</small>` : ''}</div>`).join('')}</div>` : ''}
+        </div>
+        ${c.pagina ? `<div class="card"><div class="linha" style="justify-content:space-between;margin-bottom:10px"><h2 style="margin:0">Prévia</h2>
+          <div class="linha"><button class="btn pequeno" data-w="390">Celular</button><button class="btn pequeno" data-w="820">Tablet</button><button class="btn pequeno" data-w="100%">Desktop</button></div></div>
+          <div class="moldura" id="mold" style="width:390px"><iframe src="/preview/${slug}/" title="Prévia"></iframe></div></div>` : ''}
+        ${c.plano ? `<div class="card"><h2>Plano da página</h2>
+          ${c.plano.posicionamento?.angulo ? `<p style="margin:0 0 10px"><b>Ângulo:</b> ${esc(c.plano.posicionamento.angulo)}</p>` : ''}
+          <ol style="margin:0;padding-left:20px;display:grid;gap:4px;font-size:13px">${c.plano.secoes.map((s) => `<li><code>${esc(s.id)}</code>${s.ajuste_custom ? ' <span class="tag warn">ajuste custom</span>' : ''}<br><small style="color:var(--muted)">${esc(s.objetivo || '')}</small></li>`).join('')}</ol></div>` : ''}
+        ${c.qa_imagens.length ? `<div class="card"><h2>Capturas do QA</h2><div class="fotos" style="grid-template-columns:repeat(auto-fill,minmax(110px,1fr))">${c.qa_imagens.map((f) => `<figure style="aspect-ratio:3/4"><img loading="lazy" src="/qa/${slug}/${encodeURIComponent(f)}" data-zoom alt="${esc(f)}"></figure>`).join('')}</div></div>` : ''}
+      </div>
+    </div>`;
+
+  $('#salva-brief').onclick = async () => { await api(`/api/clientes/${slug}/briefing`, json('PUT', { texto: $('#brief').value })); aviso('Briefing salvo'); };
+  $('#cp-cmd').onclick = () => copiar(c.comando);
+  $('#ver-perguntas').onclick = async () => { try { const t = await (await fetch('/arquivo/briefing-perguntas')).text(); copiar(t); } catch { aviso('Arquivo não encontrado'); } };
+  const solta = $('#solta'), arq = $('#arq');
+  solta.onclick = () => arq.click();
+  solta.ondragover = (e) => { e.preventDefault(); solta.classList.add('sobre'); };
+  solta.ondragleave = () => solta.classList.remove('sobre');
+  const enviar = async (files) => {
+    for (const f of files) { try { await api(`/api/clientes/${slug}/fotos?nome=${encodeURIComponent(f.name)}`, { method: 'POST', body: f }); } catch (e) { aviso(e.message); } }
+    telaCliente(slug);
+  };
+  solta.ondrop = (e) => { e.preventDefault(); solta.classList.remove('sobre'); enviar(e.dataTransfer.files); };
+  arq.onchange = () => enviar(arq.files);
+  document.querySelectorAll('.fotos button[data-f]').forEach((b) => b.onclick = async () => { if (confirm('Remover ' + b.dataset.f + '?')) { await api(`/api/clientes/${slug}/fotos/${encodeURIComponent(b.dataset.f)}`, { method: 'DELETE' }); telaCliente(slug); } });
+  document.querySelectorAll('[data-acao]').forEach((b) => b.onclick = async () => {
+    const saida = $('#saida'); saida.hidden = false; saida.textContent = 'Rodando…'; document.querySelectorAll('[data-acao]').forEach((x) => x.disabled = true);
+    try { const r = await api(`/api/clientes/${slug}/rodar`, json('POST', { acao: b.dataset.acao })); saida.textContent = r.saida || '(sem saída)'; aviso(r.codigo === 0 ? 'Concluído' : 'Terminou com erro'); }
+    catch (e) { saida.textContent = e.message; }
+    setTimeout(() => telaCliente(slug).then(() => { const s = $('#saida'); if (s) { s.hidden = false; s.textContent = saida.textContent; } }), 400);
+  });
+  document.querySelectorAll('[data-w]').forEach((b) => b.onclick = () => { $('#mold').style.width = b.dataset.w === '100%' ? '100%' : b.dataset.w + 'px'; });
+  document.querySelectorAll('[data-zoom]').forEach((i) => i.onclick = () => abrirZoom(i.src));
+}
+
+/* ---------- Biblioteca ---------- */
+let SECOES = [], filtro = { tipo: '', estado: '', q: '' };
+function abrirZoom(src) { const z = $('#zoom'); $('img', z).src = src; z.showModal(); }
+$('#zoom').addEventListener('click', () => $('#zoom').close());
+async function telaBiblioteca() {
+  SECOES = await api('/api/secoes');
+  const tipos = [...new Set(SECOES.map((s) => s.tipo))];
+  $('#tela').innerHTML = `<h1>Biblioteca</h1><p class="sub">Dê uma nota de 1 a 5 e aprove as seções que o diretor criativo pode usar. Só as aprovadas entram no catálogo.</p>
+    <div id="resumo" class="linha" style="margin-bottom:14px"></div>
+    <div class="filtros">
+      <input type="search" id="q" placeholder="Buscar por nome, estilo ou descrição" value="${esc(filtro.q)}" style="flex:1;min-width:220px">
+      <select id="ftipo"><option value="">Todos os tipos</option>${tipos.map((t) => `<option ${filtro.tipo === t ? 'selected' : ''}>${t}</option>`).join('')}</select>
+      <select id="fest"><option value="">Todas</option><option value="aprovada" ${filtro.estado === 'aprovada' ? 'selected' : ''}>Aprovadas</option><option value="pendente" ${filtro.estado === 'pendente' ? 'selected' : ''}>Pendentes</option></select>
+      <button class="btn pri" id="gera-cat">Gerar catálogo</button>
+    </div><div class="saida" id="saida-cat" hidden></div><div class="grade" id="grade-sec" style="margin-top:14px"></div>`;
+  $('#q').oninput = (e) => { filtro.q = e.target.value; pintarSecoes(); };
+  $('#ftipo').onchange = (e) => { filtro.tipo = e.target.value; pintarSecoes(); };
+  $('#fest').onchange = (e) => { filtro.estado = e.target.value; pintarSecoes(); };
+  $('#gera-cat').onclick = async () => { const o = $('#saida-cat'); o.hidden = false; o.textContent = 'Gerando…'; try { o.textContent = (await api('/api/catalogo', json('POST', {}))).saida; } catch (e) { o.textContent = e.message; } };
+  pintarSecoes();
+}
+function pintarSecoes() {
+  const q = filtro.q.toLowerCase();
+  const lista = SECOES.filter((s) => (!filtro.tipo || s.tipo === filtro.tipo) && (!filtro.estado || (filtro.estado === 'aprovada') === s.aprovada)
+    && (!q || (s.id + ' ' + s.descricao + ' ' + s.estilo.join(' ') + ' ' + s.nicho.join(' ')).toLowerCase().includes(q)));
+  const ap = SECOES.filter((s) => s.aprovada);
+  const porTipo = {}; ap.forEach((s) => porTipo[s.tipo] = (porTipo[s.tipo] || 0) + 1);
+  $('#cont-lib').textContent = ap.length + '/' + SECOES.length;
+  $('#resumo').innerHTML = ['hero', 'servicos', 'sobre', 'processo', 'cta-final'].map((t) => `<span class="tag ${(porTipo[t] || 0) >= 4 ? 'ok' : 'warn'}">${t} ${porTipo[t] || 0}/4</span>`).join('') + `<span class="tag">${lista.length} exibidas</span>`;
+  $('#grade-sec').innerHTML = lista.length ? lista.map((s) => `<div class="card sec" data-id="${esc(s.id)}">
+    <div class="img">${s.preview ? `<img loading="lazy" data-zoom src="/secao/${esc(s.id)}/preview.png" alt="${esc(s.id)}">` : ''}</div>
+    <div class="corpo"><div class="id">${esc(s.id)}</div>
+      <div class="tags"><span class="tag">${esc(s.tipo)}</span>${s.estilo.slice(0, 2).map((e) => `<span class="tag">${esc(e)}</span>`).join('')}${s.libs.map((l) => `<span class="tag">${esc(l)}</span>`).join('')}</div>
+      <div class="desc" title="${esc(s.descricao)}">${esc(s.descricao)}</div>
+      <div class="linha" style="justify-content:space-between"><div class="estrelas">${[1, 2, 3, 4, 5].map((n) => `<button data-n="${n}" class="${(s.nota || 0) >= n ? 'on' : ''}" title="Nota ${n}">★</button>`).join('')}</div>
+        <button class="btn pequeno ${s.aprovada ? 'pri' : ''}" data-ap>${s.aprovada ? 'Aprovada ✓' : 'Aprovar'}</button></div></div></div>`).join('') : '<div class="card vazio" style="grid-column:1/-1">Nada com esse filtro.</div>';
+  document.querySelectorAll('#grade-sec .sec').forEach((el) => {
+    const s = SECOES.find((x) => x.id === el.dataset.id);
+    el.querySelectorAll('[data-n]').forEach((b) => b.onclick = async () => { const n = +b.dataset.n; await api('/api/secoes/' + s.id, json('PUT', { nota: n })); s.nota = n; pintarSecoes(); });
+    $('[data-ap]', el).onclick = async () => { await api('/api/secoes/' + s.id, json('PUT', { aprovada: !s.aprovada })); s.aprovada = !s.aprovada; pintarSecoes(); };
+    const im = $('[data-zoom]', el); if (im) im.onclick = () => abrirZoom(im.src);
+  });
+}
+
+/* ---------- Novo cliente ---------- */
+function telaNovo() {
+  $('#tela').innerHTML = `<h1>Novo cliente</h1><p class="sub">Cria a pasta <code>clients/&lt;slug&gt;/</code> com os arquivos de entrada. Depois é só colar o briefing e enviar as fotos.</p>
+    <div class="card" style="max-width:520px"><label for="nome"><b>Nome do cliente</b></label>
+      <input type="text" id="nome" placeholder="Ex.: Studio Marina Souza" style="margin:8px 0 14px" autofocus>
+      <div class="linha"><button class="btn pri" id="cria">Criar cliente</button><span id="prev" class="sub" style="margin:0"></span></div></div>`;
+  const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  $('#nome').oninput = (e) => { const s = slugify(e.target.value); $('#prev').textContent = s ? 'pasta: ' + s : ''; };
+  const criar = async () => { try { const r = await api('/api/clientes', json('POST', { nome: $('#nome').value })); location.hash = '#/cliente/' + r.slug; } catch (e) { aviso(e.message); } };
+  $('#cria').onclick = criar; $('#nome').onkeydown = (e) => { if (e.key === 'Enter') criar(); };
+}
+
+/* ---------- rotas ---------- */
+async function rota() {
+  const h = location.hash.replace(/^#\/?/, '') || 'clientes'; const [r, arg] = h.split('/');
+  document.querySelectorAll('nav.lado a[data-r]').forEach((a) => a.classList.toggle('on', a.dataset.r === (r === 'cliente' ? 'clientes' : r)));
+  try {
+    if (r === 'cliente' && arg) await telaCliente(arg);
+    else if (r === 'biblioteca') await telaBiblioteca();
+    else if (r === 'novo') telaNovo();
+    else await telaClientes();
+  } catch (e) { $('#tela').innerHTML = `<div class="card vazio">${esc(e.message)}</div>`; }
+}
+addEventListener('hashchange', rota); rota();
+api('/api/secoes').then((l) => { $('#cont-lib').textContent = l.filter((s) => s.aprovada).length + '/' + l.length; }).catch(() => {});
+</script>
+</body>
+</html>

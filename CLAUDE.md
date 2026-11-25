@@ -36,6 +36,9 @@ Responda sempre em português.
 - Nada de números de resultado, depoimentos ou nomes de clientes que o cliente não forneceu.
 - Nicho de saúde: seguir `docs/regras-nicho.md`.
 
+## Painel
+- `npm run painel` abre a interface local em http://localhost:4300 (clientes, curadoria, novo cliente). Código em `scripts/painel.js` e `painel/index.html`.
+
 ## Comandos
 - `/extrair-biblioteca [slug|pasta]`: transforma páginas em seções da biblioteca
 - `/gerar-landing <slug> [--sem-juiz]`: gera a página completa
